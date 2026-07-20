@@ -1,0 +1,30 @@
+export const PRICE_RANGES = [
+  {
+    id: "entry",
+    label: "$10–15",
+    description: "Great value pours and beginner-friendly whiskies.",
+    min: 10,
+    max: 15,
+  },
+  {
+    id: "mid",
+    label: "$16–25",
+    description: "A balance of quality, complexity, and value.",
+    min: 16,
+    max: 25,
+  },
+  {
+    id: "premium",
+    label: "$26–40",
+    description: "Exceptional whiskies for enthusiasts seeking something special.",
+    min: 26,
+    max: 40,
+  },
+  {
+    id: "luxury",
+    label: "$41+",
+    description: "Rare, aged, and ultra-premium pours for a memorable experience.",
+    min: 41,
+    max: Infinity,
+  },
+];

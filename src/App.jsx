@@ -1,9 +1,21 @@
+import { Routes, Route } from "react-router-dom";
+
+import Header from "./components/Header/Header";
+
+import Home from "./pages/Home/Home";
+import Finder from "./pages/Finder/Finder";
+
 import "./App.css";
 
 function App() {
   return (
     <div className="app">
-      <h1>Whiskey Finder</h1>
+      <Header />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/finder" element={<Finder />} />
+      </Routes>
     </div>
   );
 }
