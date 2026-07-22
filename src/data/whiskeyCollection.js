@@ -34,7 +34,7 @@ export const whiskeyCollection = [
     bartenderNote:
       "One of the best introductions to Japanese whisky. Smooth enough for beginners while offering enough complexity to keep experienced whisky drinkers interested.",
 
-    tags: ["staff-pick"],
+    tags: [],
   },
 
   {
@@ -361,7 +361,7 @@ export const whiskeyCollection = [
     bartenderNote:
       "A fresh and lightly smoky Japanese single malt with crisp green apple, citrus, mint, and herbal notes. A great choice for guests who enjoy bright, refreshing whiskies with a subtle touch of smoke.",
 
-    tags: ["featured"],
+    tags: ["featured", "staff-pick"],
   },
   {
     id: "hakushu-18-year",
@@ -473,7 +473,7 @@ export const whiskeyCollection = [
     bartenderNote:
       "A refined and approachable Japanese single malt with layers of peach, pineapple, citrus, vanilla, and gentle spice. A great choice for guests looking to explore classic Yamazaki or enjoy a fruit-forward whisky with elegant oak influence.",
 
-    tags: ["featured"],
+    tags: ["featured", "staff-pick"],
   },
   {
     id: "yamazaki-18-year",
@@ -1170,7 +1170,7 @@ export const whiskeyCollection = [
     bartenderNote:
       "A powerful and richly flavored Nikka blend with vanilla, caramel, orange, dried fruit, spice, and oak. Its higher proof gives it extra intensity and makes it a great choice for guests who enjoy bold whisky or want a fuller-bodied introduction to Nikka's blending style.",
 
-    tags: ["featured"],
+    tags: ["featured", "staff-pick"],
   },
   {
     id: "taketsuru-pure-malt",
@@ -4133,54 +4133,6 @@ export const whiskeyCollection = [
     id: "slane-irish-whiskey",
 
     name: "Slane Irish Whiskey",
-
-    distillery: "Slane Distillery",
-
-    country: "ireland",
-
-    location: "Slane, County Meath",
-
-    style: "irish-whiskey",
-
-    barrelTypes: [
-      "virgin-oak",
-      "tennessee-whiskey-cask",
-      "oloroso-sherry-cask",
-    ],
-
-    age: null,
-
-    abv: 40,
-
-    price: 11,
-
-    priceRange: "entry",
-
-    image: "/images/whiskey/slane-irish-whiskey.png",
-
-    imageAlt: "Bottle of Slane Triple Casked Irish Whiskey",
-
-    flavorNotes: [
-      "vanilla",
-      "caramel",
-      "banana",
-      "butterscotch",
-      "dried-fruit",
-      "baking-spice",
-    ],
-
-    description:
-      "A triple-casked blended Irish whiskey crafted at Slane Distillery in County Meath. Matured in a combination of virgin oak, seasoned Tennessee whiskey, and Oloroso sherry casks, Slane delivers a smooth yet complex profile with layers of vanilla, caramel, banana, butterscotch, dried fruit, and warm baking spice.",
-
-    bartenderNote:
-      "A smooth, approachable Irish whiskey with more depth than a typical blend thanks to its unique triple-cask maturation. A great recommendation for guests who enjoy sweet vanilla and caramel notes with subtle fruit and spice.",
-
-    tags: ["featured"],
-  },
-  {
-    id: "kavalan",
-
-    name: "Kavalan Classic",
 
     distillery: "Slane Distillery",
 

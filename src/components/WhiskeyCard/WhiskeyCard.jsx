@@ -1,0 +1,86 @@
+import { getFlavorNoteLabel } from "../../utils/flavorHelpers";
+import { getTagLabel } from "../../utils/tagHelpers";
+import "./WhiskeyCard.css";
+
+function WhiskeyCard({ whiskey, onViewDetails }) {
+  return (
+    <article className="whiskey-card">
+      <div className="whiskey-card__image-container">
+        {whiskey.scores?.total !== undefined && (
+            <p className="whiskey-card__score">
+              {Math.round(whiskey.scores.total)}% Match
+            </p>
+          )}
+        <img
+          className="whiskey-card__image"
+          src={whiskey.image}
+          alt={whiskey.imageAlt}
+        />
+      </div>
+
+      <div className="whiskey-card__content">
+        <div className="whiskey-card__heading">
+          <h4 className="whiskey-card__name">
+            {whiskey.name}
+          </h4>
+
+          <p className="whiskey-card__distillery">
+            {whiskey.distillery}
+          </p>
+        </div>
+
+        <div className="whiskey-card__details">
+          <p className="whiskey-card__location">
+            {whiskey.location}
+          </p>
+
+          <p className="whiskey-card__price">
+            ${whiskey.price} / pour
+          </p>
+        </div>
+
+        {whiskey.tags?.length > 0 && (
+  <div className="whiskey-card__badges">
+    {whiskey.tags.map((tag) => (
+      <span
+        key={tag}
+        className={`whiskey-card__badge whiskey-card__badge--${tag}`}
+      >
+        {getTagLabel(tag)}
+      </span>
+    ))}
+  </div>
+)}
+
+        {whiskey.matchingNotes?.length > 0 && (
+          <div className="whiskey-card__matches">
+            <p className="whiskey-card__matches-title">
+              Your Flavor Matches
+            </p>
+
+            <ul className="whiskey-card__matches-list">
+              {whiskey.matchingNotes.map((note) => (
+                <li
+                  className="whiskey-card__match"
+                  key={note}
+                >
+                  {getFlavorNoteLabel(note)}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+
+        <button
+          className="whiskey-card__button"
+          type="button"
+          onClick={() => onViewDetails(whiskey)}
+        >
+          View Details
+        </button>
+      </div>
+    </article>
+  );
+}
+
+export default WhiskeyCard;

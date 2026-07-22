@@ -1,0 +1,354 @@
+.whiskey-modal {
+  position: fixed;
+  inset: 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 32px;
+
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(8px);
+
+  z-index: 1000;
+
+  animation: modalFadeIn 0.25s ease;
+}
+
+.whiskey-modal__container {
+  position: relative;
+
+  width: min(1100px, 100%);
+  max-height: 90vh;
+
+  overflow-y: auto;
+
+  background: var(--color-card);
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+
+  box-shadow: var(--shadow-hover);
+
+  animation: modalSlideUp 0.3s ease;
+}
+
+/* ===========================
+   Close Button
+=========================== */
+
+.whiskey-modal__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  width: 42px;
+  height: 42px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: rgba(255,255,255,.05);
+
+  color: var(--color-text-primary);
+
+  font-size: 1.6rem;
+
+  cursor: pointer;
+
+  transition:
+    background var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.whiskey-modal__close:hover {
+  background: rgba(255,255,255,.12);
+
+  transform: rotate(90deg);
+}
+
+/* ===========================
+   Hero
+=========================== */
+
+.whiskey-modal__hero {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+
+  gap: 48px;
+
+  padding: 56px;
+}
+
+.whiskey-modal__image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 32px;
+
+  border-radius: var(--radius-card);
+
+  background:
+    radial-gradient(
+      circle at top,
+      rgba(201,139,60,.18),
+      transparent 60%
+    );
+}
+
+.whiskey-modal__image {
+  max-width: 230px;
+  max-height: 380px;
+
+  object-fit: contain;
+
+  transition: transform .4s ease;
+}
+
+.whiskey-modal__image:hover {
+  transform: scale(1.04);
+}
+
+.whiskey-modal__hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* ===========================
+   Heading
+=========================== */
+
+.whiskey-modal__distillery {
+  margin-bottom: 8px;
+
+  color: var(--color-accent);
+
+  font-size: .85rem;
+  font-weight: 700;
+
+  letter-spacing: .16em;
+  text-transform: uppercase;
+}
+
+.whiskey-modal__title {
+  margin-bottom: 12px;
+
+  color: var(--color-text-primary);
+
+  font-size: clamp(2rem,4vw,3rem);
+
+  line-height: 1.1;
+}
+
+.whiskey-modal__location {
+  color: var(--color-text-secondary);
+
+  font-size: 1rem;
+}
+
+/* ===========================
+   Facts
+=========================== */
+
+.whiskey-modal__facts {
+  display: flex;
+  gap: 18px;
+
+  margin-top: 40px;
+}
+
+.whiskey-modal__fact {
+  flex: 1;
+
+  padding: 20px;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-card);
+
+  background: var(--color-surface);
+
+  text-align: center;
+}
+
+.whiskey-modal__fact-label {
+  margin-bottom: 8px;
+
+  color: var(--color-text-secondary);
+
+  font-size: .8rem;
+
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.whiskey-modal__fact-value {
+  color: var(--color-text-primary);
+
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+/* ===========================
+   Body
+=========================== */
+
+.whiskey-modal__body {
+  padding: 0 56px 56px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.whiskey-modal__section-title {
+  margin-bottom: 18px;
+
+  color: var(--color-text-primary);
+
+  font-size: 1.35rem;
+}
+
+.whiskey-modal__section-description {
+  margin-bottom: 18px;
+
+  color: var(--color-text-secondary);
+}
+
+.whiskey-modal__text {
+  color: var(--color-text-secondary);
+
+  line-height: 1.8;
+}
+
+/* ===========================
+   Chips
+=========================== */
+
+.whiskey-modal__flavors {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.whiskey-modal__flavor {
+  padding: 8px 16px;
+
+  border-radius: var(--radius-button);
+
+  background: rgba(255,255,255,.03);
+
+  border: 1px solid var(--color-border);
+
+  color: var(--color-text-secondary);
+
+  transition:
+    background var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.whiskey-modal__flavor:hover {
+  background: rgba(201,139,60,.12);
+
+  transform: translateY(-2px);
+}
+
+/* ===========================
+   Bartender Callout
+=========================== */
+
+.whiskey-modal__section--bartender {
+  padding: 28px;
+
+  border-left: 4px solid var(--color-accent);
+
+  border-radius: var(--radius-card);
+
+  background: rgba(201,139,60,.06);
+}
+
+/* ===========================
+   Animations
+=========================== */
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes modalSlideUp {
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(30px)
+      scale(.98);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0)
+      scale(1);
+  }
+}
+
+/* ===========================
+   Mobile
+=========================== */
+
+@media (max-width: 900px) {
+  .whiskey-modal__hero {
+    grid-template-columns: 1fr;
+
+    padding: 36px;
+
+    gap: 32px;
+  }
+
+  .whiskey-modal__image {
+    max-width: 180px;
+    max-height: 300px;
+  }
+
+  .whiskey-modal__facts {
+    flex-direction: column;
+  }
+
+  .whiskey-modal__body {
+    padding: 0 36px 36px;
+  }
+}
+
+@media (max-width: 600px) {
+  .whiskey-modal {
+    padding: 16px;
+  }
+
+  .whiskey-modal__hero,
+  .whiskey-modal__body {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .whiskey-modal__title {
+    font-size: 2rem;
+  }
+
+  .whiskey-modal__section-title {
+    font-size: 1.2rem;
+  }
+}

@@ -1,4 +1,5 @@
 import { FLAVOR_CATEGORIES } from "../data/flavorNotes";
+import { BARREL_TYPES } from "../data/barrelTypes";
 
 /**
  * Returns every flavor category.
@@ -15,21 +16,6 @@ export function getAllFlavorNotes() {
 }
 
 /**
- * Finds the category that contains a given flavor note.
- *
- * Example:
- * getCategoryFromNote("honey")
- * returns "sweet"
- */
-export function getCategoryFromNote(noteId) {
-  const category = FLAVOR_CATEGORIES.find((category) =>
-    category.notes.some((note) => note.id === noteId)
-  );
-
-  return category ? category.id : null;
-}
-
-/**
  * Returns all flavor notes belonging to a category.
  *
  * Example:
@@ -40,18 +26,45 @@ export function getNotesFromCategory(categoryId) {
     (category) => category.id === categoryId
   );
 
-  return category ? category.notes : [];
+  return category
+    ? category.notes.map((note) => note.id)
+    : [];
 }
 
 /**
- * Counts how many flavor notes match
- * the user's selected flavor categories.
+ * Returns the display label for a flavor note ID.
+ *
+ * Example:
+ * getFlavorNoteLabel("black-cherry")
+ * returns "Black Cherry"
  */
-export function countMatchingFlavorNotes(
-  whiskeyNotes,
-  selectedCategories
-) {
-  return whiskeyNotes.filter((note) =>
-    selectedCategories.includes(getCategoryFromNote(note))
-  ).length;
+export function getFlavorNoteLabel(noteId) {
+  const flavorNote = FLAVOR_CATEGORIES
+    .flatMap((category) => category.notes)
+    .find((note) => note.id === noteId);
+
+  return flavorNote ? flavorNote.label : noteId;
+}
+
+/**
+ * Returns the display label for a barrel type ID.
+ *
+ * Example:
+ * getBarrelTypeLabel("sherry-cask")
+ * returns "Sherry Cask"
+ */
+export function getBarrelTypeLabel(barrelTypeId) {
+  const barrelType = BARREL_TYPES.find(
+    (barrel) => barrel.id === barrelTypeId
+  );
+
+  return barrelType ? barrelType.label : barrelTypeId;
+}
+
+export function getFlavorCategory(noteId) {
+  const category = FLAVOR_CATEGORIES.find((category) =>
+    category.notes.some((note) => note.id === noteId)
+  );
+
+  return category?.id ?? "";
 }

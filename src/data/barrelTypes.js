@@ -4,63 +4,123 @@ export const BARREL_TYPES = [
     label: "American Oak",
   },
   {
+    id: "american-oak-puncheon",
+    label: "American Oak Puncheon",
+  },
+  {
+    id: "beer-cask",
+    label: "Beer Cask",
+  },
+  {
+    id: "bordeaux-wine-cask",
+    label: "Bordeaux Wine Cask",
+  },
+  {
+    id: "bourbon-cask",
+    label: "Bourbon Cask",
+  },
+  {
+    id: "chestnut-cask",
+    label: "Chestnut Cask",
+  },
+  {
+    id: "chibidaru-cask",
+    label: "Chibidaru Cask",
+  },
+  {
     id: "european-oak",
     label: "European Oak",
+  },
+  {
+    id: "french-oak",
+    label: "French Oak",
+  },
+  {
+    id: "manzanilla-sherry-cask",
+    label: "Manzanilla Sherry Cask",
   },
   {
     id: "mizunara-oak",
     label: "Mizunara Oak",
   },
   {
-    id: "ex-bourbon",
-    label: "Ex-Bourbon Barrel",
+    id: "new-charred-american-oak",
+    label: "New Charred American Oak",
   },
   {
-    id: "sherry-cask",
-    label: "Sherry Cask",
+    id: "new-oak",
+    label: "New Oak",
+  },
+  {
+    id: "oloroso-sherry-cask",
+    label: "Oloroso Sherry Cask",
   },
   {
     id: "port-cask",
     label: "Port Cask",
   },
   {
-    id: "madeira-cask",
-    label: "Madeira Cask",
+    id: "puncheon",
+    label: "Puncheon",
   },
   {
-    id: "wine-cask",
-    label: "Wine Cask",
+    id: "px-sherry-cask",
+    label: "Pedro Ximénez Sherry Cask",
+  },
+  {
+    id: "recharred-american-oak",
+    label: "Recharred American Oak",
   },
   {
     id: "red-wine-cask",
     label: "Red Wine Cask",
   },
   {
-    id: "white-wine-cask",
-    label: "White Wine Cask",
+    id: "refill-bourbon-cask",
+    label: "Refill Bourbon Cask",
+  },
+  {
+    id: "refill-cask",
+    label: "Refill Cask",
   },
   {
     id: "rum-cask",
     label: "Rum Cask",
   },
   {
-    id: "cognac-cask",
-    label: "Cognac Cask",
+    id: "sake-cask",
+    label: "Sake Cask",
   },
   {
-    id: "calvados-cask",
-    label: "Calvados Cask",
+    id: "sakura-cask",
+    label: "Sakura Cask",
+  },
+  {
+    id: "sherry-cask",
+    label: "Sherry Cask",
+  },
+  {
+    id: "shochu-cask",
+    label: "Shochu Cask",
+  },
+  {
+    id: "spanish-oak",
+    label: "Spanish Oak",
+  },
+  {
+    id: "tennessee-whiskey-cask",
+    label: "Tennessee Whiskey Cask",
+  },
+  {
+    id: "ume-cask",
+    label: "Ume Cask",
   },
   {
     id: "virgin-oak",
     label: "Virgin Oak",
   },
   {
-    id: "charred-oak",
-    label: "Charred Oak",
-  },
-  {
-    id: "refill-cask",
-    label: "Refill Cask",
+    id: "wine-cask",
+    label: "Wine Cask",
   },
 ];

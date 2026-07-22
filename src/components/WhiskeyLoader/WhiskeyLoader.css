@@ -1,0 +1,89 @@
+.whiskey-loader {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 24px;
+}
+
+.whiskey-loader__glass {
+  position: relative;
+
+  width: 48px;
+  height: 60px;
+
+  overflow: hidden;
+
+  border: 3px solid var(--color-accent);
+  border-radius: 0 0 12px 12px;
+
+  background: rgba(255, 255, 255, 0.03);
+
+  box-shadow:
+    inset 0 0 10px rgba(255, 255, 255, 0.04),
+    0 8px 18px rgba(0, 0, 0, 0.2);
+}
+
+.whiskey-loader__liquid {
+  position: absolute;
+
+  bottom: 0;
+  left: 0;
+
+  width: 100%;
+  height: 42%;
+
+  overflow: hidden;
+
+  background: linear-gradient(
+    180deg,
+    #d8a35a,
+    #b97b2d
+  );
+
+  animation: whiskeyWave 1.8s ease-in-out infinite;
+}
+
+.whiskey-loader__liquid::after {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: -100%;
+
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.25),
+    transparent
+  );
+
+  animation: whiskeyShimmer 2s linear infinite;
+}
+
+@keyframes whiskeyWave {
+  0% {
+    height: 35%;
+  }
+
+  50% {
+    height: 58%;
+  }
+
+  100% {
+    height: 35%;
+  }
+}
+
+@keyframes whiskeyShimmer {
+  from {
+    left: -100%;
+  }
+
+  to {
+    left: 120%;
+  }
+}
