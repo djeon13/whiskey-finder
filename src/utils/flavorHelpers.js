@@ -68,3 +68,9 @@ export function getFlavorCategory(noteId) {
 
   return category?.id ?? "";
 }
+
+export function getCategoryFromNote(note) {
+  return Object.keys(FLAVOR_CATEGORIES).find((category) =>
+    FLAVOR_CATEGORIES[category].includes(note)
+  );
+}

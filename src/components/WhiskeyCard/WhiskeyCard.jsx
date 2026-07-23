@@ -1,5 +1,10 @@
 import { getFlavorNoteLabel } from "../../utils/flavorHelpers";
 import { getTagLabel } from "../../utils/tagHelpers";
+import {
+  MapPin,
+  FlaskConical,
+  DollarSign,
+} from "lucide-react";
 import "./WhiskeyCard.css";
 
 function WhiskeyCard({ whiskey, onViewDetails }) {
@@ -30,14 +35,33 @@ function WhiskeyCard({ whiskey, onViewDetails }) {
         </div>
 
         <div className="whiskey-card__details">
-          <p className="whiskey-card__location">
-            {whiskey.location}
-          </p>
+<div className="whiskey-card__chip">
+    <MapPin
+      size={15}
+      className="whiskey-card__chip-icon"
+    />
 
-          <p className="whiskey-card__price">
-            ${whiskey.price} / pour
-          </p>
-        </div>
+    <span className="whiskey-card__chip-text">
+      {whiskey.location}
+    </span>
+</div>
+
+  <div className="whiskey-card__chip">
+    <FlaskConical
+      size={15}
+      className="whiskey-card__chip-icon"
+    />
+    <span>{whiskey.abv}% ABV</span>
+  </div>
+
+  <div className="whiskey-card__chip">
+    <DollarSign
+      size={15}
+      className="whiskey-card__chip-icon"
+    />
+    <span>${whiskey.price} / pour</span>
+  </div>
+</div>
 
         {whiskey.tags?.length > 0 && (
   <div className="whiskey-card__badges">

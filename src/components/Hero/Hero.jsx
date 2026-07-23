@@ -30,22 +30,24 @@ function Hero() {
           flavor profile, price, and country of origin.
         </p>
 
-        <div className="hero__cta">
-          <img
-            className="hero__pour"
-            src={whiskeyPour}
-            alt=""
-            aria-hidden="true"
-          />
+<div className="hero__cta">
+  <div className="hero__illustration">
+    <img
+      className="hero__pour"
+      src={whiskeyPour}
+      alt=""
+      aria-hidden="true"
+    />
+  </div>
 
-          <button
-            className="hero__button"
-            type="button"
-            onClick={handleStartExploring}
-          >
-            Start Exploring
-          </button>
-        </div>
+  <button
+    className="hero__button"
+    type="button"
+    onClick={handleStartExploring}
+  >
+    Start Exploring
+  </button>
+</div>
       </div>
     </section>
   );

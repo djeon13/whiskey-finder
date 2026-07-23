@@ -1,4 +1,10 @@
-import { getNotesFromCategory } from "./flavorHelpers";
+import {
+  FLAVOR_CATEGORIES,
+} from "../data/flavorNotes";
+
+import {
+  getNotesFromCategory,
+} from "./flavorHelpers";
 
 const DEFAULT_WEIGHTS = {
   flavor: 60,
@@ -13,48 +19,87 @@ export function getMatchingFlavorNotes(
   if (!selectedCategories.length) {
     return {
       matchingNotes: [],
-      possibleNotes: 0,
+      matchedCategories: 0,
+      selectedCategories: 0,
+      whiskeyCategories: 0,
     };
   }
 
   const flavorNotes = whiskey.flavorNotes ?? [];
 
-  const matchingNotes = new Set();
-  let possibleNotes = 0;
+  const whiskeyCategorySet = new Set();
 
-  selectedCategories.forEach((category) => {
-    const categoryNotes = getNotesFromCategory(category);
+  FLAVOR_CATEGORIES.forEach((category) => {
+    const hasCategory = category.notes.some((note) =>
+      flavorNotes.includes(note.id)
+    );
 
-    possibleNotes += categoryNotes.length;
+    if (hasCategory) {
+      whiskeyCategorySet.add(category.id);
+    }
+  });
 
-    categoryNotes.forEach((note) => {
-      if (flavorNotes.includes(note)) {
-        matchingNotes.add(note);
-      }
-    });
+  const matchedCategorySet = new Set();
+  const matchingNotes = [];
+
+  selectedCategories.forEach((categoryId) => {
+    const category = FLAVOR_CATEGORIES.find(
+      (item) => item.id === categoryId
+    );
+
+    if (!category) {
+      return;
+    }
+
+    const matchedNote = category.notes.find((note) =>
+      flavorNotes.includes(note.id)
+    );
+
+    if (matchedNote) {
+      matchedCategorySet.add(categoryId);
+      matchingNotes.push(matchedNote.id);
+    }
   });
 
   return {
-    matchingNotes: [...matchingNotes],
-    possibleNotes,
+    matchingNotes,
+
+    matchedCategories:
+      matchedCategorySet.size,
+
+    selectedCategories:
+      selectedCategories.length,
+
+    whiskeyCategories:
+      whiskeyCategorySet.size,
   };
 }
 
 export function getFlavorScore(flavorData) {
   const {
-    matchingNotes,
-    possibleNotes,
+    matchedCategories,
+    selectedCategories,
+    whiskeyCategories,
   } = flavorData;
 
-  if (possibleNotes === 0) {
+  if (selectedCategories === 0) {
     return null;
   }
 
+  const coverage =
+    matchedCategories / selectedCategories;
+
+  const precision =
+    whiskeyCategories === 0
+      ? 0
+      : matchedCategories / whiskeyCategories;
+
+  const flavorScore =
+    coverage * 0.85 +
+    precision * 0.15;
+
   return Number(
-    (
-      (matchingNotes.length / possibleNotes) *
-      100
-    ).toFixed(1)
+    (flavorScore * 100).toFixed(1)
   );
 }
 

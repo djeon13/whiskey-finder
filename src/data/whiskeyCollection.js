@@ -79,7 +79,7 @@ export const whiskeyCollection = [
     bartenderNote:
       "An elegant and aromatic expression of Hibiki with a distinctive sakura cask finish. Delicate floral notes, soft fruit, honey, and subtle spice make this a great choice for guests who enjoy refined, floral, and gently sweet Japanese whisky.",
 
-    tags: ["featured", "limited-release"],
+    tags: ["limited-release"],
   },
 
   {
@@ -125,7 +125,7 @@ export const whiskeyCollection = [
     bartenderNote:
       "A richer and more fruit-forward take on Hibiki Harmony. The additional sherry cask influence brings dried fruit, dark chocolate, and spice, making this a great choice for guests who enjoy a fuller and more complex Japanese whisky.",
 
-    tags: ["featured"],
+    tags: [],
   },
   {
     id: "hibiki-blenders-choice",
@@ -162,7 +162,7 @@ export const whiskeyCollection = [
     bartenderNote:
       "A richer and more mature expression of the Hibiki style, with wine cask influence adding depth and fruitiness to the blend. A great choice for guests who enjoy smooth Japanese whisky with rich fruit, caramel, and subtle spice.",
 
-    tags: ["featured"],
+    tags: [],
   },
   {
     id: "hibiki-12-year",
@@ -236,7 +236,7 @@ export const whiskeyCollection = [
     bartenderNote:
       "A refined and complex Hibiki expression with layers of ripe fruit, honey, vanilla, and aromatic oak. Its mature character and discontinued status make it an excellent choice for guests seeking a rare and highly regarded Japanese whisky.",
 
-    tags: ["featured", "discontinued"],
+    tags: ["discontinued"],
   },
   {
     id: "hibiki-21-year",
@@ -280,7 +280,7 @@ export const whiskeyCollection = [
     bartenderNote:
       "A rich and sophisticated Hibiki expression with deep fruit, dark chocolate, spice, and fragrant oak. An excellent choice for guests looking for a mature, complex, and highly regarded Japanese blended whisky.",
 
-    tags: ["featured"],
+    tags: [],
   },
   {
     id: "hibiki-30-year",
@@ -562,7 +562,7 @@ export const whiskeyCollection = [
     bartenderNote:
       "A vibrant and fruit-forward Yamazaki with bright red berries, vanilla, gentle spice, and aromatic oak. A great choice for guests looking for an approachable introduction to Yamazaki's complex multi-cask style.",
 
-    tags: ["featured"],
+    tags: [],
   },
   {
     id: "yamazaki-puncheon-tsukuriwake-2022",
@@ -600,7 +600,7 @@ export const whiskeyCollection = [
     bartenderNote:
       "A smooth and elegant Yamazaki expression showcasing the influence of large American oak puncheon casks. A great choice for guests who enjoy fruit-forward whisky with vanilla, honey, butterscotch, and gentle oak character.",
 
-    tags: ["featured", "limited-release", "rare"],
+    tags: ["limited-release", "rare"],
   },
   {
     id: "yamazaki-spanish-oak-tsukuriwake-2022",
@@ -645,7 +645,7 @@ export const whiskeyCollection = [
     bartenderNote:
       "A rich and decadent Yamazaki expression showcasing the influence of Spanish oak maturation. A great choice for guests who enjoy full-bodied whisky with dried fruit, raisin, prune, spice, and deep oak character.",
 
-    tags: ["featured", "limited-release", "rare"],
+    tags: ["limited-release", "rare"],
   },
   {
     id: "yamazaki-bordeaux-wine-cask-2020",
@@ -683,7 +683,7 @@ export const whiskeyCollection = [
     bartenderNote:
       "A rich and fruit-forward Yamazaki showcasing the influence of Bordeaux wine casks. A great choice for guests who enjoy red fruit, wine-like sweetness and acidity, warm spice, and oak in a complex Japanese single malt.",
 
-    tags: ["featured", "limited-release", "rare"],
+    tags: ["limited-release", "rare"],
   },
   {
     id: "yamazaki-18-year-mizunara",
@@ -845,7 +845,7 @@ export const whiskeyCollection = [
     bartenderNote:
       "A soft and elegant Japanese single malt with ripe pear, peach, citrus, floral notes, honey, and gentle spice. A great choice for guests who prefer a delicate and fruit-forward whisky with subtle sherry cask richness.",
 
-    tags: ["featured"],
+    tags: [],
   },
   {
     id: "miyagikyo-peated-2021",
@@ -883,7 +883,7 @@ export const whiskeyCollection = [
     bartenderNote:
       "A rare and distinctive Miyagikyo that trades the distillery's typically light and fruity profile for a much more peat-forward character. A great choice for guests who enjoy smoky whisky but want to explore a refined Japanese interpretation of a peated single malt.",
 
-    tags: ["featured", "limited-release", "rare"],
+    tags: ["limited-release", "rare"],
   },
   {
     id: "miyagikyo-12-year",
