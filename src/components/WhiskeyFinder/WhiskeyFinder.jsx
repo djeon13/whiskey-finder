@@ -6,10 +6,13 @@ import { PRICE_RANGES } from "../../data/priceRanges";
 
 import { recommendWhiskeys } from "../../utils/recommendationEngine";
 import { getFlavorDescription } from "../../utils/flavorDescriptions";
+import { getBartenderRecommendation } from "../../utils/geminiApi";
 
 import WhiskeyCard from "../WhiskeyCard/WhiskeyCard";
 import WhiskeyDetailsModal from "../WhiskeyDetailsModal/WhiskeyDetailsModal";
 import WhiskeyLoader from "../WhiskeyLoader/WhiskeyLoader";
+
+import BartenderRecommendation from "../BartenderRecommendation/BartenderRecommendation";
 
 import "./WhiskeyFinder.css";
 
@@ -35,6 +38,21 @@ function WhiskeyFinder() {
   const [isLoading, setIsLoading] =
     useState(false);
 
+  const [
+    isBartenderLoading,
+    setIsBartenderLoading,
+  ] = useState(false);
+
+  const [
+    bartenderMessage,
+    setBartenderMessage,
+  ] = useState("");
+
+  const [
+    bartenderError,
+    setBartenderError,
+  ] = useState("");
+
   function handleViewDetails(whiskey) {
     setSelectedWhiskey(whiskey);
   }
@@ -43,44 +61,44 @@ function WhiskeyFinder() {
     setSelectedWhiskey(null);
   }
 
- function handleFlavorClick(flavorId) {
-  const isSelected =
-    preferences.flavors.includes(flavorId);
+  function handleFlavorClick(flavorId) {
+    const isSelected =
+      preferences.flavors.includes(flavorId);
 
-  if (isSelected) {
-    const updatedFlavors =
-      preferences.flavors.filter(
-        (flavor) => flavor !== flavorId
-      );
+    if (isSelected) {
+      const updatedFlavors =
+        preferences.flavors.filter(
+          (flavor) => flavor !== flavorId
+        );
+
+      setPreferences((current) => ({
+        ...current,
+        flavors: updatedFlavors,
+      }));
+
+      if (activeFlavor === flavorId) {
+        setActiveFlavor(updatedFlavors[0] ?? null);
+      }
+
+      return;
+    }
+
+    if (preferences.flavors.length >= 2) {
+      return;
+    }
+
+    const updatedFlavors = [
+      ...preferences.flavors,
+      flavorId,
+    ];
 
     setPreferences((current) => ({
       ...current,
       flavors: updatedFlavors,
     }));
 
-    if (activeFlavor === flavorId) {
-      setActiveFlavor(updatedFlavors[0] ?? null);
-    }
-
-    return;
+    setActiveFlavor(flavorId);
   }
-
-  if (preferences.flavors.length >= 2) {
-    return;
-  }
-
-  const updatedFlavors = [
-    ...preferences.flavors,
-    flavorId,
-  ];
-
-  setPreferences((current) => ({
-    ...current,
-    flavors: updatedFlavors,
-  }));
-
-  setActiveFlavor(flavorId);
-}
 
   function handlePriceChange(event) {
     setPreferences((currentPreferences) => ({
@@ -102,6 +120,9 @@ function WhiskeyFinder() {
     setIsLoading(true);
 
     setTimeout(() => {
+      setBartenderMessage("");
+      setBartenderError("");
+
       const whiskeyRecommendations =
         recommendWhiskeys(preferences);
 
@@ -115,10 +136,36 @@ function WhiskeyFinder() {
     }, 700);
   }
 
+  async function handleAskBartender() {
+    try {
+      setBartenderError("");
+      setBartenderMessage("");
+
+      setIsBartenderLoading(true);
+
+      const message =
+        await getBartenderRecommendation({
+          recommendations,
+          preferences,
+        });
+
+      setBartenderMessage(message);
+    } catch (error) {
+      console.error(error);
+
+      setBartenderError(
+        "Looks like the bartender stepped away for a moment. Please try again."
+      );
+    } finally {
+      setIsBartenderLoading(false);
+    }
+  }
+
   const displayedFlavor =
-  FLAVOR_CATEGORIES.find(
-    (category) => category.id === activeFlavor
-  );
+    FLAVOR_CATEGORIES.find(
+      (category) =>
+        category.id === activeFlavor
+    );
 
   return (
     <section className="whiskey-finder">
@@ -150,9 +197,7 @@ function WhiskeyFinder() {
 
             <p className="whiskey-finder__helper-text">
               Choose up to two flavor profiles.
-              (
-              {preferences.flavors.length}
-              /2 selected)
+              ({preferences.flavors.length}/2 selected)
             </p>
 
             <div className="whiskey-finder__options">
@@ -164,8 +209,8 @@ function WhiskeyFinder() {
                     );
 
                   const isDisabled =
-                    preferences.flavors.length >=
-                      2 && !isSelected;
+                    preferences.flavors.length >= 2 &&
+                    !isSelected;
 
                   return (
                     <button
@@ -333,6 +378,17 @@ function WhiskeyFinder() {
                   )
                 )}
               </ul>
+
+              <BartenderRecommendation
+  isLoading={isBartenderLoading}
+  message={bartenderMessage}
+  error={bartenderError}
+  onAsk={handleAskBartender}
+  onClose={() => {
+    setBartenderMessage("");
+    setBartenderError("");
+  }}
+/>
             </section>
           )}
 
@@ -356,10 +412,11 @@ function WhiskeyFinder() {
       </div>
 
       <WhiskeyDetailsModal
-        whiskey={selectedWhiskey}
-        isOpen={Boolean(selectedWhiskey)}
-        onClose={handleCloseDetails}
-      />
+  whiskey={selectedWhiskey}
+  preferences={preferences}
+  isOpen={Boolean(selectedWhiskey)}
+  onClose={handleCloseDetails}
+/>
     </section>
   );
 }

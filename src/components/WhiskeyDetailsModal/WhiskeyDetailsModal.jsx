@@ -8,6 +8,7 @@ import "./WhiskeyDetailsModal.css";
 
 function WhiskeyDetailsModal({
   whiskey,
+  preferences,
   isOpen,
   onClose,
 }) {
