@@ -1,4 +1,6 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { getBartenderPerspective } from "../../utils/geminiApi";
+import WhiskeyLoader from "../WhiskeyLoader/WhiskeyLoader";
 import {
   getFlavorNoteLabel,
   getBarrelTypeLabel,
@@ -12,6 +14,23 @@ function WhiskeyDetailsModal({
   isOpen,
   onClose,
 }) {
+
+  const [
+  isBartenderLoading,
+  setIsBartenderLoading,
+] = useState(false);
+
+const [
+  bartenderPerspective,
+  setBartenderPerspective,
+] = useState("");
+
+const [
+  bartenderError,
+  setBartenderError,
+] = useState("");
+  
+
   useEffect(() => {
     if (!isOpen) {
       return;
@@ -33,6 +52,12 @@ function WhiskeyDetailsModal({
     };
   }, [isOpen, onClose]);
 
+  useEffect(() => {
+  setBartenderPerspective("");
+  setBartenderError("");
+  setIsBartenderLoading(false);
+}, [whiskey]);
+
   if (!isOpen || !whiskey) {
     return null;
   }
@@ -42,6 +67,31 @@ function WhiskeyDetailsModal({
       onClose();
     }
   }
+
+  async function handleAskBartender() {
+  try {
+    setBartenderError("");
+    setBartenderPerspective("");
+
+    setIsBartenderLoading(true);
+
+    const response =
+      await getBartenderPerspective({
+        whiskey,
+        preferences,
+      });
+
+    setBartenderPerspective(response);
+  } catch (error) {
+    console.error(error);
+
+    setBartenderError(
+      "The bartender is unavailable at the moment. Please try again."
+    );
+  } finally {
+    setIsBartenderLoading(false);
+  }
+}
 
   return (
     <div
@@ -199,14 +249,52 @@ function WhiskeyDetailsModal({
           </section>
 
           <section className="whiskey-modal__section whiskey-modal__section--bartender">
-            <h3 className="whiskey-modal__section-title">
-              Bartender's Recommendation
-            </h3>
 
-            <p className="whiskey-modal__text">
-              {whiskey.bartenderNote}
-            </p>
-          </section>
+  <h3 className="whiskey-modal__section-title">
+    Bartender's Recommendation
+  </h3>
+
+  <p className="whiskey-modal__text">
+    {whiskey.bartenderNote}
+  </p>
+
+  {!isBartenderLoading && (
+    <button
+      className="whiskey-modal__bartender-button"
+      type="button"
+      onClick={handleAskBartender}
+    >
+      {bartenderPerspective
+        ? "✨ Ask Again"
+        : "✨ Ask the Bartender"}
+    </button>
+  )}
+
+  {isBartenderLoading && (
+    <div className="whiskey-modal__bartender-loader">
+      <WhiskeyLoader />
+    </div>
+  )}
+
+  {bartenderPerspective && (
+    <div className="whiskey-modal__bartender-bubble">
+      <h4 className="whiskey-modal__bartender-title">
+        🥃 Bartender's Perspective
+      </h4>
+
+      <p className="whiskey-modal__text">
+        {bartenderPerspective}
+      </p>
+    </div>
+  )}
+
+  {bartenderError && (
+    <p className="whiskey-modal__bartender-error">
+      {bartenderError}
+    </p>
+  )}
+
+</section>
         </div>
       </div>
     </div>

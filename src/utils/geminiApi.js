@@ -1,16 +1,60 @@
+import { FLAVOR_CATEGORIES } from "../data/flavorNotes";
+
+const FLAVOR_DESCRIPTIONS = {
+  smoke: "smoky",
+  sweet: "sweet",
+  fruit: "fruit-forward",
+  spice: "spice-driven",
+  wood: "oak-forward",
+  dessert: "dessert-inspired",
+  floral: "floral",
+  maritime: "coastal",
+};
+
 const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 
 const API_URL =
   "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent";
 
+
+function getFlavorPreferenceDescription(
+  selectedFlavors
+) {
+  if (!selectedFlavors.length) {
+    return "The guest has no specific flavor preferences.";
+  }
+
+  const descriptions = selectedFlavors
+    .map(
+      (flavor) =>
+        FLAVOR_DESCRIPTIONS[flavor]
+    )
+    .filter(Boolean);
+
+  if (descriptions.length === 1) {
+    return `The guest enjoys ${descriptions[0]} whiskies.`;
+  }
+
+  if (descriptions.length === 2) {
+    return `The guest enjoys ${descriptions[0]} whiskies with noticeable ${descriptions[1]} character.`;
+  }
+
+  const lastDescription =
+    descriptions.pop();
+
+  return `The guest enjoys ${descriptions.join(
+    ", "
+  )}, and ${lastDescription} whiskies.`;
+}
+
 function buildPrompt({
-  recommendations,
+  whiskey,
   preferences,
 }) {
-  const selectedFlavors =
-    preferences.flavors.length > 0
-      ? preferences.flavors.join(", ")
-      : "No preference";
+  const flavorPreference =
+  getFlavorPreferenceDescription(
+    preferences.flavors
+  );
 
   const selectedCountry =
     preferences.country || "No preference";
@@ -18,16 +62,9 @@ function buildPrompt({
   const selectedPrice =
     preferences.priceRange || "No preference";
 
-  const whiskeyList = recommendations
-    .map((whiskey, index) => {
-      return `
-Recommendation #${index + 1}
-
+  const whiskeyDetails = `
 Name:
 ${whiskey.name}
-
-Overall Match:
-${Math.round(whiskey.scores.total)}%
 
 Distillery:
 ${whiskey.distillery}
@@ -41,26 +78,20 @@ ${whiskey.abv}%
 Price:
 $${whiskey.price}
 
-Matching Flavor Notes:
-${
-  whiskey.matchingNotes.length
-    ? whiskey.matchingNotes.join(", ")
-    : "None"
-}
-
-Full Flavor Profile:
+Flavor Notes:
 ${whiskey.flavorNotes.join(", ")}
+
+Description:
+${whiskey.description}
 
 Bartender Note:
 ${whiskey.bartenderNote}
 `;
-    })
-    .join("\n");
 
   return `
 You are the head bartender at Wolf & Crane Whiskey Library.
 
-You have spent years helping guests discover whiskies they'll genuinely enjoy.
+You have years of experience helping guests discover whiskies they'll genuinely enjoy.
 
 You are knowledgeable but never pretentious.
 
@@ -70,104 +101,70 @@ You never sound like a salesperson.
 
 You speak naturally, like you're talking to someone sitting across the bar.
 
-The recommendation engine has already ranked these three whiskies.
+The guest is currently viewing ONE whiskey in detail.
 
-Recommendation #1 is the strongest overall match.
+Use the bartender note as inspiration, but expand on it naturally.
 
-Do not change the ranking.
+Do not repeat the bartender note verbatim.
 
-Your job is to explain why Recommendation #1 is the bottle you would pour first.
+Explain why this whiskey is a good match for the guest's preferences.
 
-Briefly mention Recommendation #2 as another excellent choice.
+Describe the experience of drinking it rather than listing tasting notes.
 
-Only mention Recommendation #3 if it offers something noticeably different.
+Do not compare it to other whiskies.
+
+Do not recommend another bottle.
 
 Do not invent tasting notes.
 
 Only use the information provided.
 
-Never recommend a whiskey that is not included in the three recommendations.
+Keep your response between 70 and 120 words.
 
-Keep your response between 80 and 140 words.
-
-Write in one or two short paragraphs.
+Write naturally in one or two short paragraphs.
 
 Never use bullet points.
 
-Never mention recommendation numbers.
+Never mention AI.
 
-Never mention percentages.
+Never mention Gemini.
 
-Never mention "AI", "Gemini", "algorithm", or "based on your input."
+Never mention algorithms.
 
-Don't repeat every tasting note.
+Never mention recommendation scores.
 
-Instead, describe the overall experience of drinking the whiskey.
-
-Your response should be purely informative.
-
-Do not ask the guest any questions.
+Never ask the guest any questions.
 
 Do not invite further conversation.
 
-Do not ask which whiskey they would choose.
-
-Do not ask if they would like another recommendation.
-
-Do not ask if they are ready to order.
-
 Do not end with a call to action.
 
-End with a confident concluding statement about the recommendation.
-
-The final sentence should feel complete and should not invite a reply.
-
-After finishing your recommendation, consider the conversation complete. Do not continue it, ask follow-up questions, or invite a response.
+End with a confident concluding sentence.
 
 Customer Preferences
 
-Flavor Categories:
-${selectedFlavors}
+${flavorPreference}
 
-Country:
+Preferred Country:
 ${selectedCountry}
 
-Price Range:
+Preferred Price Range:
 ${selectedPrice}
 
-Recommended Whiskeys
+Flavor preferences should be the primary focus of your explanation. Use the country and price preferences only as supporting context when they are provided.
 
-${whiskeyList}
+Whiskey
 
-Customer Preferences
-
-Flavor Categories:
-${selectedFlavors}
-
-Country:
-${selectedCountry}
-
-Price Range:
-${selectedPrice}
-
-Recommended Whiskeys
-
-${whiskeyList}
-
-The response should feel warm, welcoming, and conversational.
-
-Imagine the guest is standing at the bar deciding what to order next.
-
-The recommendation should sound like it comes from a real bartender at Wolf & Crane.
+${whiskeyDetails}
 `;
 }
 
-export async function getBartenderRecommendation({
-  recommendations,
+export async function getBartenderPerspective({
+  whiskey,
   preferences,
 }) {
   const prompt = buildPrompt({
-    recommendations,
+    whiskey,
     preferences,
   });
 
@@ -201,7 +198,7 @@ export async function getBartenderRecommendation({
     console.error(error);
 
     throw new Error(
-      "Failed to get bartender recommendation."
+      "Failed to get bartender perspective."
     );
   }
 

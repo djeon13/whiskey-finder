@@ -6,13 +6,10 @@ import { PRICE_RANGES } from "../../data/priceRanges";
 
 import { recommendWhiskeys } from "../../utils/recommendationEngine";
 import { getFlavorDescription } from "../../utils/flavorDescriptions";
-import { getBartenderRecommendation } from "../../utils/geminiApi";
 
 import WhiskeyCard from "../WhiskeyCard/WhiskeyCard";
 import WhiskeyDetailsModal from "../WhiskeyDetailsModal/WhiskeyDetailsModal";
 import WhiskeyLoader from "../WhiskeyLoader/WhiskeyLoader";
-
-import BartenderRecommendation from "../BartenderRecommendation/BartenderRecommendation";
 
 import "./WhiskeyFinder.css";
 
@@ -38,22 +35,8 @@ function WhiskeyFinder() {
   const [isLoading, setIsLoading] =
     useState(false);
 
-  const [
-    isBartenderLoading,
-    setIsBartenderLoading,
-  ] = useState(false);
-
-  const [
-    bartenderMessage,
-    setBartenderMessage,
-  ] = useState("");
-
-  const [
-    bartenderError,
-    setBartenderError,
-  ] = useState("");
-
-  function handleViewDetails(whiskey) {
+  
+    function handleViewDetails(whiskey) {
     setSelectedWhiskey(whiskey);
   }
 
@@ -120,8 +103,6 @@ function WhiskeyFinder() {
     setIsLoading(true);
 
     setTimeout(() => {
-      setBartenderMessage("");
-      setBartenderError("");
 
       const whiskeyRecommendations =
         recommendWhiskeys(preferences);
@@ -134,31 +115,6 @@ function WhiskeyFinder() {
 
       setIsLoading(false);
     }, 700);
-  }
-
-  async function handleAskBartender() {
-    try {
-      setBartenderError("");
-      setBartenderMessage("");
-
-      setIsBartenderLoading(true);
-
-      const message =
-        await getBartenderRecommendation({
-          recommendations,
-          preferences,
-        });
-
-      setBartenderMessage(message);
-    } catch (error) {
-      console.error(error);
-
-      setBartenderError(
-        "Looks like the bartender stepped away for a moment. Please try again."
-      );
-    } finally {
-      setIsBartenderLoading(false);
-    }
   }
 
   const displayedFlavor =
@@ -378,17 +334,6 @@ function WhiskeyFinder() {
                   )
                 )}
               </ul>
-
-              <BartenderRecommendation
-  isLoading={isBartenderLoading}
-  message={bartenderMessage}
-  error={bartenderError}
-  onAsk={handleAskBartender}
-  onClose={() => {
-    setBartenderMessage("");
-    setBartenderError("");
-  }}
-/>
             </section>
           )}
 
