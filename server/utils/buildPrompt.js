@@ -1,5 +1,3 @@
-import { FLAVOR_CATEGORIES } from "../data/flavorNotes";
-
 const FLAVOR_DESCRIPTIONS = {
   smoke: "smoky",
   sweet: "sweet",
@@ -11,24 +9,13 @@ const FLAVOR_DESCRIPTIONS = {
   maritime: "coastal",
 };
 
-const API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
-
-const API_URL =
-  "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent";
-
-
-function getFlavorPreferenceDescription(
-  selectedFlavors
-) {
+function getFlavorPreferenceDescription(selectedFlavors) {
   if (!selectedFlavors.length) {
     return "The guest has no specific flavor preferences.";
   }
 
   const descriptions = selectedFlavors
-    .map(
-      (flavor) =>
-        FLAVOR_DESCRIPTIONS[flavor]
-    )
+    .map((flavor) => FLAVOR_DESCRIPTIONS[flavor])
     .filter(Boolean);
 
   if (descriptions.length === 1) {
@@ -39,22 +26,21 @@ function getFlavorPreferenceDescription(
     return `The guest enjoys ${descriptions[0]} whiskies with noticeable ${descriptions[1]} character.`;
   }
 
-  const lastDescription =
-    descriptions.pop();
+  const lastDescription = descriptions.pop();
 
   return `The guest enjoys ${descriptions.join(
     ", "
   )}, and ${lastDescription} whiskies.`;
 }
 
-function buildPrompt({
+export default function buildPrompt({
   whiskey,
   preferences,
 }) {
   const flavorPreference =
-  getFlavorPreferenceDescription(
-    preferences.flavors
-  );
+    getFlavorPreferenceDescription(
+      preferences.flavors
+    );
 
   const selectedCountry =
     preferences.country || "No preference";
@@ -157,52 +143,4 @@ Whiskey
 
 ${whiskeyDetails}
 `;
-}
-
-export async function getBartenderPerspective({
-  whiskey,
-  preferences,
-}) {
-  const prompt = buildPrompt({
-    whiskey,
-    preferences,
-  });
-
-  const response = await fetch(
-    `${API_URL}?key=${API_KEY}`,
-    {
-      method: "POST",
-
-      headers: {
-        "Content-Type":
-          "application/json",
-      },
-
-      body: JSON.stringify({
-        contents: [
-          {
-            parts: [
-              {
-                text: prompt,
-              },
-            ],
-          },
-        ],
-      }),
-    }
-  );
-
-  if (!response.ok) {
-    const error = await response.json();
-
-    console.error(error);
-
-    throw new Error(
-      "Failed to get bartender perspective."
-    );
-  }
-
-  const data = await response.json();
-
-  return data.candidates[0].content.parts[0].text;
 }

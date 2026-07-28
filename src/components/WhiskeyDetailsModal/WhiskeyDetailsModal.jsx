@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getBartenderPerspective } from "../../utils/geminiApi";
+import { getBartenderPerspective } from "../../utils/bartenderApi";
 import WhiskeyLoader from "../WhiskeyLoader/WhiskeyLoader";
 import {
   getFlavorNoteLabel,
