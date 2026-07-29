@@ -86,6 +86,8 @@ https://wolf-crane-api-daniel.onrender.com
 
 ## Project Video
 
+https://www.loom.com/share/384d54c81a404befb90f4d9bfa61b766
+
 ## Author
 
 Developed by Da In Jeon as part of the TripleTen Software Engineering program.
