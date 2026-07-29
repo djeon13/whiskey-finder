@@ -17,6 +17,10 @@ function Header() {
         />
       </Link>
 
+      <h1 className="header__title">
+        Wolf & Crane Whiskey Library
+      </h1>
+
       <Navigation />
     </header>
   );

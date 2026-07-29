@@ -1,7 +1,9 @@
 .navigation {
   display: flex;
   align-items: center;
-  gap: 40px;
+
+  justify-self:end;
+  gap: 32px;
 }
 
 .navigation__link {

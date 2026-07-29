@@ -3848,7 +3848,7 @@ export const whiskeyCollection = [
 
     age: null,
 
-    abv: null,
+    abv: 62.35,
 
     price: 20,
 

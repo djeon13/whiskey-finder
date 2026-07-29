@@ -1,4 +1,4 @@
-# 🥃 The Whiskey Library
+# 🥃 Wolf and Crane Whiskey Library
 
 The Whiskey Library is a React web application that helps users discover whiskey recommendations based on their flavor preferences. Users can select up to two flavor profiles, optionally filter by price range and country, and receive personalized recommendations from a curated whiskey collection.
 
@@ -78,9 +78,11 @@ Add screenshots before submitting:
 
 ## Live Demo
 
-**Frontend:**
+Frontend:
+https://djeon13.github.io/whiskey-finder/
 
-https://djeon13.github.io/whiskey-finder
+Backend API:
+https://wolf-crane-api-daniel.onrender.com
 
 ## Project Video
 
