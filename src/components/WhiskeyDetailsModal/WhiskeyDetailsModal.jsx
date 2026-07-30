@@ -8,28 +8,12 @@ import {
 } from "../../utils/flavorHelpers";
 import "./WhiskeyDetailsModal.css";
 
-function WhiskeyDetailsModal({
-  whiskey,
-  preferences,
-  isOpen,
-  onClose,
-}) {
+function WhiskeyDetailsModal({ whiskey, preferences, isOpen, onClose }) {
+  const [isBartenderLoading, setIsBartenderLoading] = useState(false);
 
-  const [
-  isBartenderLoading,
-  setIsBartenderLoading,
-] = useState(false);
+  const [bartenderPerspective, setBartenderPerspective] = useState("");
 
-const [
-  bartenderPerspective,
-  setBartenderPerspective,
-] = useState("");
-
-const [
-  bartenderError,
-  setBartenderError,
-] = useState("");
-  
+  const [bartenderError, setBartenderError] = useState("");
 
   useEffect(() => {
     if (!isOpen) {
@@ -45,18 +29,9 @@ const [
     document.addEventListener("keydown", handleEscape);
 
     return () => {
-      document.removeEventListener(
-        "keydown",
-        handleEscape
-      );
+      document.removeEventListener("keydown", handleEscape);
     };
   }, [isOpen, onClose]);
-
-  useEffect(() => {
-  setBartenderPerspective("");
-  setBartenderError("");
-  setIsBartenderLoading(false);
-}, [whiskey]);
 
   if (!isOpen || !whiskey) {
     return null;
@@ -69,35 +44,31 @@ const [
   }
 
   async function handleAskBartender() {
-  try {
-    setBartenderError("");
-    setBartenderPerspective("");
+    try {
+      setBartenderError("");
+      setBartenderPerspective("");
 
-    setIsBartenderLoading(true);
+      setIsBartenderLoading(true);
 
-    const response =
-      await getBartenderPerspective({
+      const response = await getBartenderPerspective({
         whiskey,
         preferences,
       });
 
-    setBartenderPerspective(response);
-  } catch (error) {
-    console.error(error);
+      setBartenderPerspective(response);
+    } catch (error) {
+      console.error(error);
 
-    setBartenderError(
-      "The bartender is unavailable at the moment. Please try again."
-    );
-  } finally {
-    setIsBartenderLoading(false);
+      setBartenderError(
+        "The bartender is unavailable at the moment. Please try again."
+      );
+    } finally {
+      setIsBartenderLoading(false);
+    }
   }
-}
 
   return (
-    <div
-      className="whiskey-modal"
-      onMouseDown={handleOverlayClick}
-    >
+    <div className="whiskey-modal" onMouseDown={handleOverlayClick}>
       <div
         className="whiskey-modal__container"
         role="dialog"
@@ -124,28 +95,19 @@ const [
 
           <div className="whiskey-modal__hero-content">
             <header className="whiskey-modal__heading">
-              <p className="whiskey-modal__distillery">
-                {whiskey.distillery}
-              </p>
+              <p className="whiskey-modal__distillery">{whiskey.distillery}</p>
 
-              <h2
-                className="whiskey-modal__title"
-                id="whiskey-modal-title"
-              >
+              <h2 className="whiskey-modal__title" id="whiskey-modal-title">
                 {whiskey.name}
               </h2>
 
-              <p className="whiskey-modal__location">
-                {whiskey.location}
-              </p>
+              <p className="whiskey-modal__location">{whiskey.location}</p>
             </header>
 
             <dl className="whiskey-modal__facts">
               {whiskey.age !== null && (
                 <div className="whiskey-modal__fact">
-                  <dt className="whiskey-modal__fact-label">
-                    Age
-                  </dt>
+                  <dt className="whiskey-modal__fact-label">Age</dt>
 
                   <dd className="whiskey-modal__fact-value">
                     {whiskey.age} Years
@@ -154,19 +116,13 @@ const [
               )}
 
               <div className="whiskey-modal__fact">
-                <dt className="whiskey-modal__fact-label">
-                  ABV
-                </dt>
+                <dt className="whiskey-modal__fact-label">ABV</dt>
 
-                <dd className="whiskey-modal__fact-value">
-                  {whiskey.abv}%
-                </dd>
+                <dd className="whiskey-modal__fact-value">{whiskey.abv}%</dd>
               </div>
 
               <div className="whiskey-modal__fact">
-                <dt className="whiskey-modal__fact-label">
-                  Price
-                </dt>
+                <dt className="whiskey-modal__fact-label">Price</dt>
 
                 <dd className="whiskey-modal__fact-value">
                   ${whiskey.price} / pour
@@ -178,9 +134,7 @@ const [
 
         <div className="whiskey-modal__body">
           <section className="whiskey-modal__section">
-            <h3 className="whiskey-modal__section-title">
-              Flavor Profile
-            </h3>
+            <h3 className="whiskey-modal__section-title">Flavor Profile</h3>
 
             <ul className="whiskey-modal__flavors">
               {whiskey.flavorNotes.map((note) => (
@@ -222,16 +176,11 @@ const [
           )}
 
           <section className="whiskey-modal__section">
-            <h3 className="whiskey-modal__section-title">
-              Barrel Types
-            </h3>
+            <h3 className="whiskey-modal__section-title">Barrel Types</h3>
 
             <ul className="whiskey-modal__flavors">
               {whiskey.barrelTypes.map((barrelType) => (
-                <li
-                  className="whiskey-modal__flavor"
-                  key={barrelType}
-                >
+                <li className="whiskey-modal__flavor" key={barrelType}>
                   {getBarrelTypeLabel(barrelType)}
                 </li>
               ))}
@@ -239,62 +188,48 @@ const [
           </section>
 
           <section className="whiskey-modal__section">
-            <h3 className="whiskey-modal__section-title">
-              About This Whiskey
-            </h3>
+            <h3 className="whiskey-modal__section-title">About This Whiskey</h3>
 
-            <p className="whiskey-modal__text">
-              {whiskey.description}
-            </p>
+            <p className="whiskey-modal__text">{whiskey.description}</p>
           </section>
 
           <section className="whiskey-modal__section whiskey-modal__section--bartender">
+            <h3 className="whiskey-modal__section-title">
+              Bartender's Recommendation
+            </h3>
 
-  <h3 className="whiskey-modal__section-title">
-    Bartender's Recommendation
-  </h3>
+            <p className="whiskey-modal__text">{whiskey.bartenderNote}</p>
 
-  <p className="whiskey-modal__text">
-    {whiskey.bartenderNote}
-  </p>
+            {!isBartenderLoading && (
+              <button
+                className="whiskey-modal__bartender-button"
+                type="button"
+                onClick={handleAskBartender}
+              >
+                {bartenderPerspective ? "✨ Ask Again" : "✨ Ask the Bartender"}
+              </button>
+            )}
 
-  {!isBartenderLoading && (
-    <button
-      className="whiskey-modal__bartender-button"
-      type="button"
-      onClick={handleAskBartender}
-    >
-      {bartenderPerspective
-        ? "✨ Ask Again"
-        : "✨ Ask the Bartender"}
-    </button>
-  )}
+            {isBartenderLoading && (
+              <div className="whiskey-modal__bartender-loader">
+                <WhiskeyLoader />
+              </div>
+            )}
 
-  {isBartenderLoading && (
-    <div className="whiskey-modal__bartender-loader">
-      <WhiskeyLoader />
-    </div>
-  )}
+            {bartenderPerspective && (
+              <div className="whiskey-modal__bartender-bubble">
+                <h4 className="whiskey-modal__bartender-title">
+                  🥃 Bartender's Perspective
+                </h4>
 
-  {bartenderPerspective && (
-    <div className="whiskey-modal__bartender-bubble">
-      <h4 className="whiskey-modal__bartender-title">
-        🥃 Bartender's Perspective
-      </h4>
+                <p className="whiskey-modal__text">{bartenderPerspective}</p>
+              </div>
+            )}
 
-      <p className="whiskey-modal__text">
-        {bartenderPerspective}
-      </p>
-    </div>
-  )}
-
-  {bartenderError && (
-    <p className="whiskey-modal__bartender-error">
-      {bartenderError}
-    </p>
-  )}
-
-</section>
+            {bartenderError && (
+              <p className="whiskey-modal__bartender-error">{bartenderError}</p>
+            )}
+          </section>
         </div>
       </div>
     </div>

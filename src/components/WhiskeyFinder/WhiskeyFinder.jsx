@@ -20,23 +20,17 @@ function WhiskeyFinder() {
     country: "",
   });
 
-  const [activeFlavor, setActiveFlavor] =
-    useState(null);
+  const [activeFlavor, setActiveFlavor] = useState(null);
 
-  const [recommendations, setRecommendations] =
-    useState([]);
+  const [recommendations, setRecommendations] = useState([]);
 
-  const [hasSearched, setHasSearched] =
-    useState(false);
+  const [hasSearched, setHasSearched] = useState(false);
 
-  const [selectedWhiskey, setSelectedWhiskey] =
-    useState(null);
+  const [selectedWhiskey, setSelectedWhiskey] = useState(null);
 
-  const [isLoading, setIsLoading] =
-    useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
-  
-    function handleViewDetails(whiskey) {
+  function handleViewDetails(whiskey) {
     setSelectedWhiskey(whiskey);
   }
 
@@ -45,14 +39,12 @@ function WhiskeyFinder() {
   }
 
   function handleFlavorClick(flavorId) {
-    const isSelected =
-      preferences.flavors.includes(flavorId);
+    const isSelected = preferences.flavors.includes(flavorId);
 
     if (isSelected) {
-      const updatedFlavors =
-        preferences.flavors.filter(
-          (flavor) => flavor !== flavorId
-        );
+      const updatedFlavors = preferences.flavors.filter(
+        (flavor) => flavor !== flavorId
+      );
 
       setPreferences((current) => ({
         ...current,
@@ -70,10 +62,7 @@ function WhiskeyFinder() {
       return;
     }
 
-    const updatedFlavors = [
-      ...preferences.flavors,
-      flavorId,
-    ];
+    const updatedFlavors = [...preferences.flavors, flavorId];
 
     setPreferences((current) => ({
       ...current,
@@ -103,13 +92,9 @@ function WhiskeyFinder() {
     setIsLoading(true);
 
     setTimeout(() => {
+      const whiskeyRecommendations = recommendWhiskeys(preferences);
 
-      const whiskeyRecommendations =
-        recommendWhiskeys(preferences);
-
-      setRecommendations(
-        whiskeyRecommendations
-      );
+      setRecommendations(whiskeyRecommendations);
 
       setHasSearched(true);
 
@@ -117,11 +102,9 @@ function WhiskeyFinder() {
     }, 700);
   }
 
-  const displayedFlavor =
-    FLAVOR_CATEGORIES.find(
-      (category) =>
-        category.id === activeFlavor
-    );
+  const displayedFlavor = FLAVOR_CATEGORIES.find(
+    (category) => category.id === activeFlavor
+  );
 
   return (
     <section className="whiskey-finder">
@@ -131,65 +114,47 @@ function WhiskeyFinder() {
             Personalized Recommendations
           </p>
 
-          <h2 className="whiskey-finder__title">
-            Find Your Whiskey
-          </h2>
+          <h2 className="whiskey-finder__title">Find Your Whiskey</h2>
 
           <p className="whiskey-finder__description">
-            Tell us what you enjoy and we'll
-            recommend three whiskeys from our
+            Tell us what you enjoy and we'll recommend three whiskeys from our
             collection.
           </p>
         </div>
 
-        <form
-          className="whiskey-finder__form"
-          onSubmit={handleSubmit}
-        >
+        <form className="whiskey-finder__form" onSubmit={handleSubmit}>
           <fieldset className="whiskey-finder__fieldset">
             <legend className="whiskey-finder__legend">
               Choose Your Flavors
             </legend>
 
             <p className="whiskey-finder__helper-text">
-              Choose up to two flavor profiles.
-              ({preferences.flavors.length}/2 selected)
+              Choose up to two flavor profiles. ({preferences.flavors.length}/2
+              selected)
             </p>
 
             <div className="whiskey-finder__options">
-              {FLAVOR_CATEGORIES.map(
-                (flavor) => {
-                  const isSelected =
-                    preferences.flavors.includes(
-                      flavor.id
-                    );
+              {FLAVOR_CATEGORIES.map((flavor) => {
+                const isSelected = preferences.flavors.includes(flavor.id);
 
-                  const isDisabled =
-                    preferences.flavors.length >= 2 &&
-                    !isSelected;
+                const isDisabled =
+                  preferences.flavors.length >= 2 && !isSelected;
 
-                  return (
-                    <button
-                      key={flavor.id}
-                      type="button"
-                      disabled={isDisabled}
-                      onClick={() =>
-                        handleFlavorClick(
-                          flavor.id
-                        )
-                      }
-                      className={`whiskey-finder__option ${
-                        isSelected
-                          ? "whiskey-finder__option--selected"
-                          : ""
-                      }`}
-                    >
-                      {isSelected && "✓ "}
-                      {flavor.label}
-                    </button>
-                  );
-                }
-              )}
+                return (
+                  <button
+                    key={flavor.id}
+                    type="button"
+                    disabled={isDisabled}
+                    onClick={() => handleFlavorClick(flavor.id)}
+                    className={`whiskey-finder__option ${
+                      isSelected ? "whiskey-finder__option--selected" : ""
+                    }`}
+                  >
+                    {isSelected && "✓ "}
+                    {flavor.label}
+                  </button>
+                );
+              })}
             </div>
 
             {displayedFlavor && (
@@ -199,9 +164,7 @@ function WhiskeyFinder() {
                 </h3>
 
                 <p className="whiskey-finder__flavor-description">
-                  {getFlavorDescription(
-                    displayedFlavor.id
-                  )}
+                  {getFlavorDescription(displayedFlavor.id)}
                 </p>
 
                 <p className="whiskey-finder__flavor-subtitle">
@@ -209,43 +172,29 @@ function WhiskeyFinder() {
                 </p>
 
                 <ul className="whiskey-finder__notes-list">
-                  {displayedFlavor.notes.map(
-                    (note) => (
-                      <li
-                        key={note.id}
-                        className="whiskey-finder__note"
-                      >
-                        {note.label}
-                      </li>
-                    )
-                  )}
+                  {displayedFlavor.notes.map((note) => (
+                    <li key={note.id} className="whiskey-finder__note">
+                      {note.label}
+                    </li>
+                  ))}
                 </ul>
               </section>
             )}
           </fieldset>
-                    <fieldset className="whiskey-finder__fieldset">
-            <legend className="whiskey-finder__legend">
-              Price Range
-            </legend>
+          <fieldset className="whiskey-finder__fieldset">
+            <legend className="whiskey-finder__legend">Price Range</legend>
 
-            <p className="whiskey-finder__helper-text">
-              Optional
-            </p>
+            <p className="whiskey-finder__helper-text">Optional</p>
 
             <select
               className="whiskey-finder__select"
               value={preferences.priceRange}
               onChange={handlePriceChange}
             >
-              <option value="">
-                Any Price
-              </option>
+              <option value="">Any Price</option>
 
               {PRICE_RANGES.map((priceRange) => (
-                <option
-                  key={priceRange.id}
-                  value={priceRange.id}
-                >
+                <option key={priceRange.id} value={priceRange.id}>
                   {priceRange.label}
                 </option>
               ))}
@@ -257,24 +206,17 @@ function WhiskeyFinder() {
               Country of Origin
             </legend>
 
-            <p className="whiskey-finder__helper-text">
-              Optional
-            </p>
+            <p className="whiskey-finder__helper-text">Optional</p>
 
             <select
               className="whiskey-finder__select"
               value={preferences.country}
               onChange={handleCountryChange}
             >
-              <option value="">
-                Any Country
-              </option>
+              <option value="">Any Country</option>
 
               {COUNTRIES.map((country) => (
-                <option
-                  key={country.id}
-                  value={country.id}
-                >
+                <option key={country.id} value={country.id}>
                   {country.label}
                 </option>
               ))}
@@ -286,9 +228,7 @@ function WhiskeyFinder() {
             type="submit"
             disabled={isLoading}
           >
-            {isLoading
-              ? "Finding Your Whiskey..."
-              : "Find My Whiskey"}
+            {isLoading ? "Finding Your Whiskey..." : "Find My Whiskey"}
           </button>
         </form>
 
@@ -301,67 +241,56 @@ function WhiskeyFinder() {
             </h3>
 
             <p className="whiskey-finder__loading-text">
-              Searching our collection for the
-              best matches.
+              Searching our collection for the best matches.
             </p>
           </section>
         )}
 
-        {hasSearched &&
-          recommendations.length > 0 && (
-            <section className="whiskey-finder__results">
-              <h3 className="whiskey-finder__results-title">
-                Your Whiskey Matches
-              </h3>
+        {hasSearched && recommendations.length > 0 && (
+          <section className="whiskey-finder__results">
+            <h3 className="whiskey-finder__results-title">
+              Your Whiskey Matches
+            </h3>
 
-              <ul className="whiskey-finder__results-list">
-                {recommendations.map(
-                  (whiskey, index) => (
-                    <li
-                      key={whiskey.id}
-                      className="whiskey-finder__results-item"
-                      style={{
-                        animationDelay: `${index * 180}ms`,
-                      }}
-                    >
-                      <WhiskeyCard
-                        whiskey={whiskey}
-                        onViewDetails={
-                          handleViewDetails
-                        }
-                      />
-                    </li>
-                  )
-                )}
-              </ul>
-            </section>
-          )}
+            <ul className="whiskey-finder__results-list">
+              {recommendations.map((whiskey, index) => (
+                <li
+                  key={whiskey.id}
+                  className="whiskey-finder__results-item"
+                  style={{
+                    animationDelay: `${index * 180}ms`,
+                  }}
+                >
+                  <WhiskeyCard
+                    whiskey={whiskey}
+                    onViewDetails={handleViewDetails}
+                  />
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
 
-        {hasSearched &&
-          !isLoading &&
-          recommendations.length === 0 && (
-            <section className="whiskey-finder__empty">
-              <h3 className="whiskey-finder__empty-title">
-                No Matches Found
-              </h3>
+        {hasSearched && !isLoading && recommendations.length === 0 && (
+          <section className="whiskey-finder__empty">
+            <h3 className="whiskey-finder__empty-title">No Matches Found</h3>
 
-              <p className="whiskey-finder__empty-text">
-                We couldn't find a whiskey that
-                matches those flavor profiles and
-                filters. Try selecting a different
-                flavor combination or removing a
-                filter.
-              </p>
-            </section>
-          )}
+            <p className="whiskey-finder__empty-text">
+              We couldn't find a whiskey that matches those flavor profiles and
+              filters. Try selecting a different flavor combination or removing
+              a filter.
+            </p>
+          </section>
+        )}
       </div>
 
       <WhiskeyDetailsModal
-  whiskey={selectedWhiskey}
-  preferences={preferences}
-  isOpen={Boolean(selectedWhiskey)}
-  onClose={handleCloseDetails}
-/>
+        key={selectedWhiskey?.id}
+        whiskey={selectedWhiskey}
+        preferences={preferences}
+        isOpen={Boolean(selectedWhiskey)}
+        onClose={handleCloseDetails}
+      />
     </section>
   );
 }

@@ -27,9 +27,9 @@
    Hero
 ================================================== */
 
---color-hero: #efe4d1;
---color-hero-overlay: rgba(255,255,255,.18);
---color-hero-title: #34241d;
+  --color-hero: #efe4d1;
+  --color-hero-overlay: rgba(255, 255, 255, 0.18);
+  --color-hero-title: #34241d;
 
   /* ==================================================
      Text
@@ -49,11 +49,7 @@
      Buttons
   ================================================== */
 
-  --button-primary-bg: linear-gradient(
-    180deg,
-    #c74d22 0%,
-    #a33412 100%
-  );
+  --button-primary-bg: linear-gradient(180deg, #c74d22 0%, #a33412 100%);
 
   --button-primary-text: #faf6ef;
 
@@ -61,11 +57,9 @@
      Shadows
   ================================================== */
 
-  --shadow-card:
-    0 8px 24px rgba(44, 33, 28, 0.08);
+  --shadow-card: 0 8px 24px rgba(44, 33, 28, 0.08);
 
-  --shadow-hover:
-    0 14px 36px rgba(44, 33, 28, 0.16);
+  --shadow-hover: 0 14px 36px rgba(44, 33, 28, 0.16);
 
   /* ==================================================
      Radius
@@ -91,8 +85,8 @@
      Animation
   ================================================== */
 
-  --transition-fast: .2s ease;
-  --transition-normal: .3s ease;
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
 
   /* ==================================================
      Compatibility Aliases

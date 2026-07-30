@@ -33,20 +33,12 @@ function getFlavorPreferenceDescription(selectedFlavors) {
   )}, and ${lastDescription} whiskies.`;
 }
 
-export default function buildPrompt({
-  whiskey,
-  preferences,
-}) {
-  const flavorPreference =
-    getFlavorPreferenceDescription(
-      preferences.flavors
-    );
+export default function buildPrompt({ whiskey, preferences }) {
+  const flavorPreference = getFlavorPreferenceDescription(preferences.flavors);
 
-  const selectedCountry =
-    preferences.country || "No preference";
+  const selectedCountry = preferences.country || "No preference";
 
-  const selectedPrice =
-    preferences.priceRange || "No preference";
+  const selectedPrice = preferences.priceRange || "No preference";
 
   const whiskeyDetails = `
 Name:

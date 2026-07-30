@@ -7,7 +7,7 @@ export const FLAVOR_CATEGORIES = [
       { id: "peat", label: "Peat" },
       { id: "campfire", label: "Campfire" },
       { id: "ash", label: "Ash" },
-      {id: "charcoal", label: "Charcoal"},
+      { id: "charcoal", label: "Charcoal" },
     ],
   },
 

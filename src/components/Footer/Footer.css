@@ -44,7 +44,7 @@
 .footer__logo-link:hover .footer__logo {
   transform: scale(1.04);
 
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .footer__description {
@@ -72,10 +72,10 @@
 
   color: var(--color-text-primary);
 
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 600;
 
-  letter-spacing: .12em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
 
   transition: color var(--transition-fast);
@@ -110,7 +110,7 @@
 
   color: var(--color-text-muted);
 
-  font-size: .9rem;
+  font-size: 0.9rem;
 
   line-height: 1.8;
 }

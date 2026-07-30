@@ -4,7 +4,6 @@ The Whiskey Library is a React web application that helps users discover whiskey
 
 This project was developed as the **TripleTen Software Engineering Custom Final Project**.
 
-
 ## Features
 
 - Personalized whiskey recommendation engine
@@ -33,7 +32,6 @@ Recommendations are generated using the following process:
 
 This recommendation process is designed to simulate the experience of receiving suggestions from a knowledgeable bartender rather than simply filtering a list.
 
-
 ## Technologies Used
 
 - React
@@ -43,7 +41,6 @@ This recommendation process is designed to simulate the experience of receiving 
 - CSS3
 - Responsive Web Design
 - BEM Methodology
-
 
 ## Responsive Design
 

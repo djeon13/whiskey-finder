@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
 
-  justify-self:end;
+  justify-self: end;
   gap: 32px;
 }
 
@@ -61,11 +61,11 @@
 
 @media screen and (max-width: 768px) {
   .navigation {
-    gap: 20px;
+    gap: 16px;
   }
 
   .navigation__link {
-    font-size: 0.8rem;
-    letter-spacing: 0.08em;
+    font-size: 0.75rem;
+    letter-spacing: 0.04em;
   }
 }

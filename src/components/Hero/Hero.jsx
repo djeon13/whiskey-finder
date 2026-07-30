@@ -14,9 +14,7 @@ function Hero() {
   return (
     <section className="hero">
       <div className="hero__content">
-        <p className="hero__eyebrow">
-          Curated Whiskey Recommendations
-        </p>
+        <p className="hero__eyebrow">Curated Whiskey Recommendations</p>
 
         <h1 className="hero__title">
           Discover Your
@@ -25,29 +23,27 @@ function Hero() {
         </h1>
 
         <p className="hero__description">
-          Explore the Wolf & Crane collection through
-          personalized whiskey recommendations based on
-          flavor profile, price, and country of origin.
+          Explore the Wolf & Crane collection through personalized whiskey
+          recommendations based on flavor profile, price, and country of origin.
         </p>
 
-<div className="hero__cta">
-  <div className="hero__illustration">
-    <img
-      className="hero__pour"
-      src={whiskeyPour}
-      alt=""
-      aria-hidden="true"
-    />
-  </div>
+        <div className="hero__cta">
+          <div className="hero__illustration">
+            <img
+              className="hero__pour"
+              src={whiskeyPour}
+              alt="Illustration of a whiskey glass folded in an origami style."
+            />
+          </div>
 
-  <button
-    className="hero__button"
-    type="button"
-    onClick={handleStartExploring}
-  >
-    Start Exploring
-  </button>
-</div>
+          <button
+            className="hero__button"
+            type="button"
+            onClick={handleStartExploring}
+          >
+            Start Exploring
+          </button>
+        </div>
       </div>
     </section>
   );

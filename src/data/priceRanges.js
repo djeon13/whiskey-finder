@@ -16,14 +16,16 @@ export const PRICE_RANGES = [
   {
     id: "premium",
     label: "$26–40",
-    description: "Exceptional whiskies for enthusiasts seeking something special.",
+    description:
+      "Exceptional whiskies for enthusiasts seeking something special.",
     min: 26,
     max: 40,
   },
   {
     id: "luxury",
     label: "$41+",
-    description: "Rare, aged, and ultra-premium pours for a memorable experience.",
+    description:
+      "Rare, aged, and ultra-premium pours for a memorable experience.",
     min: 41,
     max: Infinity,
   },

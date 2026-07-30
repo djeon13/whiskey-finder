@@ -36,7 +36,6 @@
   pointer-events: none;
 }
 
-
 /* =====================================
    Content
 ===================================== */
@@ -134,7 +133,6 @@
 ===================================== */
 
 @media screen and (max-width: 768px) {
-
   .hero {
     min-height: auto;
     padding: 72px 24px;
@@ -146,7 +144,7 @@
     top: -40px;
     right: -22vw;
 
-    opacity: .06;
+    opacity: 0.06;
 
     transform: rotate(8deg);
   }

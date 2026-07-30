@@ -7,31 +7,15 @@ export function getFlavorCategories() {
 }
 
 export function getFlavorNoteLabel(noteId) {
-  return (
-    FLAVOR_METADATA[noteId]?.label ??
-    noteId
-  );
+  return FLAVOR_METADATA[noteId]?.label ?? noteId;
 }
 
-export function getBarrelTypeLabel(
-  barrelTypeId
-) {
-  const barrelType =
-    BARREL_TYPES.find(
-      (barrel) =>
-        barrel.id === barrelTypeId
-    );
+export function getBarrelTypeLabel(barrelTypeId) {
+  const barrelType = BARREL_TYPES.find((barrel) => barrel.id === barrelTypeId);
 
-  return barrelType
-    ? barrelType.label
-    : barrelTypeId;
+  return barrelType ? barrelType.label : barrelTypeId;
 }
 
-export function getFlavorCategory(
-  noteId
-) {
-  return (
-    FLAVOR_METADATA[noteId]
-      ?.categories?.[0] ?? ""
-  );
+export function getFlavorCategory(noteId) {
+  return FLAVOR_METADATA[noteId]?.categories?.[0] ?? "";
 }

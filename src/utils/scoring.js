@@ -1,11 +1,4 @@
-const DEFAULT_WEIGHTS = {
-  flavor: 100,
-};
-
-
-export function getActiveWeights(
-  preferences
-) {
+export function getActiveWeights(preferences) {
   if (!preferences.flavors.length) {
     return {};
   }
@@ -15,16 +8,11 @@ export function getActiveWeights(
   };
 }
 
-export function getTotalScore(
-  scores,
-  weights
-) {
+export function getTotalScore(scores, weights) {
   let totalScore = 0;
 
   Object.keys(weights).forEach((key) => {
-    totalScore +=
-      scores[key] *
-      (weights[key] / 100);
+    totalScore += scores[key] * (weights[key] / 100);
   });
 
   return Number(totalScore.toFixed(1));

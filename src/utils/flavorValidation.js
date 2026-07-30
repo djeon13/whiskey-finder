@@ -38,9 +38,8 @@ export function validateFlavorNotes(whiskeys) {
 }
 
 export function findDuplicateFlavorNoteIds() {
-  const flavorNoteIds = FLAVOR_CATEGORIES.flatMap(
-    (category) =>
-      category.notes.map((note) => note.id)
+  const flavorNoteIds = FLAVOR_CATEGORIES.flatMap((category) =>
+    category.notes.map((note) => note.id)
   );
 
   const seenFlavorNoteIds = new Set();

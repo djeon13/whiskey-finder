@@ -1,15 +1,12 @@
 import { Link } from "react-router-dom";
 import Navigation from "../Navigation/Navigation";
-import logo from "../../assets/wolf-crane-logo.png";
+import logo from "../../assets/wolf-crane-logo.svg";
 import "./Header.css";
 
 function Header() {
   return (
     <header className="header">
-      <Link
-        className="header__logo"
-        to="/"
-      >
+      <Link className="header__logo" to="/">
         <img
           className="header__logo-image"
           src={logo}
@@ -18,7 +15,8 @@ function Header() {
       </Link>
 
       <h1 className="header__title">
-        Wolf & Crane Whiskey Library
+        <span>Wolf & Crane</span>
+        <span>Whiskey Library</span>
       </h1>
 
       <Navigation />

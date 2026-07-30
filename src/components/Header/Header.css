@@ -16,33 +16,12 @@
   z-index: 100;
 }
 
-.header__title {
-  justify-self: center;
-
-  margin: 0;
-
-  font-family: var(--font-heading);
-
-  font-size: 1.35rem;
-
-  font-weight: 500;
-
-  letter-spacing: 0.12em;
-
-  text-transform: uppercase;
-
-  color: var(--color-cream);
-
-  white-space: nowrap;
-}
-
 .header__logo {
   display: flex;
   align-items: center;
+  justify-self: start;
 
   flex-shrink: 0;
-
-  justify-self: start;
 }
 
 .header__logo-image {
@@ -58,97 +37,65 @@
 
 .header__logo:hover .header__logo-image {
   transform: scale(1.03);
-
   opacity: 0.9;
 }
 
-/* ===========================
-   Navigation
-=========================== */
+.header__title {
+  justify-self: center;
 
-.navigation {
-  display: flex;
-  align-items: center;
+  margin: 0;
 
-  gap: 32px;
-}
+  font-family: var(--font-heading);
 
-.navigation__link {
-  position: relative;
-
-  color: #f5f2eb;
-
-  font-size: 0.9rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.2;
+  text-align: center;
 
   letter-spacing: 0.12em;
   text-transform: uppercase;
 
-  transition:
-    color var(--transition-fast),
-    transform var(--transition-fast);
+  color: var(--color-cream);
+
+  white-space: nowrap;
 }
 
-.navigation__link:hover {
-  color: var(--color-bourbon);
-}
-
-.navigation__link:active {
-  transform: translateY(1px);
-}
-
-.navigation__link::after {
-  content: "";
-
-  position: absolute;
-  left: 0;
-  bottom: -6px;
-
-  width: 100%;
-  height: 2px;
-
-  background: var(--color-bourbon);
-
-  transform: scaleX(0);
-  transform-origin: center;
-
-  transition: transform var(--transition-normal);
-}
-
-.navigation__link:hover::after,
-.navigation__link--active::after {
-  transform: scaleX(1);
-}
-
-.navigation__link--active {
-  color: var(--color-bourbon);
+.header__title span {
+  display: block;
 }
 
 @media screen and (max-width: 768px) {
   .header {
-    grid-template-columns: auto 1fr auto;
-    padding: 14px 20px;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "logo"
+      "title"
+      "nav";
+
+    justify-items: center;
+
+    row-gap: 12px;
+
+    padding: 16px 12px;
+  }
+
+  .header__logo {
+    grid-area: logo;
+  }
+
+  .header__logo-image {
+    width: 95px;
   }
 
   .header__title {
-  font-size: 0.75rem;
+    grid-area: title;
 
-  letter-spacing: 0.05em;
+    text-align: center;
 
-  text-align: center;
-}
+    font-size: 1rem;
 
-  .header__logo-image {
-    width: 100px;
-  }
+    letter-spacing: 0.08em;
 
-  .navigation {
-    gap: 18px;
-  }
-
-  .navigation__link {
-    font-size: 0.75rem;
-
-    letter-spacing: 0.06em;
+    white-space: normal;
   }
 }

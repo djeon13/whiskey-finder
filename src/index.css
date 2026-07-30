@@ -1,5 +1,37 @@
-@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Inter:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/inter-v20-latin-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
 
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/inter-v20-latin-500.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/inter-v20-latin-600.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("./fonts/inter-v20-latin-700.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bree Serif";
+  src: url("./fonts/bree-serif-v18-latin-regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
 /* ==========================
    Reset
 ========================== */
@@ -27,11 +59,7 @@ body {
   min-width: 320px;
 
   background:
-    radial-gradient(
-      circle at top,
-      rgba(200, 135, 47, 0.12),
-      transparent 45%
-    ),
+    radial-gradient(circle at top, rgba(200, 135, 47, 0.12), transparent 45%),
     var(--color-background);
 
   color: var(--color-text-primary);
@@ -61,10 +89,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family:
-    "Bree Serif",
-    Georgia,
-    serif;
+  font-family: "Bree Serif", Georgia, serif;
 
   font-weight: 700;
 

@@ -34,11 +34,7 @@
 
   overflow: hidden;
 
-  background: linear-gradient(
-    180deg,
-    #d8a35a,
-    #b97b2d
-  );
+  background: linear-gradient(180deg, #d8a35a, #b97b2d);
 
   animation: whiskeyWave 1.8s ease-in-out infinite;
 }

@@ -310,7 +310,7 @@ export const FLAVOR_METADATA = {
     categories: ["floral"],
     style: "fresh",
   },
-    incense: {
+  incense: {
     label: "Incense",
     importance: 4,
     intensity: 4,
@@ -581,7 +581,7 @@ export const FLAVOR_METADATA = {
     categories: ["fruit"],
     style: "fresh",
   },
-    sweet: {
+  sweet: {
     label: "Sweet",
     importance: 2,
     intensity: 2,
