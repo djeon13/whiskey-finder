@@ -133,6 +133,7 @@ export const FLAVOR_CATEGORIES = [
       { id: "herbal", label: "Herbal" },
       { id: "mint", label: "Mint" },
       { id: "tea", label: "Tea" },
+      { id: "cardomom", label: "Cardomom" },
     ],
   },
 

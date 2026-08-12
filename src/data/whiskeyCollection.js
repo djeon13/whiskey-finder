@@ -1,5 +1,43 @@
 export const whiskeyCollection = [
   {
+    id: "chita-distillers-reserve",
+
+    name: "The Chita Distiller's Reserve",
+
+    distillery: "Suntory",
+
+    country: "japan",
+
+    location: "Chita Distillery, Aichi",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["american-oak", "sherry-cask", "wine-cask"],
+
+    age: null,
+
+    abv: 43,
+
+    price: 50,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/chita-distillers-reserve.png",
+
+    imageAlt:
+      "Bottle of The Chita Distiller's Reserve Japanese single grain whisky",
+
+    flavorNotes: ["honey", "vanilla", "floral", "mint", "oak", "cardamom"],
+
+    description:
+      "A Japanese single grain whisky from Suntory's Chita Distillery, crafted from diverse grain whiskies and matured in a combination of American white oak, Spanish oak (sherry), and wine casks. The Chita Distiller's Reserve is exceptionally smooth and elegant, offering delicate floral aromas, honeyed sweetness, creamy vanilla, subtle mint, and gentle oak spice.",
+
+    bartenderNote:
+      "A refined and approachable single grain whisky with floral aromas, honey, vanilla, mint, and gentle oak spice. An excellent choice for guests who enjoy lighter-bodied whiskies or are looking to explore the elegance of Japanese grain whisky.",
+
+    tags: ["featured"],
+  },
+  {
     id: "hibiki-harmony",
 
     name: "Hibiki Harmony",
@@ -439,6 +477,51 @@ export const whiskeyCollection = [
     tags: ["featured", "limited-release", "rare"],
   },
   {
+    id: "hakushu-18-year-peated-malt-tsukuriwake-2024",
+
+    name: "Hakushu 18 Year Peated Malt Tsukuriwake 2024",
+
+    distillery: "Suntory",
+
+    country: "japan",
+
+    location: "Hakushu Distillery, Yamanashi",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["american-oak"],
+
+    age: 18,
+
+    abv: 48,
+
+    price: 50,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/hakushu-18-year-peated-malt-tsukuriwake-2024.png",
+
+    imageAlt:
+      "Bottle of Hakushu 18 Year Peated Malt Tsukuriwake 2024 Japanese single malt whisky",
+
+    flavorNotes: [
+      "smoke",
+      "green-apple",
+      "grapefruit",
+      "honey",
+      "herbal",
+      "pepper",
+    ],
+
+    description:
+      "A limited-edition single malt from Suntory's Tsukuriwake 2024 Collection celebrating the diversity of whisky-making at Hakushu Distillery. Aged for 18 years, this expression showcases Hakushu's elegant style of peated malt with clean smoke, vibrant orchard fruit, herbal freshness, honeyed sweetness, and a long, refined finish.",
+
+    bartenderNote:
+      "A refined interpretation of peated Japanese whisky that emphasizes freshness over intensity. An excellent choice for guests who enjoy subtle smoke balanced by green fruit, herbs, honey, and pepper rather than the medicinal style often associated with heavily peated Scotch.",
+
+    tags: ["featured", "limited-release", "rare"],
+  },
+  {
     id: "yamazaki-12-year",
 
     name: "Yamazaki 12 Year",
@@ -563,6 +646,82 @@ export const whiskeyCollection = [
       "A vibrant and fruit-forward Yamazaki with bright red berries, vanilla, gentle spice, and aromatic oak. A great choice for guests looking for an approachable introduction to Yamazaki's complex multi-cask style.",
 
     tags: [],
+  },
+  {
+    id: "yamazaki-golden-promise-tsukuriwake-2024",
+
+    name: "Yamazaki Golden Promise Tsukuriwake 2024",
+
+    distillery: "Suntory",
+
+    country: "japan",
+
+    location: "Suntory Yamazaki Distillery, Osaka",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["american-oak"],
+
+    age: null,
+
+    abv: 48,
+
+    price: 65,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/yamazaki-golden-promise-tsukuriwake-2024.png",
+
+    imageAlt:
+      "Bottle of Yamazaki Golden Promise Tsukuriwake 2024 Japanese single malt whisky",
+
+    flavorNotes: ["orange", "honey", "vanilla", "apple", "custard", "malt"],
+
+    description:
+      "A limited-edition Japanese single malt from Suntory's 2024 Tsukuriwake Series, crafted entirely from Golden Promise barley, a heritage Scottish barley variety first distilled at Yamazaki in 2009. Matured exclusively in American oak casks, it showcases a rich, malty style with layers of orange marmalade, honey, vanilla, orchard fruit, and creamy custard.",
+
+    bartenderNote:
+      "A unique Yamazaki that highlights the character of Golden Promise barley rather than exotic cask influence. Rich malt, honey, vanilla, orange, and orchard fruit make this an excellent choice for guests who appreciate elegant, cereal-forward whiskies with exceptional texture and balance.",
+
+    tags: ["featured", "limited-release", "rare"],
+  },
+  {
+    id: "yamazaki-peated-malt-tsukuriwake-2022",
+
+    name: "Yamazaki Peated Malt Tsukuriwake 2022",
+
+    distillery: "Suntory",
+
+    country: "japan",
+
+    location: "Suntory Yamazaki Distillery, Osaka",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["american-oak"],
+
+    age: null,
+
+    abv: 48,
+
+    price: 100,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/yamazaki-peated-malt-tsukuriwake-2022.png",
+
+    imageAlt:
+      "Bottle of Yamazaki Peated Malt Tsukuriwake 2022 Japanese single malt whisky",
+
+    flavorNotes: ["smoke", "herbal", "pineapple", "citrus", "earth", "peat"],
+
+    description:
+      "A limited-edition Japanese single malt from Suntory's 2022 Tsukuriwake Selection, showcasing the peated malt component that serves as the 'hidden accent' in Yamazaki's signature style. Crafted from carefully selected heavily peated malt whiskies, it delivers refined smoke balanced by herbal freshness, tropical fruit, citrus, and earthy complexity.",
+
+    bartenderNote:
+      "A refined and elegant peated Japanese whisky that emphasizes balance rather than intensity. A great choice for guests who enjoy gentle smoke layered with herbal notes, pineapple, citrus, and subtle earthiness instead of the medicinal character found in many Islay whiskies.",
+
+    tags: ["featured", "limited-release", "rare"],
   },
   {
     id: "yamazaki-puncheon-tsukuriwake-2022",
@@ -811,6 +970,209 @@ export const whiskeyCollection = [
     tags: ["featured", "limited-release", "rare"],
   },
   {
+    id: "yamazaki-limited-edition-2021",
+
+    name: "Yamazaki Limited Edition 2021",
+
+    distillery: "Suntory",
+
+    country: "japan",
+
+    location: "Suntory Yamazaki Distillery, Osaka",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["mizunara-oak"],
+
+    age: null,
+
+    abv: 43,
+
+    price: 150,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/yamazaki-limited-edition-2021.png",
+
+    imageAlt:
+      "Bottle of Yamazaki Limited Edition 2021 Japanese single malt whisky",
+
+    flavorNotes: ["pineapple", "orange", "honey", "vanilla", "ginger", "smoke"],
+
+    description:
+      "A limited-edition Japanese single malt from Suntory showcasing Yamazaki malt aged in virgin Mizunara oak casks. Matured using carefully selected whiskies including components over 12 years old, the 2021 release highlights vibrant tropical fruit, rich sweetness, creamy vanilla, and the signature sandalwood-like spice of Mizunara oak.",
+
+    bartenderNote:
+      "A beautifully balanced Yamazaki that emphasizes the rare character of virgin Mizunara oak. An excellent choice for guests who enjoy tropical fruit, honey, vanilla, gentle spice, and the elegant incense-like complexity for which Mizunara-aged whisky is famous.",
+
+    tags: ["featured", "limited-release", "rare"],
+  },
+  {
+    id: "yamazaki-limited-edition-2022",
+
+    name: "Yamazaki Limited Edition 2022",
+
+    distillery: "Suntory",
+
+    country: "japan",
+
+    location: "Suntory Yamazaki Distillery, Osaka",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["mizunara-oak"],
+
+    age: null,
+
+    abv: 43,
+
+    price: 250,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/yamazaki-limited-edition-2022.png",
+
+    imageAlt:
+      "Bottle of Yamazaki Limited Edition 2022 Japanese single malt whisky",
+
+    flavorNotes: [
+      "pineapple",
+      "honey",
+      "blueberry",
+      "vanilla",
+      "ginger",
+      "smoke",
+    ],
+
+    description:
+      "A limited-edition Japanese single malt showcasing Yamazaki whisky aged in new (virgin) Mizunara oak casks. Building on the 2021 release, the 2022 edition highlights the distinctive character of Mizunara with vibrant tropical fruit, rich honeyed sweetness, creamy vanilla, and elegant spice, while maintaining Yamazaki's signature balance and refinement.",
+
+    bartenderNote:
+      "A refined and highly collectible Yamazaki that emphasizes the unique influence of virgin Mizunara oak. An excellent choice for guests who appreciate tropical fruit, honey, vanilla, gentle spice, and the incense-like complexity that only long-aged Mizunara can provide.",
+
+    tags: ["featured", "limited-release", "rare"],
+  },
+  {
+    id: "yamazaki-islay-peated-malt-2024",
+
+    name: "Yamazaki Islay Peated Malt 2024",
+
+    distillery: "Suntory",
+
+    country: "japan",
+
+    location: "Suntory Yamazaki Distillery, Osaka",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["american-oak"],
+
+    age: null,
+
+    abv: 48,
+
+    price: 67,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/yamazaki-islay-peated-malt-2024.png",
+
+    imageAlt:
+      "Bottle of Yamazaki Islay Peated Malt 2024 Japanese single malt whisky",
+
+    flavorNotes: [
+      "smoke",
+      "orange",
+      "brown-sugar",
+      "vanilla",
+      "ginger",
+      "pepper",
+    ],
+
+    description:
+      "A limited-edition Japanese single malt from Suntory's 2024 Tsukuriwake Series. Crafted using barley peated on Islay and distilled at the Yamazaki Distillery, this expression combines elegant Japanese whisky with the distinctive character of Islay peat. The result is a refined balance of sweet smoke, citrus, brown sugar, creamy vanilla, and warming spice.",
+
+    bartenderNote:
+      "A unique Yamazaki that marries the refined elegance of Japanese single malt with the soft, sweet smokiness of Islay-peated barley. An excellent choice for guests who enjoy balanced smoky whiskies with citrus, vanilla, and gentle spice rather than intensely medicinal peat.",
+
+    tags: ["featured", "limited-release", "rare"],
+  },
+  {
+    id: "suntory-umeshu",
+
+    name: "Suntory Umeshu",
+
+    distillery: "Suntory",
+
+    country: "japan",
+
+    location: "Yamazaki Distillery, Osaka",
+
+    style: "umeshu",
+
+    barrelTypes: ["whisky-cask", "plum-cask"],
+
+    age: null,
+
+    abv: 17,
+
+    price: 16,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/suntory-umeshu.png",
+
+    imageAlt:
+      "Bottle of Suntory Umeshu Blended with Barrel-Aged Plum Liqueur from Yamazaki Distillery",
+
+    flavorNotes: ["plum", "honey", "vanilla", "caramel", "oak", "citrus"],
+
+    description:
+      "A premium Japanese plum liqueur crafted from ume plums and blended with barrel-aged plum liqueur from Suntory's Yamazaki Distillery. The blend also incorporates grain whisky aged in plum liqueur casks and brandy, creating a rich, smooth profile with ripe plum, honeyed sweetness, vanilla, oak, and bright citrus.",
+
+    bartenderNote:
+      "A luxurious umeshu with noticeably more depth than a traditional plum liqueur thanks to its whisky influence. A great choice for guests who enjoy sweet fruit-forward pours with oak complexity, or as an after-dinner sipper served over ice.",
+
+    tags: ["featured"],
+  },
+  {
+    id: "suntory-ao-world-whisky",
+
+    name: "Suntory AO World Whisky",
+
+    distillery: "Suntory",
+
+    country: "japan",
+
+    location: "Suntory Global Blending Center, Japan",
+
+    style: "world-whisky",
+
+    barrelTypes: ["bourbon-cask", "american-oak", "sherry-cask"],
+
+    age: null,
+
+    abv: 43,
+
+    price: 16,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/suntory-ao-world-whisky.png",
+
+    imageAlt: "Bottle of Suntory AO World Whisky",
+
+    flavorNotes: ["vanilla", "pineapple", "honey", "smoke", "cinnamon", "oak"],
+
+    description:
+      "A world whisky created by Suntory by blending whiskies from the five major whisky-producing regions: Japan, Scotland, Ireland, Canada, and the United States. AO ('blue' in Japanese) showcases the harmony of diverse whisky traditions with layers of tropical fruit, creamy sweetness, gentle smoke, warm spice, and oak.",
+
+    bartenderNote:
+      "A unique whisky that lets guests experience the character of five whisky traditions in one glass. Smooth enough for newcomers yet complex enough for enthusiasts, with tropical fruit, honey, vanilla, gentle smoke, cinnamon, and oak working together in a remarkably balanced blend.",
+
+    tags: ["featured"],
+  },
+  {
     id: "miyagikyo-single-malt",
 
     name: "Miyagikyo Single Malt",
@@ -923,6 +1285,44 @@ export const whiskeyCollection = [
     tags: ["featured", "discontinued", "rare"],
   },
   {
+    id: "miyagikyo-aromatic-yeast-2022",
+
+    name: "Miyagikyo Aromatic Yeast 2022",
+
+    distillery: "Nikka",
+
+    country: "japan",
+
+    location: "Miyagikyo Distillery, Miyagi",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["refill-cask"],
+
+    age: null,
+
+    abv: 47,
+
+    price: 28,
+
+    priceRange: "premium",
+
+    image: "/images/whiskey/miyagikyo-aromatic-yeast-2022.png",
+
+    imageAlt:
+      "Bottle of Miyagikyo Aromatic Yeast 2022 Japanese single malt whisky",
+
+    flavorNotes: ["apricot", "peach", "honey", "floral", "malt", "peat"],
+
+    description:
+      "A limited-edition Japanese single malt released as part of the 2022 Nikka Discovery Series. This expression explores the influence of a proprietary yeast strain that produces an exceptionally aromatic spirit. Matured primarily in well-aged refill casks to preserve its delicate character, it showcases lush stone fruit, floral aromas, honeyed sweetness, rich malt, and a subtle touch of peat.",
+
+    bartenderNote:
+      "A beautifully elegant Miyagikyo that puts the spotlight on fermentation rather than oak. An excellent choice for guests who enjoy fragrant, fruit-forward Japanese whiskies with apricot, peach, honey, floral notes, and just a whisper of smoke.",
+
+    tags: ["featured", "limited-release", "rare"],
+  },
+  {
     id: "yoichi-single-malt",
 
     name: "Yoichi Single Malt",
@@ -956,6 +1356,50 @@ export const whiskeyCollection = [
 
     bartenderNote:
       "A bold and smoky Japanese single malt with peat, rich malt, citrus, vanilla, and oak. A great choice for guests who enjoy smoky Scotch-style whiskies but want to explore the distinctive robust and slightly maritime character of Nikka's Yoichi Distillery.",
+
+    tags: ["featured"],
+  },
+  {
+    id: "yoichi-10-year-original",
+
+    name: "Yoichi 10 Year Original",
+
+    distillery: "Nikka",
+
+    country: "japan",
+
+    location: "Yoichi Distillery, Hokkaido",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask", "virgin-oak", "sherry-cask"],
+
+    age: 10,
+
+    abv: 45,
+
+    price: 240,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/yoichi-10-year-original.png",
+
+    imageAlt: "Bottle of Yoichi 10 Year Original Japanese single malt whisky",
+
+    flavorNotes: [
+      "smoke",
+      "peat",
+      "honey",
+      "green-apple",
+      "dried-fruit",
+      "salinity",
+    ],
+
+    description:
+      "A 10-year-old Japanese single malt from Nikka's Yoichi Distillery, crafted using traditional direct coal-fired pot stills. Matured in a combination of bourbon, virgin oak, and sherry casks, Yoichi 10 Year Original balances coastal peat smoke with honeyed sweetness, green apple, dried fruit, and maritime salinity for a rich and elegant profile.",
+
+    bartenderNote:
+      "A beautifully balanced Yoichi that showcases the distillery's signature coastal style. An excellent choice for guests who enjoy refined peat smoke supported by honey, orchard fruit, dried fruit, and a lingering salty finish rather than heavily medicinal smoke.",
 
     tags: ["featured"],
   },
@@ -1039,6 +1483,49 @@ export const whiskeyCollection = [
       "A mature and complex Yoichi balancing peat smoke with rich malt, fruit, vanilla, warm spice, and dark chocolate. A great choice for guests who enjoy robust, smoky Japanese whisky with the added depth and complexity of extended aging.",
 
     tags: ["featured", "discontinued", "rare"],
+  },
+  {
+    id: "yoichi-aromatic-yeast-2022",
+
+    name: "Yoichi Aromatic Yeast 2022",
+
+    distillery: "Nikka",
+
+    country: "japan",
+
+    location: "Yoichi Distillery, Hokkaido",
+
+    style: "japanese-whisky",
+
+    barrelTypes: [
+      "refill-cask",
+      "sherry-cask",
+      "remade-cask",
+      "recharred-cask",
+    ],
+
+    age: null,
+
+    abv: 48,
+
+    price: 25,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/yoichi-aromatic-yeast-2022.png",
+
+    imageAlt:
+      "Bottle of Yoichi Aromatic Yeast 2022 Japanese single malt whisky",
+
+    flavorNotes: ["smoke", "apple", "pear", "floral", "salinity", "peat"],
+
+    description:
+      "A limited-edition Japanese single malt released as part of the 2022 Nikka Discovery Series. This expression explores the influence of an aromatic yeast strain that produces floral and fruity notes reminiscent of ginjo sake while preserving Yoichi's signature coastal peat smoke. Matured in a selection of refill, sherry, remade, and recharred casks, it offers an elegant balance of fruit, smoke, and maritime character.",
+
+    bartenderNote:
+      "A fascinating take on Yoichi that showcases how fermentation can shape whisky just as much as peat or oak. An excellent choice for guests who enjoy elegant smoky whiskies with orchard fruit, floral aromas, coastal salinity, and restrained peat.",
+
+    tags: ["featured", "limited-release", "rare"],
   },
   {
     id: "nikka-coffey-grain",
@@ -1173,6 +1660,126 @@ export const whiskeyCollection = [
     tags: ["featured", "staff-pick"],
   },
   {
+    id: "nikka-date",
+
+    name: "Nikka Date",
+
+    distillery: "Nikka",
+
+    country: "japan",
+
+    location: "Miyagikyo Distillery, Miyagi",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["american-oak", "sherry-cask"],
+
+    age: null,
+
+    abv: 43,
+
+    price: 30,
+
+    priceRange: "premium",
+
+    image: "/images/whiskey/nikka-date.png",
+
+    imageAlt: "Bottle of Nikka Date Japanese blended whisky",
+
+    flavorNotes: ["honey", "vanilla", "floral", "chocolate", "peat", "malt"],
+
+    description:
+      "A regional Japanese blended whisky created by Nikka in honor of the legendary samurai Date Masamune and originally sold exclusively in Miyagi Prefecture. Built primarily around Miyagikyo malt, Coffey Malt, and Coffey Grain whiskies, Nikka Date delivers a rich yet elegant profile with honeyed sweetness, vanilla, floral aromas, creamy malt, chocolate, and a gentle touch of peat.",
+
+    bartenderNote:
+      "A smooth and elegant Nikka blend that highlights the softer, fruitier character of Miyagikyo while retaining a subtle peaty backbone. An excellent choice for guests who enjoy honey, vanilla, floral notes, creamy malt, and just enough peat to add complexity without overwhelming the palate.",
+
+    tags: ["featured", "regional-release", "discontinued"],
+  },
+  {
+    id: "nikka-days",
+
+    name: "Nikka Days",
+
+    distillery: "Nikka",
+
+    country: "japan",
+
+    location: "Yoichi and Miyagikyo Distilleries, Japan",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["american-oak", "sherry-cask"],
+
+    age: null,
+
+    abv: 40,
+
+    price: 14,
+
+    priceRange: "entry",
+
+    image: "/images/whiskey/nikka-days.png",
+
+    imageAlt: "Bottle of Nikka Days Japanese blended whisky",
+
+    flavorNotes: ["apple", "pear", "vanilla", "toffee", "floral", "peat"],
+
+    description:
+      "A smooth and approachable Japanese blended whisky created for everyday enjoyment. Nikka Days combines Coffey Grain Whisky, non-peated Miyagikyo malt, Coffey Malt, and a touch of Yoichi malt to create a silky profile with fresh orchard fruit, floral aromas, vanilla, toffee, and a delicate hint of peat smoke.",
+
+    bartenderNote:
+      "An easy-drinking Japanese blend that's ideal for newcomers and highballs. Bright apple and pear are balanced by vanilla, toffee, floral notes, and just a touch of Yoichi peat, making it versatile without sacrificing character.",
+
+    tags: ["featured"],
+  },
+  {
+    id: "nikka-the-grain-discovery-2023",
+
+    name: "Nikka The Grain Discovery 2023",
+
+    distillery: "Nikka",
+
+    country: "japan",
+
+    location:
+      "Miyagikyo, Moji, Satsuma Tsukasa & Nishinomiya Distilleries, Japan",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["american-oak", "refill-cask"],
+
+    age: null,
+
+    abv: 48,
+
+    price: 20,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/nikka-the-grain-discovery-2023.png",
+
+    imageAlt:
+      "Bottle of Nikka The Grain Discovery 2023 Japanese blended grain whisky",
+
+    flavorNotes: [
+      "vanilla",
+      "honey",
+      "roasted-corn",
+      "chamomile",
+      "spice",
+      "oak",
+    ],
+
+    description:
+      "A limited-edition Japanese blended grain whisky released as the third and final bottling in the Nikka Discovery Series. Created to celebrate 60 years of Nikka's grain whisky production, it blends grain whiskies from four Nikka distilleries—including Coffey Grain and Coffey Malt from Miyagikyo and historic Nishinomiya, along with experimental grain whiskies from Moji and Satsuma Tsukasa. The result is a rich, creamy whisky with sweet grain character, floral aromas, warming spice, and elegant oak.",
+
+    bartenderNote:
+      "One of Nikka's most innovative releases, showcasing the full spectrum of the company's grain whisky production. A fantastic choice for guests who enjoy silky, sweet whiskies with honey, vanilla, roasted grain, floral notes, and gentle spice rather than peat-forward flavors.",
+
+    tags: ["featured", "limited-release", "rare"],
+  },
+  {
     id: "taketsuru-pure-malt",
 
     name: "Taketsuru Pure Malt",
@@ -1208,6 +1815,44 @@ export const whiskeyCollection = [
       "A balanced and approachable blended malt combining the fruity elegance associated with Miyagikyo and the richer, peated character of Yoichi. A great choice for guests who enjoy fruit-forward whisky with vanilla, malt, oak, and a subtle smoky finish.",
 
     tags: ["featured"],
+  },
+  {
+    id: "taketsuru-pure-malt-old-black-label",
+
+    name: "Taketsuru Pure Malt (Old Black Label)",
+
+    distillery: "Nikka",
+
+    country: "japan",
+
+    location: "Yoichi and Miyagikyo Distilleries, Japan",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["sherry-cask", "remade-cask"],
+
+    age: null,
+
+    abv: 43,
+
+    price: 25,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/taketsuru-pure-malt-old-black-label.png",
+
+    imageAlt:
+      "Bottle of Taketsuru Pure Malt Old Black Label Japanese blended malt whisky",
+
+    flavorNotes: ["green-apple", "pear", "vanilla", "banana", "orange", "malt"],
+
+    description:
+      "A discontinued Japanese blended malt whisky named after Nikka founder Masataka Taketsuru. Produced from a marriage of Yoichi and Miyagikyo single malts, the original Black Label emphasized Miyagikyo's elegant fruit-forward character with soft malt sweetness, silky texture, and subtle oak influence.",
+
+    bartenderNote:
+      "A beautifully balanced and approachable Taketsuru with fresh orchard fruit, vanilla, citrus, and rich malt. Softer and fruitier than the current release, making it an excellent choice for guests who prefer elegant Japanese whiskies with minimal smoke.",
+
+    tags: ["featured", "discontinued", "rare"],
   },
   {
     id: "taketsuru-12-year",
@@ -1365,6 +2010,50 @@ export const whiskeyCollection = [
     tags: ["featured", "discontinued", "rare"],
   },
   {
+    id: "the-nikka-tailored",
+
+    name: "The Nikka Tailored",
+
+    distillery: "Nikka",
+
+    country: "japan",
+
+    location: "Yoichi and Miyagikyo Distilleries, Japan",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["american-oak", "sherry-cask"],
+
+    age: null,
+
+    abv: 43,
+
+    price: 25,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/the-nikka-tailored.png",
+
+    imageAlt: "Bottle of The Nikka Tailored Japanese blended whisky",
+
+    flavorNotes: [
+      "apple",
+      "honey",
+      "vanilla",
+      "orange",
+      "dark-chocolate",
+      "malt",
+    ],
+
+    description:
+      "A premium Japanese blended whisky introduced in 2019 as the successor to Nikka 12 Year. Built primarily around malt whiskies from Yoichi and Miyagikyo with Coffey Grain whisky providing softness and balance, The Nikka Tailored delivers a rich malty profile layered with orchard fruit, honey, vanilla, citrus, and dark chocolate.",
+
+    bartenderNote:
+      "A refined and elegant blend that showcases Nikka's signature balance of rich malt and silky Coffey Grain whisky. An excellent recommendation for guests who enjoy fruit-forward Japanese whiskies with honeyed sweetness, creamy vanilla, citrus, and a touch of dark chocolate complexity.",
+
+    tags: ["featured"],
+  },
+  {
     id: "the-nikka-12-year",
 
     name: "The Nikka 12 Year",
@@ -1400,6 +2089,95 @@ export const whiskeyCollection = [
       "A refined and well-balanced aged Nikka blend with fruit, vanilla, caramel, spice, and mature oak. A great choice for guests looking for a smooth and complex Japanese blended whisky with the added depth of a 12-year age statement.",
 
     tags: ["featured", "discontinued", "rare"],
+  },
+  {
+    id: "the-nikka-nine-decades",
+
+    name: "The Nikka Nine Decades",
+
+    distillery: "Nikka",
+
+    country: "japan",
+
+    location: "Yoichi and Miyagikyo Distilleries, Japan",
+
+    style: "world-whisky",
+
+    barrelTypes: ["american-oak", "sherry-cask", "mizunara-oak"],
+
+    age: null,
+
+    abv: 48,
+
+    price: 282,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/the-nikka-nine-decades.png",
+
+    imageAlt:
+      "Bottle of The Nikka Nine Decades commemorative world blended whisky",
+
+    flavorNotes: [
+      "apple",
+      "raisin",
+      "dark-chocolate",
+      "cinnamon",
+      "peat",
+      "maple-syrup",
+    ],
+
+    description:
+      "A limited-edition world blended whisky released in 2024 to celebrate Nikka Whisky's 90th anniversary. The blend brings together whiskies distilled across nine decades—from the 1940s through the 2020s—including rare Yoichi and Miyagikyo malts, Ben Nevis malt from Scotland, Coffey Grain and Coffey Malt, and experimental grain whiskies from Moji and Satsuma Tsukasa. Rich, layered, and remarkably harmonious, it represents the history and future of Nikka in a single bottle.",
+
+    bartenderNote:
+      "One of Nikka's most ambitious and collectible releases. Rich orchard fruit, raisin, dark chocolate, cinnamon, gentle peat, and maple sweetness are woven together into an exceptionally complex whisky that showcases nearly every facet of Nikka's blending expertise.",
+
+    tags: ["featured", "limited-release", "rare"],
+  },
+  {
+    id: "akashi-goju-sherry-cask",
+
+    name: "Akashi Goju Sherry Cask",
+
+    distillery: "Eigashima",
+
+    country: "japan",
+
+    location: "White Oak Distillery, Hyogo",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["new-oak", "bourbon-cask", "shochu-cask", "sherry-cask"],
+
+    age: null,
+
+    abv: 50,
+
+    price: 17,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/akashi-goju-sherry-cask.png",
+
+    imageAlt: "Bottle of Akashi Goju Sherry Cask Japanese blended whisky",
+
+    flavorNotes: [
+      "raisin",
+      "vanilla",
+      "smoke",
+      "dark-chocolate",
+      "baking-spice",
+      "salinity",
+    ],
+
+    description:
+      "A limited Japanese blended whisky from Eigashima Shuzo, bottled at 50% ABV ('Goju' means 'fifty' in Japanese). The whisky is matured for approximately three years in new oak, ex-bourbon, and ex-shochu casks before receiving an additional two-year finish in sherry casks. The result is a rich, layered whisky with dried fruit, gentle smoke, warming spice, and maritime character.",
+
+    bartenderNote:
+      "A bold, sherry-forward Japanese blend that balances raisin sweetness, vanilla, gentle smoke, baking spice, dark chocolate, and a touch of coastal salinity. A great choice for guests who enjoy richer Japanese whiskies with noticeable sherry influence while retaining the elegance of the Akashi house style.",
+
+    tags: ["featured", "limited-release"],
   },
   {
     id: "akashi-white-oak",
@@ -1646,6 +2424,671 @@ export const whiskeyCollection = [
     tags: ["featured", "limited-release", "rare"],
   },
   {
+    id: "akashi-sommelier-series-pinot-noir",
+
+    name: "Akashi Sommelier Series Pinot Noir Cask Finish",
+
+    distillery: "Eigashima",
+
+    country: "japan",
+
+    location: "White Oak Distillery, Hyogo",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask", "pinot-noir-cask"],
+
+    age: 5.5,
+
+    abv: 50,
+
+    price: 40,
+
+    priceRange: "premium",
+
+    image: "/images/whiskey/akashi-sommelier-series-pinot-noir.png",
+
+    imageAlt:
+      "Bottle of Akashi Sommelier Series Pinot Noir Cask Finish Japanese single malt whisky",
+
+    flavorNotes: [
+      "stone-fruit",
+      "red-berries",
+      "floral",
+      "black-tea",
+      "tobacco",
+      "oak",
+    ],
+
+    description:
+      "A limited-edition Japanese single malt created in collaboration between Eigashima Distillery and Master Sommelier Ken Fredrickson. Matured for four years in ex-bourbon barrels before an additional eighteen-month finish in French oak Pinot Noir casks from California, it delivers an elegant balance of orchard fruit, red berries, floral notes, black tea, tobacco, and refined oak.",
+
+    bartenderNote:
+      "A refined, wine-influenced Japanese single malt that showcases how Pinot Noir cask finishing can add elegance without overpowering the spirit. An excellent choice for guests who enjoy fruit-forward whiskies with floral aromas, subtle tannins, and a long, dry finish.",
+
+    tags: ["featured", "limited-release", "rare"],
+  },
+  {
+    id: "akkeshi-boshu",
+
+    name: "Akkeshi Boshu",
+
+    distillery: "Akkeshi",
+
+    country: "japan",
+
+    location: "Akkeshi Distillery, Hokkaido",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask", "sherry-cask", "wine-cask", "mizunara-oak"],
+
+    age: null,
+
+    abv: 55,
+
+    price: 65,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/akkeshi-boshu.png",
+
+    imageAlt: "Bottle of Akkeshi Boshu Japanese single malt whisky",
+
+    flavorNotes: [
+      "smoke",
+      "dried-fruit",
+      "milk-chocolate",
+      "citrus",
+      "salinity",
+      "peat",
+    ],
+
+    description:
+      "A limited-edition Japanese single malt released in 2021 as the third bottling in Akkeshi Distillery's acclaimed 24 Solar Terms Series. Crafted from a combination of British and locally grown two-row barley and peated with locally harvested Hokkaido peat, Boshu is matured in a combination of ex-bourbon, sherry, wine, and Mizunara oak casks. The result is a rich coastal whisky with elegant peat smoke, chocolate, dried fruit, citrus, and maritime salinity.",
+
+    bartenderNote:
+      "A beautifully balanced coastal Japanese single malt that showcases Akkeshi's signature style. Rich peat smoke, milk chocolate, dried fruit, citrus, and briny salinity make it an excellent recommendation for guests who enjoy the maritime character of Islay whiskies but want a distinctly Japanese interpretation.",
+
+    tags: ["featured", "limited-release", "rare"],
+  },
+  {
+    id: "akkeshi-hakuro-2023",
+
+    name: "Akkeshi Hakuro 2023",
+
+    distillery: "Akkeshi",
+
+    country: "japan",
+
+    location: "Akkeshi Distillery, Hokkaido",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask", "sherry-cask", "wine-cask", "mizunara-oak"],
+
+    age: null,
+
+    abv: 55,
+
+    price: 45,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/akkeshi-hakuro-2023.png",
+
+    imageAlt: "Bottle of Akkeshi Hakuro 2023 Japanese single malt whisky",
+
+    flavorNotes: [
+      "smoke",
+      "orange",
+      "milk-chocolate",
+      "white-pepper",
+      "salinity",
+      "peat",
+    ],
+
+    description:
+      "A limited-edition Japanese single malt released in 2023 as the twelfth bottling in Akkeshi Distillery's acclaimed 24 Solar Terms Series. Hakuro ('White Dew') showcases Akkeshi's signature coastal style, combining heavily peated malt with maturation in bourbon, sherry, wine, and Hokkaido Mizunara oak casks. The result is a complex whisky with vibrant citrus, elegant peat smoke, creamy chocolate, warming spice, and maritime salinity.",
+
+    bartenderNote:
+      "A beautifully balanced coastal Japanese single malt with refined peat smoke rather than overwhelming intensity. Orange citrus, milk chocolate, white pepper, and briny salinity make this an outstanding recommendation for fans of elegant smoky whiskies such as Hakushu or lightly peated Islay malts.",
+
+    tags: ["featured", "limited-release", "rare"],
+  },
+  {
+    id: "akkeshi-shoman-2023",
+
+    name: "Akkeshi Shoman 2023",
+
+    distillery: "Akkeshi",
+
+    country: "japan",
+
+    location: "Akkeshi Distillery, Hokkaido",
+
+    style: "japanese-whisky",
+
+    barrelTypes: [
+      "bourbon-cask",
+      "sherry-cask",
+      "wine-cask",
+      "mizunara-oak",
+      "rum-cask",
+    ],
+
+    age: null,
+
+    abv: 48,
+
+    price: 45,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/akkeshi-shoman-2023.png",
+
+    imageAlt: "Bottle of Akkeshi Shoman 2023 Japanese blended whisky",
+
+    flavorNotes: [
+      "pineapple",
+      "honey",
+      "citrus",
+      "herbal",
+      "white-pepper",
+      "peat",
+    ],
+
+    description:
+      "A limited-edition Japanese blended whisky released in 2023 as the eleventh bottling in Akkeshi Distillery's Twenty-Four Solar Terms Series. Built around Hokkaido Mizunara-matured malt and matured in a diverse combination of bourbon, sherry, wine, Mizunara, and rum casks, Shoman offers layers of tropical fruit, honeyed sweetness, citrus, herbs, gentle peat smoke, and coastal complexity.",
+
+    bartenderNote:
+      "A refined and expressive Akkeshi blend that highlights the distillery's exceptional blending skill. Tropical fruit, honey, citrus, herbs, white pepper, and elegant peat make it an excellent choice for guests who enjoy complex coastal whiskies with a balance of sweetness and smoke.",
+
+    tags: ["featured", "limited-release", "rare"],
+  },
+  {
+    id: "akkeshi-shosetsu-2023",
+
+    name: "Akkeshi Shosetsu 2023",
+
+    distillery: "Akkeshi",
+
+    country: "japan",
+
+    location: "Akkeshi Distillery, Hokkaido",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask", "mizunara-oak"],
+
+    age: null,
+
+    abv: 48,
+
+    price: 45,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/akkeshi-shosetsu-2023.png",
+
+    imageAlt: "Bottle of Akkeshi Shosetsu 2023 Japanese blended whisky",
+
+    flavorNotes: [
+      "smoke",
+      "honey",
+      "orange",
+      "raisin",
+      "salinity",
+      "white-pepper",
+    ],
+
+    description:
+      "A limited-edition Japanese blended whisky released in late 2023 as the thirteenth bottling in Akkeshi Distillery's Twenty-Four Solar Terms Series. Centered around Hokkaido Mizunara-matured malt, Shosetsu ('Minor Snow') combines elegant peat smoke with bright citrus, honeyed sweetness, subtle dried fruit, and a distinctly coastal finish inspired by eastern Hokkaido.",
+
+    bartenderNote:
+      "A refined coastal blend that highlights Akkeshi's signature combination of peat, citrus, and Mizunara oak. An excellent recommendation for guests who enjoy elegant smoky whiskies with honeyed sweetness, orange zest, maritime salinity, and peppery spice rather than heavy medicinal peat.",
+
+    tags: ["featured", "limited-release", "rare"],
+  },
+  {
+    id: "akkeshi-daikan-2022",
+
+    name: "Akkeshi Malt & Grain Daikan 2022",
+
+    distillery: "Akkeshi",
+
+    country: "japan",
+
+    location: "Akkeshi Distillery, Hokkaido",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask", "sherry-cask", "wine-cask", "mizunara-oak"],
+
+    age: null,
+
+    abv: 48,
+
+    price: 45,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/akkeshi-daikan-2022.png",
+
+    imageAlt:
+      "Bottle of Akkeshi Malt & Grain Daikan 2022 Japanese blended whisky",
+
+    flavorNotes: [
+      "orange",
+      "brown-sugar",
+      "strawberry",
+      "salinity",
+      "white-pepper",
+      "peat",
+    ],
+
+    description:
+      "A limited-edition Japanese blended whisky released in 2022 as the eighth bottling in Akkeshi Distillery's Twenty-Four Solar Terms Series. Daikan ('Greater Cold') is built around a key malt matured in Hokkaido Mizunara oak, complemented by bourbon, sherry, and wine casks. The result is a balanced coastal whisky with bright citrus, brown sugar sweetness, gentle peat smoke, and maritime salinity.",
+
+    bartenderNote:
+      "A refined coastal blend that highlights Akkeshi's signature style of elegant peat and Hokkaido Mizunara oak. Orange, brown sugar, strawberry, sea salt, white pepper, and gentle smoke make it an excellent recommendation for guests who enjoy layered Japanese whiskies with both sweetness and maritime complexity.",
+
+    tags: ["featured", "limited-release", "rare"],
+  },
+  {
+    id: "akkeshi-shosho-2021",
+
+    name: "Akkeshi Malt & Grain Shosho 2021",
+
+    distillery: "Akkeshi",
+
+    country: "japan",
+
+    location: "Akkeshi Distillery, Hokkaido",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask", "sherry-cask", "wine-cask", "mizunara-oak"],
+
+    age: null,
+
+    abv: 48,
+
+    price: 45,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/akkeshi-shosho-2021.png",
+
+    imageAlt:
+      "Bottle of Akkeshi Malt & Grain Shosho 2021 Japanese blended whisky",
+
+    flavorNotes: [
+      "smoke",
+      "orange",
+      "dried-fruit",
+      "vanilla",
+      "white-pepper",
+      "salinity",
+    ],
+
+    description:
+      "A limited-edition Japanese blended whisky released in 2021 as the fifth bottling in Akkeshi Distillery's Twenty-Four Solar Terms Series. Inspired by 'Shosho' (the seasonal period when summer heat begins to fade), it is matured in a combination of bourbon, sherry, wine, and Mizunara oak casks. The whisky balances gentle peat smoke with citrus, dried fruit, creamy vanilla, warming spice, and a distinctly maritime finish.",
+
+    bartenderNote:
+      "A refined coastal blend that showcases Akkeshi's signature combination of elegant peat, citrus brightness, and Hokkaido maritime character. A great choice for guests who enjoy balanced smoky whiskies with dried fruit, vanilla, peppery spice, and lingering salinity.",
+
+    tags: ["featured", "limited-release", "rare"],
+  },
+  {
+    id: "akkeshi-taisho-2022",
+
+    name: "Akkeshi Malt & Grain Taisho 2022",
+
+    distillery: "Akkeshi",
+
+    country: "japan",
+
+    location: "Akkeshi Distillery, Hokkaido",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask", "mizunara-oak"],
+
+    age: null,
+
+    abv: 48,
+
+    price: 45,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/akkeshi-taisho-2022.png",
+
+    imageAlt:
+      "Bottle of Akkeshi Malt & Grain Taisho 2022 Japanese blended whisky",
+
+    flavorNotes: [
+      "grapefruit",
+      "honey",
+      "milk-chocolate",
+      "salinity",
+      "white-pepper",
+      "peat",
+    ],
+
+    description:
+      "A limited-edition Japanese blended whisky released in 2022 as the ninth bottling in Akkeshi Distillery's Twenty-Four Solar Terms Series. 'Taisho' (Great Heat) highlights key malts matured entirely in Hokkaido Mizunara oak alongside bourbon cask components, creating a vibrant coastal whisky with bright citrus, honeyed sweetness, gentle peat smoke, creamy chocolate, and maritime salinity.",
+
+    bartenderNote:
+      "A bright and elegant Akkeshi that balances citrus freshness with coastal peat and Mizunara character. Grapefruit, honey, milk chocolate, sea salt, and white pepper make it an excellent choice for guests who enjoy refined smoky whiskies with a clean, dry finish.",
+
+    tags: ["featured", "limited-release", "rare"],
+  },
+  {
+    id: "akkeshi-usui-2021",
+
+    name: "Akkeshi Malt & Grain Usui 2021",
+
+    distillery: "Akkeshi",
+
+    country: "japan",
+
+    location: "Akkeshi Distillery, Hokkaido",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask", "sherry-cask", "wine-cask", "mizunara-oak"],
+
+    age: null,
+
+    abv: 48,
+
+    price: 27,
+
+    priceRange: "premium",
+
+    image: "/images/whiskey/akkeshi-usui-2021.png",
+
+    imageAlt:
+      "Bottle of Akkeshi Malt & Grain Usui 2021 Japanese blended whisky",
+
+    flavorNotes: [
+      "orange",
+      "raisin",
+      "milk-chocolate",
+      "salinity",
+      "white-pepper",
+      "peat",
+    ],
+
+    description:
+      "A limited-edition Japanese blended whisky released in 2021 as the second bottling in Akkeshi Distillery's Twenty-Four Solar Terms Series. 'Usui' (Rainwater) marks the season when melting snow begins to nourish the land. More than half of the blend is Akkeshi peated malt, married with imported grain spirit matured in Hokkaido and aged in a combination of bourbon, sherry, wine, and Hokkaido Mizunara oak casks. The result is a rich coastal whisky with vibrant citrus, dried fruit, gentle peat smoke, and creamy chocolate notes.",
+
+    bartenderNote:
+      "A beautifully balanced coastal blend that showcases Akkeshi's signature maritime style. Bright orange citrus, raisin sweetness, milk chocolate, white pepper, and elegant peat make it an excellent recommendation for guests who enjoy refined smoky whiskies with complexity rather than overwhelming intensity.",
+
+    tags: ["featured", "limited-release", "rare"],
+  },
+  {
+    id: "akkeshi-seimei-2022",
+
+    name: "Akkeshi Seimei 2022",
+
+    distillery: "Akkeshi",
+
+    country: "japan",
+
+    location: "Akkeshi Distillery, Hokkaido",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask", "sherry-cask", "wine-cask", "mizunara-oak"],
+
+    age: null,
+
+    abv: 55,
+
+    price: 60,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/akkeshi-seimei-2022.png",
+
+    imageAlt:
+      "Bottle of Akkeshi Seimei 2022 Peated Japanese single malt whisky",
+
+    flavorNotes: [
+      "smoke",
+      "honey",
+      "citrus",
+      "dark-chocolate",
+      "salinity",
+      "white-pepper",
+    ],
+
+    description:
+      "A limited-edition Japanese single malt released in 2022 as the seventh bottling in Akkeshi Distillery's Twenty-Four Solar Terms Series. 'Seimei' (Clear and Bright) celebrates the arrival of spring and showcases Akkeshi's elegant coastal peat style. Matured in bourbon, sherry, red wine, and Hokkaido Mizunara oak casks, it balances sweet smoke with vibrant citrus, honey, chocolate, and maritime salinity.",
+
+    bartenderNote:
+      "A refined coastal single malt that perfectly captures Akkeshi's signature style. Sweet peat smoke, citrus, honey, dark chocolate, sea salt, and white pepper make it an outstanding recommendation for fans of elegant, maritime whiskies with layered complexity rather than overpowering smoke.",
+
+    tags: ["featured", "limited-release", "rare"],
+  },
+  {
+    id: "akkeshi-kanro-2020",
+
+    name: "Akkeshi Kanro",
+
+    distillery: "Akkeshi",
+
+    country: "japan",
+
+    location: "Akkeshi Distillery, Hokkaido",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask", "sherry-cask", "wine-cask", "mizunara-oak"],
+
+    age: null,
+
+    abv: 55,
+
+    price: 65,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/akkeshi-kanro-2020.png",
+
+    imageAlt: "Bottle of Akkeshi Kanro Japanese single malt whisky",
+
+    flavorNotes: [
+      "smoke",
+      "orange",
+      "dried-fruit",
+      "milk-chocolate",
+      "white-pepper",
+      "salinity",
+    ],
+
+    description:
+      "A limited-edition Japanese single malt released in 2020 as the inaugural single malt in Akkeshi Distillery's acclaimed Twenty-Four Solar Terms Series. Matured in a combination of bourbon, sherry, wine, and Hokkaido Mizunara oak casks, Kanro showcases Akkeshi's signature coastal style with elegant peat smoke, bright citrus, dried fruit sweetness, creamy chocolate, and a lingering maritime finish.",
+
+    bartenderNote:
+      "The first full-size single malt from Akkeshi and a landmark release for the distillery. Rich peat smoke, orange citrus, dried fruit, milk chocolate, sea salt, and white pepper make it an outstanding recommendation for fans of coastal, Islay-inspired whiskies with distinctly Japanese elegance.",
+
+    tags: ["featured", "limited-release", "rare"],
+  },
+  {
+    id: "akkeshi-keichitsu-2023",
+
+    name: "Akkeshi Keichitsu 2023",
+
+    distillery: "Akkeshi",
+
+    country: "japan",
+
+    location: "Akkeshi Distillery, Hokkaido",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask", "sherry-cask", "wine-cask", "mizunara-oak"],
+
+    age: null,
+
+    abv: 55,
+
+    price: 45,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/akkeshi-keichitsu-2023.png",
+
+    imageAlt: "Bottle of Akkeshi Keichitsu 2023 Japanese single malt whisky",
+
+    flavorNotes: [
+      "orange",
+      "brown-sugar",
+      "honey",
+      "white-pepper",
+      "salinity",
+      "peat",
+    ],
+
+    description:
+      "A limited-edition Japanese single malt released in 2023 as the tenth bottling in Akkeshi Distillery's Twenty-Four Solar Terms Series. 'Keichitsu' ('Awakening of Insects') celebrates the arrival of spring and showcases Akkeshi's elegant coastal style. Matured primarily in bourbon casks with additional sherry, wine, and Hokkaido Mizunara oak casks, it delivers vibrant citrus, honeyed sweetness, gentle peat smoke, and a clean maritime finish.",
+
+    bartenderNote:
+      "A bright and elegant Akkeshi with a citrus-driven profile supported by honey, brown sugar, white pepper, and refined coastal peat. An excellent recommendation for guests who enjoy smoky whiskies that emphasize freshness and balance rather than heavy sherry richness.",
+
+    tags: ["featured", "limited-release", "rare"],
+  },
+  {
+    id: "akkeshi-ritto-2021",
+
+    name: "Akkeshi Ritto 2021",
+
+    distillery: "Akkeshi",
+
+    country: "japan",
+
+    location: "Akkeshi Distillery, Hokkaido",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["mizunara-oak", "sherry-cask", "wine-cask"],
+
+    age: null,
+
+    abv: 55,
+
+    price: 75,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/akkeshi-ritto-2021.png",
+
+    imageAlt: "Bottle of Akkeshi Ritto 2021 Japanese single malt whisky",
+
+    flavorNotes: [
+      "orange",
+      "dark-chocolate",
+      "brown-sugar",
+      "floral",
+      "peat",
+      "smoke",
+    ],
+
+    description:
+      "A limited-edition Japanese single malt released in 2021 as the fifth single malt in Akkeshi Distillery's Twenty-Four Solar Terms Series. 'Ritto' ('Beginning of Winter') showcases Hokkaido-grown malt matured primarily in Mizunara oak, sherry, and Pinot Noir wine casks. The whisky emphasizes rich chocolate sweetness, bright citrus, floral aromas, and elegant peat smoke in a full-bodied, complex profile. :contentReference[oaicite:0]{index=0}",
+
+    bartenderNote:
+      "One of Akkeshi's richest early single malts, with more pronounced sherry influence than many releases in the Solar Terms Series. An excellent choice for guests who enjoy chocolate-rich whiskies with orange citrus, floral elegance, and restrained coastal peat.",
+
+    tags: ["featured", "limited-release", "rare"],
+  },
+  {
+    id: "akkeshi-taisetsu-2022",
+
+    name: "Akkeshi Taisetsu 2022",
+
+    distillery: "Akkeshi",
+
+    country: "japan",
+
+    location: "Akkeshi Distillery, Hokkaido",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask", "sherry-cask", "mizunara-oak"],
+
+    age: null,
+
+    abv: 55,
+
+    price: 45,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/akkeshi-taisetsu-2022.png",
+
+    imageAlt: "Bottle of Akkeshi Taisetsu 2022 Japanese single malt whisky",
+
+    flavorNotes: [
+      "orange",
+      "honey",
+      "brown-sugar",
+      "white-pepper",
+      "herbal",
+      "peat",
+    ],
+
+    description:
+      "A limited-edition Japanese single malt released in 2022 as the ninth single malt in Akkeshi Distillery's Twenty-Four Solar Terms Series. 'Taisetsu' ('Greater Snow') celebrates the beginning of deep winter and showcases Akkeshi's signature coastal style through vibrant citrus, gentle peat smoke, honeyed sweetness, herbal complexity, and Hokkaido Mizunara oak influence.",
+
+    bartenderNote:
+      "A citrus-forward Akkeshi with elegant peat rather than overwhelming smoke. Orange, honey, brown sugar, herbs, white pepper, and a lingering peaty finish make it an excellent recommendation for guests who enjoy refined coastal whiskies with freshness and balance.",
+
+    tags: ["featured", "limited-release", "rare"],
+  },
+  {
+    id: "iwai-tradition",
+
+    name: "Iwai Tradition",
+
+    distillery: "Mars",
+
+    country: "japan",
+
+    location: "Mars Shinshu Distillery, Nagano",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask", "sherry-cask", "wine-cask"],
+
+    age: null,
+
+    abv: 40,
+
+    price: 15,
+
+    priceRange: "entry",
+
+    image: "/images/whiskey/iwai-tradition.png",
+
+    imageAlt: "Bottle of Mars Iwai Tradition Japanese blended whisky",
+
+    flavorNotes: ["cherry", "honey", "caramel", "vanilla", "ginger", "spice"],
+
+    description:
+      "A malt-forward blended whisky from Mars, Iwai Tradition combines malt and grain whiskies to create a rich yet approachable profile. Matured using a combination of cask types, it offers layers of ripe fruit, honeyed sweetness, caramel, vanilla, warm spice, and gentle oak.",
+
+    bartenderNote:
+      "A smooth and approachable Mars blend with ripe cherry, honey, caramel, vanilla, and warm spice. A great choice for guests looking for a balanced whisky that bridges sweeter, fruit-forward flavors with a richer malt character.",
+
+    tags: ["featured"],
+  },
+  {
     id: "iwai-tradition-haru-sakura-cask",
 
     name: "Iwai Tradition Haru Sakura Cask",
@@ -1688,43 +3131,6 @@ export const whiskeyCollection = [
       "A delicate and aromatic Iwai expression showcasing the influence of Japanese sakura wood. A great choice for guests who enjoy floral and fruit-forward whisky with honeyed sweetness and a soft, approachable character.",
 
     tags: ["featured", "limited-release"],
-  },
-  {
-    id: "iwai-tradition",
-
-    name: "Iwai Tradition",
-
-    distillery: "Mars",
-
-    country: "japan",
-
-    location: "Mars Shinshu Distillery, Nagano",
-
-    style: "japanese-whisky",
-
-    barrelTypes: ["bourbon-cask", "sherry-cask", "wine-cask"],
-
-    age: null,
-
-    abv: 40,
-
-    price: 15,
-
-    priceRange: "entry",
-
-    image: "/images/whiskey/iwai-tradition.png",
-
-    imageAlt: "Bottle of Mars Iwai Tradition Japanese blended whisky",
-
-    flavorNotes: ["cherry", "honey", "caramel", "vanilla", "ginger", "spice"],
-
-    description:
-      "A malt-forward blended whisky from Mars, Iwai Tradition combines malt and grain whiskies to create a rich yet approachable profile. Matured using a combination of cask types, it offers layers of ripe fruit, honeyed sweetness, caramel, vanilla, warm spice, and gentle oak.",
-
-    bartenderNote:
-      "A smooth and approachable Mars blend with ripe cherry, honey, caramel, vanilla, and warm spice. A great choice for guests looking for a balanced whisky that bridges sweeter, fruit-forward flavors with a richer malt character.",
-
-    tags: ["featured"],
   },
   {
     id: "iwai-tradition-fuyu-chestnut-cask",
