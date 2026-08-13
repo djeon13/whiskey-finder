@@ -23,9 +23,13 @@ export const FLAVOR_CATEGORIES = [
       { id: "toffee", label: "Toffee" },
       { id: "brown-sugar", label: "Brown Sugar" },
       { id: "maple", label: "Maple" },
+      { id: "maple-syrup", label: "Maple Syrup" },
       { id: "molasses", label: "Molasses" },
       { id: "butterscotch", label: "Butterscotch" },
+      { id: "cream-soda", label: "Cream Soda" },
+      { id: "marshmallow", label: "Marshmallow" },
       { id: "sweet", label: "Sweet" },
+      { id: "gingerbread", label: "Gingerbread" },
     ],
   },
 
@@ -73,6 +77,34 @@ export const FLAVOR_CATEGORIES = [
       { id: "tropical-fruit", label: "Tropical Fruit" },
 
       { id: "coconut", label: "Coconut" },
+
+      { id: "grapefruit", label: "Grapefruit" },
+      { id: "lime", label: "Lime" },
+      { id: "tangerine", label: "Tangerine" },
+      { id: "yuzu", label: "Yuzu" },
+
+      { id: "red-apple", label: "Red Apple" },
+      { id: "cooked-apple", label: "Cooked Apple" },
+      { id: "green-plum", label: "Green Plum" },
+
+      { id: "dark-cherry", label: "Dark Cherry" },
+      { id: "dried-cherry", label: "Dried Cherry" },
+
+      { id: "black-currant", label: "Black Currant" },
+      { id: "blueberry", label: "Blueberry" },
+      { id: "dark-berry", label: "Dark Berry" },
+
+      { id: "candied-fruit", label: "Candied Fruit" },
+      { id: "cooked-fruit", label: "Cooked Fruit" },
+      { id: "dark-fruit", label: "Dark Fruit" },
+      { id: "grilled-fruit", label: "Grilled Fruit" },
+
+      { id: "kiwi", label: "Kiwi" },
+      { id: "melon", label: "Melon" },
+      { id: "watermelon", label: "Watermelon" },
+      { id: "passion-fruit", label: "Passion Fruit" },
+      { id: "persimmon", label: "Persimmon" },
+      { id: "quince", label: "Quince" },
     ],
   },
 
@@ -90,6 +122,10 @@ export const FLAVOR_CATEGORIES = [
       { id: "pepper", label: "Pepper" },
       { id: "ginger", label: "Ginger" },
       { id: "licorice", label: "Licorice" },
+      { id: "allspice", label: "Allspice" },
+      { id: "anise", label: "Anise" },
+      { id: "white-pepper", label: "White Pepper" },
+      { id: "cardamom", label: "Cardamom" },
     ],
   },
 
@@ -104,6 +140,11 @@ export const FLAVOR_CATEGORIES = [
       { id: "sandalwood", label: "Sandalwood" },
       { id: "incense", label: "Incense" },
       { id: "malt", label: "Malt" },
+      { id: "earth", label: "Earth" },
+      { id: "corn", label: "Corn" },
+      { id: "roasted-corn", label: "Roasted Corn" },
+      { id: "rye", label: "Rye" },
+      { id: "hops", label: "Hops" },
     ],
   },
 
@@ -121,6 +162,26 @@ export const FLAVOR_CATEGORIES = [
       { id: "nuts", label: "Nuts" },
       { id: "nutty", label: "Nutty" },
       { id: "peanut", label: "Peanut" },
+      { id: "almond", label: "Almond" },
+      { id: "hazelnut", label: "Hazelnut" },
+      { id: "pecan", label: "Pecan" },
+      { id: "chestnut", label: "Chestnut" },
+
+      { id: "milk-chocolate", label: "Milk Chocolate" },
+      { id: "bitter-chocolate", label: "Bitter Chocolate" },
+
+      { id: "biscuit", label: "Biscuit" },
+      { id: "pastry", label: "Pastry" },
+      { id: "shortbread", label: "Shortbread" },
+
+      { id: "custard", label: "Custard" },
+      { id: "creme-brulee", label: "Crème Brûlée" },
+      { id: "whipped-cream", label: "Whipped Cream" },
+      { id: "nougat", label: "Nougat" },
+
+      { id: "red-bean", label: "Red Bean" },
+
+      { id: "bitter", label: "Bitter" },
     ],
   },
 
@@ -133,7 +194,12 @@ export const FLAVOR_CATEGORIES = [
       { id: "herbal", label: "Herbal" },
       { id: "mint", label: "Mint" },
       { id: "tea", label: "Tea" },
-      { id: "cardomom", label: "Cardomom" },
+      { id: "black-tea", label: "Black Tea" },
+      { id: "green-tea", label: "Green Tea" },
+      { id: "elderflower", label: "Elderflower" },
+      { id: "chamomile", label: "Chamomile" },
+      { id: "lemongrass", label: "Lemongrass" },
+      { id: "dill", label: "Dill" },
     ],
   },
 
