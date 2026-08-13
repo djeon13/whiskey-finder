@@ -3052,6 +3052,56 @@ export const whiskeyCollection = [
     tags: ["featured", "limited-release", "rare"],
   },
   {
+    id: "akkeshi-sarorunkamuy-2020",
+
+    name: "Akkeshi Single Malt Sarorunkamuy 2020",
+
+    distillery: "Akkeshi",
+
+    country: "japan",
+
+    location: "Akkeshi Distillery, Hokkaido",
+
+    style: "japanese-whisky",
+
+    barrelTypes: [
+      "bourbon-cask",
+      "sherry-cask",
+      "red-wine-cask",
+      "mizunara-oak",
+    ],
+
+    age: 3,
+
+    abv: 55,
+
+    price: 50,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/akkeshi-sarorunkamuy-2020.png",
+
+    imageAlt:
+      "200ml bottle of Akkeshi Sarorunkamuy 2020 Japanese single malt whisky",
+
+    flavorNotes: [
+      "strawberry",
+      "dark-chocolate",
+      "smoke",
+      "citrus",
+      "vanilla",
+      "white-pepper",
+    ],
+
+    description:
+      "Akkeshi's first official single malt release, bottled in January 2020 after approximately three years of maturation. Lightly peated and matured across bourbon, sherry, red wine, and Hokkaido Mizunara oak casks, Sarorunkamuy showcases Akkeshi's emerging coastal style with strawberry, chocolate, citrus, vanilla, spice, and elegant peat smoke.",
+
+    bartenderNote:
+      "A landmark Akkeshi release and a fascinating early snapshot of the distillery's style. Rich strawberry and chocolate are layered with light peat smoke, citrus, vanilla, and Mizunara spice. A great choice for guests who enjoy young, high-proof Japanese single malts with pronounced character.",
+
+    tags: ["featured", "limited-release", "rare", "discontinued"],
+  },
+  {
     id: "iwai-tradition",
 
     name: "Iwai Tradition",
@@ -3222,6 +3272,44 @@ export const whiskeyCollection = [
     tags: ["featured", "limited-release"],
   },
   {
+    id: "iwai-tradition-natsu-umeshu-cask",
+
+    name: "Iwai Tradition Natsu Umeshu Cask",
+
+    distillery: "Mars Shinshu",
+
+    country: "japan",
+
+    location: "Mars Shinshu Distillery, Nagano",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask", "sherry-cask", "umeshu-cask"],
+
+    age: null,
+
+    abv: 40,
+
+    price: 16,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/iwai-tradition-natsu-umeshu-cask.png",
+
+    imageAlt:
+      "Bottle of Iwai Tradition Natsu Umeshu Cask Japanese blended whisky",
+
+    flavorNotes: ["plum", "honey", "toffee", "ginger", "cinnamon", "black-tea"],
+
+    description:
+      "A limited annual summer release of Iwai Tradition finished for more than six months in casks that previously held Japanese umeshu, or plum wine. The finish adds sweet-and-sour Japanese plum character to Iwai Tradition's honey, toffee, and ginger-spice profile, with cinnamon on the nose and black tea emerging on the finish.",
+
+    bartenderNote:
+      "A distinctive Japanese whisky for guests who enjoy fruit-forward, sweeter profiles. The umeshu finish adds bright sweet-and-sour plum to Iwai's honey, toffee, ginger, and baking-spice character, making this a particularly approachable and unusual pour.",
+
+    tags: ["featured", "limited-release", "seasonal"],
+  },
+  {
     id: "iwai-tradition-wine-cask",
 
     name: "Iwai Tradition Wine Cask",
@@ -3264,6 +3352,1802 @@ export const whiskeyCollection = [
       "A fruit-forward Iwai Tradition with added richness from wine cask finishing. A great choice for guests who enjoy red fruit, dried fruit, vanilla, honey, and gentle spice in a smooth and approachable Japanese blended whisky.",
 
     tags: ["featured", "limited-release"],
+  },
+  {
+    id: "iwai-tradition-napa-wine-cask",
+
+    name: "Iwai Tradition Napa Wine Cask",
+
+    distillery: "Mars Shinshu",
+
+    country: "japan",
+
+    location: "Mars Shinshu Distillery, Nagano",
+
+    style: "japanese-whisky",
+
+    barrelTypes: [
+      "bourbon-cask",
+      "sherry-cask",
+      "american-white-oak",
+      "cabernet-sauvignon-cask",
+    ],
+
+    age: null,
+
+    abv: 40,
+
+    price: 20,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/iwai-tradition-napa-wine-cask.png",
+
+    imageAlt: "Bottle of Iwai Tradition Napa Wine Cask Japanese blended whisky",
+
+    flavorNotes: [
+      "dried-cherry",
+      "red-berries",
+      "plum",
+      "vanilla",
+      "black-pepper",
+      "oak",
+    ],
+
+    description:
+      "A limited-edition Iwai Tradition blended whisky finished in Cabernet Sauvignon casks sourced from Napa Valley, California. The underlying whisky is matured primarily in ex-bourbon, sherry, and American white oak casks before receiving an extended Napa Cabernet Sauvignon cask finish. The wine casks add rich red-fruit sweetness, deeper color, and a soft tannic character to Iwai's vanilla and spice-driven profile.",
+
+    bartenderNote:
+      "A fruit-forward variation of Iwai Tradition with pronounced Napa Cabernet influence. Dried cherry, red berries, and plum combine with vanilla, black pepper, and toasted oak, making this an excellent choice for guests who enjoy wine-finished whiskies with a sweeter, fruitier profile.",
+
+    tags: ["featured", "limited-release", "seasonal"],
+  },
+  {
+    id: "mars-bakemono-1-oyashirome",
+
+    name: "Mars Bakemono Zukushi #1 Oyashirome",
+
+    distillery: "Mars Komagatake",
+
+    country: "japan",
+
+    location: "Komagatake Distillery, Nagano",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask"],
+
+    age: 7,
+
+    abv: 64,
+
+    price: 25,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/mars-bakemono-1-oyashirome.png",
+
+    imageAlt:
+      "Bottle of Mars Bakemono Zukushi #1 Oyashirome single cask Japanese single malt whisky",
+
+    flavorNotes: [
+      "strawberry",
+      "cherry",
+      "watermelon",
+      "raspberry",
+      "pepper",
+      "milk-chocolate",
+    ],
+
+    description:
+      "A U.S.-exclusive single-cask Japanese single malt from Mars Komagatake, released as the first installment of the Bakemono Zukushi series. Distilled in November 2015 and bottled in June 2023 after 7 years and 7 months of maturation in a single ex-bourbon barrel. Bottled at a powerful 64% ABV, it showcases an intensely fruit-forward profile with strawberry, cherry, watermelon, raspberry, pepper, and chocolate.",
+
+    bartenderNote:
+      "A high-proof, intensely fruity single cask with remarkable concentration. Strawberry, cherry, raspberry, and watermelon dominate the profile, while pepper and milk chocolate add depth. Best suited to experienced whiskey drinkers who enjoy cask-strength Japanese single malts.",
+
+    tags: ["featured", "limited-release", "rare", "single-cask"],
+  },
+  {
+    id: "mars-bakemono-2-daichiuchi",
+
+    name: "Mars Bakemono Zukushi #2 Daichiuchi",
+
+    distillery: "Mars Tsunuki",
+
+    country: "japan",
+
+    location: "Tsunuki Distillery, Kagoshima",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask"],
+
+    age: 4.2,
+
+    abv: 61,
+
+    price: 36,
+
+    priceRange: "premium",
+
+    image: "/images/whiskey/mars-bakemono-2-daichiuchi.png",
+
+    imageAlt:
+      "Bottle of Mars Bakemono Zukushi #2 Daichiuchi single cask Japanese single malt whisky",
+
+    flavorNotes: ["apricot", "peach", "apple", "pear", "vanilla", "peat"],
+
+    description:
+      "A limited U.S.-exclusive single-cask Japanese single malt from Mars Tsunuki, released in 2023 as the second installment of the Bakemono Zukushi series. Distilled in April 2019 and bottled in June 2023 after 4 years and 2 months in a single ex-bourbon barrel. Lightly peated at approximately 3.5 ppm and bottled at a powerful 61% ABV, it combines rich stone fruit and tropical fruit with vanilla, citrus, pepper, and restrained peat.",
+
+    bartenderNote:
+      "A powerful but surprisingly fruit-forward cask-strength Tsunuki. Apricot, peach, apple, pear, and vanilla lead into light peat and pepper, making this an excellent choice for experienced whiskey drinkers who want high proof without sacrificing delicate fruit character.",
+
+    tags: ["featured", "limited-release", "rare", "single-cask"],
+  },
+  {
+    id: "mars-bakemono-3-domo-komo",
+
+    name: "Mars Bakemono Zukushi #3 Dōmo-Kōmo",
+
+    distillery: "Mars",
+
+    country: "japan",
+
+    location: "Tsunuki and Komagatake Distilleries, Japan",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask"],
+
+    age: 5,
+
+    abv: 51,
+
+    price: 39,
+
+    priceRange: "premium",
+
+    image: "/images/whiskey/mars-bakemono-3-domo-komo.png",
+
+    imageAlt:
+      "Bottle of Mars Bakemono Zukushi #3 Dōmo-Kōmo Japanese pure malt whisky",
+
+    flavorNotes: ["apricot", "orange", "peach", "apple", "vanilla", "ginger"],
+
+    description:
+      "A limited U.S.-exclusive pure malt whisky from Mars, created by combining two single ex-bourbon casks—one from Tsunuki and one from Komagatake—and aging the whiskies on Yakushima. The Tsunuki component is over 4 years old and the Komagatake component is over 5 years old. Lightly peated at approximately 3.5 ppm, Dōmo-Kōmo delivers an intensely fruity profile with apricot, orchard fruit, citrus, vanilla, and gentle spice.",
+
+    bartenderNote:
+      "A bright, fruit-driven Mars malt that brings together the contrasting characters of Tsunuki and Komagatake. Apricot, peach, orange, and orchard fruit lead into vanilla and ginger spice, with only a subtle touch of peat. A great choice for guests who want a high-proof Japanese malt without heavy smoke.",
+
+    tags: ["featured", "limited-release", "rare", "double-cask"],
+  },
+  {
+    id: "mars-bakemono-4-sarahebi",
+
+    name: "Mars Bakemono Zukushi #4 Sarahebi",
+
+    distillery: "Mars Komagatake",
+
+    country: "japan",
+
+    location: "Komagatake Distillery, Nagano",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["american-white-oak-hogshead"],
+
+    age: 6,
+
+    abv: 60,
+
+    price: 38,
+
+    priceRange: "premium",
+
+    image: "/images/whiskey/mars-bakemono-4-sarahebi.png",
+
+    imageAlt:
+      "Bottle of Mars Bakemono Zukushi #4 Sarahebi Japanese single malt whisky",
+
+    flavorNotes: ["orange", "peach", "vanilla", "peanut", "ginger", "oak"],
+
+    description:
+      "A limited U.S.-exclusive single-cask Japanese single malt from Mars Komagatake. Distilled in January 2018 and bottled in January 2024 after 6 years and 11 months of maturation in a single American white oak hogshead. Unpeated and bottled at 60% ABV, Sarahebi showcases rich new-oak character alongside orange, peach, vanilla, roasted nuts, ginger, and baking spice.",
+
+    bartenderNote:
+      "A powerful, oak-driven Komagatake single cask with pronounced vanilla, orange, peach, peanut, ginger, and fresh-oak character. Best suited to experienced whiskey drinkers who enjoy high-proof, heavily oak-influenced single casks.",
+
+    tags: ["featured", "limited-release", "rare", "single-cask"],
+  },
+  {
+    id: "mars-bakemono-5-minokedachi",
+
+    name: "Mars Bakemono Zukushi #5 Minokedachi",
+
+    distillery: "Mars Tsunuki",
+
+    country: "japan",
+
+    location: "Tsunuki Distillery, Kagoshima",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["sherry-cask"],
+
+    age: 5,
+
+    abv: 60,
+
+    price: 50,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/mars-bakemono-5-minokedachi.png",
+
+    imageAlt:
+      "Bottle of Mars Bakemono Zukushi #5 Minokedachi Japanese single malt whisky",
+
+    flavorNotes: [
+      "smoke",
+      "dark-chocolate",
+      "cherry",
+      "raisin",
+      "black-currant",
+      "fig",
+    ],
+
+    description:
+      "A limited U.S.-exclusive single-cask Japanese single malt from Mars Tsunuki. Distilled in June 2018 and bottled in May 2024 after more than five years in a single sherry hogshead. Heavily peated at approximately 50 ppm and bottled at 60% ABV, Minokedachi combines intense peat smoke with dark fruit, chocolate, cherry, raisin, fig, and rich sherry character.",
+
+    bartenderNote:
+      "A powerful, heavily peated Tsunuki with exceptional sherry-cask depth. Dark chocolate, cherry, raisin, black currant, and fig sit underneath substantial smoke, making this an excellent recommendation for experienced drinkers who enjoy heavily peated Scotch but want a Japanese interpretation.",
+
+    tags: ["featured", "limited-release", "rare", "single-cask"],
+  },
+  {
+    id: "mars-bakemono-6-nobusuma",
+
+    name: "Mars Bakemono Zukushi #6 Y.A. Nobusuma",
+
+    distillery: "Mars",
+
+    country: "japan",
+
+    location: "Yakushima Aging Cellar, Kagoshima",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask"],
+
+    age: 5,
+
+    abv: 55,
+
+    price: 40,
+
+    priceRange: "premium",
+
+    image: "/images/whiskey/mars-bakemono-6-nobusuma.png",
+
+    imageAlt:
+      "Bottle of Mars Bakemono Zukushi #6 Y.A. Nobusuma Japanese blended malt whisky",
+
+    flavorNotes: ["honey", "apple", "pear", "citrus", "vanilla", "smoke"],
+
+    description:
+      "A limited U.S.-exclusive Japanese blended malt from Mars, combining single ex-bourbon casks from the Komagatake and Tsunuki distilleries. Distilled in 2018 and 2019, the two whiskies were matured separately for approximately 5–6 years at the Mars Yakushima Aging Cellar before being blended. Lightly peated at approximately 3.5 ppm and bottled at 55% ABV, Nobusuma combines orchard fruit, honey, citrus, vanilla, and gentle smoke.",
+
+    bartenderNote:
+      "A bright and elegant Mars blended malt with honeyed orchard fruit, citrus, vanilla, and restrained smoke. Yakushima maturation adds another layer of tropical and maritime character, making this an excellent choice for guests who want complexity and high proof without heavy peat.",
+
+    tags: ["featured", "limited-release", "rare", "double-cask"],
+  },
+  {
+    id: "mars-bakemono-7-umashika",
+
+    name: "Mars Bakemono Zukushi #7 Umashika",
+
+    distillery: "Mars",
+
+    country: "japan",
+
+    location: "Komagatake and Tsunuki Distilleries, Japan",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask"],
+
+    age: 6,
+
+    abv: 51,
+
+    price: 36,
+
+    priceRange: "premium",
+
+    image: "/images/whiskey/mars-bakemono-7-umashika.png",
+
+    imageAlt:
+      "Bottle of Mars Bakemono Zukushi #7 Umashika Japanese blended malt whisky",
+
+    flavorNotes: [
+      "orange",
+      "mango",
+      "toffee",
+      "smoke",
+      "grilled-fruit",
+      "salinity",
+    ],
+
+    description:
+      "A limited-edition Japanese blended malt from Mars, combining two single ex-bourbon barrels from Komagatake and Tsunuki. The whiskies were matured separately for 8 and 6 years at the Mars Yakushima Aging Cellar before being blended. Made from 20 ppm and 50 ppm peated malts and bottled at 51% ABV, Umashika balances tropical fruit, orange citrus, toffee, smoke, grilled fruit, and a lingering salty sweetness.",
+
+    bartenderNote:
+      "A complex high-proof Mars blended malt that combines mature fruit character with substantial peat. Orange, mango, grilled fruit, and toffee bring sweetness while the 20–50 ppm peat contributes deeper smoke and a salty finish. A strong choice for experienced drinkers who want fruit, smoke, and maritime character together.",
+
+    tags: ["featured", "limited-release", "rare", "double-cask"],
+  },
+  {
+    id: "mars-bakemono-8-hajikkaki",
+
+    name: "Mars Bakemono Zukushi #8 Hajikkaki",
+
+    distillery: "Mars Tsunuki",
+
+    country: "japan",
+
+    location: "Tsunuki Distillery, Kagoshima",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask"],
+
+    age: 5.5,
+
+    abv: 61,
+
+    price: 27,
+
+    priceRange: "premium",
+
+    image: "/images/whiskey/mars-bakemono-8-hajikkaki.png",
+
+    imageAlt:
+      "Bottle of Mars Bakemono Zukushi #8 Hajikkaki Japanese single malt whisky",
+
+    flavorNotes: ["apple", "orange", "vanilla", "peach", "mint", "oak"],
+
+    description:
+      "A limited-edition single-cask Japanese single malt distilled at Mars Tsunuki in Kagoshima and matured entirely at Mars Komagatake in Nagano. Distilled in January 2020 and bottled in June 2025 after 5 years and 5 months in a single ex-bourbon barrel. Made from 100% unpeated malted barley and bottled at a powerful 61% ABV, Hajikkaki showcases bright orchard fruit, citrus, vanilla, fresh herbs, and oak.",
+
+    bartenderNote:
+      "A powerful but elegant unpeated Tsunuki single cask with bright fruit and fresh herbal character. Apple, orange, peach, vanilla, and mint are supported by substantial oak and high proof, making it a great choice for experienced drinkers who prefer fruit-forward Japanese whisky without peat.",
+
+    tags: ["featured", "limited-release", "rare", "single-cask"],
+  },
+  {
+    id: "mars-bakemono-9-odoroshi",
+
+    name: "Mars Bakemono Zukushi #9 Odoroshi",
+
+    distillery: "Mars Komagatake",
+
+    country: "japan",
+
+    location: "Komagatake Distillery, Nagano",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["sherry-cask"],
+
+    age: 5.5,
+
+    abv: 59,
+
+    price: 29,
+
+    priceRange: "premium",
+
+    image: "/images/whiskey/mars-bakemono-9-odoroshi.png",
+
+    imageAlt:
+      "Bottle of Mars Bakemono Zukushi #9 Odoroshi Japanese single malt whisky",
+
+    flavorNotes: [
+      "red-apple",
+      "banana",
+      "hazelnut",
+      "smoke",
+      "dark-chocolate",
+      "dried-fruit",
+    ],
+
+    description:
+      "A limited-edition single-cask Japanese single malt from Mars Komagatake, distilled in January 2020 and bottled in June 2025 after 5 years and 5 months of maturation in a single ex-sherry barrel. Made from 100% malted barley peated to 20 ppm and bottled non-chill filtered at 59% ABV, Odoroshi combines rich sherry influence with elegant peat smoke, red fruit, tropical fruit, roasted nuts, and chocolate.",
+
+    bartenderNote:
+      "A rich and imposing Komagatake single cask with a beautiful combination of sherry sweetness and moderate peat. Red apple, banana, hazelnut, dried fruit, and chocolate sit beneath campfire smoke, making this an excellent choice for experienced drinkers who enjoy sherry-forward peated whisky.",
+
+    tags: ["featured", "limited-release", "rare", "single-cask"],
+  },
+  {
+    id: "komagatake-27-year",
+
+    name: "Komagatake 27 Year",
+
+    distillery: "Mars Komagatake",
+
+    country: "japan",
+
+    location: "Komagatake Distillery, Nagano",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["sherry-cask", "american-oak"],
+
+    age: 27,
+
+    abv: 46,
+
+    price: 300,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/komagatake-27-year.png",
+
+    imageAlt: "Bottle of Komagatake 27 Year Japanese single malt whisky",
+
+    flavorNotes: ["plum", "apricot", "vanilla", "dried-fruit", "oak", "spice"],
+
+    description:
+      "A rare 27-year-old Japanese single malt from Mars Komagatake, crafted from carefully selected long-aged malt whiskies distilled in 1986, 1988, and 1990. Matured in a combination of sherry and American oak casks, the whisky offers an exceptionally mature profile of plum, apricot, vanilla, dried fruit, oak, and warming spice.",
+
+    bartenderNote:
+      "An exceptionally rare, mature Japanese single malt with elegant dried-fruit sweetness and deep oak complexity. Plum, apricot, vanilla, and spice create a refined profile that rewards slow sipping and makes this an outstanding choice for collectors and experienced whisky drinkers.",
+
+    tags: ["featured", "limited-release", "rare", "discontinued"],
+  },
+  {
+    id: "komagatake-30-year-american-white-oak",
+
+    name: "Komagatake 1986 Aged 30 Years American White Oak",
+
+    distillery: "Mars Komagatake",
+
+    country: "japan",
+
+    location: "Komagatake Distillery, Nagano",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["american-white-oak"],
+
+    age: 30,
+
+    abv: 61,
+
+    price: 350,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/komagatake-30-year-american-white-oak.png",
+
+    imageAlt:
+      "Bottle of Komagatake 1986 Aged 30 Years American White Oak Japanese single malt whisky",
+
+    flavorNotes: ["vanilla", "apple", "pear", "oak", "caramel", "spice"],
+
+    description:
+      "A rare 30-year-old Japanese single malt distilled at Mars Komagatake in 1986 and matured in four American white oak casks. Bottled in 2016 at natural cask strength of 61% ABV, this historic pre-closure Komagatake expression delivers remarkable maturity with rounded sweetness, vanilla, orchard fruit, deep oak, and a long, complex finish.",
+
+    bartenderNote:
+      "An exceptionally rare piece of early Mars whisky history. Decades of maturation bring intense American oak, vanilla, orchard fruit, caramel, and spice together with remarkable depth and persistence. Best suited to collectors and experienced drinkers interested in historic Japanese single malt.",
+
+    tags: ["featured", "limited-release", "rare", "discontinued"],
+  },
+  {
+    id: "komagatake-3-year-cask-strength-2011",
+
+    name: "Komagatake 3 Year Cask Strength",
+
+    distillery: "Mars Komagatake",
+
+    country: "japan",
+
+    location: "Komagatake Distillery, Nagano",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["sherry-cask", "american-white-oak"],
+
+    age: 3,
+
+    abv: 57,
+
+    price: 60,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/komagatake-3-year-cask-strength.png",
+
+    imageAlt:
+      "Bottle of Komagatake 3 Year Old Cask Strength Japanese single malt whisky",
+
+    flavorNotes: ["apricot", "honey", "vanilla", "almond", "cinnamon", "malt"],
+
+    description:
+      "A young cask-strength Japanese single malt distilled at Mars Komagatake in 2011, the first year of production following the distillery's revival. Matured in a combination of sherry and American white oak casks and bottled in 2014 at natural cask strength, it offers an expressive profile of apricot, honey, vanilla, toasted malt, almond, and warm spice.",
+
+    bartenderNote:
+      "A fascinating early expression of the revived Komagatake distillery. Despite its young age, it shows surprising depth with apricot, honey, vanilla, toasted grain, almond, and cinnamon. A great choice for guests interested in historic Mars releases and high-proof Japanese single malt.",
+
+    tags: ["featured", "limited-release", "rare", "discontinued"],
+  },
+  {
+    id: "komagatake-double-cellars-2019",
+
+    name: "Komagatake Double Cellars Bottled in 2019",
+
+    distillery: "Mars Komagatake",
+
+    country: "japan",
+
+    location: "Komagatake Distillery, Nagano",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["american-white-oak", "bourbon-cask", "sherry-cask"],
+
+    age: 5,
+
+    abv: 47,
+
+    price: 65,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/komagatake-double-cellars-2019.png",
+
+    imageAlt:
+      "Bottle of Komagatake Double Cellars Bottled in 2019 Japanese single malt whisky",
+
+    flavorNotes: [
+      "apricot",
+      "orange",
+      "honey",
+      "vanilla",
+      "toffee",
+      "salinity",
+    ],
+
+    description:
+      "A limited-edition Japanese single malt from Mars Komagatake, distilled in Nagano and matured in two distinct environments: the Komagatake Distillery in Shinshu and the Mars Yakushima Aging Cellar. The different climates and cask types create a layered profile of apricot, bitter chocolate, citrus, honey, vanilla, gentle spice, and maritime salinity.",
+
+    bartenderNote:
+      "A fascinating expression of Mars's double-cellar maturation concept. Bright apricot and citrus combine with honey, vanilla, toffee, and subtle saltiness, making this an excellent choice for guests who enjoy fruit-forward Japanese single malts with unusual maturation character.",
+
+    tags: ["featured", "limited-release", "rare", "discontinued"],
+  },
+  {
+    id: "komagatake-ipa-cask-finish-2020",
+
+    name: "Komagatake IPA Cask Finish 2020",
+
+    distillery: "Mars Komagatake",
+
+    country: "japan",
+
+    location: "Komagatake Distillery, Nagano",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask", "ipa-cask"],
+
+    age: null,
+
+    abv: 52,
+
+    price: 55,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/komagatake-ipa-cask-finish-2020.png",
+
+    imageAlt:
+      "Bottle of Komagatake IPA Cask Finish 2020 Japanese single malt whisky",
+
+    flavorNotes: ["grapefruit", "orange", "citrus", "mint", "herbal", "hops"],
+
+    description:
+      "A limited-edition Komagatake single malt initially matured in ex-bourbon barrels before being finished in casks that previously held India Pale Ale brewed at the neighboring Minami Shinshu Beer Komagatake Brewery. The IPA casks contribute vibrant citrus, grapefruit and orange sweetness alongside fresh herbal and hoppy character, finishing with a distinctive crisp bitterness.",
+
+    bartenderNote:
+      "One of Mars's more experimental finishes. Bright grapefruit and orange combine with citrus, mint and fresh hops, followed by a clean, bitter IPA finish. A great recommendation for guests who enjoy refreshing, highball-friendly whiskies and unusual beer-cask finishes.",
+
+    tags: ["featured", "limited-release", "discontinued"],
+  },
+  {
+    id: "komagatake-ipa-cask-finish-2021",
+
+    name: "Komagatake IPA Cask Finish 2021",
+
+    distillery: "Mars Komagatake",
+
+    country: "japan",
+
+    location: "Komagatake Distillery, Nagano",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask", "ipa-cask"],
+
+    age: null,
+
+    abv: 52,
+
+    price: 55,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/komagatake-ipa-cask-finish-2021.png",
+
+    imageAlt:
+      "Bottle of Komagatake IPA Cask Finish 2021 Japanese single malt whisky",
+
+    flavorNotes: ["apple", "grapefruit", "orange", "honey", "vanilla", "hops"],
+
+    description:
+      "A limited-edition Komagatake single malt matured initially in ex-bourbon barrels before being finished in empty IPA casks from Minami Shinshu Beer at the Komagatake Brewery. The IPA casks contribute refreshing citrus and herbal hop character, while grapefruit, orange, apple, honey, vanilla, and a crisp hop bitterness create a distinctive and refreshing profile.",
+
+    bartenderNote:
+      "A highly distinctive beer-finished Japanese single malt. Bright citrus, apple, grapefruit, honey, and vanilla are followed by fresh hop character and a crisp bitter finish. An excellent recommendation for guests who enjoy experimental cask finishes, refreshing whisky, or highballs.",
+
+    tags: ["featured", "limited-release", "discontinued"],
+  },
+  {
+    id: "komagatake-ipa-cask-finish-2022",
+
+    name: "Komagatake IPA Cask Finish 2022",
+
+    distillery: "Mars Komagatake",
+
+    country: "japan",
+
+    location: "Komagatake Distillery, Nagano",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask", "ipa-cask"],
+
+    age: null,
+
+    abv: 52,
+
+    price: 55,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/komagatake-ipa-cask-finish-2022.png",
+
+    imageAlt:
+      "Bottle of Komagatake IPA Cask Finish 2022 Japanese single malt whisky",
+
+    flavorNotes: ["grapefruit", "orange", "citrus", "mint", "herbal", "hops"],
+
+    description:
+      "A limited-edition Komagatake single malt matured primarily in ex-bourbon barrels before being finished in casks that previously held India Pale Ale brewed at the neighboring Minami Shinshu Beer Komagatake Brewery. The IPA casks contribute refreshing citrus and grapefruit character, herbal notes, and a crisp bitter finish from the hops.",
+
+    bartenderNote:
+      "A bright and unusual Komagatake that showcases the influence of IPA cask finishing. Grapefruit, orange, citrus, mint, and herbs lead into a clean, bitter hop finish. An excellent recommendation for guests who enjoy experimental finishes or refreshing, highball-friendly whiskies.",
+
+    tags: ["featured", "limited-release", "discontinued"],
+  },
+  {
+    id: "komagatake-ipa-cask-finish-2023",
+
+    name: "Komagatake IPA Cask Finish 2023",
+
+    distillery: "Mars Komagatake",
+
+    country: "japan",
+
+    location: "Komagatake Distillery, Nagano",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask", "ipa-cask"],
+
+    age: null,
+
+    abv: 52,
+
+    price: 55,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/komagatake-ipa-cask-finish-2023.png",
+
+    imageAlt:
+      "Bottle of Komagatake IPA Cask Finish 2023 Japanese single malt whisky",
+
+    flavorNotes: [
+      "grapefruit",
+      "honey",
+      "ginger",
+      "elderflower",
+      "milk-chocolate",
+      "hops",
+    ],
+
+    description:
+      "A limited-edition Komagatake single malt matured in ex-bourbon barrels before being finished in casks that previously held India Pale Ale brewed with abundant hops at the neighboring Minami Shinshu Beer Komagatake Brewery. The 2023 release combines refreshing hop-derived citrus and herbal character with grapefruit sweetness, honey, ginger, elderflower, and a crisp bitter-spicy finish.",
+
+    bartenderNote:
+      "A distinctive beer-finished Japanese single malt with a surprisingly elegant floral and citrus profile. Grapefruit, honey, ginger, and elderflower lead into subtle milk chocolate and a clean hop bitterness. An excellent choice for guests who enjoy experimental cask finishes or refreshing high-proof whiskies.",
+
+    tags: ["featured", "limited-release", "discontinued"],
+  },
+  {
+    id: "komagatake-limited-edition-2018",
+
+    name: "Komagatake Limited Edition 2018",
+
+    distillery: "Mars Komagatake",
+
+    country: "japan",
+
+    location: "Komagatake Distillery, Nagano",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask", "american-white-oak"],
+
+    age: 3,
+
+    abv: 48,
+
+    price: 65,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/komagatake-limited-edition-2018.png",
+
+    imageAlt:
+      "Bottle of Komagatake Limited Edition 2018 Japanese single malt whisky",
+
+    flavorNotes: ["plum", "floral", "citrus", "vanilla", "malt", "smoke"],
+
+    description:
+      "The 2018 limited-edition single malt from Mars Komagatake, created from malt whiskies matured for more than three years in ex-bourbon and American white oak casks in Shinshu. The whisky combines ripe plum and floral aromas with subtle peat, followed by bright citrus and a long, pleasant finish. It served as a precursor to the future standard Single Malt KOMAGATAKE.",
+
+    bartenderNote:
+      "A bright and lightly smoky early expression of the revived Komagatake distillery. Ripe plum, floral notes, citrus, vanilla, and malt are balanced by gentle peat, making it an excellent choice for guests who enjoy elegant fruit-forward Japanese single malts with restrained smoke.",
+
+    tags: ["featured", "limited-release", "rare", "discontinued"],
+  },
+  {
+    id: "komagatake-limited-edition-2019",
+
+    name: "Komagatake Limited Edition 2019",
+
+    distillery: "Mars Komagatake",
+
+    country: "japan",
+
+    location: "Komagatake Distillery, Nagano",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask", "american-white-oak", "sherry-cask"],
+
+    age: null,
+
+    abv: 48,
+
+    price: 65,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/komagatake-limited-edition-2019.png",
+
+    imageAlt:
+      "Bottle of Komagatake Limited Edition 2019 Japanese single malt whisky",
+
+    flavorNotes: ["apricot", "plum", "orange", "honey", "vanilla", "smoke"],
+
+    description:
+      "A limited-edition Japanese single malt bottled in 2019, composed primarily of malt whiskies matured in ex-bourbon barrels in the natural environment of Shinshu. Supporting maturation in American white oak and sherry casks adds depth to the whisky's ripe stone-fruit, citrus, honeyed, and lightly smoky character.",
+
+    bartenderNote:
+      "A fruit-forward Komagatake with ripe apricot and plum at the center, followed by orange marmalade, honey, vanilla, and gentle smoke. A refined choice for guests who enjoy elegant Japanese single malts with orchard and stone fruit rather than heavy peat.",
+
+    tags: ["featured", "limited-release", "rare", "discontinued"],
+  },
+  {
+    id: "komagatake-limited-edition-2020",
+
+    name: "Komagatake Limited Edition 2020",
+
+    distillery: "Mars Komagatake",
+
+    country: "japan",
+
+    location: "Komagatake Distillery, Nagano",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["sherry-cask", "american-white-oak"],
+
+    age: null,
+
+    abv: 50,
+
+    price: 65,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/komagatake-limited-edition-2020.png",
+
+    imageAlt:
+      "Bottle of Komagatake Limited Edition 2020 Japanese single malt whisky",
+
+    flavorNotes: ["plum", "honey", "vanilla", "orange", "cocoa", "dried-fruit"],
+
+    description:
+      "A limited-edition Japanese single malt bottled in 2020, composed primarily of malt whiskies matured in sherry and American white oak casks in the natural environment of Shinshu. Rich mature plum leads into elegant honey and vanilla, followed by orange fruit, cocoa-like bitterness, and a gentle sweet finish.",
+
+    bartenderNote:
+      "A richer and more sherry-influenced Komagatake than the 2018 and 2019 Limited Editions. Plum and dried fruit combine with honey, vanilla, orange, and cocoa, creating a full-bodied but gentle profile that works especially well for guests who prefer fruit and dessert notes over peat.",
+
+    tags: ["featured", "limited-release", "rare", "discontinued"],
+  },
+  {
+    id: "komagatake-limited-edition-2021",
+
+    name: "Komagatake Limited Edition 2021",
+
+    distillery: "Mars Komagatake",
+
+    country: "japan",
+
+    location: "Komagatake Distillery, Nagano",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask", "sherry-cask", "american-white-oak"],
+
+    age: null,
+
+    abv: 48,
+
+    price: 65,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/komagatake-limited-edition-2021.png",
+
+    imageAlt:
+      "Bottle of Komagatake Limited Edition 2021 Japanese single malt whisky",
+
+    flavorNotes: ["apricot", "plum", "honey", "vanilla", "melon", "hazelnut"],
+
+    description:
+      "A limited-edition Japanese single malt from Mars Komagatake, distilled and matured entirely at the Shinshu Distillery in Nagano. Built from malt whiskies matured primarily in ex-bourbon and ex-sherry American oak casks, the 2021 edition delivers ripe stone fruit, honey, vanilla, melon, dried persimmon, and nutty sherry character with a smooth, elegant finish.",
+
+    bartenderNote:
+      "A fruit-forward and polished Komagatake with ripe apricot and plum, honeyed sweetness, creamy vanilla, melon, and hazelnut. A great choice for guests who prefer elegant Japanese single malts with fruit and gentle sherry influence rather than pronounced peat.",
+
+    tags: ["featured", "limited-release", "rare", "discontinued"],
+  },
+  {
+    id: "komagatake-2022-edition",
+
+    name: "Komagatake 2022 Edition",
+
+    distillery: "Mars Komagatake",
+
+    country: "japan",
+
+    location: "Komagatake Distillery, Nagano",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask", "sherry-cask", "port-cask"],
+
+    age: null,
+
+    abv: 50,
+
+    price: 65,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/komagatake-2022-edition.png",
+
+    imageAlt: "Bottle of Komagatake 2022 Edition Japanese single malt whisky",
+
+    flavorNotes: [
+      "grapefruit",
+      "passion-fruit",
+      "kiwi",
+      "prune",
+      "hazelnut",
+      "oak",
+    ],
+
+    description:
+      "The 2022 annual edition of Mars Komagatake single malt, composed primarily of malt whiskies matured in ex-bourbon barrels and accented with whiskies matured in sherry and port casks. The whisky combines elegant fruit character with honeyed dried fruit, nuts, gentle oak, and a pleasant balance of sweetness and acidity.",
+
+    bartenderNote:
+      "A fruit-forward Komagatake with a noticeably different profile from the earlier Limited Editions. Bright grapefruit, passion fruit, and kiwi are complemented by honeyed prune and hazelnut, while the bourbon, sherry, and port casks add depth and gentle oak. A good choice for guests who enjoy fruity, slightly wine-influenced Japanese single malts.",
+
+    tags: ["featured", "annual-release", "discontinued"],
+  },
+  {
+    id: "komagatake-2023-edition",
+
+    name: "Komagatake 2023 Edition",
+
+    distillery: "Mars Komagatake",
+
+    country: "japan",
+
+    location: "Komagatake Distillery, Nagano",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask", "sherry-cask", "port-cask"],
+
+    age: null,
+
+    abv: 50,
+
+    price: 55,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/komagatake-2023-edition.png",
+
+    imageAlt: "Bottle of Komagatake 2023 Edition Japanese single malt whisky",
+
+    flavorNotes: [
+      "apricot",
+      "grapefruit",
+      "vanilla",
+      "persimmon",
+      "hazelnut",
+      "chocolate",
+    ],
+
+    description:
+      "The 2023 annual edition of Mars Komagatake single malt, composed of malt whiskies matured primarily in ex-bourbon barrels with supporting sherry and port cask influence. The whisky combines bright apricot and citrus with ripe persimmon, vanilla, hazelnut, chocolate, and gentle sherry-derived sweetness.",
+
+    bartenderNote:
+      "A fruit-forward and polished Komagatake with bright apricot and grapefruit balanced by vanilla, persimmon, hazelnut, and chocolate. A strong choice for guests who enjoy elegant Japanese single malts with fruit and subtle sherry richness rather than pronounced peat.",
+
+    tags: ["featured", "annual-release", "limited-release", "discontinued"],
+  },
+  {
+    id: "komagatake-nature-of-shinshu-kohiganzakura",
+
+    name: "Komagatake Nature of Shinshu Kohiganzakura",
+
+    distillery: "Mars Komagatake",
+
+    country: "japan",
+
+    location: "Komagatake Distillery, Nagano",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["american-oak", "sherry-cask"],
+
+    age: null,
+
+    abv: 52,
+
+    price: 60,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/komagatake-kohiganzakura.png",
+
+    imageAlt:
+      "Bottle of Komagatake Nature of Shinshu Kohiganzakura Japanese single malt whisky",
+
+    flavorNotes: [
+      "berry",
+      "floral",
+      "honey",
+      "vanilla",
+      "white-pepper",
+      "smoke",
+    ],
+
+    description:
+      "A limited-edition Komagatake single malt from Mars's Nature of Shinshu series. The whisky combines young malt distilled in 2013 with malt whisky aged for more than 20 years, creating an unusual balance of youthful vibrancy and mature depth. Sweet and spicy aromas from the long-aged malt combine with gentle peat, floral character, bright berry fruit, and a smooth, full-bodied palate.",
+
+    bartenderNote:
+      "A fascinating bridge between young and mature Mars whisky. Bright berry fruit and floral notes sit alongside honeyed sweetness, white pepper, vanilla, and gentle peat. A great recommendation for guests interested in historic Japanese whisky or unusual age blending.",
+
+    tags: ["featured", "limited-release", "rare", "discontinued"],
+  },
+  {
+    id: "komagatake-nature-of-shinshu-rindo",
+
+    name: "Komagatake Nature of Shinshu Rindo",
+
+    distillery: "Mars Komagatake",
+
+    country: "japan",
+
+    location: "Komagatake Distillery, Nagano",
+
+    style: "japanese-whisky",
+
+    barrelTypes: [],
+
+    age: null,
+
+    abv: 52,
+
+    price: 60,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/komagatake-nature-of-shinshu-rindo.png",
+
+    imageAlt:
+      "Bottle of Komagatake Nature of Shinshu Rindo Japanese single malt whisky",
+
+    flavorNotes: ["dried-fruit", "malt", "orange", "plum", "honey", "oak"],
+
+    description:
+      "The inaugural release in Mars Komagatake's Nature of Shinshu series, inspired by Rindo (gentian), the alpine flower associated with Nagano Prefecture. The whisky combines malt distilled in 2012 with rare malt whiskies aged for more than 20 years, creating a rich and harmonious profile that balances youthful malt character with mature dried-fruit depth.",
+
+    bartenderNote:
+      "A fascinating piece of early Mars history and the first Nature of Shinshu release. The combination of young 2012 malt with more than 20-year-old stocks gives Rindo unusual depth, with dried fruit, rich malt, plum, honey, and gentle oak. A strong choice for guests interested in mature Japanese whisky character without a conventional age statement.",
+
+    tags: ["featured", "limited-release", "rare", "discontinued"],
+  },
+  {
+    id: "komagatake-nature-of-shinshu-shinanotanpopo",
+
+    name: "Komagatake Nature of Shinshu Shinanotanpopo",
+
+    distillery: "Mars Komagatake",
+
+    country: "japan",
+
+    location: "Komagatake Distillery, Nagano",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask", "american-white-oak", "sherry-cask"],
+
+    age: null,
+
+    abv: 52,
+
+    price: 65,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/komagatake-shinanotanpopo.png",
+
+    imageAlt:
+      "Bottle of Komagatake Nature of Shinshu Shinanotanpopo Japanese single malt whisky",
+
+    flavorNotes: [
+      "berry",
+      "apple",
+      "vanilla",
+      "honey",
+      "dark-chocolate",
+      "smoke",
+    ],
+
+    description:
+      "The third release in Mars Komagatake's Nature of Shinshu series, inspired by the Shinano dandelion native to Nagano Prefecture. The whisky is composed primarily of malt distilled in 2014 and matured in ex-bourbon and American white oak casks, vatted with rare malt whiskies aged for more than 20 years, including sherry-cask-matured stock. The result is a complex single malt combining youthful malt character with mature fruit, sweetness, spice, and gentle smoke.",
+
+    bartenderNote:
+      "A fascinating Mars expression that combines young Komagatake spirit with rare pre-revival-era malt. Berry and orchard fruit meet vanilla, honey, dark chocolate, and subtle smoke, creating a much deeper profile than its NAS designation suggests.",
+
+    tags: ["featured", "limited-release", "rare", "discontinued"],
+  },
+  {
+    id: "komagatake-tsunuki-aging-2018",
+
+    name: "Komagatake Tsunuki Aging Bottled in 2018",
+
+    distillery: "Mars Komagatake",
+
+    country: "japan",
+
+    location: "Komagatake Distillery, Nagano / Tsunuki Distillery, Kagoshima",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask"],
+
+    age: 3,
+
+    abv: 57,
+
+    price: 65,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/komagatake-tsunuki-aging-2018.png",
+
+    imageAlt:
+      "Bottle of Komagatake Tsunuki Aging Bottled in 2018 Japanese single malt whisky",
+
+    flavorNotes: [
+      "cherry",
+      "green-tea",
+      "brown-sugar",
+      "caramel",
+      "vanilla",
+      "bitter-chocolate",
+    ],
+
+    description:
+      "A limited-edition Komagatake single malt distilled in 2015 at the Mars Komagatake Distillery and transferred to the stone warehouse at Mars Tsunuki Distillery in Kagoshima for maturation. Composed primarily of malt whisky matured in ex-bourbon barrels, the warmer southern aging environment contributes delicate fruit aromas, brown sugar and caramel sweetness, a substantial body, and a long, pleasantly bitter finish.",
+
+    bartenderNote:
+      "A fascinating example of Mars's cross-climate aging program. Cherry and green tea lead into brown sugar, caramel, and vanilla, while the southern Tsunuki maturation gives the whisky a fuller body and lingering bitter finish. A strong choice for guests interested in unusual maturation environments and high-proof Japanese single malt.",
+
+    tags: ["featured", "limited-release", "rare", "discontinued"],
+  },
+  {
+    id: "komagatake-tsunuki-aging-2019",
+
+    name: "Komagatake Tsunuki Aging Bottled in 2019",
+
+    distillery: "Mars Komagatake",
+
+    country: "japan",
+
+    location: "Komagatake Distillery, Nagano / Tsunuki Distillery, Kagoshima",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask"],
+
+    age: 3,
+
+    abv: 56,
+
+    price: 65,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/komagatake-tsunuki-aging-2019.png",
+
+    imageAlt:
+      "Bottle of Komagatake Tsunuki Aging Bottled in 2019 Japanese single malt whisky",
+
+    flavorNotes: [
+      "apple",
+      "orange",
+      "whipped-cream",
+      "red-bean",
+      "honey",
+      "malt",
+    ],
+
+    description:
+      "A limited-edition Komagatake single malt distilled in 2016 at the Mars Shinshu Distillery and matured at the stone warehouse of Mars Tsunuki Distillery in Kagoshima. Composed primarily of malt whisky matured in ex-bourbon barrels, the whisky develops ripe apple and citrus aromas followed by rich whipped-cream and sweet red-bean character. The palate is full-bodied, rich, and fruit-forward.",
+
+    bartenderNote:
+      "A high-proof, fruit-forward example of Komagatake's Tsunuki aging series. Ripe apple and citrus lead into creamy sweetness and red-bean confectionery notes, with a substantial body. A great recommendation for guests who enjoy unusual maturation environments and rich, sweet Japanese single malts.",
+
+    tags: ["featured", "limited-release", "rare", "discontinued"],
+  },
+  {
+    id: "mars-malt-duo-komagatake-chichibu",
+
+    name: "Mars Malt Duo Komagatake × Chichibu",
+
+    distillery: "Mars Komagatake / Chichibu",
+
+    country: "japan",
+
+    location: "Mars Komagatake Distillery, Nagano",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask", "american-white-oak", "sherry-cask"],
+
+    age: null,
+
+    abv: 54,
+
+    price: 75,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/mars-malt-duo-komagatake-chichibu.png",
+
+    imageAlt:
+      "Bottle of Mars Malt Duo Komagatake Chichibu Japanese blended malt whisky",
+
+    flavorNotes: [
+      "apple",
+      "cherry",
+      "strawberry",
+      "vanilla",
+      "chocolate",
+      "brown-sugar",
+    ],
+
+    description:
+      "A landmark Japanese blended malt collaboration between Mars Komagatake and Venture Whisky's Chichibu Distillery. The project began in 2015 with an exchange of new-make malt spirit between the two distilleries. For this 2021 release, Komagatake and Chichibu malt whiskies were matured at the Mars Komagatake Distillery before being vatted together. The result combines bright orchard and red-fruit character with vanilla, brown sugar, chocolate, spice, and oak.",
+
+    bartenderNote:
+      "A historically significant Japanese whisky collaboration that brings together the fruit-forward character of Chichibu with the elegant malt profile of Komagatake. Apple, cherry, strawberry, vanilla, brown sugar, and chocolate make this an excellent recommendation for guests interested in distinctive Japanese blended malts.",
+
+    tags: ["featured", "limited-release", "rare", "collaboration"],
+  },
+  {
+    id: "komagatake-yakushima-aging-2019",
+
+    name: "Komagatake Yakushima Aging Bottled in 2019",
+
+    distillery: "Mars Komagatake",
+
+    country: "japan",
+
+    location: "Komagatake Distillery, Nagano / Yakushima Aging Cellar",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["sherry-cask"],
+
+    age: 3,
+
+    abv: 58,
+
+    price: 70,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/komagatake-yakushima-aging-2019.png",
+
+    imageAlt:
+      "Bottle of Komagatake Yakushima Aging Bottled in 2019 Japanese single malt whisky",
+
+    flavorNotes: [
+      "honey",
+      "apricot",
+      "bitter-chocolate",
+      "coffee",
+      "pepper",
+      "smoke",
+    ],
+
+    description:
+      "A limited-edition Komagatake single malt distilled in 2015 at Mars Shinshu Distillery and matured on Yakushima Island in southern Japan. The whisky is a vatting of malt whiskies primarily matured in sherry casks in the Mars Yakushima Aging Cellar. The warm, humid island environment contributes pronounced peat character, while the sherry casks provide rich bitter chocolate and coffee notes.",
+
+    bartenderNote:
+      "A powerful early example of Mars's Yakushima aging experiment. Honey and dried apricot meet pronounced peat, bitter chocolate, coffee, and pepper, creating a rich sweet-and-bitter profile with a long finish. An excellent choice for guests who enjoy sherry-driven, smoky whisky with unusual tropical maturation.",
+
+    tags: ["featured", "limited-release", "rare", "discontinued"],
+  },
+  {
+    id: "komagatake-yakushima-aging-2020",
+
+    name: "Komagatake Yakushima Aging Bottled in 2020",
+
+    distillery: "Mars Komagatake",
+
+    country: "japan",
+
+    location: "Komagatake Distillery, Nagano / Yakushima Aging Cellar",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask"],
+
+    age: null,
+
+    abv: 53,
+
+    price: 70,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/komagatake-yakushima-aging-2020.png",
+
+    imageAlt:
+      "Bottle of Komagatake Yakushima Aging Bottled in 2020 Japanese single malt whisky",
+
+    flavorNotes: [
+      "citrus",
+      "pineapple",
+      "vanilla",
+      "custard",
+      "tropical-fruit",
+      "peat",
+    ],
+
+    description:
+      "A limited-edition Komagatake single malt distilled at the Mars Komagatake Distillery and matured on Yakushima Island. Selected malt whiskies from the Mars Yakushima Aging Cellar, primarily matured in ex-bourbon barrels, were vatted to create a whisky with juicy citrus, tropical fruit, subtle peat, vanilla, custard cream, and a robust fruit-forward character influenced by Yakushima's warm, humid climate.",
+
+    bartenderNote:
+      "A bright, tropical expression of Komagatake that showcases the influence of Yakushima maturation. Juicy citrus and tropical fruit lead into vanilla and custard sweetness with a subtle touch of peat. A great recommendation for guests who prefer fruity, creamy Japanese whisky over heavy smoke or sherry.",
+
+    tags: ["featured", "limited-release", "rare", "discontinued"],
+  },
+  {
+    id: "komagatake-yakushima-aging-2021",
+
+    name: "Komagatake Yakushima Aging Bottled in 2021",
+
+    distillery: "Mars Komagatake",
+
+    country: "japan",
+
+    location: "Komagatake Distillery, Nagano / Yakushima Aging Cellar",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask"],
+
+    age: 3,
+
+    abv: 56,
+
+    price: 70,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/komagatake-yakushima-aging-2021.png",
+
+    imageAlt:
+      "Bottle of Komagatake Yakushima Aging Bottled in 2021 Japanese single malt whisky",
+
+    flavorNotes: [
+      "banana",
+      "orange",
+      "vanilla",
+      "honey",
+      "maple-syrup",
+      "peat",
+    ],
+
+    description:
+      "The fourth release in Mars Komagatake's Yakushima Aging series. Malt whisky aged for 3–5 years primarily in ex-bourbon barrels at the Mars Yakushima Aging Cellar delivers rich vanilla and tropical fruit aromas, especially banana, followed by honey and maple-syrup sweetness and a distinctive earthy peat character.",
+
+    bartenderNote:
+      "A sweet, tropical, lightly smoky expression of Komagatake. Banana, orange, vanilla, honey, and maple syrup create a rich fruit-and-dessert profile, while earthy peat develops later on the palate and lingers through the finish.",
+
+    tags: ["featured", "limited-release", "rare", "discontinued"],
+  },
+  {
+    id: "lucky-cat-hana",
+
+    name: "The Lucky Cat Hana",
+
+    distillery: "Mars Komagatake",
+
+    country: "japan",
+
+    location: "Komagatake Distillery, Nagano",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["oloroso-sherry-cask"],
+
+    age: null,
+
+    abv: 43,
+
+    price: 45,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/lucky-cat-hana.png",
+
+    imageAlt: "Bottle of The Lucky Cat Hana blended Japanese whisky",
+
+    flavorNotes: [
+      "stone-fruit",
+      "cherry",
+      "plum",
+      "brown-sugar",
+      "maple-syrup",
+      "spice",
+    ],
+
+    description:
+      "The fifth release in Mars Whisky's Lucky Cat series, The Lucky Cat Hana is a blended whisky of malt and grain spirits finished in Oloroso Sherry casks. Inspired by Hana, a gentle and affectionate cat from the Hombo family, the whisky combines rich fruit character with warm spice and gentle brown-sugar and maple-syrup sweetness.",
+
+    bartenderNote:
+      "A soft, fruit-forward Lucky Cat with a pronounced Oloroso Sherry influence. Cherry, plum, and other stone fruit lead into warm spice, brown sugar, and maple syrup. An excellent choice for guests looking for an approachable, sweet, dessert-like Japanese blend.",
+
+    tags: ["featured", "limited-release", "discontinued"],
+  },
+  {
+    id: "lucky-cat-luna",
+
+    name: "The Lucky Cat Luna",
+
+    distillery: "Mars Komagatake",
+
+    country: "japan",
+
+    location: "Komagatake Distillery, Nagano",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["manzanilla-sherry-cask", "oloroso-sherry-cask"],
+
+    age: null,
+
+    abv: 40,
+
+    price: 45,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/lucky-cat-luna.png",
+
+    imageAlt: "Bottle of The Lucky Cat Luna blended Japanese whisky",
+
+    flavorNotes: [
+      "dried-fruit",
+      "orange",
+      "nutty",
+      "brown-sugar",
+      "dark-chocolate",
+      "spice",
+    ],
+
+    description:
+      "The seventh release in Mars Whisky's Lucky Cat series, The Lucky Cat Luna is a blended whisky finished in both Manzanilla and Oloroso Sherry casks. Inspired by Luna, a playful calico cat who joined the Hombo family in 2020, the double-sherry finish creates a balance of sweetness and pleasant bitterness with rich dried-fruit and nutty character.",
+
+    bartenderNote:
+      "A sherry-driven Lucky Cat with more depth and bitterness than the earlier Hana release. Dried fruit, orange, nutty sherry character, brown sugar, dark chocolate, and warm spice make this an excellent choice for guests who prefer richer, sweeter whiskies with a slightly bitter finish.",
+
+    tags: ["featured", "limited-release", "discontinued"],
+  },
+  {
+    id: "lucky-cat-may-luna",
+
+    name: "The Lucky Cat Double Individuals May & Luna",
+
+    distillery: "Mars Komagatake",
+
+    country: "japan",
+
+    location: "Komagatake Distillery, Nagano",
+
+    style: "blended-whisky",
+
+    barrelTypes: ["cherry-cask", "sherry-cask"],
+
+    age: null,
+
+    abv: 43,
+
+    price: 45,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/lucky-cat-may-luna.png",
+
+    imageAlt:
+      "Bottle of The Lucky Cat Double Individuals May and Luna Japanese blended whisky",
+
+    flavorNotes: ["cherry", "apricot", "honey", "vanilla", "lemon", "peat"],
+
+    description:
+      "The eighth release in Mars Whisky's Lucky Cat series, The Lucky Cat Double Individuals May & Luna combines malt and grain whiskies to represent the contrasting personalities of May and Luna. Cherry cask influence provides a distinctive fruity aroma, followed by gentle peat and a sweet, creamy profile of apricot, honey, vanilla, and citrus.",
+
+    bartenderNote:
+      "A playful but surprisingly complex Mars blend. Cherry and stone-fruit sweetness lead into honey, vanilla, lemon, and gentle peat. A great recommendation for guests who want something approachable and fruity but with enough smoke and spice to keep it interesting.",
+
+    tags: ["featured", "limited-release", "discontinued"],
+  },
+  {
+    id: "lucky-cat-ash-99",
+
+    name: "The Lucky Cat Ash 99",
+
+    distillery: "Mars",
+
+    country: "japan",
+
+    location: "Shinshu / Mars",
+
+    style: "blended-whisky",
+
+    barrelTypes: ["bourbon-cask", "sherry-cask"],
+
+    age: null,
+
+    abv: 43,
+
+    price: 45,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/lucky-cat-ash-99.png",
+
+    imageAlt: "Bottle of The Lucky Cat Ash 99 Japanese blended whisky",
+
+    flavorNotes: [
+      "orange",
+      "mint",
+      "herbal",
+      "vanilla",
+      "cooked-apple",
+      "ginger",
+    ],
+
+    description:
+      "The second release in Mars Whisky's Lucky Cat series, The Lucky Cat Ash 99 is a blend of malt and grain whisky. The malt component is matured in bourbon and sherry casks before being blended with grain whisky, creating a soft and aromatic profile with fresh orange and marmalade, mint and herbs, vanilla, cooked fruit, and gentle spice.",
+
+    bartenderNote:
+      "A bright and aromatic Lucky Cat with fresh citrus and herbal character up front, followed by vanilla, cooked apple, and warming ginger spice. A particularly approachable Mars blend for guests who enjoy fruity, sweet, and lightly spicy whisky without heavy smoke.",
+
+    tags: ["featured", "limited-release", "rare", "discontinued"],
+  },
+  {
+    id: "lucky-cat-choco",
+
+    name: "The Lucky Cat Choco",
+
+    distillery: "Mars Komagatake",
+
+    country: "japan",
+
+    location: "Komagatake Distillery, Nagano",
+
+    style: "blended-whisky",
+
+    barrelTypes: ["port-pipe"],
+
+    age: null,
+
+    abv: 40,
+
+    price: 45,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/lucky-cat-choco.png",
+
+    imageAlt: "Bottle of The Lucky Cat Choco Japanese blended whisky",
+
+    flavorNotes: [
+      "dark-chocolate",
+      "cocoa",
+      "brown-sugar",
+      "vanilla",
+      "raisin",
+      "cinnamon",
+    ],
+
+    description:
+      "The sixth release in Mars Whisky's Lucky Cat series, The Lucky Cat Choco is a blended whisky made from malt and grain whisky and finished in Port pipes. The Port finish brings together rich sweetness and nuttiness with balanced tannins, leading to a lingering cocoa-like finish.",
+
+    bartenderNote:
+      "A dessert-driven Lucky Cat with rich chocolate and Port-cask character. Dark chocolate, cocoa, brown sugar, vanilla, raisin, and cinnamon create a creamy, sweet profile with enough tannin to keep it balanced.",
+
+    tags: ["featured", "limited-release", "discontinued"],
+  },
+  {
+    id: "lucky-cat-may",
+
+    name: "The Lucky Cat May",
+
+    distillery: "Mars",
+
+    country: "japan",
+
+    location: "Tsunuki Distillery, Kagoshima",
+
+    style: "blended-whisky",
+
+    barrelTypes: ["umeshu-cask"],
+
+    age: null,
+
+    abv: 40,
+
+    price: 45,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/lucky-cat-may.png",
+
+    imageAlt: "Bottle of The Lucky Cat May Japanese blended whisky",
+
+    flavorNotes: [
+      "green-plum",
+      "plum",
+      "citrus",
+      "honey",
+      "brown-sugar",
+      "bitter",
+    ],
+
+    description:
+      "The fourth release in Mars Whisky's Lucky Cat series, The Lucky Cat May is a blended whisky of malt and grain finished in casks previously used to mature umeshu at the Mars Tsunuki Distillery. The umeshu casks impart a fresh Japanese green-plum character, while the whisky retains a light body with a balance of sweetness and gentle bitterness.",
+
+    bartenderNote:
+      "A light, fruit-forward Japanese blend with distinctive Japanese plum character. Fresh green plum leads into gentle sweetness and a pleasantly bitter finish. An excellent recommendation for guests who enjoy lighter, refreshing whiskies or unusual fruit-cask finishes.",
+
+    tags: ["featured", "limited-release", "discontinued"],
+  },
+  {
+    id: "lucky-cat-mint",
+
+    name: "The Lucky Cat Mint",
+
+    distillery: "Mars Komagatake",
+
+    country: "japan",
+
+    location: "Komagatake Distillery, Nagano",
+
+    style: "blended-whisky",
+
+    barrelTypes: [],
+
+    age: null,
+
+    abv: 43,
+
+    price: 45,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/lucky-cat-mint.png",
+
+    imageAlt: "Bottle of The Lucky Cat Mint Japanese blended whisky",
+
+    flavorNotes: ["honey", "vanilla", "peach", "apple", "oak", "spice"],
+
+    description:
+      "The third release in Mars Whisky's Lucky Cat series, The Lucky Cat Mint is a blended whisky made from malt and grain whisky. Inspired by Mint, a beloved cat from the Hombo family, the whisky offers sweet honey and vanilla aromas followed by a dry, woody palate and a refreshing finish.",
+
+    bartenderNote:
+      "A light and approachable Lucky Cat with honeyed sweetness, soft vanilla, orchard fruit, and gentle oak spice. The dry woody palate keeps it from becoming overly sweet, while the refreshing finish makes it an easy recommendation for guests who prefer lighter Japanese blends.",
+
+    tags: ["featured", "limited-release", "discontinued"],
+  },
+  {
+    id: "lucky-cat-sun",
+
+    name: "The Lucky Cat Sun",
+
+    distillery: "Mars Komagatake",
+
+    country: "japan",
+
+    location: "Komagatake Distillery, Nagano",
+
+    style: "blended-whisky",
+
+    barrelTypes: ["port-cask", "madeira-cask"],
+
+    age: null,
+
+    abv: 39,
+
+    price: 75,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/lucky-cat-sun.png",
+
+    imageAlt:
+      "Bottle of The Lucky Cat Sun Port and Madeira Cask Finish Japanese blended whisky",
+
+    flavorNotes: [
+      "tropical-fruit",
+      "pineapple",
+      "plum",
+      "raisin",
+      "vanilla",
+      "dried-fruit",
+    ],
+
+    description:
+      "The inaugural release in Mars Whisky's Lucky Cat series. A blended whisky made from selected malt and grain spirits and finished in empty Port and Madeira wine casks for approximately two years. Bottled at 39% ABV without chill filtration and with minimal filtration, Sun is characterized by a sweet, exotic fruit-forward profile.",
+
+    bartenderNote:
+      "The original Lucky Cat and one of the most distinctive bottles in the series. Port and Madeira maturation give the whisky a sweet, exotic character with tropical and dried fruit, while vanilla and plum add depth. A great recommendation for guests who enjoy fruit-forward, wine-finished whiskies.",
+
+    tags: ["featured", "limited-release", "rare", "discontinued"],
+  },
+  {
+    id: "mars-maltage-3-plus-25",
+
+    name: "Mars Maltage 3+25",
+
+    distillery: "Mars Shinshu",
+
+    country: "japan",
+
+    location: "Kagoshima / Yamanashi / Nagano",
+
+    style: "blended-malt",
+
+    barrelTypes: [],
+
+    age: 28,
+
+    abv: 46,
+
+    price: 350,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/mars-maltage-3-plus-25.png",
+
+    imageAlt:
+      "Bottle of Mars Maltage 3+25 28 Year Japanese blended malt whisky",
+
+    flavorNotes: [
+      "dried-fruit",
+      "vanilla",
+      "honey",
+      "lemon",
+      "butterscotch",
+      "floral",
+    ],
+
+    description:
+      "A historic Mars blended malt composed of 3-year-old malt whisky from Kagoshima and Yamanashi that was subsequently matured for another 25 years at the Mars Shinshu Distillery in Nagano. The resulting 28-year-old whisky develops rich dried-fruit sweetness, vanilla, honey, citrus, butterscotch, and floral character with a long, elegant finish.",
+
+    bartenderNote:
+      "One of Mars's most historically significant whiskies and a World Whiskies Awards winner. Long maturation gives it remarkable dried-fruit, vanilla, honey, and butterscotch depth while lemon and floral notes keep the profile lively. A bottle for experienced Japanese-whisky drinkers and collectors.",
+
+    tags: ["featured", "award-winning", "rare", "discontinued"],
+  },
+  {
+    id: "mars-asagi-madara",
+
+    name: "Mars Asagi Madara",
+
+    distillery: "Mars Komagatake",
+
+    country: "japan",
+
+    location: "Komagatake Distillery, Nagano",
+
+    style: "blended-whisky",
+
+    barrelTypes: [],
+
+    age: 8,
+
+    abv: 48,
+
+    price: 55,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/mars-asagi-madara.png",
+
+    imageAlt: "Bottle of Mars Asagi Madara Japanese blended whisky",
+
+    flavorNotes: ["apple", "plum", "vanilla", "malt", "smoke", "herbal"],
+
+    description:
+      "An 8-year-old blended Japanese whisky released in 2020 to commemorate the 35th anniversary of the Mars Komagatake Distillery. It combines malt whisky distilled in the original Shinshu pot stills with domestically produced grain whisky, both aged for more than eight years in Shinshu. The whisky has a refreshing, forest-like character inspired by the Central Alps surrounding the distillery.",
+
+    bartenderNote:
+      "A refreshing and approachable Mars blend with apple and plum fruit, soft vanilla sweetness, gentle malt, and a light peaty finish. A good choice for guests looking for an elegant Japanese blend with a little smoke but without the intensity of a heavily peated whisky.",
+
+    tags: ["featured", "limited-release", "award-winning", "discontinued"],
   },
   {
     id: "mars-the-ya-01",
@@ -3430,6 +5314,50 @@ export const whiskeyCollection = [
     tags: ["featured", "limited-release"],
   },
   {
+    id: "tsunuki-2022-edition",
+
+    name: "Single Malt TSUNUKI 2022 Edition",
+
+    distillery: "Mars Tsunuki",
+
+    country: "japan",
+
+    location: "Tsunuki Distillery, Kagoshima",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask"],
+
+    age: null,
+
+    abv: 50,
+
+    price: 60,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/tsunuki-2022-edition.png",
+
+    imageAlt: "Bottle of Mars Single Malt Tsunuki 2022 Edition Japanese whisky",
+
+    flavorNotes: [
+      "apricot",
+      "peach",
+      "orange",
+      "vanilla",
+      "dark-chocolate",
+      "maple-syrup",
+    ],
+
+    description:
+      "The 2022 Edition of Mars Tsunuki single malt, produced at the Tsunuki Distillery in Kagoshima. Primarily composed of malt whisky matured in ex-bourbon barrels, the whisky balances deep sweetness with fresh fruitiness, bringing together stone fruit, citrus, vanilla, chocolate, and gentle oak spice.",
+
+    bartenderNote:
+      "A rich but fruit-forward young Tsunuki. Apricot and peach lead into orange and vanilla, while dark chocolate, maple syrup, and bourbon-derived oak add depth. A great choice for guests looking for a fuller Japanese single malt with fruit, sweetness, and subtle smoke.",
+
+    tags: ["featured", "annual-release", "award-winning", "discontinued"],
+  },
+  {
     id: "fuji-single-grain",
 
     name: "Fuji Single Grain",
@@ -3474,6 +5402,80 @@ export const whiskeyCollection = [
     tags: ["featured"],
   },
   {
+    id: "fuji-sanroku-signature-blend",
+
+    name: "Fuji Sanroku Signature Blend",
+
+    distillery: "Fuji Gotemba",
+
+    country: "japan",
+
+    location: "Fuji Gotemba Distillery, Shizuoka",
+
+    style: "blended-whisky",
+
+    barrelTypes: [],
+
+    age: null,
+
+    abv: 50,
+
+    price: 22,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/fuji-sanroku-signature-blend.png",
+
+    imageAlt: "Bottle of Fuji Sanroku Signature Blend Japanese blended whisky",
+
+    flavorNotes: ["pear", "pineapple", "orange", "vanilla", "honey", "oak"],
+
+    description:
+      "A 50% ABV blended whisky from Kirin's Fuji Gotemba Distillery, created using mature malt and grain whiskies selected for their peak maturation characteristics. The blend combines bright fruit and citrus with honeyed sweetness, vanilla, baked-goods character, and mature oak.",
+
+    bartenderNote:
+      "A full-flavored Japanese blend with surprisingly mature character for a NAS whisky. Pear, pineapple, and orange bring bright fruit, while vanilla, honey, and oak provide depth. The 50% ABV gives it enough weight for neat pours while still working exceptionally well in a highball.",
+
+    tags: ["featured", "discontinued"],
+  },
+  {
+    id: "fuji-world-blend",
+
+    name: "Fuji World Blend",
+
+    distillery: "Fuji Gotemba",
+
+    country: "japan",
+
+    location: "Fuji Gotemba Distillery, Shizuoka",
+
+    style: "world-blend",
+
+    barrelTypes: [],
+
+    age: null,
+
+    abv: 46,
+
+    price: 14,
+
+    priceRange: "entry",
+
+    image: "/images/whiskey/fuji-world-blend.png",
+
+    imageAlt: "Bottle of Fuji World Blend Japanese world blended whisky",
+
+    flavorNotes: ["vanilla", "apricot", "fig", "prune", "cinnamon", "oak"],
+
+    description:
+      "A world blended whisky created by Fuji Gotemba's master blender Jota Tanaka, combining Fuji whisky with whiskies from around the world. The blend brings together vanilla, crème brûlée, baked pastry, apricot, dried fig, prune, and gentle rye spice, finishing with moderate oak and a subtle touch of peat.",
+
+    bartenderNote:
+      "A fruit-forward and creamy world blend with a distinctly Fuji character. Vanilla, apricot, dried fig, and prune provide sweetness and depth, while rye spice, oak, and a faint touch of peat keep the finish crisp and structured.",
+
+    tags: ["featured", "world-blend", "discontinued"],
+  },
+  {
     id: "fuji-sanroku-18-year-limited-edition",
 
     name: "Fuji Sanroku 18 Year Limited Edition",
@@ -3492,7 +5494,7 @@ export const whiskeyCollection = [
 
     abv: 43,
 
-    price: 45,
+    price: 125,
 
     priceRange: "luxury",
 
@@ -3517,6 +5519,44 @@ export const whiskeyCollection = [
       "A rare and mature Fuji Sanroku with pronounced Oloroso sherry cask influence. A great choice for guests who enjoy rich dried fruit, fig, dark chocolate, vanilla, brown sugar, and mature oak in an elegant aged Japanese blended whisky.",
 
     tags: ["featured", "limited-release", "rare"],
+  },
+  {
+    id: "fuji-sanroku-50-white-label",
+
+    name: "Fuji-Sanroku 50°",
+
+    distillery: "Fuji Gotemba",
+
+    country: "japan",
+
+    location: "Fuji Gotemba Distillery, Shizuoka",
+
+    style: "blended-whisky",
+
+    barrelTypes: ["american-oak"],
+
+    age: null,
+
+    abv: 50,
+
+    price: 25,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/fuji-sanroku-50-white-label.png",
+
+    imageAlt:
+      "Bottle of Fuji-Sanroku 50 degree White Label Japanese blended whisky",
+
+    flavorNotes: ["caramel", "vanilla", "honey", "chocolate", "apple", "spice"],
+
+    description:
+      "A 50% ABV non-chill-filtered blended whisky from Kirin's Fuji Gotemba Distillery. The blend combines malt whisky with Fuji's light, medium, and heavy grain whiskies, with the components matured at relatively high proof before blending. The result is a rich, sweet and full-bodied whisky with caramel, vanilla, honey, chocolate, fruit, and warming spice.",
+
+    bartenderNote:
+      "A classic high-proof Fuji blend with much more weight than its entry-level positioning suggests. Caramel, vanilla, honey, and chocolate lead into baked fruit and peppery spice. Excellent neat or with a small amount of water, and particularly well suited to a robust highball.",
+
+    tags: ["featured", "discontinued", "non-chill-filtered"],
   },
   {
     id: "fuji-single-malt",
@@ -3719,6 +5759,611 @@ export const whiskeyCollection = [
     tags: ["featured", "discontinued", "rare"],
   },
   {
+    id: "ichiros-malt-double-distilleries-2021",
+
+    name: "Ichiro's Malt Double Distilleries 2021",
+
+    distillery: "Chichibu / Mars Komagatake",
+
+    country: "japan",
+
+    location: "Chichibu Distillery, Saitama / Komagatake Distillery, Nagano",
+
+    style: "blended-malt",
+
+    barrelTypes: ["ex-bourbon", "american-white-oak", "sherry-cask"],
+
+    age: null,
+
+    abv: 53.5,
+
+    price: 250,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/ichiros-malt-double-distilleries-2021.png",
+
+    imageAlt:
+      "Bottle of Ichiro's Malt Double Distilleries 2021 Chichibu and Komagatake Japanese blended malt whisky",
+
+    flavorNotes: [
+      "orange",
+      "peach",
+      "strawberry",
+      "vanilla",
+      "toffee",
+      "spice",
+    ],
+
+    description:
+      "A limited-edition blended malt collaboration between Chichibu and Mars Komagatake. The 2021 release combines malt whisky from both distilleries, with maturation centered at the Chichibu warehouse. Rich sherry-derived fruit and sweetness combine with vanilla, toffee, ripe peach, blood orange, strawberry, and warm spice at a high 53.5% ABV.",
+
+    bartenderNote:
+      "A powerful and fruit-forward collaboration that brings together Chichibu's character with Mars Komagatake malt. Blood orange, ripe peach, strawberry, vanilla, and toffee lead into white pepper and warm spice. A great bottle for guests interested in limited Japanese whisky collaborations or high-proof fruit-driven whisky.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "collaboration",
+      "discontinued",
+    ],
+  },
+  {
+    id: "ichiros-malt-us-edition-2018",
+
+    name: "Ichiro's Malt The US Edition 2018",
+
+    distillery: "Chichibu",
+
+    country: "japan",
+
+    location: "Chichibu Distillery, Saitama",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask", "mizunara-oak"],
+
+    age: null,
+
+    abv: 56.4,
+
+    price: 100,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/ichiros-malt-us-edition-2018.png",
+
+    imageAlt:
+      "Bottle of Ichiro's Malt The US Edition 2018 Japanese single malt whisky",
+
+    flavorNotes: ["melon", "citrus", "vanilla", "honey", "cocoa", "spice"],
+
+    description:
+      "The inaugural US-exclusive release in Chichibu's annual US Edition series. This small-batch single malt combines whisky matured in one Mizunara hogshead and five ex-bourbon barrels, then bottled at a powerful 56.4% ABV. The whisky offers rich fruit and malt character alongside vanilla, honey, cocoa, and distinctive Japanese oak spice.",
+
+    bartenderNote:
+      "A rare early Chichibu and the first US Edition bottling. High-proof and intensely flavorful, with ripe fruit, vanilla, honey, cocoa, and Mizunara-derived spice. Best suited to experienced whisky drinkers and collectors interested in early Chichibu releases.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "us-exclusive",
+      "discontinued",
+    ],
+  },
+  {
+    id: "ichiros-malt-us-edition-2019",
+
+    name: "Ichiro's Malt The US Edition 2019",
+
+    distillery: "Chichibu",
+
+    country: "japan",
+
+    location: "Chichibu Distillery, Saitama",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask"],
+
+    age: null,
+
+    abv: 55.5,
+
+    price: 65,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/ichiros-malt-us-edition-2019.png",
+
+    imageAlt:
+      "Bottle of Ichiro's Malt The US Edition 2019 Japanese single malt whisky",
+
+    flavorNotes: [
+      "pear",
+      "melon",
+      "green-apple",
+      "citrus",
+      "vanilla",
+      "caramel",
+    ],
+
+    description:
+      "The second US-exclusive edition from Chichibu, composed from seven casks using three malt varieties: floor-malted Tipple, peated Concerto, and Braemar. Bottled at 55.5% ABV, it combines Chichibu's rich, textured character with ripe orchard fruit, citrus, vanilla, caramel, and a subtle grassy smoke.",
+
+    bartenderNote:
+      "A powerful but highly fruit-driven Chichibu. Pear, melon, and green apple lead into citrus, vanilla, and caramel, with a subtle grassy smoke and peppery spice underneath. A strong choice for experienced whisky drinkers who enjoy high-proof, fruit-forward single malts.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "us-exclusive",
+      "discontinued",
+    ],
+  },
+  {
+    id: "ichiros-malt-us-edition-2020",
+
+    name: "Ichiro's Malt The US Edition 2020",
+
+    distillery: "Chichibu",
+
+    country: "japan",
+
+    location: "Chichibu Distillery, Saitama",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["ex-bourbon", "wine-cask", "chibidaru"],
+
+    age: 5,
+
+    abv: 55.5,
+
+    price: 50,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/ichiros-malt-us-edition-2020.png",
+
+    imageAlt:
+      "Bottle of Ichiro's Malt The US Edition 2020 Japanese single malt whisky",
+
+    flavorNotes: ["vanilla", "citrus", "mint", "cinnamon", "clove", "smoke"],
+
+    description:
+      "The third US-exclusive release from Chichibu, this peated single malt was matured for approximately five years in a combination of ex-bourbon, wine, and Chibidaru quarter casks. Bottled at cask strength, the whisky combines intense peat smoke with bourbon-derived vanilla sweetness, citrus, mint, and pronounced baking spice.",
+
+    bartenderNote:
+      "A powerful, heavily peated Chichibu with a surprisingly sweet and precise character. Vanilla, icing sugar, citrus, mint, cinnamon, and clove sit underneath a substantial layer of peat smoke. Best suited to experienced whisky drinkers who enjoy high-proof smoky whisky.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "us-exclusive",
+      "peated",
+      "discontinued",
+    ],
+  },
+  {
+    id: "ichiros-malt-us-edition-2021",
+
+    name: "Ichiro's Malt The US Edition 2021",
+
+    distillery: "Chichibu",
+
+    country: "japan",
+
+    location: "Chichibu Distillery, Saitama",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["new-american-oak", "bourbon-cask", "american-oak-hogshead"],
+
+    age: null,
+
+    abv: 53.5,
+
+    price: 55,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/ichiros-malt-us-edition-2021.png",
+
+    imageAlt:
+      "Bottle of Ichiro's Malt The US Edition 2021 Japanese single malt whisky",
+
+    flavorNotes: ["peach", "apricot", "orange", "vanilla", "honey", "spice"],
+
+    description:
+      "The 2021 US-exclusive edition from Chichibu, a non-age-statement single malt matured in new American oak, first-fill bourbon barrels, and new American oak hogsheads. Bottled at 53.5% ABV, it combines ripe stone fruit and baked citrus with vanilla, honey, sweet malt, and warming ginger and pepper spice.",
+
+    bartenderNote:
+      "A rich and fruit-forward Chichibu with excellent balance between sweet oak and vibrant fruit. Peach, apricot, orange, vanilla, and honey lead into ginger and pepper spice, while a faint touch of peat appears on the finish. A strong choice for guests who want a high-proof Chichibu without heavy smoke.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "us-exclusive",
+      "discontinued",
+    ],
+  },
+  {
+    id: "ichiros-malt-us-edition-2022",
+
+    name: "Ichiro's Malt The US Edition 2022",
+
+    distillery: "Chichibu",
+
+    country: "japan",
+
+    location: "Chichibu Distillery, Saitama",
+
+    style: "japanese-whisky",
+
+    barrelTypes: [
+      "hogshead",
+      "ipa-cask",
+      "imperial-stout-cask",
+      "hoppy-cider-cask",
+    ],
+
+    age: null,
+
+    abv: 53.5,
+
+    price: 50,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/ichiros-malt-us-edition-2022.png",
+
+    imageAlt:
+      "Bottle of Ichiro's Malt The US Edition 2022 Japanese single malt whisky",
+
+    flavorNotes: [
+      "vanilla",
+      "tropical-fruit",
+      "citrus",
+      "malt",
+      "coffee",
+      "hops",
+    ],
+
+    description:
+      "The 2022 US-exclusive edition from Chichibu, made from 100% malted Concerto two-row barley and matured in a combination of nine casks, including IPA, Imperial Stout, hopped cider, and sherry hogshead casks. The unusual beer-cask maturation gives the whisky a distinctive combination of tropical fruit, vanilla, citrus, malt, roasted coffee, and fresh hop character.",
+
+    bartenderNote:
+      "One of the most experimental US Editions. Tropical fruit and vanilla meet citrus, malt, roasted coffee, and distinctive hop character from the IPA and hopped-cider casks. A great recommendation for guests who enjoy craft beer, unusual cask finishes, or highly distinctive Japanese single malt.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "us-exclusive",
+      "experimental",
+      "discontinued",
+    ],
+  },
+  {
+    id: "ichiros-malt-us-edition-2023",
+
+    name: "Ichiro's Malt The US Edition 2023",
+
+    distillery: "Chichibu",
+
+    country: "japan",
+
+    location: "Chichibu Distillery, Saitama",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["new-french-oak", "mizunara-oak", "sherry-cask", "chibidaru"],
+
+    age: 4,
+
+    abv: 53.5,
+
+    price: 50,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/ichiros-malt-us-edition-2023.png",
+
+    imageAlt:
+      "Bottle of Ichiro's Malt The US Edition 2023 Japanese single malt whisky",
+
+    flavorNotes: [
+      "orange",
+      "melon",
+      "mint",
+      "vanilla",
+      "tropical-fruit",
+      "smoke",
+    ],
+
+    description:
+      "The 2023 US-exclusive release from Chichibu, composed of whiskies aged approximately 4–7 years, with the majority made from peated malt. The whisky is matured across heavily toasted new French oak, Mizunara hogsheads, Chibidaru quarter casks, and sherry casks, creating a distinctive combination of tropical fruit, citrus, vanilla, herbal freshness, oak spice, and peat smoke.",
+
+    bartenderNote:
+      "A particularly expressive Chichibu that balances substantial peat with bright tropical fruit. Orange, melon, mint, and vanilla appear alongside gentle herbal bitterness and smoke, while the heavily toasted French oak and Mizunara add depth and spice. A strong recommendation for guests who want a high-proof Japanese single malt with both fruit and peat.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "us-exclusive",
+      "peated",
+      "discontinued",
+    ],
+  },
+  {
+    id: "ichiros-malt-us-edition-2024",
+
+    name: "Ichiro's Malt The US Edition 2024",
+
+    distillery: "Chichibu",
+
+    country: "japan",
+
+    location: "Chichibu Distillery, Saitama",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["ex-bourbon-cask", "refill-sherry-hogshead"],
+
+    age: null,
+
+    abv: 52.5,
+
+    price: 50,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/ichiros-malt-us-edition-2024.png",
+
+    imageAlt:
+      "Bottle of Ichiro's Malt The US Edition 2024 Japanese single malt whisky",
+
+    flavorNotes: ["apple", "pear", "peach", "vanilla", "honey", "almond"],
+
+    description:
+      "The 2024 US-exclusive release from Chichibu, composed of 16 carefully selected casks ranging from 4 to 10 years old. Fifteen casks are ex-bourbon and one is a refill sherry hogshead. Two of the bourbon casks contain whisky made from floor-malted barley at Chichibu. The unpeated whisky delivers layers of orchard fruit, honeyed malt, vanilla cream, baked fruit, toasted nuts, and gentle spice.",
+
+    bartenderNote:
+      "A polished, unpeated Chichibu built around orchard fruit and confectionery sweetness. Apple, pear, peach, vanilla cream, and honey lead into toasted almond and soft spice. A great recommendation for guests who want the refined fruit-and-malt character of Chichibu without the peat found in the 2023 US Edition.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "us-exclusive",
+      "discontinued",
+    ],
+  },
+  {
+    id: "ichiros-malt-chichibu-red-wine-cask-finish-2023",
+
+    name: "Ichiro's Malt Chichibu Red Wine Cask Finish 2023",
+
+    distillery: "Chichibu",
+
+    country: "japan",
+
+    location: "Chichibu Distillery, Saitama",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["red-wine-cask"],
+
+    age: null,
+
+    abv: 50.5,
+
+    price: 60,
+
+    priceRange: "luxury",
+
+    image:
+      "/images/whiskey/ichiros-malt-chichibu-red-wine-cask-finish-2023.png",
+
+    imageAlt:
+      "Bottle of Ichiro's Malt Chichibu Red Wine Cask Finish 2023 Japanese single malt whisky",
+
+    flavorNotes: [
+      "orange",
+      "blueberry",
+      "honey",
+      "cocoa",
+      "anise",
+      "dark-chocolate",
+    ],
+
+    description:
+      "A limited Chichibu single malt release composed of whiskies aged approximately 6–13 years and matured in 36 red-wine casks sourced from France, America, New Zealand, and Japan. The red-wine maturation contributes rich dark-fruit character, while Chichibu's malt provides honey, cocoa, citrus, spice, and a bittersweet chocolate finish.",
+
+    bartenderNote:
+      "A rich, elegant Chichibu with pronounced red-wine influence. Candied orange and blueberry lead into honey and cocoa, followed by anise, cinnamon, clove, and a long milk-chocolate finish. An excellent recommendation for guests who enjoy fruit-forward whisky with wine-cask depth.",
+
+    tags: ["featured", "limited-release", "rare", "discontinued"],
+  },
+  {
+    id: "ichiros-malt-the-first-ten",
+
+    name: "Ichiro's Malt The First Ten",
+
+    distillery: "Chichibu",
+
+    country: "japan",
+
+    location: "Chichibu Distillery, Saitama",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask", "mizunara-oak", "sherry-cask"],
+
+    age: 10,
+
+    abv: 50.5,
+
+    price: 250,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/ichiros-malt-the-first-ten.png",
+
+    imageAlt:
+      "Bottle of Ichiro's Malt Chichibu The First Ten 10 Year Old Japanese single malt whisky",
+
+    flavorNotes: ["apple", "pear", "honey", "vanilla", "cinnamon", "smoke"],
+
+    description:
+      "The first official 10-year-old age-statement whisky from Chichibu Distillery. A small-batch single malt composed of 26 casks, predominantly first-fill bourbon barrels with additional Mizunara and sherry-cask influence. A portion of the malted barley was locally grown in Chichibu. Light peat complements fresh green fruit, honey, vanilla, and baking spice.",
+
+    bartenderNote:
+      "A landmark Chichibu release and a natural bottle for collectors. Fresh apple and pear combine with honey and vanilla, while cinnamon and nutmeg-like spice add complexity. A restrained touch of peat provides depth without overwhelming the elegant fruit and malt character.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "award-winning",
+      "discontinued",
+    ],
+  },
+  {
+    id: "hanyu-golden-horse-black",
+
+    name: "Hanyu Golden Horse Black",
+
+    distillery: "Hanyu / Toa Shuzo",
+
+    country: "japan",
+
+    location: "Hanyu Distillery, Saitama",
+
+    style: "blended-whisky",
+
+    barrelTypes: [],
+
+    age: null,
+
+    abv: 42,
+
+    price: 105,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/hanyu-golden-horse-black.png",
+
+    imageAlt:
+      "Bottle of Hanyu Golden Horse Black historical Japanese blended whisky",
+
+    flavorNotes: ["caramel", "vanilla", "honey", "apple", "smoke", "oak"],
+
+    description:
+      "A historical Golden Horse blend produced by Toa Shuzo after Hanyu began producing its own malt whisky. The Black Label version combines approximately 77% Hanyu malt whisky with 23% imported Scottish malt, including whisky sourced from Aberlour, Laphroaig, and Macallan. The result is a rich, sweet and lightly smoky whisky with caramel, vanilla, fruit, and oak character.",
+
+    bartenderNote:
+      "A fascinating piece of Hanyu history rather than a conventional Japanese whisky. Hanyu malt provides the core of the blend while imported Scotch—reportedly including Laphroaig, Aberlour, and Macallan—adds depth and peat. Caramel, vanilla, honey, fruit, smoke, and old oak make this especially interesting for collectors of pre-Ichiro-era Hanyu.",
+
+    tags: ["featured", "rare", "historical", "discontinued"],
+  },
+  {
+    id: "ichiros-malt-chichibu-10-year",
+
+    name: "Ichiro's Malt Chichibu 10 Year",
+
+    distillery: "Chichibu",
+
+    country: "japan",
+
+    location: "Chichibu Distillery, Saitama",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["ex-bourbon-cask"],
+
+    age: 10,
+
+    abv: 50.5,
+
+    price: 95,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/ichiros-malt-chichibu-10-year.png",
+
+    imageAlt:
+      "Bottle of Ichiro's Malt Chichibu 10 Year Japanese single malt whisky",
+
+    flavorNotes: [
+      "honey",
+      "vanilla",
+      "pineapple",
+      "citrus",
+      "pastry",
+      "grapefruit",
+    ],
+
+    description:
+      "A 10-year-old Chichibu single malt matured entirely in ex-bourbon barrels. Lightly peated and bottled at 50.5% ABV, it combines honeyed sweetness, vanilla, tropical pineapple, citrus peel, pastry cream, and bittersweet grapefruit with a subtle layer of smoke.",
+
+    bartenderNote:
+      "A benchmark modern Chichibu that balances tropical fruit and creamy sweetness with restrained peat. Honey, vanilla, pineapple, and citrus lead into pastry cream and bittersweet grapefruit. A strong recommendation for guests who want a mature Chichibu with fruit and subtle smoke rather than heavy peat.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "age-statement",
+      "discontinued",
+    ],
+  },
+  {
+    id: "ichiros-malt-chichibu-distillery-ii",
+
+    name: "Ichiro's Malt Chichibu Distillery II",
+
+    distillery: "Chichibu Distillery II",
+
+    country: "japan",
+
+    location: "Chichibu, Saitama",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask"],
+
+    age: null,
+
+    abv: 55.5,
+
+    price: 65,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/ichiros-malt-chichibu-distillery-ii.png",
+
+    imageAlt:
+      "Bottle of Ichiro's Malt Chichibu Distillery II Japanese single malt whisky",
+
+    flavorNotes: ["pineapple", "pear", "apple", "honey", "vanilla", "smoke"],
+
+    description:
+      "The inaugural official release from Chichibu Distillery II, which began producing whisky in 2019. Made from malt whisky aged approximately 4–5 years, predominantly in bourbon casks. Direct-fired stills and French-oak washbacks contribute to a rich, full-bodied spirit with tropical and orchard fruit, honeyed sweetness, vanilla, spice, and a gently smoky malt character.",
+
+    bartenderNote:
+      "The first major expression of Chichibu's second distillery. Pineapple, pear, and apple lead into honey, vanilla, custard, and baking spice, followed by a long, gently smoky malt finish. A fascinating bottle for comparing the emerging Distillery II character against the original Chichibu.",
+
+    tags: ["featured", "limited-release", "rare", "new-release"],
+  },
+  {
     id: "ichiros-malt-chichibu-floor-malted-2024",
 
     name: "Ichiro's Malt Chichibu On The Way Floor Malted 2024",
@@ -3755,6 +6400,44 @@ export const whiskeyCollection = [
       "A rare Chichibu expression highlighting the traditional craft of floor malting. A great choice for guests who enjoy rich malt character balanced by ripe orchard and stone fruit, vanilla, honey, and complex oak influence.",
 
     tags: ["featured", "limited-release", "rare"],
+  },
+  {
+    id: "ichiros-malt-on-the-way-2013",
+
+    name: "Ichiro's Malt On The Way 2013",
+
+    distillery: "Chichibu",
+
+    country: "japan",
+
+    location: "Chichibu Distillery, Saitama",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["bourbon-cask", "mizunara-oak"],
+
+    age: null,
+
+    abv: 58.5,
+
+    price: 70,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/ichiros-malt-on-the-way-2013.png",
+
+    imageAlt:
+      "Bottle of Ichiro's Malt Chichibu On The Way 2013 Japanese single malt whisky",
+
+    flavorNotes: ["apple", "pear", "vanilla", "caramel", "coconut", "pepper"],
+
+    description:
+      "A landmark early Chichibu single malt bottled in 2013. Made from Chichibu whisky distilled between 2008 and 2010, including malt up to five years old, the whisky was primarily matured in ex-bourbon casks before receiving Mizunara Japanese oak influence. Bottled at 58.5% ABV, it combines orchard fruit and caramel sweetness with vanilla, coconut, malt, and pronounced wood spice.",
+
+    bartenderNote:
+      "A powerful and historically important early Chichibu. Apple and pear lead into caramel and vanilla, while Mizunara contributes coconut, oak, and peppery spice. Best suited to experienced whisky drinkers who appreciate high-proof, wood-driven Japanese single malt.",
+
+    tags: ["featured", "limited-release", "rare", "discontinued"],
   },
   {
     id: "ichiros-malt-chichibu-on-the-way-2019",
@@ -3951,6 +6634,876 @@ export const whiskeyCollection = [
       "A bold and smoky Chichibu expression that showcases the distillery's use of peated malt. A great choice for guests who enjoy peat-forward whisky with citrus, honeyed sweetness, vanilla, and spice while retaining the refined character associated with Chichibu single malt.",
 
     tags: ["featured", "limited-release", "rare"],
+  },
+  {
+    id: "ichiros-malt-chichibu-single-cask-14162",
+
+    name: "Ichiro's Malt Chichibu Single Cask #14162",
+
+    distillery: "Chichibu",
+
+    country: "japan",
+
+    location: "Chichibu Distillery, Saitama",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["ex-bourbon-cask", "imperial-stout-cask"],
+
+    age: 8,
+
+    abv: 63.6,
+
+    price: 120,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/ichiros-malt-chichibu-cask-14162.png",
+
+    imageAlt:
+      "Bottle of Ichiro's Malt Chichibu Single Cask 14162 Year of the Snake",
+
+    flavorNotes: [
+      "grapefruit",
+      "banana",
+      "vanilla",
+      "floral",
+      "baking-spice",
+      "chocolate",
+    ],
+
+    description:
+      "An 8-year-old, cask-strength Chichibu single cask released in 2025 as part of the revival of the Zodiac Series for the Year of the Snake. The whisky was matured for four years in an ex-bourbon barrel before being transferred to an Imperial Stout cask for another four years. The result is a powerful but remarkably fruit-forward whisky with vanilla sweetness, grapefruit citrus, green banana, floral notes, baking spice, and a rich roasted character.",
+
+    bartenderNote:
+      "A serious cask-strength Chichibu for experienced whisky drinkers. Vanilla wafer and baking spice lead into grapefruit, wildflowers, and green banana, while the Imperial Stout finish adds depth and roasted chocolate character. At 63.6%, this is best approached neat with water added gradually.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "single-cask",
+      "cask-strength",
+      "us-exclusive",
+      "zodiac-series",
+    ],
+  },
+  {
+    id: "ichiros-malt-chichibu-single-cask-3861-cat-and-mouse",
+
+    name: "Ichiro's Malt Chichibu Single Cask #3861 Cat and Mouse",
+
+    distillery: "Chichibu",
+
+    country: "japan",
+
+    location: "Chichibu Distillery, Saitama",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["refill-bourbon-cask"],
+
+    age: 8,
+
+    abv: 60.4,
+
+    price: 120,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/ichiros-malt-chichibu-cask-3861-cat-and-mouse.png",
+
+    imageAlt: "Bottle of Ichiro's Malt Chichibu Single Cask 3861 Cat and Mouse",
+
+    flavorNotes: ["melon", "apple", "citrus", "coconut", "vanilla", "honey"],
+
+    description:
+      "An 8-year-old Chichibu single malt distilled in 2014 and matured entirely in refill bourbon barrel #3861. Bottled in 2023 exclusively for Los Angeles bar Everson Royce, the whisky is exceptionally tropical and fruit-forward, with melon, apple, citrus, coconut, vanilla cream, honey, and sweet spice.",
+
+    bartenderNote:
+      "An exceptional cask-strength Chichibu with an unusually tropical and creamy profile. Melon and apple lead into citrus, coconut, vanilla cream, honey, and milk chocolate, with cinnamon and ginger appearing toward the finish. A standout bottle for guests who enjoy powerful whisky without heavy peat.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "single-cask",
+      "cask-strength",
+      "los-angeles-exclusive",
+      "discontinued",
+    ],
+  },
+  {
+    id: "ichiros-malt-hanyu-final-vintage-15-year",
+
+    name: "Ichiro's Malt Hanyu 15 Year The Final Vintage",
+
+    distillery: "Hanyu",
+
+    country: "japan",
+
+    location: "Hanyu Distillery, Saitama",
+
+    style: "japanese-whisky",
+
+    barrelTypes: [
+      "cognac-cask",
+      "puncheon",
+      "bourbon-cask",
+      "hogshead",
+      "port-pipe",
+    ],
+
+    age: 15,
+
+    abv: 46.5,
+
+    price: 125,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/ichiros-malt-hanyu-final-vintage-15-year.png",
+
+    imageAlt:
+      "Bottle of Ichiro's Malt Hanyu 15 Year The Final Vintage Japanese single malt whisky",
+
+    flavorNotes: ["apple", "orange", "plum", "vanilla", "honey", "cinnamon"],
+
+    description:
+      "A 15-year-old Hanyu single malt distilled in 2000, the final year of production at Hanyu Distillery. Released by Ichiro Akuto in 2015 from rescued Hanyu stocks, the whisky combines malt matured across Cognac, puncheon, bourbon, hogshead, and Port casks. Rich orchard and tropical fruit meet vanilla, honey, malt, spice, oak, and subtle peat.",
+
+    bartenderNote:
+      "A landmark piece of Japanese whisky history. Fresh apple, orange, and plum lead into vanilla, honey, malt, and warm cinnamon, while oak and a subtle earthy/peaty character add depth. A bottle for guests interested in the lost Hanyu distillery, historic Japanese whisky, or collectible single malts.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "historical",
+      "age-statement",
+      "discontinued",
+    ],
+  },
+  {
+    id: "ichiros-malt-chichibu-single-cask-3912-scooby",
+
+    name: "Ichiro's Malt Chichibu Single Cask #3912 Scooby",
+
+    distillery: "Chichibu",
+
+    country: "japan",
+
+    location: "Chichibu Distillery, Saitama",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["second-fill-bourbon-cask"],
+
+    age: 6,
+
+    abv: 62,
+
+    price: 120,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/ichiros-malt-chichibu-cask-3912-scooby.png",
+
+    imageAlt: "Bottle of Ichiro's Malt Chichibu Single Cask 3912 Scooby",
+
+    flavorNotes: [
+      "chocolate",
+      "citrus",
+      "cooked-fruit",
+      "vanilla",
+      "oak",
+      "spice",
+    ],
+
+    description:
+      "A 6-year-old Chichibu single malt distilled in 2014 and bottled in 2020 from second-fill bourbon barrel #3912. Bottled at a powerful 62% ABV, this highly limited expression was produced in only 202 bottles and features the playful Scooby label. The whisky combines citrus and cooked-fruit sweetness with chocolate, vanilla, oak, and warming spice.",
+
+    bartenderNote:
+      "A rare, high-proof Chichibu with a playful label but serious whisky inside. Citrus and cooked fruit combine with chocolate, vanilla, oak, and spice, while the 62% cask strength gives it substantial weight and intensity. A collector's bottle with a strong Los Angeles connection.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "single-cask",
+      "cask-strength",
+      "los-angeles-exclusive",
+      "discontinued",
+    ],
+  },
+  {
+    id: "ichiros-malt-chichibu-single-cask-2134-mouse-rat",
+
+    name: "Ichiro's Malt Chichibu Single Cask #2134 The Mouse",
+
+    distillery: "Chichibu",
+
+    country: "japan",
+
+    location: "Chichibu Distillery, Saitama",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["ex-bourbon-cask"],
+
+    age: 6,
+
+    abv: 60.6,
+
+    price: 110,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/ichiros-malt-chichibu-cask-2134-mouse.png",
+
+    imageAlt:
+      "Bottle of Ichiro's Malt Chichibu Single Cask 2134 Year of the Rat",
+
+    flavorNotes: ["melon", "apricot", "vanilla", "pear", "pineapple", "spice"],
+
+    description:
+      "A 6-year-old Chichibu single malt distilled from Concerto malt and matured in an ex-bourbon cask. Cask #2134 was bottled in 2019 as the Year of the Rat release at 60.6% ABV. The whisky combines ripe melon and tropical fruit with vanilla, apricot, pear, malt, and warming spice.",
+
+    bartenderNote:
+      "A powerful but highly fruit-driven Chichibu single cask. Overripe melon and tropical fruit lead into vanilla, apricot, pear, and rich malt, while warm autumn spice develops through the finish. A great choice for guests who want high-proof whisky with intense fruit rather than heavy smoke.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "single-cask",
+      "cask-strength",
+      "zodiac-series",
+      "year-of-the-rat",
+      "discontinued",
+    ],
+  },
+  {
+    id: "ichiros-malt-chichibu-single-cask-2345-the-boar",
+
+    name: "Ichiro's Malt Chichibu Single Cask #2345 The Boar",
+
+    distillery: "Chichibu",
+
+    country: "japan",
+
+    location: "Chichibu Distillery, Saitama",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["ex-bourbon-cask"],
+
+    age: 6,
+
+    abv: 63.5,
+
+    price: 130,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/ichiros-malt-chichibu-cask-2345-the-boar.png",
+
+    imageAlt: "Bottle of Ichiro's Malt Chichibu Single Cask 2345 The Boar",
+
+    flavorNotes: ["stone-fruit", "honey", "citrus", "toffee", "almond", "malt"],
+
+    description:
+      "A 6-year-old Chichibu single malt distilled from Braemar malt and matured in an ex-bourbon barrel. Cask #2345 was bottled in 2019 for the Year of the Boar, producing only 204 bottles at a powerful 63.5% ABV. The whisky combines stone fruit, honey, malt, citrus peel, toffee, and almond with Chichibu's characteristic rich texture.",
+
+    bartenderNote:
+      "A powerful cask-strength Chichibu with a surprisingly rich and fruit-forward profile. Stone fruit, honey, and malt lead into allspice, warm dates, citrus peel, and toffee, while almond brittle develops on the long finish. A collector-level bottle for guests who enjoy intense, high-proof whisky.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "single-cask",
+      "cask-strength",
+      "zodiac-series",
+      "year-of-the-boar",
+      "discontinued",
+    ],
+  },
+  {
+    id: "kanosuke-2021-first-edition",
+
+    name: "Kanosuke 2021 First Edition",
+
+    distillery: "Kanosuke",
+
+    country: "japan",
+
+    location: "Kanosuke Distillery, Kagoshima",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["re-charred-american-white-oak", "ex-shochu-cask"],
+
+    age: 3,
+
+    abv: 58,
+
+    price: 75,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/kanosuke-2021-first-edition.png",
+
+    imageAlt:
+      "Bottle of Kanosuke 2021 First Edition Japanese single malt whisky",
+
+    flavorNotes: ["lime", "plum", "raisin", "vanilla", "cinnamon", "orange"],
+
+    description:
+      "The inaugural single malt Japanese whisky from Kanosuke Distillery. Made from non-peated malt distilled in 2017–2018 and matured for three years in a variety of oak casks, with re-charred American white-oak refill casks previously used for Mellowed Kozuru rice shochu serving as a key component. Bottled at 58% ABV in cask-strength form.",
+
+    bartenderNote:
+      "A landmark early Kanosuke with a distinctly mellow, fruit-driven profile. Lime and plum lead into raisin-butter richness, vanilla and cinnamon, while bitter orange and a gentle coastal character emerge on the finish. A great bottle for guests interested in young Japanese whisky with unusual shochu-cask influence.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "first-release",
+      "cask-strength",
+      "discontinued",
+    ],
+  },
+  {
+    id: "kanosuke-2022-limited-edition",
+
+    name: "Kanosuke 2022 Limited Edition",
+
+    distillery: "Kanosuke",
+
+    country: "japan",
+
+    location: "Kanosuke Distillery, Kagoshima",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["sherry-cask"],
+
+    age: null,
+
+    abv: 59,
+
+    price: 65,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/kanosuke-2022-limited-edition.png",
+
+    imageAlt:
+      "Bottle of Kanosuke 2022 Limited Edition Japanese single malt whisky",
+
+    flavorNotes: [
+      "orange",
+      "yuzu",
+      "pineapple",
+      "strawberry",
+      "raspberry",
+      "cinnamon",
+    ],
+
+    description:
+      "The 2022 Limited Edition single malt from Kanosuke Distillery, made from non-peated malt whisky distilled between 2017 and 2019 and matured for at least three years. Sherry-cask-matured whisky forms the key component of the vatting, creating a rich fruit-forward profile with citrus, tropical fruit, berries, malt, and Japanese cinnamon.",
+
+    bartenderNote:
+      "A rich and intensely fruity Kanosuke with sherry-cask depth. Orange, yuzu, pineapple, and tropical fruit lead into strawberry and raspberry, while cinnamon and black tea add structure. At 59% ABV, it has plenty of power but retains Kanosuke's characteristic mellow, sweet character.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "cask-strength",
+      "discontinued",
+    ],
+  },
+  {
+    id: "kanosuke-double-distillery",
+
+    name: "Kanosuke Double Distillery",
+
+    distillery: "Kanosuke / Hioki",
+
+    country: "japan",
+
+    location: "Kagoshima",
+
+    style: "blended-whisky",
+
+    barrelTypes: ["ex-shochu-cask", "new-american-white-oak", "bourbon-cask"],
+
+    age: null,
+
+    abv: 53,
+
+    price: 30,
+
+    priceRange: "premium",
+
+    image: "/images/whiskey/kanosuke-double-distillery.png",
+
+    imageAlt: "Bottle of Kanosuke Double Distillery Japanese blended whisky",
+
+    flavorNotes: [
+      "vanilla",
+      "apricot",
+      "melon",
+      "tangerine",
+      "black-tea",
+      "cinnamon",
+    ],
+
+    description:
+      "A premium blended Japanese whisky made exclusively from two house-distilled spirits: Single Malt Kanosuke and Kanosuke Hioki Pot Still. The combination brings together Kanosuke's elegant sweetness with Hioki's richer, spice-driven character, resulting in a fruit-forward whisky with vanilla, apricot, melon, citrus, black tea, cinnamon, and gentle oak.",
+
+    bartenderNote:
+      "A great introduction to the broader Kanosuke family because it combines the personalities of both distilleries. Vanilla, apricot, melon, and tangerine provide bright fruit and sweetness, while black tea, clove, cinnamon, and oak add structure. A particularly good choice for guests who enjoy fruit-forward whisky with baking spice and subtle bitterness.",
+
+    tags: ["featured", "blended-japanese-whisky"],
+  },
+  {
+    id: "kanosuke-hioki-pot-still",
+
+    name: "Kanosuke Hioki Pot Still",
+
+    distillery: "Hioki",
+
+    country: "japan",
+
+    location: "Hioki Distillery, Kagoshima",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["new-american-white-oak", "bourbon-cask"],
+
+    age: 3,
+
+    abv: 51,
+
+    price: 30,
+
+    priceRange: "premium",
+
+    image: "/images/whiskey/kanosuke-hioki-pot-still.png",
+
+    imageAlt: "Bottle of Kanosuke Hioki Pot Still Japanese whisky",
+
+    flavorNotes: ["vanilla", "apricot", "plum", "citrus", "cinnamon", "ginger"],
+
+    description:
+      "A Japanese-style pot still whisky produced at Hioki Distillery using a combination of malted and unmalted barley. Distilled in pot stills drawing on Kanosuke's long shochu-making tradition, the spirit is matured in new American white oak casks and bourbon barrels. The result is a rich, pastry-like whisky with apricot, plum, citrus, vanilla, cinnamon, and gentle ginger spice.",
+
+    bartenderNote:
+      "A fascinating bridge between Japanese whisky and traditional shochu production. Butter pastry, apricot, plum, and citrus give it a rich fruit-and-dessert character, while vanilla, cinnamon, ginger, and oak add structure. A great recommendation for guests who enjoy bourbon-like sweetness but want something distinctly Japanese.",
+
+    tags: ["featured", "japanese-whisky", "pot-still"],
+  },
+  {
+    id: "kanosuke-2023-limited-edition",
+
+    name: "Kanosuke 2023 Limited Edition",
+
+    distillery: "Kanosuke",
+
+    country: "japan",
+
+    location: "Kanosuke Distillery, Kagoshima",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["ex-shochu-cask", "sherry-cask"],
+
+    age: null,
+
+    abv: 59,
+
+    price: 55,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/kanosuke-2023-limited-edition.png",
+
+    imageAlt:
+      "Bottle of Kanosuke 2023 Limited Edition Japanese single malt whisky",
+
+    flavorNotes: [
+      "banana",
+      "orange",
+      "caramel",
+      "black-tea",
+      "cinnamon",
+      "smoke",
+    ],
+
+    description:
+      "A cask-strength single malt Japanese whisky from Kanosuke Distillery, composed primarily of peated malt whisky distilled in 2018–2019 and matured in shochu re-charred and sherry casks. The whisky delivers mellow sweetness alongside banana, custard, citrus, tea, cinnamon, and a lingering gentle smoke.",
+
+    bartenderNote:
+      "A richer and smokier Kanosuke than the earlier Limited Editions. Banana and custard sweetness lead into salted caramel, black tea, cinnamon, and blood orange, while a gentle campfire note lingers on the finish. A strong choice for guests who want Japanese whisky with noticeable but restrained peat.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "cask-strength",
+      "peated",
+      "award-winning",
+      "discontinued",
+    ],
+  },
+  {
+    id: "kanosuke-single-malt",
+
+    name: "Kanosuke Single Malt",
+
+    distillery: "Kanosuke",
+
+    country: "japan",
+
+    location: "Kanosuke Distillery, Kagoshima",
+
+    style: "japanese-whisky",
+
+    barrelTypes: ["ex-shochu-cask", "american-white-oak"],
+
+    age: null,
+
+    abv: 48,
+
+    price: 20,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/kanosuke-single-malt.png",
+
+    imageAlt: "Bottle of Kanosuke Single Malt Japanese whisky",
+
+    flavorNotes: ["honey", "banana", "lemon", "caramel", "quince", "cinnamon"],
+
+    description:
+      "The flagship single malt from Kanosuke Distillery in Kagoshima. Made from non-peated malt and matured using a variety of casks, with undiluted whisky from re-charred American white-oak casks previously used for Mellowed Kozuru shochu forming the base. The whisky combines honey, banana, lemon tea, caramel, quince, Japanese cinnamon, and ginger with a gentle bittersweet finish.",
+
+    bartenderNote:
+      "A mellow, fruit-forward Japanese single malt with a distinctive shochu-cask influence. Honey, banana, lemon tea, and caramel lead into candied quince, cinnamon, and ginger. A great introduction to Kanosuke's house style and an excellent option for guests who prefer sweet, fruity whisky with gentle spice rather than heavy peat.",
+
+    tags: ["featured", "flagship", "japanese-whisky"],
+  },
+  {
+    id: "moon-glow-half-moon-2019",
+
+    name: "Moon Glow Half Moon 2019",
+
+    distillery: "Saburomaru",
+
+    country: "japan",
+
+    location: "Saburomaru Distillery, Toyama",
+
+    style: "blended-whisky",
+
+    barrelTypes: ["px-sherry-cask"],
+
+    age: 10,
+
+    abv: 43,
+
+    price: 65,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/moon-glow-half-moon-2019.png",
+
+    imageAlt: "Bottle of Moon Glow Half Moon 2019 Japanese blended whisky",
+
+    flavorNotes: ["apple", "raisin", "vanilla", "caramel", "honey", "smoke"],
+
+    description:
+      "A limited 2019 Moon Glow blended whisky from Saburomaru Distillery, composed exclusively of whiskies aged at least 10 years, including malt distilled in 1960. The blend was married in Pedro Ximénez sherry casks, creating a rich profile of mature fruit, raisins, vanilla, caramel, honey, oak, and dry peat smoke.",
+
+    bartenderNote:
+      "A remarkable mature blend with old Saburomaru malt at its core. Red apple, raisin, caramel, and honey provide rich sweetness, while PX cask maturation adds sherry depth and a long, polished finish. Dry peat and oak give it structure without dominating the fruit.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "award-winning",
+      "discontinued",
+    ],
+  },
+  {
+    id: "moon-glow-10yr-limited-edition-2018",
+
+    name: "Moon Glow 10yr Limited Edition 2018",
+
+    distillery: "Saburomaru",
+
+    country: "japan",
+
+    location: "Saburomaru Distillery, Toyama",
+
+    style: "blended-whisky",
+
+    barrelTypes: [],
+
+    age: 10,
+
+    abv: 43,
+
+    price: 80,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/moon-glow-10yr-limited-edition-2018.png",
+
+    imageAlt:
+      "Bottle of Moon Glow 10 Year Limited Edition 2018 Japanese blended whisky",
+
+    flavorNotes: ["orange", "apple", "vanilla", "malt", "biscuit", "smoke"],
+
+    description:
+      "A limited 2018 Moon Glow blended whisky from Saburomaru Distillery. The blend is built primarily around a 20-year-old malt whisky, with the remaining components aged at least 10 years. Bottled at 43% ABV, it combines orange and fresh apple with vanilla, dried malt, biscuit, grain character, and a subtle touch of peat.",
+
+    bartenderNote:
+      "A mature and distinctive Saburomaru blend with a surprisingly Scotch-like character. Orange and fresh apple provide brightness, while vanilla, dried malt, biscuit, and a touch of peat create a rich, slightly oily profile. A good choice for guests looking for an older Japanese blend with subtle smoke and savory depth.",
+
+    tags: ["featured", "limited-release", "rare", "historical", "discontinued"],
+  },
+  {
+    id: "moon-glow-10yr-limited-edition-2019",
+
+    name: "Moon Glow 10yr Limited Edition 2019",
+
+    distillery: "Saburomaru",
+
+    country: "japan",
+
+    location: "Saburomaru Distillery, Toyama",
+
+    style: "blended-whisky",
+
+    barrelTypes: ["red-wine-cask", "sherry-cask"],
+
+    age: 10,
+
+    abv: 43,
+
+    price: 65,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/moon-glow-10yr-limited-edition-2019.png",
+
+    imageAlt:
+      "Bottle of Moon Glow 10 Year Limited Edition 2019 Japanese blended whisky",
+
+    flavorNotes: ["grape", "apricot", "honey", "caramel", "malt", "smoke"],
+
+    description:
+      "A limited 2019 Moon Glow blended whisky from Saburomaru Distillery, composed exclusively of whiskies aged 10 years or more and built around malt whisky aged over 20 years. The grain component was finished in red-wine casks while sherry-cask malt contributes additional sweetness and depth. The result is a mature, smooth whisky with grape skin, apricot, honey, caramel, malt, dry peat, and oak.",
+
+    bartenderNote:
+      "A mature and understated Moon Glow with an unusual red-wine-finished grain component. Grape, honey, caramel, and malt provide a rich foundation while dry peat, oak, and light fruit acidity keep the profile balanced. A great choice for guests who enjoy older blends with subtle smoke and wine-cask complexity.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "historical",
+      "award-winning",
+      "discontinued",
+    ],
+  },
+  {
+    id: "the-matsui-mizunara-cask",
+
+    name: "The Matsui Mizunara Cask",
+
+    distillery: "Matsui",
+
+    country: "japan",
+
+    location: "Tottori",
+
+    style: "single-malt",
+
+    barrelTypes: ["mizunara-oak"],
+
+    age: null,
+
+    abv: 48,
+
+    price: 18,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/the-matsui-mizunara-cask.png",
+
+    imageAlt: "Bottle of The Matsui Mizunara Cask Japanese single malt whisky",
+
+    flavorNotes: [
+      "pear",
+      "honey",
+      "sandalwood",
+      "floral",
+      "tropical-fruit",
+      "nutmeg",
+    ],
+
+    description:
+      "A single malt whisky from Matsui's Tottori operation, matured in Japanese Mizunara oak. The distinctive oak contributes fragrant sandalwood and incense-like character alongside pear, honey, floral notes, tropical fruit, and warming spice.",
+
+    bartenderNote:
+      "A showcase for Mizunara rather than a heavily flavored whisky. Pear and honey provide a soft fruit sweetness while sandalwood, floral aromas, tropical fruit, and nutmeg demonstrate the distinctive aromatic character of Japanese oak. A strong recommendation for guests curious about Mizunara maturation.",
+
+    tags: ["featured", "mizunara", "japanese-whisky"],
+  },
+  {
+    id: "yuza-first-edition-2022",
+
+    name: "YUZA First Edition 2022",
+
+    distillery: "YUZA",
+
+    country: "japan",
+
+    location: "YUZA Distillery, Yamagata",
+
+    style: "single-malt",
+
+    barrelTypes: ["bourbon-cask"],
+
+    age: 3,
+
+    abv: 61,
+
+    price: 80,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/yuza-first-edition-2022.png",
+
+    imageAlt: "Bottle of YUZA First Edition 2022 Japanese single malt whisky",
+
+    flavorNotes: ["apricot", "honey", "vanilla", "almond", "citrus", "malt"],
+
+    description:
+      "The inaugural official whisky from YUZA Distillery in Yamagata. Made from the distillery's earliest spirit, casked between November 2018 and January 2019 and matured exclusively in bourbon barrels. Bottled at 61% ABV cask strength, the whisky is youthful but smooth, with honey, vanilla, apricot, almond, citrus, and sweet malt character.",
+
+    bartenderNote:
+      "A landmark bottle for YUZA and an excellent example of the distillery's early house style. Honey, vanilla, apricot, and almond give it a soft sweetness while bourbon casks provide additional vanilla and oak. At 61%, it has plenty of power but becomes significantly more fruity and approachable with a little water.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "first-release",
+      "cask-strength",
+      "discontinued",
+    ],
+  },
+  {
+    id: "yamazakura-asaka-the-first-3-year",
+
+    name: "Yamazakura Asaka The First 3 Year",
+
+    distillery: "Asaka",
+
+    country: "japan",
+
+    location: "Asaka Distillery, Fukushima",
+
+    style: "single-malt",
+
+    barrelTypes: ["bourbon-cask"],
+
+    age: 3,
+
+    abv: 50,
+
+    price: 25,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/yamazakura-asaka-the-first-3-year.png",
+
+    imageAlt:
+      "Bottle of Yamazakura Asaka The First 3 Year Japanese single malt whisky",
+
+    flavorNotes: ["peach", "apricot", "apple", "honey", "vanilla", "malt"],
+
+    description:
+      "The inaugural single malt released by Asaka Distillery in Fukushima. A 3-year-old Japanese single malt matured in bourbon barrels and bottled at 50% ABV. The youthful whisky combines yellow fruit, honey, vanilla, malt, and gentle oak with a clean, approachable character.",
+
+    bartenderNote:
+      "A historically important young Japanese single malt from Asaka's first official release. Peach, apricot, and apple combine with honey and vanilla, while sweet malt and bourbon oak provide structure. A good recommendation for guests interested in emerging Japanese distilleries or lighter fruit-forward whisky.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "first-release",
+      "age-statement",
+      "discontinued",
+    ],
+  },
+  {
+    id: "hinomaru-the-1st-edition",
+
+    name: "Hinomaru The 1st Edition",
+
+    distillery: "Kiuchi",
+
+    country: "japan",
+
+    location: "Yasato & Nukada Distilleries, Ibaraki",
+
+    style: "blended-whisky",
+
+    barrelTypes: [],
+
+    age: null,
+
+    abv: 48,
+
+    price: 22,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/hinomaru-the-1st-edition.png",
+
+    imageAlt: "Bottle of Hinomaru The 1st Edition Japanese blended whisky",
+
+    flavorNotes: [
+      "apple",
+      "raisin",
+      "vanilla",
+      "caramel",
+      "stone-fruit",
+      "cinnamon",
+    ],
+
+    description:
+      "The inaugural Hinomaru Whisky release from Kiuchi Brewery, combining whisky produced at the Yasato and Nukada distilleries in Ibaraki. The blend uses locally sourced grains including barley, wheat, and rice, creating a distinctive Japanese character with apple, raisin, vanilla, caramel, stone fruit, and warm spice.",
+
+    bartenderNote:
+      "A distinctive early Hinomaru expression that showcases Kiuchi's approach to using multiple grains and distillation methods. Apple and raisin combine with vanilla, butterscotch, oak, stone fruit, cinnamon, and ginger for a creamy, spicy profile.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "first-release",
+      "discontinued",
+    ],
   },
   {
     id: "ardbeg-10-year",
@@ -4365,6 +7918,7 @@ export const whiskeyCollection = [
 
     tags: ["featured", "limited-release"],
   },
+
   {
     id: "laphroaig-10-year",
 
@@ -4837,6 +8391,106 @@ export const whiskeyCollection = [
     tags: ["featured", "limited-release", "rare"],
   },
   {
+    id: "old-forester-birthday-bourbon-2024",
+
+    name: "Old Forester Birthday Bourbon 2024",
+
+    distillery: "Old Forester",
+
+    country: "usa",
+
+    location: "Louisville, Kentucky",
+
+    style: "bourbon",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: 12,
+
+    abv: 53.5,
+
+    price: 90,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/old-forester-birthday-bourbon-2024.png",
+
+    imageAlt: "Bottle of Old Forester Birthday Bourbon 2024",
+
+    flavorNotes: ["apricot", "apple", "caramel", "vanilla", "tobacco", "oak"],
+
+    description:
+      "The 24th annual Old Forester Birthday Bourbon release, a 12-year-old Kentucky straight bourbon selected from 209 barrels produced on a single day and matured in Warehouses G and L. Bottled at 107 proof, the 2024 expression combines bright orchard fruit and apricot with spice cake, buttercream, sweet tobacco, caramel, vanilla, and mature oak.",
+
+    bartenderNote:
+      "A rich, mature Birthday Bourbon with a strong combination of fruit, confectionery sweetness, and seasoned oak. Apricot and apple lead into spice cake, buttercream, caramel, and vanilla, while sweet tobacco and oak provide depth. A collector-level bourbon that still has enough proof to carry substantial flavor.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "small-batch",
+      "age-statement",
+      "birthday-bourbon",
+      "collector",
+      "discontinued",
+    ],
+  },
+  {
+    id: "old-forester-birthday-bourbon-2025",
+
+    name: "Old Forester Birthday Bourbon 2025",
+
+    distillery: "Old Forester",
+
+    country: "usa",
+
+    location: "Louisville, Kentucky",
+
+    style: "bourbon",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: 12,
+
+    abv: 46,
+
+    price: 75,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/old-forester-birthday-bourbon-2025.png",
+
+    imageAlt: "Bottle of Old Forester Birthday Bourbon 2025",
+
+    flavorNotes: [
+      "brown-sugar",
+      "elderflower",
+      "baking-spice",
+      "tobacco",
+      "oak",
+      "caramel",
+    ],
+
+    description:
+      "The 25th annual Old Forester Birthday Bourbon release, a 12-year-old Kentucky straight bourbon produced using a rare sweet-mash fermentation process without setback. Drawn from 210 barrels produced on April 5, 2013 and aged in Warehouse K, the 2025 expression combines brown sugar, baking spice, elderflower tea, pipe tobacco, charred oak, and gentle sweetness.",
+
+    bartenderNote:
+      "A softer and more delicate Birthday Bourbon than the 2024 release. Brown sugar, baking spice, and elderflower tea lead into tobacco and mature oak, while the low 92-proof bottling gives it an unusually gentle texture. A good choice for guests who prefer refined, lower-proof bourbon with mature oak character.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "small-batch",
+      "age-statement",
+      "birthday-bourbon",
+      "collector",
+      "sweet-mash",
+      "discontinued",
+    ],
+  },
+  {
     id: "old-forester-1924-10-year",
 
     name: "Old Forester 1924 10 Year",
@@ -4920,6 +8574,58 @@ export const whiskeyCollection = [
     tags: ["featured"],
   },
   {
+    id: "old-forester-presidents-choice-bourbon",
+
+    name: "Old Forester President's Choice Bourbon",
+
+    distillery: "Old Forester",
+
+    country: "usa",
+
+    location: "Louisville, Kentucky",
+
+    style: "bourbon",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: null,
+
+    abv: null,
+
+    price: 80,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/old-forester-presidents-choice-bourbon.png",
+
+    imageAlt: "Bottle of Old Forester President's Choice Bourbon",
+
+    flavorNotes: [
+      "dark-fruit",
+      "caramel",
+      "vanilla",
+      "chocolate",
+      "cinnamon",
+      "oak",
+    ],
+
+    description:
+      "A highly limited single-barrel Kentucky straight bourbon selected from Old Forester's most exceptional mature barrels. President's Choice barrels typically mature for 7 to 9 years and are bottled at barrel-specific proof, producing rich and distinctive profiles that can range from dark fruit, caramel, vanilla, and chocolate to baking spice and mature oak.",
+
+    bartenderNote:
+      "A premium single-barrel expression with substantial proof and barrel character. Dark fruit, caramel, vanilla, and chocolate are complemented by cinnamon, tobacco, and mature oak. Because every barrel is different, the exact profile can vary significantly from bottle to bottle.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "single-barrel",
+      "barrel-strength",
+      "presidents-choice",
+      "collector",
+    ],
+  },
+  {
     id: "parkers-heritage-11-year-single-barrel",
 
     name: "Parker's Heritage Collection 11 Year Single Barrel",
@@ -4958,6 +8664,609 @@ export const whiskeyCollection = [
     tags: ["featured", "limited-release", "rare"],
   },
   {
+    id: "parkers-heritage-8-year-heavy-char-rye",
+
+    name: "Parker's Heritage 8 Year Heavy Char Rye",
+
+    distillery: "Heaven Hill",
+
+    country: "usa",
+
+    location: "Bardstown, Kentucky",
+
+    style: "rye-whiskey",
+
+    barrelTypes: ["level-5-heavy-char-american-oak"],
+
+    age: 8,
+
+    abv: 52.5,
+
+    price: 55,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/parkers-heritage-8-year-heavy-char-rye.png",
+
+    imageAlt: "Bottle of Parker's Heritage 8 Year Heavy Char Rye",
+
+    flavorNotes: [
+      "caramel",
+      "vanilla",
+      "mint",
+      "cinnamon",
+      "almond",
+      "chocolate",
+    ],
+
+    description:
+      "An 8-year-old Kentucky straight rye from the 13th edition of Parker's Heritage Collection. The whiskey was aged in Level 5 heavy-char barrels, producing a deeply oak-influenced profile layered with caramel, vanilla, mint, cinnamon, almond, chocolate, and peppery rye spice.",
+
+    bartenderNote:
+      "A powerful rye where the barrel character is almost as important as the rye itself. Rich caramel and vanilla lead into fresh mint, cinnamon, almond, and chocolate, with heavy char contributing deep oak and subtle smoky notes. A great choice for guests who enjoy mature, barrel-forward rye.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "single-batch",
+      "age-statement",
+      "heavy-char",
+      "parker-heritage",
+      "discontinued",
+    ],
+  },
+  {
+    id: "parkers-heritage-double-barreled-blend",
+
+    name: "Parker's Heritage Double Barreled Blend",
+
+    distillery: "Heaven Hill",
+
+    country: "usa",
+
+    location: "Bardstown, Kentucky",
+
+    style: "bourbon",
+
+    barrelTypes: ["new-charred-american-oak", "level-3-char-american-oak"],
+
+    age: 13,
+
+    abv: 66.1,
+
+    price: 90,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/parkers-heritage-double-barreled-blend.png",
+
+    imageAlt:
+      "Bottle of Parker's Heritage Collection Double Barreled Blend Bourbon",
+
+    flavorNotes: [
+      "cherry",
+      "caramel",
+      "vanilla",
+      "chocolate",
+      "cinnamon",
+      "oak",
+    ],
+
+    description:
+      "The 16th edition of Parker's Heritage Collection, combining 67% 13-year-old Kentucky straight bourbon that received an additional four-week maturation in newly charred Level 3 oak barrels with 33% 15-year-old Kentucky straight bourbon. Bottled uncut and non-chill filtered at 132.2 proof, it delivers intense mature oak, cherry, caramel, vanilla, chocolate, baking spice, and pepper.",
+
+    bartenderNote:
+      "A powerful, deeply oak-driven bourbon with enormous concentration. Dark cherry, caramel, vanilla, and toasted marshmallow give way to chocolate, cinnamon, pepper, and mature oak. The secondary maturation adds pronounced barrel character, while the 15-year component provides a richer, older texture.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "blend",
+      "barrel-strength",
+      "uncut",
+      "non-chill-filtered",
+      "age-statement",
+      "parker-heritage",
+      "collector",
+      "discontinued",
+    ],
+  },
+  {
+    id: "parkers-heritage-orange-curacao-barrel-finished",
+
+    name: "Parker's Heritage Orange Curaçao Barrel Finished",
+
+    distillery: "Heaven Hill",
+
+    country: "usa",
+
+    location: "Bardstown, Kentucky",
+
+    style: "bourbon",
+
+    barrelTypes: ["new-charred-american-oak", "orange-curacao-cask"],
+
+    age: 7,
+
+    abv: 55,
+
+    price: 55,
+
+    priceRange: "luxury",
+
+    image:
+      "/images/whiskey/parkers-heritage-orange-curacao-barrel-finished.png",
+
+    imageAlt:
+      "Bottle of Parker's Heritage Collection Bourbon Finished in Orange Curaçao Barrels",
+
+    flavorNotes: [
+      "orange",
+      "caramel",
+      "vanilla",
+      "candied-fruit",
+      "pepper",
+      "oak",
+    ],
+
+    description:
+      "The 12th edition of Parker's Heritage Collection, beginning with 7- to 8-year-old Kentucky straight bourbon aged in the upper floors of Rickhouse Q before a four-month finish in barrels that previously held French orange Curaçao liqueur. The result combines classic bourbon caramel and vanilla with vivid orange, candied fruit, pepper, and seasoned oak.",
+
+    bartenderNote:
+      "One of the more unconventional Parker's Heritage releases. Bright orange and candied citrus sit directly on top of a traditional Heaven Hill bourbon foundation of caramel, vanilla, oak, and pepper. A great recommendation for guests who enjoy Old Fashioned-style citrus flavors or unusual barrel finishes.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "barrel-finished",
+      "orange-curacao",
+      "parker-heritage",
+      "discontinued",
+      "collector",
+    ],
+  },
+  {
+    id: "old-fitzgerald-15-year",
+
+    name: "Old Fitzgerald 15 Year",
+
+    distillery: "Heaven Hill",
+
+    country: "usa",
+
+    location: "Bardstown, Kentucky",
+
+    style: "bourbon",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: 15,
+
+    abv: 50,
+
+    price: 90,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/old-fitzgerald-15-year.png",
+
+    imageAlt:
+      "Bottle of Old Fitzgerald 15 Year Bottled-in-Bond Kentucky straight bourbon",
+
+    flavorNotes: ["caramel", "maple", "vanilla", "cherry", "cinnamon", "oak"],
+
+    description:
+      "A 15-year-old Kentucky straight wheated bourbon from Heaven Hill's Old Fitzgerald Bottled-in-Bond Decanter Series. Matured for an extended period in new charred American oak and bottled at 100 proof, it combines deep caramel, maple, vanilla, dried cherry, baking spice, cocoa, and pronounced mature oak.",
+
+    bartenderNote:
+      "A mature, oak-forward wheated bourbon with rich dessert character. Dense caramel, maple, vanilla, and dried cherry are layered with cinnamon, cocoa, roasted oak, and baking spice. A strong recommendation for guests looking for an elegant, deeply aged bourbon with a softer wheat-driven character.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "bottled-in-bond",
+      "age-statement",
+      "wheated-bourbon",
+      "collector",
+      "discontinued",
+    ],
+  },
+  {
+    id: "old-fitzgerald-11-year",
+
+    name: "Old Fitzgerald 11 Year",
+
+    distillery: "Heaven Hill",
+
+    country: "usa",
+
+    location: "Bardstown, Kentucky",
+
+    style: "bourbon",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: 11,
+
+    abv: 50,
+
+    price: 40,
+
+    priceRange: "premium",
+
+    image: "/images/whiskey/old-fitzgerald-11-year.png",
+
+    imageAlt:
+      "Bottle of Old Fitzgerald 11 Year Bottled-in-Bond Kentucky straight bourbon",
+
+    flavorNotes: ["honey", "butterscotch", "plum", "peach", "fig", "chocolate"],
+
+    description:
+      "An 11-year-old Kentucky straight wheated bourbon from Heaven Hill's Old Fitzgerald Bottled-in-Bond Decanter Series. Bottled at 100 proof, the whiskey combines honey and butterscotch sweetness with plum, peach, fig, leather, baking spice, dark fruit, and milk chocolate.",
+
+    bartenderNote:
+      "A rich but approachable mature wheated bourbon. Honey and butterscotch lead into plum, peach, and fig, while leather, baking spice, and milk chocolate add depth. A strong recommendation for guests looking for a softer, fruit-forward bourbon with substantial age and oak development.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "bottled-in-bond",
+      "wheated-bourbon",
+      "age-statement",
+      "collector",
+      "decanter-series",
+    ],
+  },
+  {
+    id: "four-roses-135th-anniversary-small-batch-2023",
+
+    name: "Four Roses 135th Anniversary Small Batch 2023",
+
+    distillery: "Four Roses",
+
+    country: "usa",
+
+    location: "Lawrenceburg, Kentucky",
+
+    style: "bourbon",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: 12,
+
+    abv: 54,
+
+    price: 40,
+
+    priceRange: "premium",
+
+    image: "/images/whiskey/four-roses-135th-anniversary-small-batch-2023.png",
+
+    imageAlt:
+      "Bottle of Four Roses 135th Anniversary Limited Edition Small Batch Bourbon 2023",
+
+    flavorNotes: [
+      "raspberry",
+      "cherry",
+      "pear",
+      "honey",
+      "vanilla",
+      "baking-spice",
+    ],
+
+    description:
+      "A limited-edition Kentucky straight bourbon released for Four Roses' 135th anniversary. The blend combines 12-year-old, 14-year-old, 16-year-old, and 25-year-old bourbons, creating a deeply mature but fruit-forward profile with raspberry, cherry, pear, honey, vanilla, oak, and baking spice.",
+
+    bartenderNote:
+      "An exceptionally layered Four Roses bourbon balancing very old oak with bright fruit and sweetness. Raspberry, cherry, and pear combine with honey and vanilla, while cinnamon, clove, rye spice, and mature oak provide structure. A collector-level pour that rewards slow sipping.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "small-batch",
+      "barrel-strength",
+      "age-statement",
+      "anniversary-release",
+      "collector",
+      "discontinued",
+    ],
+  },
+  {
+    id: "elijah-craig-18-year-single-barrel",
+
+    name: "Elijah Craig 18 Year Single Barrel",
+
+    distillery: "Heaven Hill",
+
+    country: "usa",
+
+    location: "Bardstown, Kentucky",
+
+    style: "bourbon",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: 18,
+
+    abv: 45,
+
+    price: 20,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/elijah-craig-18-year-single-barrel.png",
+
+    imageAlt:
+      "Bottle of Elijah Craig 18 Year Single Barrel Kentucky straight bourbon",
+
+    flavorNotes: ["honey", "vanilla", "cherry", "chocolate", "mint", "oak"],
+
+    description:
+      "An exceptionally mature 18-year-old single-barrel Kentucky straight bourbon from Heaven Hill. Extended maturation in new charred American oak creates a rich, oak-driven profile layered with honey, vanilla, orchard fruit, cherry, chocolate, mint, toasted wood, and pepper.",
+
+    bartenderNote:
+      "A mature, contemplative bourbon where seasoned oak is the star. Honey and vanilla provide sweetness while cherry and orchard fruit add brightness. Mint, chocolate, toasted wood, and pepper develop through the finish. A strong recommendation for guests who appreciate heavily matured, oak-forward bourbon.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "single-barrel",
+      "age-statement",
+      "collector",
+      "wheated-bourbon",
+    ],
+  },
+  {
+    id: "elijah-craig-23-year-single-barrel",
+
+    name: "Elijah Craig 23 Year Single Barrel",
+
+    distillery: "Heaven Hill",
+
+    country: "usa",
+
+    location: "Bardstown, Kentucky",
+
+    style: "bourbon",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: 23,
+
+    abv: 45,
+
+    price: 90,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/elijah-craig-23-year-single-barrel.png",
+
+    imageAlt:
+      "Bottle of Elijah Craig 23 Year Single Barrel Kentucky straight bourbon",
+
+    flavorNotes: ["caramel", "vanilla", "honey", "cocoa", "tobacco", "oak"],
+
+    description:
+      "An exceptionally mature 23-year-old single-barrel Kentucky straight bourbon from Heaven Hill. Long maturation in new charred American oak produces deep caramel, vanilla, honey, cocoa, tobacco, and pronounced mature oak, with individual barrels showing additional fruit and spice character.",
+
+    bartenderNote:
+      "A contemplative, oak-driven bourbon where extended maturation is unmistakable. Caramel, vanilla, and honey soften the deep oak while cocoa and tobacco add darker complexity. Some barrels show cinnamon, chili spice, menthol, or fruit beneath the oak. Best suited to guests who appreciate very mature bourbon and seasoned oak.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "single-barrel",
+      "age-statement",
+      "collector",
+      "discontinued",
+    ],
+  },
+  {
+    id: "thomas-h-handy-sazerac",
+
+    name: "Thomas H. Handy Sazerac",
+
+    distillery: "Buffalo Trace",
+
+    country: "usa",
+
+    location: "Frankfort, Kentucky",
+
+    style: "rye-whiskey",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: 6,
+
+    abv: 64.9,
+
+    price: 65,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/thomas-h-handy-sazerac.png",
+
+    imageAlt: "Bottle of Thomas H. Handy Sazerac Straight Rye Whiskey",
+
+    flavorNotes: [
+      "toffee",
+      "fig",
+      "candied-fruit",
+      "mint",
+      "cinnamon",
+      "clove",
+    ],
+
+    description:
+      "An uncut and unfiltered Kentucky straight rye whiskey from Buffalo Trace's Antique Collection. Bottled directly from the barrel at cask strength, Thomas H. Handy delivers intense rye spice balanced by rich toffee, fig cake, candied fruit, mint, cinnamon, clove, and warm oak.",
+
+    bartenderNote:
+      "A powerhouse rye with tremendous concentration and depth. Toffee, fig, and candied fruit provide rich sweetness while mint, cinnamon, and clove deliver a powerful rye-spice backbone. The barrel-strength proof adds intensity without overwhelming the mature fruit and oak character.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "barrel-strength",
+      "cask-strength",
+      "uncut",
+      "unfiltered",
+      "antique-collection",
+      "collector",
+    ],
+  },
+  {
+    id: "sazerac-rye-18-year",
+
+    name: "Sazerac Rye 18 Year",
+
+    distillery: "Buffalo Trace",
+
+    country: "usa",
+
+    location: "Frankfort, Kentucky",
+
+    style: "rye-whiskey",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: 18,
+
+    abv: 45,
+
+    price: 125,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/sazerac-rye-18-year.png",
+
+    imageAlt: "Bottle of Sazerac Rye 18 Year Old Kentucky straight rye whiskey",
+
+    flavorNotes: ["oak", "molasses", "mint", "vanilla", "cinnamon", "pepper"],
+
+    description:
+      "A highly limited 18-year-old Kentucky straight rye from Buffalo Trace's Antique Collection. Matured for 18 years and 5 months in new charred oak for the 2025 release, the whisky showcases deep mature oak alongside molasses, leather, mint, eucalyptus, cinnamon, vanilla, and lingering rye pepper.",
+
+    bartenderNote:
+      "An exceptionally mature and oak-driven rye. Molasses and vanilla provide rich sweetness while mint, eucalyptus, cinnamon, and pepper preserve the rye's identity. The long maturation brings substantial leather and seasoned-oak character, making this a contemplative sipping whiskey rather than a cocktail rye.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "age-statement",
+      "antique-collection",
+      "collector",
+      "annual-release",
+    ],
+  },
+  {
+    id: "willett-family-estate-4-year-rye",
+
+    name: "Willett Family Estate 4 Year Rye",
+
+    distillery: "Willett",
+
+    country: "usa",
+
+    location: "Bardstown, Kentucky",
+
+    style: "rye-whiskey",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: 4,
+
+    abv: 56.4,
+
+    price: 16,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/willett-family-estate-4-year-rye.png",
+
+    imageAlt: "Bottle of Willett Family Estate 4 Year Rye whiskey",
+
+    flavorNotes: ["cherry", "mint", "cinnamon", "vanilla", "caramel", "pepper"],
+
+    description:
+      "A 4-year-old Kentucky straight rye from Willett, bottled at cask strength and matured entirely in new charred American oak. The rye combines rich cherry and caramel sweetness with mint, vanilla, cinnamon, pepper, and toasted oak.",
+
+    bartenderNote:
+      "A bold, high-proof rye with an unusually herbal and fruit-driven character. Cherry, caramel, and vanilla provide sweetness while mint, cinnamon, and pepper deliver classic rye spice. A great choice for guests who want an intense rye that remains surprisingly balanced.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "single-batch",
+      "cask-strength",
+      "age-statement",
+      "kentucky-rye",
+    ],
+  },
+  {
+    id: "king-of-kentucky-16-year-single-barrel",
+
+    name: "King of Kentucky 16 Year Single Barrel",
+
+    distillery: "Brown-Forman",
+
+    country: "usa",
+
+    location: "Louisville, Kentucky",
+
+    style: "bourbon",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: 16,
+
+    abv: 65.2,
+
+    price: 200,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/king-of-kentucky-16-year.png",
+
+    imageAlt:
+      "Bottle of King of Kentucky 16 Year Single Barrel Kentucky straight bourbon",
+
+    flavorNotes: [
+      "caramel",
+      "dark-fruit",
+      "chocolate",
+      "vanilla",
+      "cinnamon",
+      "oak",
+    ],
+
+    description:
+      "An exceptionally limited 16-year-old Kentucky straight bourbon from Brown-Forman's revived King of Kentucky label. The 2024 release consists of individually selected single barrels bottled at barrel strength, producing a rich and intensely mature profile of caramel, dark fruit, chocolate, vanilla, cinnamon, pepper, and seasoned oak.",
+
+    bartenderNote:
+      "A powerhouse mature bourbon with tremendous depth. Burnt caramel, dark fruit, chocolate, and vanilla lead into cinnamon, peppery oak, leather, and a long dry finish. The high proof amplifies its rich texture and makes this a collector-level pour best enjoyed slowly.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "single-barrel",
+      "barrel-strength",
+      "age-statement",
+      "collector",
+      "king-of-kentucky",
+    ],
+  },
+  {
     id: "willett-pot-still-reserve",
 
     name: "Willett Pot Still Reserve",
@@ -4994,6 +9303,250 @@ export const whiskeyCollection = [
       "A smooth and approachable Kentucky bourbon with vanilla, caramel, cherry, citrus, cinnamon, and oak. A great choice for guests who enjoy a balanced bourbon with classic sweetness, fruit, and spice, presented in one of the most distinctive bottles in American whiskey.",
 
     tags: ["featured"],
+  },
+  {
+    id: "whistlepig-piggyback-6-year",
+
+    name: "WhistlePig PiggyBack 6 Year",
+
+    distillery: "WhistlePig",
+
+    country: "usa",
+
+    location: "Vermont",
+
+    style: "rye-whiskey",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: 6,
+
+    abv: 48.28,
+
+    price: 12,
+
+    priceRange: "entry",
+
+    image: "/images/whiskey/whistlepig-piggyback-6-year.png",
+
+    imageAlt: "Bottle of WhistlePig PiggyBack 6 Year Rye Whiskey",
+
+    flavorNotes: [
+      "cinnamon",
+      "citrus",
+      "pepper",
+      "cocoa",
+      "vanilla",
+      "caramel",
+    ],
+
+    description:
+      "A 6-year-old 100% rye whiskey from WhistlePig, bottled at 48.28% ABV. The rye combines fresh cinnamon and black pepper with tangerine and grapefruit citrus, cocoa, cardamom, cured leather, vanilla, and baking spice.",
+
+    bartenderNote:
+      "A bold but versatile rye originally designed with cocktails in mind. Cinnamon and black pepper provide the classic rye backbone, while citrus, cocoa, vanilla, and caramel soften the profile. Excellent for Manhattans and other rye-forward cocktails, but substantial enough to drink neat.",
+
+    tags: ["featured", "core-range", "100-percent-rye", "cocktail-friendly"],
+  },
+  {
+    id: "whistlepig-small-batch-10-year",
+
+    name: "WhistlePig Small Batch Rye 10 Year",
+
+    distillery: "WhistlePig",
+
+    country: "usa",
+
+    location: "Vermont",
+
+    style: "rye-whiskey",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: 10,
+
+    abv: 50,
+
+    price: 16,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/whistlepig-small-batch-10-year.png",
+
+    imageAlt: "Bottle of WhistlePig Small Batch Rye Aged 10 Years",
+
+    flavorNotes: [
+      "orange",
+      "anise",
+      "caramel",
+      "vanilla",
+      "mint",
+      "butterscotch",
+    ],
+
+    description:
+      "WhistlePig's flagship 10-year straight rye whiskey and the expression that launched the brand's rye whiskey program. Aged for a decade and bottled at 100 proof, it combines orange peel, anise, oak, caramel, vanilla, rye spice, mint, and warm butterscotch.",
+
+    bartenderNote:
+      "A mature, spice-forward rye with enough sweetness and oak depth to balance its herbal character. Orange peel and anise lead into caramel and vanilla, followed by minty rye spice and a long butterscotch finish. Excellent neat or in a rye-forward cocktail.",
+
+    tags: ["featured", "flagship", "core-range", "age-statement", "high-rye"],
+  },
+  {
+    id: "whistlepig-old-world-12-year",
+
+    name: "WhistlePig Old World Rye 12 Year",
+
+    distillery: "WhistlePig",
+
+    country: "usa",
+
+    location: "Vermont",
+
+    style: "rye-whiskey",
+
+    barrelTypes: [
+      "new-charred-american-oak",
+      "madeira-cask",
+      "sauternes-cask",
+      "port-cask",
+    ],
+
+    age: 12,
+
+    abv: 43,
+
+    price: 18,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/whistlepig-old-world-12-year.png",
+
+    imageAlt: "Bottle of WhistlePig Old World Rye 12 Year",
+
+    flavorNotes: [
+      "dark-fruit",
+      "fig",
+      "caramel",
+      "vanilla",
+      "chocolate",
+      "spice",
+    ],
+
+    description:
+      "A 12-year-old straight rye matured in new American oak and finished in a combination of Madeira, French Sauternes, and Port casks. The wine-cask finishing adds layers of dark fruit, fig, caramel, vanilla, chocolate, and baking spice to the mature rye base.",
+
+    bartenderNote:
+      "A rich, wine-driven rye that sits closer to a dessert whiskey than a traditional pepper-forward rye. Dark fruit, fig, caramel, and chocolate dominate, while Madeira and Sauternes contribute dried-fruit sweetness and the rye provides underlying spice.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "age-statement",
+      "wine-finished",
+      "old-world",
+    ],
+  },
+  {
+    id: "whistlepig-the-boss-hog-vi-samurai-scientist",
+
+    name: "WhistlePig The Boss Hog VI The Samurai Scientist",
+
+    distillery: "WhistlePig",
+
+    country: "usa",
+
+    location: "Vermont",
+
+    style: "rye-whiskey",
+
+    barrelTypes: ["new-charred-american-oak", "umeshu-cask"],
+
+    age: 16,
+
+    abv: 60.3,
+
+    price: 60,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/whistlepig-the-boss-hog-vi-samurai-scientist.png",
+
+    imageAlt: "Bottle of WhistlePig The Boss Hog VI The Samurai Scientist",
+
+    flavorNotes: ["plum", "maple", "tobacco", "ginger", "cinnamon", "smoke"],
+
+    description:
+      "A 16-year-old single-barrel, barrel-strength straight rye from WhistlePig's Boss Hog series. Finished in Japanese umeshu barrels produced in collaboration with Kitaya Brewery on Kyushu, Japan. The whiskey combines mature rye and oak with plum wine character, maple, tobacco, ginger, baking spice, umami, and a touch of smoke.",
+
+    bartenderNote:
+      "One of WhistlePig's most distinctive releases. Deep mature rye and oak provide the foundation while Japanese umeshu contributes concentrated plum and fruit character. Maple, tobacco, ginger, and baking spices add richness, with a long smoky and savory finish. A collector-level pour for guests interested in unusual cask finishes and high-proof rye.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "single-barrel",
+      "cask-strength",
+      "age-statement",
+      "collector",
+      "umeshu-finished",
+      "boss-hog",
+    ],
+  },
+  {
+    id: "old-rip-van-winkle-10-year",
+
+    name: "Old Rip Van Winkle 10 Year",
+
+    distillery: "Buffalo Trace",
+
+    country: "usa",
+
+    location: "Frankfort, Kentucky",
+
+    style: "bourbon",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: 10,
+
+    abv: 53.5,
+
+    price: 60,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/old-rip-van-winkle-10-year.png",
+
+    imageAlt:
+      "Bottle of Old Rip Van Winkle 10 Year Kentucky straight wheated bourbon",
+
+    flavorNotes: [
+      "dried-fruit",
+      "caramel",
+      "vanilla",
+      "honey",
+      "pecan",
+      "cinnamon",
+    ],
+
+    description:
+      "A 10-year-old Kentucky straight wheated bourbon from the Van Winkle family, produced in partnership with Buffalo Trace. Bottled at 107 proof, it combines rich dried fruit and toasted nuts with caramel, vanilla, floral honey, brown spice, and mature charred oak.",
+
+    bartenderNote:
+      "A rich, high-proof wheated bourbon with excellent balance between sweetness, fruit, nuts, and oak. Dried fruit, caramel, vanilla, and honey provide the foundation while toasted pecan and cinnamon add depth. A great recommendation for guests who want a classic Van Winkle bourbon without the extreme oak of the older expressions.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "wheated-bourbon",
+      "age-statement",
+      "collector",
+      "van-winkle",
+    ],
   },
   {
     id: "van-winkle-special-reserve-lot-b-12-year",
@@ -5162,6 +9715,106 @@ export const whiskeyCollection = [
     tags: ["featured", "limited-release", "rare"],
   },
   {
+    id: "legent-yamazaki-cask-finish-blend",
+
+    name: "Legent Yamazaki Cask Finish Blend",
+
+    distillery: "Legent / Jim Beam",
+
+    country: "usa",
+
+    location: "Clermont, Kentucky",
+
+    style: "bourbon",
+
+    barrelTypes: [
+      "new-charred-american-oak",
+      "french-oak-wine-cask",
+      "spanish-oak-sherry-cask",
+      "yamazaki-sherry-cask",
+    ],
+
+    age: 8,
+
+    abv: 57,
+
+    price: 22,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/legent-yamazaki-cask-finish-blend.png",
+
+    imageAlt: "Bottle of Legent Yamazaki Cask Finish Blend bourbon",
+
+    flavorNotes: ["cherry", "orange", "caramel", "vanilla", "cocoa", "spice"],
+
+    description:
+      "An ultra-premium limited-edition bourbon beginning as eight-year-old Kentucky straight bourbon. Portions are separately finished in French oak wine casks, Spanish oak sherry casks, and former Yamazaki Spanish oak sherry casks before being blended with additional eight-year-old Kentucky bourbon. The result combines dark fruit, orange, caramel, vanilla, cocoa, oak, and baking spice with a long, warming finish.",
+
+    bartenderNote:
+      "A distinctive bourbon for guests interested in wine- and sherry-finished whiskey. Cherry and orange lead into rich caramel, vanilla, cocoa, dried fruit, and baking spice, while the Yamazaki-seasoned sherry casks contribute malt, dried-fruit, and oak complexity. Full-bodied and powerful at 114 proof.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "cask-finished",
+      "yamazaki-finished",
+      "sherry-finished",
+      "wine-finished",
+      "east-meets-west",
+      "collector",
+    ],
+  },
+  {
+    id: "eagle-rare-17-year",
+
+    name: "Eagle Rare 17 Year",
+
+    distillery: "Buffalo Trace",
+
+    country: "usa",
+
+    location: "Frankfort, Kentucky",
+
+    style: "bourbon",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: 17,
+
+    ageMonths: 220,
+
+    abv: 50.5,
+
+    price: 125,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/eagle-rare-17-year.png",
+
+    imageAlt: "Bottle of Eagle Rare 17 Year Kentucky straight bourbon",
+
+    flavorNotes: ["cherry", "toffee", "vanilla", "tobacco", "cinnamon", "oak"],
+
+    description:
+      "A highly limited Kentucky straight bourbon from Buffalo Trace's Antique Collection. The 2025 release was distilled in spring 2007 and aged 18 years and 4 months in new #4-char white oak before being bottled at 101 proof. The mature bourbon combines ripe cherry, caramel, toffee, vanilla, leather, tobacco, pepper, and seasoned oak.",
+
+    bartenderNote:
+      "A mature, elegant bourbon where bright dark fruit balances substantial seasoned oak. Cherry and caramel provide sweetness while tobacco, leather, cinnamon, and vanilla add complexity. A refined sipping bourbon for guests who enjoy deeply aged whiskey without the extreme proof of barrel-strength releases.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "age-statement",
+      "antique-collection",
+      "collector",
+      "annual-release",
+    ],
+  },
+
+  {
     id: "george-t-stagg-antique-collection",
 
     name: "George T. Stagg Antique Collection",
@@ -5236,6 +9889,1529 @@ export const whiskeyCollection = [
       "A powerful and complex barrel-proof wheated bourbon with rich caramel, dark fruit, toffee, tobacco, and oak. A great choice for experienced bourbon drinkers seeking a rare, high-proof expression that combines the softer sweetness of a wheated mash bill with the intensity of extended barrel aging.",
 
     tags: ["featured", "limited-release", "rare"],
+  },
+  {
+    id: "weller-antique-107",
+
+    name: "W.L. Weller Antique 107",
+
+    distillery: "Buffalo Trace",
+
+    country: "usa",
+
+    location: "Frankfort, Kentucky",
+
+    style: "bourbon",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: null,
+
+    abv: 53.5,
+
+    price: 35,
+
+    priceRange: "premium",
+
+    image: "/images/whiskey/weller-antique-107.png",
+
+    imageAlt:
+      "Bottle of W.L. Weller Antique 107 Kentucky straight wheated bourbon",
+
+    flavorNotes: ["cherry", "vanilla", "caramel", "cinnamon", "fruit", "oak"],
+
+    description:
+      "A robust Kentucky straight wheated bourbon bottled at 107 proof. Weller Antique 107 combines sweet fruit and rich vanilla with caramel, baking spice, cinnamon, and oak for a full-bodied but balanced profile.",
+
+    bartenderNote:
+      "A higher-proof wheated bourbon with a rich, sweet profile. Cherry and other ripe fruit combine with vanilla and caramel, while cinnamon and oak provide structure and a warming finish. An excellent recommendation for guests who want the soft sweetness of a wheated bourbon with more proof and spice.",
+
+    tags: ["featured", "core-range", "wheated-bourbon", "high-proof"],
+  },
+  {
+    id: "weller-107-old-lightning-barrel-select",
+
+    name: "Weller 107 Old Lightning Barrel Select",
+
+    distillery: "Buffalo Trace",
+
+    country: "usa",
+
+    location: "Frankfort, Kentucky",
+
+    style: "bourbon",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: null,
+
+    abv: 53.5,
+
+    price: 35,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/weller-107-old-lightning-barrel-select.png",
+
+    imageAlt: "Bottle of Weller Antique 107 Old Lightning Barrel Select",
+
+    flavorNotes: [
+      "caramel",
+      "vanilla",
+      "cherry",
+      "brown-sugar",
+      "cinnamon",
+      "oak",
+    ],
+
+    description:
+      "A private single-barrel selection of Weller Antique 107, selected for Old Lightning. Bottled at 107 proof, this wheated bourbon delivers a rich, candy-like profile of caramel, vanilla, brown sugar, cherry, cinnamon, and oak.",
+
+    bartenderNote:
+      "A particularly rich and sweet Weller 107 selection. Caramel, vanilla, brown sugar, and cherry create a candy-like sweetness while cinnamon and oak provide structure. A strong choice for guests who enjoy high-proof wheated bourbon with a lush, dessert-like profile.",
+
+    tags: [
+      "featured",
+      "private-selection",
+      "single-barrel",
+      "store-pick",
+      "wheated-bourbon",
+      "high-proof",
+      "rare",
+      "old-lightning",
+    ],
+  },
+  {
+    id: "weller-single-barrel",
+
+    name: "W.L. Weller Single Barrel",
+
+    distillery: "Buffalo Trace",
+
+    country: "usa",
+
+    location: "Frankfort, Kentucky",
+
+    style: "bourbon",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: null,
+
+    abv: 48.5,
+
+    price: 30,
+
+    priceRange: "premium",
+
+    image: "/images/whiskey/weller-single-barrel.png",
+
+    imageAlt:
+      "Bottle of W.L. Weller Single Barrel Kentucky straight wheated bourbon",
+
+    flavorNotes: [
+      "cherry",
+      "caramel",
+      "vanilla",
+      "cocoa",
+      "cinnamon",
+      "pepper",
+    ],
+
+    description:
+      "A single-barrel Kentucky straight wheated bourbon from Buffalo Trace. Bottled at 97 proof, each barrel offers subtle variations from the aging process, with a profile built around cherry, vanilla, caramel, baking spice, cocoa, cinnamon, coffee, and pepper.",
+
+    bartenderNote:
+      "A sweeter, softer bourbon with more proof and individuality than Weller Special Reserve. Cherry and vanilla lead into caramel and cocoa, while cinnamon and pepper provide a gentle spicy finish. A strong choice for guests looking for a wheated bourbon with a little more intensity.",
+
+    tags: [
+      "featured",
+      "single-barrel",
+      "wheated-bourbon",
+      "limited-release",
+      "core-range",
+    ],
+  },
+  {
+    id: "weller-full-proof",
+
+    name: "W.L. Weller Full Proof",
+
+    distillery: "Buffalo Trace",
+
+    country: "usa",
+
+    location: "Frankfort, Kentucky",
+
+    style: "bourbon",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: null,
+
+    abv: 57,
+
+    price: 25,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/weller-full-proof.png",
+
+    imageAlt:
+      "Bottle of W.L. Weller Full Proof Kentucky straight wheated bourbon",
+
+    flavorNotes: [
+      "vanilla",
+      "dark-cherry",
+      "caramel",
+      "oak",
+      "creme-brulee",
+      "chocolate",
+    ],
+
+    description:
+      "A high-proof Kentucky straight wheated bourbon bottled at 114 proof, the same strength at which the bourbon enters the barrel. Non-chill filtered to preserve its natural oils and flavor, Weller Full Proof combines vanilla, dark cherry, caramel, toasted oak, crème brûlée, and chocolate.",
+
+    bartenderNote:
+      "A rich, full-bodied wheated bourbon with a thick mouthfeel and pronounced dessert character. Dark cherry, vanilla, and caramel lead into toasted oak, crème brûlée, and chocolate. A strong recommendation for guests who enjoy sweeter bourbon but want substantially more proof and intensity.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "wheated-bourbon",
+      "high-proof",
+      "non-chill-filtered",
+      "full-proof",
+    ],
+  },
+  {
+    id: "weller-cypb",
+
+    name: "W.L. Weller C.Y.P.B.",
+
+    distillery: "Buffalo Trace",
+
+    country: "usa",
+
+    location: "Frankfort, Kentucky",
+
+    style: "bourbon",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: null,
+
+    abv: 47.5,
+
+    price: 45,
+
+    priceRange: "premium",
+
+    image: "/images/whiskey/weller-cypb.png",
+
+    imageAlt:
+      "Bottle of W.L. Weller C.Y.P.B. Kentucky straight wheated bourbon",
+
+    flavorNotes: [
+      "citrus",
+      "vanilla",
+      "caramel",
+      "oak",
+      "honey",
+      "baking-spice",
+    ],
+
+    description:
+      "A wheated Kentucky straight bourbon created from Buffalo Trace's Craft Your Perfect Bourbon consumer survey. Aged on the highest warehouse floors and bottled at 95 proof, C.Y.P.B. delivers a balanced profile of citrus, vanilla, caramel, oak, honey, and gentle baking spice.",
+
+    bartenderNote:
+      "A refined, approachable Weller with a lighter profile than the higher-proof Antique 107 and Full Proof. Citrus and vanilla lead into caramel and soft oak, with a medium-long finish and subtle baking spice. A good recommendation for guests who want a balanced, lower-proof wheated bourbon.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "wheated-bourbon",
+      "cypb",
+      "high-floor-aged",
+    ],
+  },
+  {
+    id: "weller-12-year",
+
+    name: "W.L. Weller 12 Year",
+
+    distillery: "Buffalo Trace",
+
+    country: "usa",
+
+    location: "Frankfort, Kentucky",
+
+    style: "bourbon",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: 12,
+
+    abv: 45,
+
+    price: 20,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/weller-12-year.png",
+
+    imageAlt: "Bottle of W.L. Weller 12 Year Kentucky straight wheated bourbon",
+
+    flavorNotes: ["almond", "vanilla", "caramel", "cherry", "oak", "cinnamon"],
+
+    description:
+      "A 12-year-old Kentucky straight wheated bourbon from Buffalo Trace. Extended maturation produces a smooth, balanced profile with almond, creamed corn, toasted vanilla, caramel, cherry, cinnamon, and pronounced mature oak.",
+
+    bartenderNote:
+      "A mature and approachable wheated bourbon with a softer texture than many rye-based bourbons. Toasted vanilla, almond, and caramel lead into cherry and baking spice, while the long finish brings substantial oak. A strong recommendation for guests who want a classic, mellow, age-stated wheated bourbon.",
+
+    tags: [
+      "featured",
+      "core-range",
+      "wheated-bourbon",
+      "age-statement",
+      "12-year",
+    ],
+  },
+  {
+    id: "hancocks-presidents-reserve-single-barrel",
+
+    name: "Hancock's President's Reserve Single Barrel",
+
+    distillery: "Buffalo Trace",
+
+    country: "usa",
+
+    location: "Frankfort, Kentucky",
+
+    style: "bourbon",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: null,
+
+    abv: 44.45,
+
+    price: 18,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/hancocks-presidents-reserve-single-barrel.png",
+
+    imageAlt: "Bottle of Hancock's President's Reserve Single Barrel Bourbon",
+
+    flavorNotes: [
+      "caramel",
+      "vanilla",
+      "cherry",
+      "honey",
+      "cinnamon",
+      "orange",
+    ],
+
+    description:
+      "A single-barrel Kentucky straight bourbon from Buffalo Trace made from the distillery's high-rye mash bill. Bottled at approximately 88.9 proof, Hancock's President's Reserve offers a lighter, approachable profile combining caramel, vanilla, honey, cherry, tropical fruit, orange, cinnamon, and toasted oak.",
+
+    bartenderNote:
+      "An easy-drinking Buffalo Trace single barrel with a gentle high-rye character. Caramel, vanilla, honey, and fruit lead into cinnamon and toasted oak. A good recommendation for guests who want the character of a Buffalo Trace single barrel without the higher proof of bottles like Weller Antique 107 or Full Proof.",
+
+    tags: [
+      "featured",
+      "single-barrel",
+      "high-rye",
+      "buffalo-trace",
+      "approachable",
+    ],
+  },
+  {
+    id: "woodford-reserve",
+
+    name: "Woodford Reserve",
+
+    distillery: "Woodford Reserve",
+
+    country: "usa",
+
+    location: "Versailles, Kentucky",
+
+    style: "bourbon",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: null,
+
+    abv: 45.2,
+
+    price: 14,
+
+    priceRange: "entry",
+
+    image: "/images/whiskey/woodford-reserve.png",
+
+    imageAlt: "Bottle of Woodford Reserve Kentucky Straight Bourbon Whiskey",
+
+    flavorNotes: [
+      "orange",
+      "dried-fruit",
+      "caramel",
+      "vanilla",
+      "cocoa",
+      "cinnamon",
+    ],
+
+    description:
+      "Woodford Reserve's flagship Kentucky straight bourbon, triple-distilled and matured in new charred American oak. Its complex profile combines dried fruit, orange, mint, cocoa, vanilla, tobacco, cinnamon, caramel, chocolate, and baking spice.",
+
+    bartenderNote:
+      "A balanced, approachable bourbon with considerably more flavor complexity than its proof suggests. Dried fruit and orange lead into caramel, vanilla, cocoa, and cinnamon, with a silky finish. A versatile recommendation for both neat sipping and classic bourbon cocktails.",
+
+    tags: ["featured", "core-range", "kentucky-bourbon", "cocktail-friendly"],
+  },
+  {
+    id: "makers-mark-cellar-aged-2023",
+
+    name: "Maker's Mark Cellar Aged 2023",
+
+    distillery: "Maker's Mark",
+
+    country: "usa",
+
+    location: "Loretto, Kentucky",
+
+    style: "bourbon",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: null,
+
+    abv: 57.85,
+
+    price: 38,
+
+    priceRange: "premium",
+
+    image: "/images/whiskey/makers-mark-cellar-aged-2023.png",
+
+    imageAlt: "Bottle of Maker's Mark Cellar Aged 2023 bourbon",
+
+    flavorNotes: [
+      "brown-sugar",
+      "caramel",
+      "cherry",
+      "vanilla",
+      "cinnamon",
+      "oak",
+    ],
+
+    description:
+      "The inaugural Maker's Mark Cellar Aged release, combining 87% 12-year-old and 13% 11-year-old Maker's Mark. After traditional maturation, the bourbon spent additional time in Maker's limestone cellar before being bottled at 115.7 proof. The result is a rich, viscous bourbon with brown sugar, caramel, vanilla, dark cherry, cinnamon, oak, leather, and tobacco.",
+
+    bartenderNote:
+      "A powerful, mature expression of Maker's Mark with a rich wheated-bourbon character. Brown sugar, caramel, vanilla, and cherry provide sweetness while cinnamon, pepper, leather, tobacco, and mature oak add depth. A great recommendation for guests who want a high-proof, heavily aged wheated bourbon.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "wheated-bourbon",
+      "barrel-strength",
+      "cellar-aged",
+      "anniversary",
+      "collector",
+      "discontinued",
+    ],
+  },
+  {
+    id: "makers-mark-the-heart-release-2024",
+
+    name: "Maker's Mark The Heart Release 2024",
+
+    distillery: "Maker's Mark",
+
+    country: "usa",
+
+    location: "Loretto, Kentucky",
+
+    style: "bourbon",
+
+    barrelTypes: ["new-charred-american-oak", "virgin-french-oak-staves"],
+
+    age: null,
+
+    abv: 55.85,
+
+    price: 15,
+
+    priceRange: "entry",
+
+    image: "/images/whiskey/makers-mark-the-heart-release-2024.png",
+
+    imageAlt:
+      "Bottle of Maker's Mark Wood Finishing Series The Heart Release 2024",
+
+    flavorNotes: [
+      "dark-cherry",
+      "caramel",
+      "maple",
+      "chocolate",
+      "brown-sugar",
+      "cinnamon",
+    ],
+
+    description:
+      "The inaugural release of the second chapter of Maker's Mark's Wood Finishing Series. The Heart Release celebrates the Maker's Mark distillery team and uses fully matured Maker's bourbon finished with specially selected virgin oak staves. Bottled at cask strength, it delivers dark cherry, caramel, maple, brown sugar, chocolate, cinnamon, and a rich creamy texture.",
+
+    bartenderNote:
+      "A rich, dessert-forward Maker's Mark with significantly more intensity than the standard bourbon. Dark cherry, caramel, maple, and brown sugar lead into milk chocolate and cinnamon, with a creamy, silky finish. A strong recommendation for guests who enjoy sweet, rich, high-proof wheated bourbon.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "wheated-bourbon",
+      "cask-strength",
+      "wood-finishing-series",
+      "the-heart",
+      "2024-release",
+      "collector",
+    ],
+  },
+  {
+    id: "makers-mark-46-cask-strength",
+
+    name: "Maker's Mark 46 Cask Strength",
+
+    distillery: "Maker's Mark",
+
+    country: "usa",
+
+    location: "Loretto, Kentucky",
+
+    style: "bourbon",
+
+    barrelTypes: ["new-charred-american-oak", "virgin-french-oak-staves"],
+
+    age: null,
+
+    abv: 55.3,
+
+    price: 14,
+
+    priceRange: "entry",
+
+    image: "/images/whiskey/makers-mark-46-cask-strength.png",
+
+    imageAlt:
+      "Bottle of Maker's Mark 46 Cask Strength Kentucky straight bourbon",
+
+    flavorNotes: [
+      "vanilla",
+      "caramel",
+      "cherry",
+      "brown-sugar",
+      "cinnamon",
+      "oak",
+    ],
+
+    description:
+      "A cask-strength version of Maker's Mark 46, using the same fully matured wheated bourbon finished with seared virgin French oak staves. Bottled without dilution and non-chill filtered, it delivers concentrated vanilla, caramel, brown sugar, cherry, cinnamon, baking spice, and rich French oak.",
+
+    bartenderNote:
+      "A powerful, richer version of Maker's 46. Vanilla, caramel, brown sugar, and red fruit lead into cinnamon and toasted French oak, with the higher proof giving the whiskey a fuller texture and longer finish. A strong recommendation for guests who enjoy sweet, oak-driven wheated bourbon at cask strength.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "wheated-bourbon",
+      "cask-strength",
+      "non-chill-filtered",
+      "french-oak-finished",
+      "wood-finished",
+    ],
+  },
+  {
+    id: "blantons-gold",
+
+    name: "Blanton's Gold",
+
+    distillery: "Buffalo Trace",
+
+    country: "usa",
+
+    location: "Frankfort, Kentucky",
+
+    style: "bourbon",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: null,
+
+    abv: 51.5,
+
+    price: 25,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/blantons-gold.png",
+
+    imageAlt: "Bottle of Blanton's Gold Edition Single Barrel Bourbon",
+
+    flavorNotes: [
+      "honey",
+      "dried-fruit",
+      "vanilla",
+      "chocolate",
+      "apricot",
+      "toffee",
+    ],
+
+    description:
+      "A limited-edition single-barrel Kentucky straight bourbon from Buffalo Trace, produced from the distillery's high-rye bourbon mash bill. Bottled at 103 proof, Blanton's Gold offers a richer and more concentrated profile than Blanton's Original, combining honey, dried fruit, vanilla, chocolate, apricot, toffee, pepper, and oak.",
+
+    bartenderNote:
+      "A richer, higher-proof expression of Blanton's with a pronounced combination of fruit, honey, vanilla, and rye spice. Apricot and dried fruit lead into chocolate, toffee, caramel, and oak, with peppery spice adding structure. A strong recommendation for guests who want the classic Blanton's profile with more intensity.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "single-barrel",
+      "high-rye",
+      "high-proof",
+      "collector",
+    ],
+  },
+  {
+    id: "blantons-straight-from-the-barrel",
+
+    name: "Blanton's Straight From the Barrel",
+
+    distillery: "Buffalo Trace",
+
+    country: "usa",
+
+    location: "Frankfort, Kentucky",
+
+    style: "bourbon",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: null,
+
+    abv: null,
+
+    price: 30,
+
+    priceRange: "premium",
+
+    image: "/images/whiskey/blantons-straight-from-the-barrel.png",
+
+    imageAlt: "Bottle of Blanton's Straight From the Barrel bourbon",
+
+    flavorNotes: [
+      "vanilla",
+      "caramel",
+      "dark-fruit",
+      "chocolate",
+      "cinnamon",
+      "oak",
+    ],
+
+    description:
+      "An exceptionally high-proof, single-barrel Kentucky straight bourbon bottled uncut and unfiltered directly from the barrel. The Buffalo Trace high-rye bourbon develops intense vanilla, caramel, dark fruit, chocolate, baking spice, and mature oak character, with substantial heat and viscosity.",
+
+    bartenderNote:
+      "A powerhouse Blanton's expression with tremendous concentration and proof. Vanilla, caramel, and dark fruit lead into chocolate, cinnamon, brown sugar, and toasted oak. The high proof creates a thick, oily texture and long, warming finish. Best suited to guests who enjoy bold, barrel-strength bourbon.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "single-barrel",
+      "barrel-strength",
+      "uncut",
+      "unfiltered",
+      "high-proof",
+      "high-rye",
+      "collector",
+    ],
+  },
+  {
+    id: "high-west-bourbon",
+
+    name: "High West Bourbon",
+
+    distillery: "High West",
+
+    country: "usa",
+
+    location: "Park City, Utah",
+
+    style: "bourbon",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: 2,
+
+    abv: 46,
+
+    price: 14,
+
+    priceRange: "entry",
+
+    image: "/images/whiskey/high-west-bourbon.png",
+
+    imageAlt: "Bottle of High West Bourbon",
+
+    flavorNotes: ["caramel", "honey", "vanilla", "apple", "pecan", "corn"],
+
+    description:
+      "A complex blend of straight bourbons aged a minimum of two years in charred American oak. High West Bourbon combines caramel and sweet vanilla with honey nougat, sweet cornbread, caramel apple, lemon zest, and pecan pie.",
+
+    bartenderNote:
+      "An approachable, bright bourbon with a pleasant balance of sweetness and earthy high-rye spice. Honey nougat and cornbread lead into caramel apple, vanilla, and pecan. Easy to enjoy neat but versatile enough for cocktails.",
+
+    tags: [
+      "featured",
+      "core-range",
+      "bourbon-blend",
+      "high-rye",
+      "cocktail-friendly",
+    ],
+  },
+  {
+    id: "whistlepig-piggyback-6-year-bourbon",
+
+    name: "WhistlePig PiggyBack 6 Year Bourbon",
+
+    distillery: "WhistlePig",
+
+    country: "usa",
+
+    location: "Shoreham, Vermont",
+
+    style: "bourbon",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: 6,
+
+    abv: 50,
+
+    price: 14,
+
+    priceRange: "entry",
+
+    image: "/images/whiskey/whistlepig-piggyback-6-year-bourbon.png",
+
+    imageAlt: "Bottle of WhistlePig PiggyBack 6 Year Bourbon",
+
+    flavorNotes: ["caramel", "maple", "vanilla", "apple", "cinnamon", "oak"],
+
+    description:
+      "A 6-year-old bourbon from WhistlePig's PiggyBack line, made with a high-corn mash bill and aged in #3-char new American oak. Bottled at 100 proof, it delivers caramel corn, maple, vanilla, honey, apple, baking spice, and oak.",
+
+    bartenderNote:
+      "A sweeter, approachable WhistlePig bourbon with enough proof to carry its flavor. Caramel corn, maple, vanilla, and honey lead into apple, cinnamon, and oak. A versatile pour that works well neat or in bourbon-forward cocktails.",
+
+    tags: [
+      "featured",
+      "core-range",
+      "bourbon",
+      "high-corn",
+      "100-proof",
+      "6-year",
+    ],
+  },
+  {
+    id: "elmer-t-lee-single-barrel",
+
+    name: "Elmer T. Lee Single Barrel",
+
+    distillery: "Buffalo Trace",
+
+    country: "usa",
+
+    location: "Frankfort, Kentucky",
+
+    style: "bourbon",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: null,
+
+    abv: 45,
+
+    price: 24,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/elmer-t-lee-single-barrel.png",
+
+    imageAlt: "Bottle of Elmer T. Lee Single Barrel Kentucky straight bourbon",
+
+    flavorNotes: ["apple", "cherry", "caramel", "vanilla", "honey", "cinnamon"],
+
+    description:
+      "A single-barrel Kentucky straight bourbon from Buffalo Trace honoring legendary Master Distiller Elmer T. Lee. Bottled at 90 proof, it offers a light and approachable profile built around baked apple, cherry, caramel, vanilla, honey, baking spice, and gentle oak.",
+
+    bartenderNote:
+      "A bright, approachable Buffalo Trace single barrel with a distinctly sweet and fruit-forward character. Baked apple and cherry lead into caramel, vanilla, and honey, while cinnamon and light oak provide structure. An excellent recommendation for guests who want a classic bourbon without high proof or heavy oak.",
+
+    tags: [
+      "featured",
+      "single-barrel",
+      "high-rye",
+      "buffalo-trace",
+      "mash-bill-2",
+      "allocated",
+    ],
+  },
+  {
+    id: "henry-mckenna-10-year-single-barrel",
+
+    name: "Henry McKenna 10 Year",
+
+    distillery: "Heaven Hill",
+
+    country: "usa",
+
+    location: "Bardstown, Kentucky",
+
+    style: "bourbon",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: 10,
+
+    abv: 50,
+
+    price: 14,
+
+    priceRange: "entry",
+
+    image: "/images/whiskey/henry-mckenna-10-year.png",
+
+    imageAlt:
+      "Bottle of Henry McKenna 10 Year Single Barrel Bottled-in-Bond bourbon",
+
+    flavorNotes: ["caramel", "vanilla", "cherry", "honey", "cinnamon", "oak"],
+
+    description:
+      "A 10-year-old Kentucky straight bourbon bottled in bond and selected from a single barrel. Matured through 40 Kentucky seasons, it combines caramel, vanilla, honey, cherry, baking spice, and seasoned oak with a long, sweet and spicy finish.",
+
+    bartenderNote:
+      "A classic mature Heaven Hill bourbon with a strong balance of sweetness, fruit, spice, and oak. Caramel and vanilla lead into cherry and honey, while cinnamon and seasoned oak add depth. A great recommendation for guests who want an age-stated single-barrel bourbon without extreme proof.",
+
+    tags: [
+      "featured",
+      "single-barrel",
+      "bottled-in-bond",
+      "age-statement",
+      "10-year",
+      "heaven-hill",
+      "allocated",
+    ],
+  },
+  {
+    id: "noahs-mill",
+
+    name: "Noah's Mill",
+
+    distillery: "Willett",
+
+    country: "usa",
+
+    location: "Bardstown, Kentucky",
+
+    style: "bourbon",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: null,
+
+    abv: 57.15,
+
+    price: 15,
+
+    priceRange: "entry",
+
+    image: "/images/whiskey/noahs-mill.png",
+
+    imageAlt: "Bottle of Noah's Mill Kentucky straight bourbon",
+
+    flavorNotes: [
+      "caramel",
+      "brown-sugar",
+      "dark-fruit",
+      "vanilla",
+      "cinnamon",
+      "oak",
+    ],
+
+    description:
+      "A high-proof Kentucky straight bourbon from Willett, bottled at 114.3 proof. Noah's Mill is a rich and full-bodied bourbon with caramel, brown sugar, dark fruit, vanilla, toasted oak, nuts, baking spice, and a long warming finish.",
+
+    bartenderNote:
+      "A big, rich bourbon that delivers considerably more intensity than its approachable flavor profile suggests. Caramel, brown sugar, dark fruit, and vanilla lead into cinnamon, toasted oak, and nutty sweetness. The high proof gives it a thick texture and long finish.",
+
+    tags: [],
+  },
+  {
+    id: "little-book-chapter-7-in-retrospect",
+
+    name: "Little Book Chapter 7: In Retrospect",
+
+    distillery: "James B. Beam Distilling Company",
+
+    country: "usa",
+
+    location: "Clermont, Kentucky",
+
+    style: "blended-straight-whiskey",
+
+    barrelTypes: ["new-charred-american-oak", "applewood-smoked-barrel"],
+
+    age: null,
+
+    abv: 59.05,
+
+    price: 25,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/little-book-chapter-7.png",
+
+    imageAlt: "Bottle of Little Book Chapter 7 In Retrospect",
+
+    flavorNotes: ["vanilla", "caramel", "apple", "honey", "cinnamon", "smoke"],
+
+    description:
+      "The seventh installment of the Little Book blended straight whiskey series. Chapter 7 combines seven whiskey components ranging from 4 to 18 years old, including Kentucky straight bourbon, Kentucky straight rye, and a 5-year straight malt whiskey finished in applewood-smoked barrels. Bottled at 118.1 proof, the blend balances sweet vanilla, caramel, fruit, spice, floral notes, and subtle smoke.",
+
+    bartenderNote:
+      "An unusually complex high-proof American whiskey blend. Sweet vanilla and caramel are layered with apple, honey, floral notes, cinnamon, rye spice, and subtle smoke from the applewood-finished malt component. A fascinating pour for guests who enjoy experimental whiskey and complex blends.",
+
+    tags: [],
+  },
+
+  {
+    id: "rock-hill-farms-single-barrel",
+
+    name: "Rock Hill Farms Single Barrel",
+
+    distillery: "Buffalo Trace",
+
+    country: "usa",
+
+    location: "Frankfort, Kentucky",
+
+    style: "bourbon",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: null,
+
+    abv: 50,
+
+    price: 35,
+
+    priceRange: "premium",
+
+    image: "/images/whiskey/rock-hill-farms-single-barrel.png",
+
+    imageAlt:
+      "Bottle of Rock Hill Farms Single Barrel Kentucky straight bourbon",
+
+    flavorNotes: ["cherry", "apple", "vanilla", "caramel", "cinnamon", "oak"],
+
+    description:
+      "A single-barrel Kentucky straight bourbon from Buffalo Trace's high-rye Mash Bill #2. Bottled at 100 proof, Rock Hill Farms combines summer cherry, berries, baked apple, vanilla, caramel, cinnamon, rye spice, and charred oak in a bright, fruit-forward profile.",
+
+    bartenderNote:
+      "A bright and approachable Buffalo Trace single barrel with more rye spice than the distillery's low-rye bourbon. Cherry, berries, and baked apple lead into vanilla and caramel, while cinnamon, rye spice, and charred oak provide structure. A great recommendation for guests who want a fruit-forward bourbon with noticeable spice.",
+
+    tags: [],
+  },
+  {
+    id: "rowans-creek",
+
+    name: "Rowan's Creek",
+
+    distillery: "Willett Distillery",
+
+    country: "usa",
+
+    location: "Bardstown, Kentucky",
+
+    style: "straight-bourbon",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: null,
+
+    abv: 50.05,
+
+    price: 14,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/rowans-creek.png",
+
+    imageAlt: "Bottle of Rowan's Creek Kentucky Straight Bourbon",
+
+    flavorNotes: [
+      "caramel",
+      "vanilla",
+      "floral",
+      "oak",
+      "spice",
+      "cinnamon",
+      "herbal",
+    ],
+
+    description:
+      "A small-batch Kentucky straight bourbon produced by Willett Distillery in Bardstown. Bottled at 100.1 proof, Rowan's Creek presents caramel and vanilla alongside herbal and floral notes, with an oily mouthfeel that develops into a dry, oaky, and lingering spicy finish.",
+
+    bartenderNote:
+      "A distinctive 100-proof bourbon that leans toward caramel, vanilla, oak, and baking spice rather than heavy fruit sweetness. Its herbal and floral character gives it more complexity than a straightforward sweet bourbon, while the oily texture and dry oak finish make it particularly enjoyable neat.",
+
+    tags: [],
+  },
+  {
+    id: "bombergers-declaration-2024",
+
+    name: "Bomberger's Declaration",
+
+    distillery: "Michter's Distillery",
+
+    country: "usa",
+
+    location: "Louisville, Kentucky",
+
+    style: "straight-bourbon",
+
+    barrelTypes: ["new-charred-american-oak", "chinquapin-oak"],
+
+    age: null,
+
+    abv: 54,
+
+    price: 20,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/bombergers-declaration-2024.png",
+
+    imageAlt:
+      "Bottle of Bomberger's Declaration Kentucky Straight Bourbon 2024",
+
+    flavorNotes: [
+      "caramel",
+      "vanilla",
+      "cherry",
+      "chocolate",
+      "cocoa",
+      "toffee",
+      "oak",
+      "cinnamon",
+      "clove",
+      "allspice",
+      "fruit",
+      "spice",
+    ],
+
+    description:
+      "The 2024 release of Bomberger's Declaration Kentucky Straight Bourbon is a limited-edition 108-proof bourbon from Michter's Legacy Series. The bourbon is matured in new charred American oak, with a portion aged in Chinquapin oak that was naturally air-dried and seasoned for 36 months before being toasted and charred. The 2024 expression delivers rich chocolate, caramel, cherry, dark fruit, and baking spice with a bold, roasty character and lingering finish.",
+
+    bartenderNote:
+      "A rich and powerful limited-release bourbon that leans heavily into dark, dessert-like flavors. Chocolate, cocoa, caramel, and toffee are joined by brandied cherry, clove, allspice, and deep oak. The 108-proof strength gives it plenty of weight while the Chinquapin oak adds additional depth and spice. Best suited for guests who enjoy bold, high-proof, oak-forward bourbons with dark fruit and chocolate character.",
+
+    tags: ["limited-release", "rare"],
+  },
+  {
+    id: "shenks-homestead-2024",
+
+    name: "Shenk's Homestead",
+
+    distillery: "Michter's Distillery",
+
+    country: "usa",
+
+    location: "Louisville, Kentucky",
+
+    style: "sour-mash-whiskey",
+
+    barrelTypes: ["toasted-french-oak"],
+
+    age: null,
+
+    abv: 45.6,
+
+    price: 20,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/shenks-homestead-2024.png",
+
+    imageAlt: "Bottle of Shenk's Homestead Sour Mash Whiskey 2024",
+
+    flavorNotes: [
+      "toffee",
+      "vanilla",
+      "honey",
+      "dried-fruit",
+      "spice",
+      "cinnamon",
+      "chocolate",
+      "rye",
+      "herbal",
+      "oak",
+    ],
+
+    description:
+      "The 2024 release of Shenk's Homestead Sour Mash Whiskey is a limited-edition, rye-forward American whiskey from Michter's. Bottled at 91.2 proof, the 2024 expression uses a distinctive grain selection that includes rye, malted rye, and caramel malt. A portion of the whiskey was aged in French oak sourced from the Vosges region of France, which was naturally air-dried and seasoned for 24 months before being toasted. The result is a warm and rich whiskey with spiced fruit, nougat, honey, and spiced chocolate.",
+
+    bartenderNote:
+      "A unique bridge between bourbon and rye, combining bourbon-like sweetness with the peppery, herbal character of rye. The caramel malt contributes a creamy texture while toasted French oak adds layers of spice, dried fruit, honey, and chocolate. A great pour for guests who want something richer and more experimental than a traditional rye or bourbon.",
+
+    tags: [],
+  },
+  {
+    id: "michters-us1-small-batch-bourbon",
+
+    name: "Michter's US*1 Small Batch Bourbon",
+
+    distillery: "Michter's Distillery",
+
+    country: "usa",
+
+    location: "Louisville, Kentucky",
+
+    style: "straight-bourbon",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: null,
+
+    abv: 45.7,
+
+    price: 14,
+
+    priceRange: "entry",
+
+    image: "/images/whiskey/michters-us1-small-batch-bourbon.png",
+
+    imageAlt: "Bottle of Michter's US*1 Small Batch Kentucky Straight Bourbon",
+
+    flavorNotes: [
+      "caramel",
+      "vanilla",
+      "stone-fruit",
+      "cherry",
+      "oak",
+      "spice",
+      "cinnamon",
+      "honey",
+      "chocolate",
+      "pepper",
+    ],
+
+    description:
+      "Michter's US*1 Small Batch Kentucky Straight Bourbon is a small-batch bourbon distilled and matured in Kentucky and bottled at 91.4 proof. It is aged in fire-charred, new American white oak barrels and presents rich caramel, balanced vanilla, stone fruit, smoky depth, and a lingering oak finish.",
+
+    bartenderNote:
+      "A polished and approachable bourbon with a classic sweet profile backed by oak and spice. Caramel and vanilla lead into cherry and other stone-fruit flavors, while baking spice, pepper, and oak provide balance. Its moderate proof makes it versatile enough for sipping neat, on the rocks, or in classic bourbon cocktails.",
+
+    tags: [],
+  },
+  {
+    id: "michters-us1-toasted-barrel-finish-bourbon",
+
+    name: "Michter's US*1 Toasted Barrel Finish Bourbon",
+
+    distillery: "Michter's Distillery",
+
+    country: "usa",
+
+    location: "Louisville, Kentucky",
+
+    style: "straight-bourbon",
+
+    barrelTypes: ["new-charred-american-oak", "toasted-american-oak"],
+
+    age: null,
+
+    abv: 45.7,
+
+    price: 20,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/michters-toasted-barrel.png",
+
+    imageAlt: "Bottle of Michter's US*1 Toasted Barrel Finish Bourbon",
+
+    flavorNotes: [
+      "cinnamon",
+      "pecan",
+      "candied-fruit",
+      "pear",
+      "vanilla",
+      "marshmallow",
+      "caramel",
+      "smoke",
+      "oak",
+    ],
+
+    description:
+      "Michter's US*1 Toasted Barrel Finish Bourbon begins as Michter's US*1 Kentucky Straight Bourbon before receiving an additional period of maturation in a second custom-made barrel. The second barrel is made from 18-month air-dried wood and toasted but not charred. Bottled at 91.4 proof, the bourbon develops campfire and cinnamon notes with pecan and candied fruit, followed by a lingering finish of baked pears, vanilla, and marshmallow.",
+
+    bartenderNote:
+      "A richer and more dessert-driven expression of Michter's bourbon, with the toasted second barrel adding noticeable depth. Cinnamon and campfire notes lead into pecan and candied fruit, while baked pear, vanilla, and marshmallow create a soft, sweet finish. A strong choice for guests who enjoy toasted oak, dessert flavors, and subtle smoke without wanting a high-proof whiskey.",
+
+    tags: [],
+  },
+  {
+    id: "eh-taylor-barrel-proof",
+
+    name: "E.H. Taylor, Jr. Barrel Proof",
+
+    distillery: "Buffalo Trace Distillery",
+
+    country: "usa",
+
+    location: "Frankfort, Kentucky",
+
+    style: "straight-bourbon",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: null,
+
+    abv: 63.65,
+
+    price: 30,
+
+    priceRange: "premium",
+
+    image: "/images/whiskey/eh-taylor-barrel-proof.png",
+
+    imageAlt:
+      "Bottle of E.H. Taylor Jr. Barrel Proof Kentucky Straight Bourbon",
+
+    flavorNotes: [
+      "berry",
+      "caramel",
+      "vanilla",
+      "floral",
+      "oak",
+      "pepper",
+      "spice",
+      "rye",
+      "fruit",
+    ],
+
+    description:
+      "E.H. Taylor, Jr. Barrel Proof is an uncut and unfiltered Kentucky straight bourbon made from hand-selected barrels and bottled directly from the cask. Produced at Buffalo Trace and aged in historic warehouses associated with Colonel E.H. Taylor Jr., each release varies in proof. The bourbon delivers cooked berries, rich caramel, floral notes, toasty vanilla, dried oak, pepper, and a long finish with pronounced rye spice and lingering fruit.",
+
+    bartenderNote:
+      "A powerful, high-proof bourbon built for guests who want intensity and concentration. Cooked berries and caramel provide a rich sweet foundation while toasted vanilla, dried oak, black pepper, and rye spice add depth. The barrel-proof presentation preserves the whiskey's full character, making it an excellent pour neat or with a small amount of water.",
+
+    tags: [],
+  },
+  {
+    id: "parkers-heritage-8-year-malt-whiskey",
+
+    name: "Parker's Heritage 8 Year Malt Whiskey",
+
+    distillery: "Heaven Hill Distillery",
+
+    country: "usa",
+
+    location: "Bardstown, Kentucky",
+
+    style: "straight-malt-whiskey",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: 8,
+
+    abv: 52.5,
+
+    price: 55,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/parkers-heritage-8-year-malt.png",
+
+    imageAlt: "Bottle of Parker's Heritage 8 Year Malt Whiskey",
+
+    flavorNotes: [
+      "maple",
+      "honey",
+      "vanilla",
+      "caramel",
+      "butterscotch",
+      "oak",
+      "spice",
+      "mint",
+      "chocolate",
+      "smoke",
+    ],
+
+    description:
+      "Parker's Heritage 8 Year Malt Whiskey is an American malt whiskey from Heaven Hill's Parker's Heritage Collection. Aged for eight years and bottled at 105 proof, the whiskey showcases a rich combination of maple, honey, vanilla, oak, baking spice, and malted barley, with subtle chocolate and smoke emerging through the finish.",
+
+    bartenderNote:
+      "A distinctive Kentucky malt whiskey that combines the sweetness and richness of maple, honey, vanilla, and butterscotch with earthy malt, oak, mint, and baking spice. The 105-proof presentation gives it substantial weight without overwhelming its sweeter character. A great choice for guests looking to explore something outside traditional bourbon while still enjoying familiar Kentucky whiskey flavors.",
+
+    tags: [],
+  },
+  {
+    id: "parkers-heritage-11-year-heavy-char-wheat-whiskey",
+
+    name: "Parker's Heritage 11 Year Heavy Char Wheat Whiskey",
+
+    distillery: "Heaven Hill Distillery",
+
+    country: "usa",
+
+    location: "Bardstown, Kentucky",
+
+    style: "wheat-whiskey",
+
+    barrelTypes: ["heavy-char-new-american-oak"],
+
+    age: 11,
+
+    abv: 61,
+
+    price: 90,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/parkers-heritage-11-year-wheat.png",
+
+    imageAlt: "Bottle of Parker's Heritage 11 Year Heavy Char Wheat Whiskey",
+
+    flavorNotes: [
+      "honey",
+      "molasses",
+      "butterscotch",
+      "vanilla",
+      "caramel",
+      "cinnamon",
+      "nutmeg",
+      "oak",
+      "pepper",
+      "tobacco",
+      "gingerbread",
+      "smoke",
+    ],
+
+    description:
+      "The 15th edition of Parker's Heritage Collection, this 11-year-old Heavy Char Wheat Whiskey was made from a mash bill of 51% wheat, 37% corn, and 12% malted barley. The whiskey was matured for 11 years in specially made Level 5 charred barrels, which were charred for 90 seconds rather than Heaven Hill's traditional 40-second Level 3 char. Bottled at 122 proof and non-chill filtered, the heavy char contributes rich molasses, butterscotch, honey, oak, and baking spice character.",
+
+    bartenderNote:
+      "A powerful and unusually rich wheat whiskey that combines soft sweetness with substantial oak and spice. Honey, butterscotch, molasses, and caramel provide a dessert-like foundation while cinnamon, nutmeg, pepper, tobacco, and heavy barrel char add complexity. At 122 proof, this is best suited for experienced whiskey drinkers who enjoy intense, full-bodied pours.",
+
+    tags: [],
+  },
+  {
+    id: "star-hill-farm-whisky-2025",
+
+    name: "Star Hill Farm Whisky",
+
+    distillery: "Maker's Mark Distillery",
+
+    country: "usa",
+
+    location: "Loretto, Kentucky",
+
+    style: "wheat-whiskey",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: null,
+
+    abv: 57.35,
+
+    price: 24,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/star-hill-farm-whisky-2025.png",
+
+    imageAlt: "Bottle of Maker's Mark Star Hill Farm Whisky 2025",
+
+    flavorNotes: [
+      "caramel",
+      "vanilla",
+      "nougat",
+      "chocolate",
+      "strawberry",
+      "raspberry",
+      "pear",
+      "oak",
+      "cinnamon",
+      "pepper",
+      "shortbread",
+      "spice",
+    ],
+
+    description:
+      "The inaugural 2025 release of Star Hill Farm Whisky is Maker's Mark's first wheat whisky and first non-bourbon whiskey in its history. The cask-strength expression combines two wheat whiskey mash bills: one made from 70% soft red winter wheat and 30% malted barley, and another made from 100% malted soft red winter wheat. The resulting whiskey was matured for approximately 7 to 8 years in new charred American oak and bottled at 114.7 proof. Rich caramel, vanilla, nougat, fruit, chocolate, oak, and baking spice create a complex and distinctly wheat-driven profile.",
+
+    bartenderNote:
+      "An especially interesting pour for guests who want to explore what wheat can do outside of bourbon. The texture is rich and creamy, with caramel, vanilla, nougat, and confectioner's sugar leading into strawberry and raspberry fruit, chocolate, sweet oak, cinnamon, and pepper. The 114.7-proof cask-strength presentation gives it substantial weight while retaining a surprisingly soft and dessert-like character.",
+
+    tags: [],
+  },
+  {
+    id: "michters-us1-american-whiskey",
+
+    name: "Michter's US*1 American Whiskey",
+
+    distillery: "Michter's Distillery",
+
+    country: "usa",
+
+    location: "Louisville, Kentucky",
+
+    style: "american-whiskey",
+
+    barrelTypes: ["bourbon-soaked-american-white-oak"],
+
+    age: null,
+
+    abv: 41.7,
+
+    price: 14,
+
+    priceRange: "entry",
+
+    image: "/images/whiskey/michters-us1-american-whiskey.png",
+
+    imageAlt: "Bottle of Michter's US*1 American Whiskey",
+
+    flavorNotes: [
+      "butterscotch",
+      "vanilla",
+      "caramel",
+      "dried-fruit",
+      "fruit",
+      "oak",
+    ],
+
+    description:
+      "Michter's US*1 American Whiskey is a small-batch, unblended American whiskey distilled and bottled in Kentucky. Unlike bourbon and rye, which are required to mature in new oak, this whiskey is aged in previously used bourbon-soaked American white oak barrels. Bottled at 83.4 proof, it delivers deep butterscotch and vanilla notes followed by caramel, dried fruit, and a ripe fruit finish.",
+
+    bartenderNote:
+      "A softer and more approachable alternative to bourbon, with rich butterscotch and vanilla at the forefront. Caramel and dried fruit add sweetness while the ripe-fruit finish keeps the whiskey from becoming overly heavy. A good choice for guests who prefer lower-proof, smooth, dessert-leaning American whiskey.",
+
+    tags: [],
+  },
+  {
+    id: "balcones-peated-texas-single-malt",
+
+    name: "Balcones Peated Texas Single Malt",
+
+    distillery: "Balcones Distilling",
+
+    country: "usa",
+
+    location: "Waco, Texas",
+
+    style: "peated-single-malt",
+
+    barrelTypes: ["new-toasted-american-oak", "new-charred-american-oak"],
+
+    age: 4,
+
+    abv: 59,
+
+    price: 14,
+
+    priceRange: "entry",
+
+    image: "/images/whiskey/balcones-peated-texas-single-malt.png",
+
+    imageAlt: "Bottle of Balcones Peated Texas Single Malt Whisky",
+
+    flavorNotes: [
+      "smoke",
+      "peat",
+      "campfire",
+      "leather",
+      "dark-fruit",
+      "cedar",
+      "black-tea",
+      "baking-spice",
+      "pepper",
+      "oak",
+    ],
+
+    description:
+      "Balcones Peated Texas Single Malt is a heavily peated American single malt made from 100% Scottish barley peated to approximately 99 ppm before being shipped to Texas for distillation. The whiskey is matured for a minimum of four years in new toasted and charred American oak and bottled at 59% ABV. Rich peat smoke combines with campfire, cedar, leather, dark fruit, oak, and baking spice, creating an intensely smoky but distinctly Texas single malt.",
+
+    bartenderNote:
+      "A bold American take on heavily peated single malt. Dense smoke and campfire character are balanced by dark fruit, leather, cedar, black tea, and baking spice rather than the medicinal profile often associated with heavily peated Scotch. The high proof gives it considerable intensity, and a splash of water helps reveal sweeter fruit and malt beneath the smoke.",
+
+    tags: [],
+  },
+  {
+    id: "balcones-lineage-pot-still-single-malt",
+
+    name: "Balcones Lineage Texas Single Malt",
+
+    distillery: "Balcones Distilling",
+
+    country: "usa",
+
+    location: "Waco, Texas",
+
+    style: "single-malt-whiskey",
+
+    barrelTypes: ["new-charred-american-oak", "refill-oak"],
+
+    age: 3,
+
+    abv: 47,
+
+    price: 14,
+
+    priceRange: "entry",
+
+    image: "/images/whiskey/balcones-lineage.png",
+
+    imageAlt: "Bottle of Balcones Lineage Texas Single Malt Whisky",
+
+    flavorNotes: [
+      "cream-soda",
+      "apple",
+      "peach",
+      "apricot",
+      "honey",
+      "vanilla",
+      "coconut",
+      "pineapple",
+      "lemongrass",
+      "oak",
+    ],
+
+    description:
+      "Balcones Lineage Texas Single Malt is a pot-distilled American single malt made from a blend of Scottish Golden Promise and Texas-grown malted barley. Distilled in double-batch copper pot stills and matured for three years in a combination of virgin and used oak barrels, Lineage showcases the influence of Texas maturation while retaining a bright and approachable malt character. Cream soda, apple cider, peaches, apricot, vanilla, honey, toasted coconut, and tropical fruit lead into a long, tea-like finish.",
+
+    bartenderNote:
+      "A softer and more fruit-forward expression of Balcones that makes a great introduction to American single malt. Cream soda, apple, peach, honey, and vanilla create a sweet foundation, while pineapple, toasted coconut, and lemongrass add tropical and herbal complexity. The 94-proof presentation gives it enough weight without the intensity of Balcones' higher-proof releases.",
+
+    tags: [],
   },
   {
     id: "bookers-bourbon",
@@ -5371,6 +11547,95 @@ export const whiskeyCollection = [
     tags: ["featured"],
   },
   {
+    id: "basil-hayden-malted-rye",
+
+    name: "Basil Hayden Malted Rye",
+
+    distillery: "James B. Beam Distilling Co.",
+
+    country: "usa",
+
+    location: "Kentucky",
+
+    style: "rye-whiskey",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: null,
+
+    abv: 40,
+
+    price: 14,
+
+    priceRange: "entry",
+
+    image: "/images/whiskey/basil-hayden-malted-rye.png",
+
+    imageAlt:
+      "Bottle of Basil Hayden Malted Rye Kentucky Straight Rye Malt Whiskey",
+
+    flavorNotes: [
+      "cinnamon",
+      "vanilla",
+      "floral",
+      "malt",
+      "chocolate",
+      "caramel",
+    ],
+
+    description:
+      "A distinctive Kentucky straight rye malt whiskey made from a 100% malted rye mash bill. The malting process softens the characteristic spice of rye, producing a lighter, sweeter and more floral whiskey with vanilla, toasted rye bread, cinnamon, chocolate, and warm spice.",
+
+    bartenderNote:
+      "A softer, more approachable take on rye. Cinnamon and vanilla lead into toasted rye bread and sweet malt, with floral character and a delicate chocolate finish. A great recommendation for guests who want rye spice without the heavier peppery profile of a traditional rye whiskey.",
+
+    tags: ["featured", "core-range", "malted-rye"],
+  },
+  {
+    id: "basil-hayden-dark-rye",
+
+    name: "Basil Hayden Dark Rye",
+
+    distillery: "James B. Beam Distilling Co.",
+
+    country: "usa",
+
+    location: "Kentucky",
+
+    style: "blended-rye-whiskey",
+
+    barrelTypes: ["new-charred-american-oak", "port-wine"],
+
+    age: null,
+
+    abv: 40,
+
+    price: 14,
+
+    priceRange: "entry",
+
+    image: "/images/whiskey/basil-hayden-dark-rye.png",
+
+    imageAlt: "Bottle of Basil Hayden Dark Rye blended rye whiskey",
+
+    flavorNotes: [
+      "dark-berry",
+      "dried-fruit",
+      "caramel",
+      "molasses",
+      "oak",
+      "spice",
+    ],
+
+    description:
+      "A distinctive blend of Kentucky straight rye whiskey, Canadian rye whiskey, and a touch of California Port. The combination creates a dark, fruit-forward rye with dried berries, molasses, caramel, oak, and warming rye spice.",
+
+    bartenderNote:
+      "A softer, sweeter alternative to traditional rye. Dark berries and molasses lead into caramel, dried fruit, oak, and gentle rye spice, with the Port contributing a rich wine-like sweetness. A good recommendation for guests who enjoy fruit-forward whiskey or Port-finished expressions.",
+
+    tags: ["featured", "core-range", "blended-rye", "port-finished"],
+  },
+  {
     id: "blantons-original-single-barrel",
 
     name: "Blanton's Original Single Barrel",
@@ -5407,6 +11672,332 @@ export const whiskeyCollection = [
       "A classic single barrel bourbon that showcases the influence of individual barrel selection. Smooth and approachable with notes of vanilla, caramel, honey, baking spices, and oak, it's an excellent choice for guests exploring premium bourbon or collectors seeking the iconic horse-stopper bottle.",
 
     tags: ["featured"],
+  },
+  {
+    id: "high-west-double-rye",
+
+    name: "High West Double Rye",
+
+    distillery: "High West",
+
+    country: "usa",
+
+    location: "Park City, Utah",
+
+    style: "blended-rye-whiskey",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: null,
+
+    abv: 46,
+
+    price: 14,
+
+    priceRange: "entry",
+
+    image: "/images/whiskey/high-west-double-rye.png",
+
+    imageAlt: "Bottle of High West Double Rye blended straight rye whiskey",
+
+    flavorNotes: ["mint", "cinnamon", "ginger", "caramel", "vanilla", "oak"],
+
+    description:
+      "A blend of straight rye whiskeys from High West, designed to combine robust rye spice with sweeter, more aromatic character. The profile is driven by mint, cinnamon, ginger, caramel, vanilla, and toasted oak.",
+
+    bartenderNote:
+      "A classic approachable rye with a strong herbal and baking-spice character. Mint and cinnamon lead into ginger, vanilla, caramel, and oak. A versatile recommendation for guests who want a lively rye that works equally well neat or in cocktails.",
+
+    tags: ["featured", "core-range", "blended-rye", "utah-whiskey"],
+  },
+  {
+    id: "high-west-rendezvous-rye",
+
+    name: "High West Rendezvous Rye",
+
+    distillery: "High West",
+
+    country: "usa",
+
+    location: "Park City, Utah",
+
+    style: "blended-rye-whiskey",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: null,
+
+    abv: 46,
+
+    price: 16,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/high-west-rendezvous-rye.png",
+
+    imageAlt: "Bottle of High West Rendezvous Rye blended straight rye whiskey",
+
+    flavorNotes: [
+      "plum",
+      "raspberry",
+      "orange",
+      "cinnamon",
+      "vanilla",
+      "ginger",
+    ],
+
+    description:
+      "High West's flagship rye blend, combining medium-aged rye whiskey with High West's own pot-still rye for added complexity and smoothness. The high-rye blend delivers layers of plum, raspberry, orange, vanilla, cinnamon, ginger, mint, and baking spice.",
+
+    bartenderNote:
+      "A more refined and fruit-forward rye than High West Double Rye. Plum and raspberry lead into orange, vanilla, cinnamon, ginger, and mint, with baking spice and pepper adding structure. A particularly good recommendation for guests who want a rye for sipping rather than simply maximum spice.",
+
+    tags: ["featured", "flagship", "blended-rye", "seasonal-release"],
+  },
+  {
+    id: "high-west-midwinter-nights-dram-act-12-scene-8",
+
+    name: "A Midwinter Night's Dram Act 12 Scene 8",
+
+    distillery: "High West",
+
+    country: "usa",
+
+    location: "Park City, Utah",
+
+    style: "blended-rye-whiskey",
+
+    barrelTypes: ["ruby-port-cask", "tawny-port-cask", "french-oak"],
+
+    age: null,
+
+    abv: 49.3,
+
+    price: 20,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/high-west-midwinter-nights-dram-act-12-scene-8.png",
+
+    imageAlt: "Bottle of High West A Midwinter Night's Dram Act 12 Scene 8",
+
+    flavorNotes: [
+      "peach",
+      "raspberry",
+      "fig",
+      "cinnamon",
+      "ginger",
+      "chocolate",
+    ],
+
+    description:
+      "A limited seasonal rye from High West built on Rendezvous Rye and finished in ruby and tawny Port barrels, with French oak contributing additional spice. The Act 12 Scene 8 bottling combines poached white peach, stewed rhubarb, raspberry, dried fig, vanilla, cinnamon, candied ginger, clove, espresso, and dark chocolate.",
+
+    bartenderNote:
+      "A rich, dessert-like rye with pronounced Port influence. Poached peach, raspberry, fig, and dried fruit lead into cinnamon, ginger, clove, espresso, and chocolate. A natural recommendation for guests who enjoy wine-finished whiskey, dark fruit, and holiday baking-spice flavors.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "port-finished",
+      "seasonal",
+      "discontinued",
+    ],
+  },
+  {
+    id: "van-winkle-family-reserve-rye-13-year",
+
+    name: "Van Winkle Family Reserve Rye 13 Year",
+
+    distillery: "Buffalo Trace",
+
+    country: "usa",
+
+    location: "Frankfort, Kentucky",
+
+    style: "rye-whiskey",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: 13,
+
+    abv: 47.8,
+
+    price: 100,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/van-winkle-family-reserve-rye-13-year.png",
+
+    imageAlt:
+      "Bottle of Van Winkle Family Reserve Rye 13 Year Kentucky straight rye whiskey",
+
+    flavorNotes: [
+      "chestnut",
+      "vanilla",
+      "cherry",
+      "cocoa",
+      "pepper",
+      "caramel",
+    ],
+
+    description:
+      "A highly limited 13-year-old Kentucky straight rye whiskey from the Van Winkle family, produced in partnership with Buffalo Trace. Extended maturation creates a rich and mature profile of roasted chestnut, vanilla, cherry and stone fruit, cocoa, white pepper, caramel, and dry oak.",
+
+    bartenderNote:
+      "A mature, elegant rye with considerably more fruit and oak depth than a young rye. Roasted chestnut, vanilla, cherry, and cocoa lead into white pepper and caramel, with dry oak carrying the long finish. A collector-level recommendation for guests looking for an exceptionally aged rye.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "age-statement",
+      "collector",
+      "annual-release",
+    ],
+  },
+  {
+    id: "templeton-rye-4-year",
+
+    name: "Templeton Rye 4 Year",
+
+    distillery: "Templeton Rye",
+
+    country: "usa",
+
+    location: "Templeton, Iowa",
+
+    style: "rye-whiskey",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: 4,
+
+    abv: 40,
+
+    price: 12,
+
+    priceRange: "entry",
+
+    image: "/images/whiskey/templeton-rye-4-year.png",
+
+    imageAlt: "Bottle of Templeton Rye 4 Year American rye whiskey",
+
+    flavorNotes: ["vanilla", "toffee", "caramel", "pepper", "cinnamon", "oak"],
+
+    description:
+      "A 4-year-old American rye whiskey matured in new American oak. The classic expression combines sweet vanilla, toffee, caramel, and sugar-cookie character with white pepper, rye spice, baking spice, and toasted oak.",
+
+    bartenderNote:
+      "An approachable, mellow rye with a sweet opening and restrained spice. Vanilla, toffee, and caramel lead into white pepper, cinnamon, and toasted oak. A good recommendation for guests who want recognizable rye character without high proof or aggressive heat.",
+
+    tags: ["featured", "core-range", "rye-whiskey"],
+  },
+  {
+    id: "old-forester-presidents-choice-straight-rye-117-month",
+
+    name: "Old Forester President's Choice Straight Rye 117 Month",
+
+    distillery: "Old Forester",
+
+    country: "usa",
+
+    location: "Louisville, Kentucky",
+
+    style: "rye-whiskey",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: 9,
+
+    abv: 58.95,
+
+    price: 70,
+
+    priceRange: "luxury",
+
+    image: "/images/whiskey/old-forester-presidents-choice-rye-117-month.png",
+
+    imageAlt:
+      "Bottle of Old Forester President's Choice Straight Rye 117 Month",
+
+    flavorNotes: [
+      "cherry",
+      "dark-chocolate",
+      "caramel",
+      "cinnamon",
+      "pepper",
+      "tobacco",
+    ],
+
+    description:
+      "A highly limited Old Forester President's Choice single-barrel Kentucky straight rye aged at least 117 months in new charred American oak. Bottled at 58.95% ABV, the whiskey delivers ripe cherry, dark chocolate, dried fruit, caramel oak, cinnamon, black pepper, leather, and sweet tobacco.",
+
+    bartenderNote:
+      "A powerful, mature rye with deep fruit and oak character. Ripe cherry and dark chocolate lead into caramel, cinnamon, and pepper, while leather and sweet tobacco emerge through the long finish. A collector-level pour for guests who enjoy high-proof, heavily developed rye.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "single-barrel",
+      "cask-strength",
+      "age-statement",
+      "collector",
+      "presidents-choice",
+    ],
+  },
+  {
+    id: "eh-taylor-straight-rye",
+
+    name: "E.H. Taylor, Jr. Straight Rye",
+
+    distillery: "Buffalo Trace",
+
+    country: "usa",
+
+    location: "Frankfort, Kentucky",
+
+    style: "rye-whiskey",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: 4,
+
+    abv: 50,
+
+    price: 20,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/eh-taylor-straight-rye.png",
+
+    imageAlt: "Bottle of E.H. Taylor Jr. Straight Rye Kentucky rye whiskey",
+
+    flavorNotes: [
+      "dried-fruit",
+      "pepper",
+      "dill",
+      "caramel",
+      "cinnamon",
+      "oak",
+    ],
+
+    description:
+      "A Bottled-in-Bond Kentucky straight rye from Buffalo Trace, made from a distinctive mash of rye and malted barley with no corn. The whiskey delivers dried fruit, black pepper, fresh dill, dark spice, subtle caramel, and a dry oaky finish.",
+
+    bartenderNote:
+      "A distinctive rye with a surprisingly sweet and herbal side. Dried fruit and caramel balance black pepper, dill, and dark baking spice, while new American oak brings a dry, lingering finish. A strong recommendation for guests who want a rye with more herbal complexity than a typical pepper-forward expression.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "bottled-in-bond",
+      "kentucky-rye",
+      "discontinued",
+    ],
   },
   {
     id: "colonel-e-h-taylor-jr-barrel-proof",
@@ -5497,6 +12088,103 @@ export const whiskeyCollection = [
       "A classic Bottled-in-Bond bourbon that offers exceptional balance between sweetness and spice. Smooth enough for newcomers while providing enough depth and complexity to satisfy seasoned bourbon enthusiasts.",
 
     tags: ["featured"],
+  },
+  {
+    id: "michters-us1-kentucky-straight-rye",
+
+    name: "Michter's US1 Kentucky Straight Rye",
+
+    distillery: "Michter's",
+
+    country: "usa",
+
+    location: "Kentucky",
+
+    style: "rye-whiskey",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: null,
+
+    abv: 42.4,
+
+    price: 14,
+
+    priceRange: "entry",
+
+    image: "/images/whiskey/michters-us1-kentucky-straight-rye.png",
+
+    imageAlt: "Bottle of Michter's US1 Kentucky Straight Rye whiskey",
+
+    flavorNotes: [
+      "pepper",
+      "citrus",
+      "butterscotch",
+      "oak",
+      "caramel",
+      "spice",
+    ],
+
+    description:
+      "A single-barrel Kentucky straight rye from Michter's, made from select American rye grain and matured in fire-charred new American white oak barrels. The relatively low 103-proof barrel entry is intended to produce a richer, smoother, fuller-bodied rye. The profile combines peppery rye spice with citrus, butterscotch, caramel, and oak.",
+
+    bartenderNote:
+      "A polished, approachable rye with classic peppery spice softened by butterscotch and caramel sweetness. Citrus brightens the palate while new American oak contributes vanilla and woody spice. A versatile recommendation for guests who want traditional rye character without the intensity of a barrel-strength bottling.",
+
+    tags: ["featured", "core-range", "single-barrel", "kentucky-rye"],
+  },
+  {
+    id: "michters-10-year-single-barrel-straight-rye",
+
+    name: "Michter's 10 Year Single Barrel Straight Rye",
+
+    distillery: "Michter's",
+
+    country: "usa",
+
+    location: "Kentucky",
+
+    style: "rye-whiskey",
+
+    barrelTypes: ["new-charred-american-oak"],
+
+    age: 10,
+
+    abv: 46.4,
+
+    price: 25,
+
+    priceRange: "mid",
+
+    image: "/images/whiskey/michters-10-year-single-barrel-straight-rye.png",
+
+    imageAlt:
+      "Bottle of Michter's 10 Year Single Barrel Kentucky Straight Rye whiskey",
+
+    flavorNotes: [
+      "vanilla",
+      "toffee",
+      "almond",
+      "cinnamon",
+      "pepper",
+      "orange",
+    ],
+
+    description:
+      "A highly limited 10-year-old single-barrel Kentucky straight rye from Michter's. Matured in fire-charred new American white oak, the whisky combines deep vanilla and toffee with toasted almond, cinnamon, crushed pepper, and orange citrus.",
+
+    bartenderNote:
+      "A mature, richly textured rye that balances classic peppery spice with dessert-like sweetness. Vanilla and toffee lead into toasted almond and cinnamon, while crushed pepper and orange citrus provide lift. A strong recommendation for guests who want an elegant, age-driven rye rather than a high-proof powerhouse.",
+
+    tags: [
+      "featured",
+      "limited-release",
+      "rare",
+      "single-barrel",
+      "age-statement",
+      "kentucky-rye",
+      "discontinued",
+    ],
   },
   {
     id: "michters-us1-kentucky-straight-bourbon",
