@@ -66,17 +66,12 @@
 
 @media screen and (max-width: 768px) {
   .header {
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      "logo"
-      "title"
-      "nav";
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "logo title nav";
 
-    justify-items: center;
+    column-gap: 8px;
 
-    row-gap: 12px;
-
-    padding: 16px 12px;
+    padding: 8px 10px;
   }
 
   .header__logo {
@@ -90,12 +85,18 @@
   .header__title {
     grid-area: title;
 
+    justify-self: center;
+
+    font-size: 0.55rem;
+    line-height: 1.1;
+    letter-spacing: 0.05em;
+
     text-align: center;
 
-    font-size: 1rem;
+    white-space: nowrap;
+  }
 
-    letter-spacing: 0.08em;
-
-    white-space: normal;
+  .header__title span {
+    display: block;
   }
 }

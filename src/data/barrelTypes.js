@@ -4,8 +4,24 @@ export const BARREL_TYPES = [
     label: "American Oak",
   },
   {
+    id: "american-oak-hogshead",
+    label: "American Oak Hogshead",
+  },
+  {
     id: "american-oak-puncheon",
     label: "American Oak Puncheon",
+  },
+  {
+    id: "american-white-oak",
+    label: "American White Oak",
+  },
+  {
+    id: "american-white-oak-hogshead",
+    label: "American White Oak Hogshead",
+  },
+  {
+    id: "applewood-smoked-barrel",
+    label: "Applewood Smoked Barrel",
   },
   {
     id: "beer-cask",
@@ -20,20 +36,92 @@ export const BARREL_TYPES = [
     label: "Bourbon Cask",
   },
   {
+    id: "bourbon-soaked-american-white-oak",
+    label: "Bourbon-Soaked American White Oak",
+  },
+  {
+    id: "cabernet-sauvignon-cask",
+    label: "Cabernet Sauvignon Cask",
+  },
+  {
+    id: "cherry-cask",
+    label: "Cherry Cask",
+  },
+  {
     id: "chestnut-cask",
     label: "Chestnut Cask",
+  },
+  {
+    id: "chibidaru",
+    label: "Chibidaru",
   },
   {
     id: "chibidaru-cask",
     label: "Chibidaru Cask",
   },
   {
+    id: "chinquapin-oak",
+    label: "Chinquapin Oak",
+  },
+  {
+    id: "cognac-cask",
+    label: "Cognac Cask",
+  },
+  {
     id: "european-oak",
     label: "European Oak",
   },
   {
+    id: "ex-bourbon",
+    label: "Ex-Bourbon",
+  },
+  {
+    id: "ex-bourbon-cask",
+    label: "Ex-Bourbon Cask",
+  },
+  {
+    id: "ex-shochu-cask",
+    label: "Ex-Shochu Cask",
+  },
+  {
     id: "french-oak",
     label: "French Oak",
+  },
+  {
+    id: "french-oak-wine-cask",
+    label: "French Oak Wine Cask",
+  },
+  {
+    id: "heavy-char-new-american-oak",
+    label: "Heavy Char New American Oak",
+  },
+  {
+    id: "hogshead",
+    label: "Hogshead",
+  },
+  {
+    id: "hoppy-cider-cask",
+    label: "Hoppy Cider Cask",
+  },
+  {
+    id: "imperial-stout-cask",
+    label: "Imperial Stout Cask",
+  },
+  {
+    id: "ipa-cask",
+    label: "IPA Cask",
+  },
+  {
+    id: "level-3-char-american-oak",
+    label: "Level 3 Char American Oak",
+  },
+  {
+    id: "level-5-heavy-char-american-oak",
+    label: "Level 5 Heavy Char American Oak",
+  },
+  {
+    id: "madeira-cask",
+    label: "Madeira Cask",
   },
   {
     id: "manzanilla-sherry-cask",
@@ -44,20 +132,56 @@ export const BARREL_TYPES = [
     label: "Mizunara Oak",
   },
   {
+    id: "new-american-oak",
+    label: "New American Oak",
+  },
+  {
+    id: "new-american-white-oak",
+    label: "New American White Oak",
+  },
+  {
     id: "new-charred-american-oak",
     label: "New Charred American Oak",
+  },
+  {
+    id: "new-french-oak",
+    label: "New French Oak",
   },
   {
     id: "new-oak",
     label: "New Oak",
   },
   {
+    id: "new-toasted-american-oak",
+    label: "New Toasted American Oak",
+  },
+  {
     id: "oloroso-sherry-cask",
     label: "Oloroso Sherry Cask",
   },
   {
+    id: "orange-curacao-cask",
+    label: "Orange Curaçao Cask",
+  },
+  {
+    id: "pinot-noir-cask",
+    label: "Pinot Noir Cask",
+  },
+  {
+    id: "plum-cask",
+    label: "Plum Cask",
+  },
+  {
     id: "port-cask",
     label: "Port Cask",
+  },
+  {
+    id: "port-pipe",
+    label: "Port Pipe",
+  },
+  {
+    id: "port-wine",
+    label: "Port Wine",
   },
   {
     id: "puncheon",
@@ -68,8 +192,16 @@ export const BARREL_TYPES = [
     label: "Pedro Ximénez Sherry Cask",
   },
   {
+    id: "re-charred-american-white-oak",
+    label: "Re-Charred American White Oak",
+  },
+  {
     id: "recharred-american-oak",
     label: "Recharred American Oak",
+  },
+  {
+    id: "recharred-cask",
+    label: "Recharred Cask",
   },
   {
     id: "red-wine-cask",
@@ -84,6 +216,22 @@ export const BARREL_TYPES = [
     label: "Refill Cask",
   },
   {
+    id: "refill-oak",
+    label: "Refill Oak",
+  },
+  {
+    id: "refill-sherry-hogshead",
+    label: "Refill Sherry Hogshead",
+  },
+  {
+    id: "remade-cask",
+    label: "Remade Cask",
+  },
+  {
+    id: "ruby-port-cask",
+    label: "Ruby Port Cask",
+  },
+  {
     id: "rum-cask",
     label: "Rum Cask",
   },
@@ -94,6 +242,14 @@ export const BARREL_TYPES = [
   {
     id: "sakura-cask",
     label: "Sakura Cask",
+  },
+  {
+    id: "sauternes-cask",
+    label: "Sauternes Cask",
+  },
+  {
+    id: "second-fill-bourbon-cask",
+    label: "Second-Fill Bourbon Cask",
   },
   {
     id: "sherry-cask",
@@ -108,19 +264,51 @@ export const BARREL_TYPES = [
     label: "Spanish Oak",
   },
   {
+    id: "spanish-oak-sherry-cask",
+    label: "Spanish Oak Sherry Cask",
+  },
+  {
+    id: "tawny-port-cask",
+    label: "Tawny Port Cask",
+  },
+  {
     id: "tennessee-whiskey-cask",
     label: "Tennessee Whiskey Cask",
+  },
+  {
+    id: "toasted-american-oak",
+    label: "Toasted American Oak",
+  },
+  {
+    id: "toasted-french-oak",
+    label: "Toasted French Oak",
   },
   {
     id: "ume-cask",
     label: "Ume Cask",
   },
   {
+    id: "umeshu-cask",
+    label: "Umeshu Cask",
+  },
+  {
+    id: "virgin-french-oak-staves",
+    label: "Virgin French Oak Staves",
+  },
+  {
     id: "virgin-oak",
     label: "Virgin Oak",
   },
   {
+    id: "whisky-cask",
+    label: "Whisky Cask",
+  },
+  {
     id: "wine-cask",
     label: "Wine Cask",
+  },
+  {
+    id: "yamazaki-sherry-cask",
+    label: "Yamazaki Sherry Cask",
   },
 ];

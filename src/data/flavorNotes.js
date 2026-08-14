@@ -2,6 +2,16 @@ export const FLAVOR_CATEGORIES = [
   {
     id: "smoke",
     label: "Smoke",
+
+    previewNotes: [
+      { id: "smoke", label: "Smoke" },
+      { id: "peat", label: "Peat" },
+      { id: "campfire", label: "Campfire" },
+      { id: "ash", label: "Ash" },
+      { id: "charcoal", label: "Charcoal" },
+      { id: "oak", label: "Oak" },
+    ],
+
     notes: [
       { id: "smoke", label: "Smoke" },
       { id: "peat", label: "Peat" },
@@ -14,6 +24,16 @@ export const FLAVOR_CATEGORIES = [
   {
     id: "sweet",
     label: "Sweet",
+
+    previewNotes: [
+      { id: "vanilla", label: "Vanilla" },
+      { id: "caramel", label: "Caramel" },
+      { id: "honey", label: "Honey" },
+      { id: "toffee", label: "Toffee" },
+      { id: "brown-sugar", label: "Brown Sugar" },
+      { id: "maple", label: "Maple" },
+    ],
+
     notes: [
       { id: "vanilla", label: "Vanilla" },
       { id: "caramel", label: "Caramel" },
@@ -36,6 +56,16 @@ export const FLAVOR_CATEGORIES = [
   {
     id: "fruit",
     label: "Fruit",
+
+    previewNotes: [
+      { id: "apple", label: "Apple" },
+      { id: "pear", label: "Pear" },
+      { id: "citrus", label: "Citrus" },
+      { id: "cherry", label: "Cherry" },
+      { id: "berry", label: "Berry" },
+      { id: "tropical-fruit", label: "Tropical Fruit" },
+    ],
+
     notes: [
       { id: "apple", label: "Apple" },
       { id: "green-apple", label: "Green Apple" },
@@ -111,6 +141,16 @@ export const FLAVOR_CATEGORIES = [
   {
     id: "spice",
     label: "Spice",
+
+    previewNotes: [
+      { id: "cinnamon", label: "Cinnamon" },
+      { id: "black-pepper", label: "Black Pepper" },
+      { id: "nutmeg", label: "Nutmeg" },
+      { id: "clove", label: "Clove" },
+      { id: "ginger", label: "Ginger" },
+      { id: "baking-spice", label: "Baking Spice" },
+    ],
+
     notes: [
       { id: "spice", label: "Spice" },
       { id: "baking-spice", label: "Baking Spice" },
@@ -132,6 +172,16 @@ export const FLAVOR_CATEGORIES = [
   {
     id: "wood",
     label: "Wood",
+
+    previewNotes: [
+      { id: "oak", label: "Oak" },
+      { id: "leather", label: "Leather" },
+      { id: "tobacco", label: "Tobacco" },
+      { id: "cedar", label: "Cedar" },
+      { id: "malt", label: "Malt" },
+      { id: "earth", label: "Earth" },
+    ],
+
     notes: [
       { id: "oak", label: "Oak" },
       { id: "cedar", label: "Cedar" },
@@ -147,10 +197,19 @@ export const FLAVOR_CATEGORIES = [
       { id: "hops", label: "Hops" },
     ],
   },
-
-  {
+    {
     id: "dessert",
     label: "Dessert",
+
+    previewNotes: [
+      { id: "chocolate", label: "Chocolate" },
+      { id: "coffee", label: "Coffee" },
+      { id: "fudge", label: "Fudge" },
+      { id: "marzipan", label: "Marzipan" },
+      { id: "nutty", label: "Nutty" },
+      { id: "pastry", label: "Pastry" },
+    ],
+
     notes: [
       { id: "chocolate", label: "Chocolate" },
       { id: "dark-chocolate", label: "Dark Chocolate" },
@@ -162,6 +221,7 @@ export const FLAVOR_CATEGORIES = [
       { id: "nuts", label: "Nuts" },
       { id: "nutty", label: "Nutty" },
       { id: "peanut", label: "Peanut" },
+
       { id: "almond", label: "Almond" },
       { id: "hazelnut", label: "Hazelnut" },
       { id: "pecan", label: "Pecan" },
@@ -188,6 +248,16 @@ export const FLAVOR_CATEGORIES = [
   {
     id: "floral",
     label: "Floral",
+
+    previewNotes: [
+      { id: "floral", label: "Floral" },
+      { id: "herbal", label: "Herbal" },
+      { id: "tea", label: "Tea" },
+      { id: "mint", label: "Mint" },
+      { id: "elderflower", label: "Elderflower" },
+      { id: "chamomile", label: "Chamomile" },
+    ],
+
     notes: [
       { id: "floral", label: "Floral" },
       { id: "cherry-blossom", label: "Cherry Blossom" },
@@ -206,6 +276,13 @@ export const FLAVOR_CATEGORIES = [
   {
     id: "maritime",
     label: "Maritime",
+
+    previewNotes: [
+      { id: "sea-salt", label: "Sea Salt" },
+      { id: "salinity", label: "Salinity" },
+      { id: "seaweed", label: "Seaweed" },
+    ],
+
     notes: [
       { id: "salinity", label: "Salinity" },
       { id: "sea-salt", label: "Sea Salt" },

@@ -172,7 +172,7 @@ function WhiskeyFinder() {
                 </p>
 
                 <ul className="whiskey-finder__notes-list">
-                  {displayedFlavor.notes.map((note) => (
+                  {displayedFlavor.previewNotes.map((note) => (
                     <li key={note.id} className="whiskey-finder__note">
                       {note.label}
                     </li>
