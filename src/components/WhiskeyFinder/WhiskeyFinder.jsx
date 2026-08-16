@@ -26,17 +26,26 @@ function WhiskeyFinder() {
 
   const [hasSearched, setHasSearched] = useState(false);
 
+  const [isResultsModalOpen, setIsResultsModalOpen] =
+  useState(false);
+
   const [selectedWhiskey, setSelectedWhiskey] = useState(null);
 
   const [isLoading, setIsLoading] = useState(false);
 
   function handleViewDetails(whiskey) {
+      setIsResultsModalOpen(false);
     setSelectedWhiskey(whiskey);
   }
 
   function handleCloseDetails() {
     setSelectedWhiskey(null);
+    setIsResultsModalOpen(true);
   }
+
+  function handleCloseResultsModal() {
+  setIsResultsModalOpen(false);
+}
 
   function handleFlavorClick(flavorId) {
     const isSelected = preferences.flavors.includes(flavorId);
@@ -97,6 +106,10 @@ function WhiskeyFinder() {
       setRecommendations(whiskeyRecommendations);
 
       setHasSearched(true);
+
+      if (whiskeyRecommendations.length > 0) {
+  setIsResultsModalOpen(true);
+}
 
       setIsLoading(false);
     }, 700);
@@ -263,6 +276,7 @@ function WhiskeyFinder() {
                 >
                   <WhiskeyCard
                     whiskey={whiskey}
+                    rank={index + 1}
                     onViewDetails={handleViewDetails}
                   />
                 </li>
@@ -283,6 +297,51 @@ function WhiskeyFinder() {
           </section>
         )}
       </div>
+      <div
+  className={`whiskey-finder__results-modal ${
+    isResultsModalOpen
+      ? "whiskey-finder__results-modal--open"
+      : ""
+  }`}
+>
+  <div className="whiskey-finder__results-modal-content">
+    <div className="whiskey-finder__results-modal-header">
+      <div>
+        <p className="whiskey-finder__eyebrow">
+          Personalized Recommendations
+        </p>
+
+        <h3 className="whiskey-finder__results-title">
+          Your Whiskey Matches
+        </h3>
+      </div>
+
+      <button
+        className="whiskey-finder__results-modal-close"
+        type="button"
+        onClick={handleCloseResultsModal}
+        aria-label="Close whiskey recommendations"
+      >
+        ×
+      </button>
+    </div>
+
+    <ul className="whiskey-finder__results-list">
+      {recommendations.map((whiskey, index) => (
+        <li
+          key={whiskey.id}
+          className="whiskey-finder__results-item"
+        >
+          <WhiskeyCard
+            whiskey={whiskey}
+            rank={index + 1}
+            onViewDetails={handleViewDetails}
+          />
+        </li>
+      ))}
+    </ul>
+  </div>
+</div>
 
       <WhiskeyDetailsModal
         key={selectedWhiskey?.id}

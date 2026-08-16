@@ -559,9 +559,9 @@
   animation: whiskeyShimmer 2s linear infinite;
 }
 
-/* ===========================
-   Animations
-=========================== */
+.whiskey-finder__results-modal {
+  display: none;
+}
 
 @keyframes revealCard {
   from {
@@ -607,14 +607,6 @@
     left: 120%;
   }
 }
-
-/* ===========================
-   Mobile
-=========================== */
-
-/* ===========================
-   Mobile
-=========================== */
 
 @media screen and (max-width: 768px) {
   .whiskey-finder {
@@ -723,5 +715,124 @@
 
     pointer-events: none;
     z-index: 0;
+  }
+   .whiskey-finder__results-modal {
+    position: fixed;
+    inset: 0;
+
+    z-index: 1000;
+
+    padding: 20px;
+
+    background: rgba(0, 0, 0, 0.72);
+
+    backdrop-filter: blur(6px);
+
+    overflow-y: auto;
+  }
+
+  .whiskey-finder__results-modal--open {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .whiskey-finder__results-modal-content {
+    width: 100%;
+    max-width: 520px;
+
+    margin: 20px auto;
+
+    padding: 24px 18px;
+
+    background: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-card);
+
+    box-shadow: var(--shadow-hover);
+  }
+
+  .whiskey-finder__results-modal-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 16px;
+
+    margin-bottom: 24px;
+
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .whiskey-finder__results-modal-header
+    .whiskey-finder__eyebrow {
+    margin-bottom: 6px;
+  }
+
+  .whiskey-finder__results-title {
+    margin: 0;
+
+    color: var(--color-text-primary);
+
+    font-family: var(--font-heading);
+
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+
+  .whiskey-finder__results-modal-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    width: 38px;
+    height: 38px;
+
+    padding: 0;
+
+    background: transparent;
+
+    border: 1px solid var(--color-border);
+    border-radius: 50%;
+
+    color: var(--color-text-primary);
+
+    font-size: 1.5rem;
+    line-height: 1;
+
+    cursor: pointer;
+
+    transition:
+      background var(--transition-fast),
+      border-color var(--transition-fast);
+  }
+
+  .whiskey-finder__results-modal-close:hover {
+    background: rgba(201, 139, 60, 0.1);
+
+    border-color: var(--color-accent);
+  }
+
+  .whiskey-finder__results-modal
+    .whiskey-finder__results-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  .whiskey-finder__results-modal
+    .whiskey-finder__results-item {
+    margin: 0;
   }
 }
