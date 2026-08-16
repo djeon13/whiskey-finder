@@ -22,10 +22,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/chita-distillers-reserve.png",
 
-    imageAlt:
-      "Bottle of The Chita Distiller's Reserve Japanese single grain whisky",
 
     flavorNotes: ["honey", "vanilla", "floral", "mint", "oak", "cardamom"],
 
@@ -60,9 +57,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/hibiki-harmony.png",
 
-    imageAlt: "Bottle of Hibiki Harmony Japanese whisky",
 
     flavorNotes: ["honey", "orange", "vanilla", "oak", "floral"],
 
@@ -98,9 +93,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/hibiki-blossom-harmony-2022.png",
 
-    imageAlt: "Bottle of Hibiki Blossom Harmony 2022 Japanese whisky",
 
     flavorNotes: [
       "floral",
@@ -143,10 +136,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/hibiki-masters-select.png",
 
-    imageAlt:
-      "Bottle of Hibiki Japanese Harmony Master's Select Japanese whisky",
 
     flavorNotes: [
       "orange",
@@ -188,9 +178,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/hibiki-blenders-choice.png",
 
-    imageAlt: "Bottle of Hibiki Blender's Choice Japanese whisky",
 
     flavorNotes: ["raisin", "plum", "caramel", "vanilla", "spice", "oak"],
 
@@ -225,9 +213,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/hibiki-12-year.png",
 
-    imageAlt: "Bottle of Hibiki 12 Year Japanese whisky",
 
     flavorNotes: ["honey", "citrus", "pineapple", "plum", "vanilla", "oak"],
 
@@ -262,9 +248,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/hibiki-17-year.png",
 
-    imageAlt: "Bottle of Hibiki 17 Year Japanese whisky",
 
     flavorNotes: ["honey", "peach", "apricot", "vanilla", "oak", "sandalwood"],
 
@@ -299,9 +283,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/hibiki-21-year.png",
 
-    imageAlt: "Bottle of Hibiki 21 Year Japanese whisky",
 
     flavorNotes: [
       "dried-fruit",
@@ -343,9 +325,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/hibiki-30-year.png",
 
-    imageAlt: "Bottle of Hibiki 30 Year Japanese whisky",
 
     flavorNotes: [
       "dried-fruit",
@@ -387,9 +367,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/hakushu-12-year.png",
 
-    imageAlt: "Bottle of Hakushu 12 Year Japanese single malt whisky",
 
     flavorNotes: ["green-apple", "pear", "citrus", "mint", "herbal", "smoke"],
 
@@ -424,9 +402,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/hakushu-18-year.png",
 
-    imageAlt: "Bottle of Hakushu 18 Year Japanese single malt whisky",
 
     flavorNotes: ["pear", "apple", "honey", "herbal", "oak", "smoke"],
 
@@ -461,10 +437,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/hakushu-heavily-peated-2013.png",
 
-    imageAlt:
-      "Bottle of Hakushu Heavily Peated 2013 Japanese single malt whisky",
 
     flavorNotes: ["smoke", "peat", "citrus", "herbal", "honey", "oak"],
 
@@ -499,10 +472,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/hakushu-18-year-peated-malt-tsukuriwake-2024.png",
 
-    imageAlt:
-      "Bottle of Hakushu 18 Year Peated Malt Tsukuriwake 2024 Japanese single malt whisky",
 
     flavorNotes: [
       "smoke",
@@ -544,9 +514,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/yamazaki-12-year.png",
 
-    imageAlt: "Bottle of Yamazaki 12 Year Japanese single malt whisky",
 
     flavorNotes: ["peach", "pineapple", "orange", "vanilla", "cinnamon", "oak"],
 
@@ -581,9 +549,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/yamazaki-18-year.png",
 
-    imageAlt: "Bottle of Yamazaki 18 Year Japanese single malt whisky",
 
     flavorNotes: [
       "raisin",
@@ -625,10 +591,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/yamazaki-distillers-reserve.png",
 
-    imageAlt:
-      "Bottle of Yamazaki Distiller's Reserve Japanese single malt whisky",
 
     flavorNotes: [
       "strawberry",
@@ -670,10 +633,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/yamazaki-golden-promise-tsukuriwake-2024.png",
 
-    imageAlt:
-      "Bottle of Yamazaki Golden Promise Tsukuriwake 2024 Japanese single malt whisky",
 
     flavorNotes: ["orange", "honey", "vanilla", "apple", "custard", "malt"],
 
@@ -708,10 +668,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/yamazaki-peated-malt-tsukuriwake-2022.png",
 
-    imageAlt:
-      "Bottle of Yamazaki Peated Malt Tsukuriwake 2022 Japanese single malt whisky",
 
     flavorNotes: ["smoke", "herbal", "pineapple", "citrus", "earth", "peat"],
 
@@ -746,10 +703,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/yamazaki-puncheon-tsukuriwake-2022.png",
 
-    imageAlt:
-      "Bottle of Yamazaki Puncheon Tsukuriwake 2022 Japanese single malt whisky",
 
     flavorNotes: ["green-apple", "vanilla", "honey", "butterscotch", "oak"],
 
@@ -784,10 +738,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/yamazaki-spanish-oak-tsukuriwake-2022.png",
 
-    imageAlt:
-      "Bottle of Yamazaki Spanish Oak Tsukuriwake 2022 Japanese single malt whisky",
 
     flavorNotes: [
       "raisin",
@@ -829,10 +780,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/yamazaki-bordeaux-wine-cask-2020.png",
 
-    imageAlt:
-      "Bottle of Yamazaki Bordeaux Wine Cask 2020 Japanese single malt whisky",
 
     flavorNotes: ["berry", "red-grape", "sweet", "spice", "oak"],
 
@@ -867,9 +815,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/yamazaki-18-year-mizunara.png",
 
-    imageAlt: "Bottle of Yamazaki 18 Year Mizunara Japanese single malt whisky",
 
     flavorNotes: [
       "cherry",
@@ -911,9 +857,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/yamazaki-25-year.png",
 
-    imageAlt: "Bottle of Yamazaki 25 Year Japanese single malt whisky",
 
     flavorNotes: [
       "dried-fruit",
@@ -955,9 +899,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/yamazaki-sherry-cask-2016.png",
 
-    imageAlt: "Bottle of Yamazaki Sherry Cask 2016 Japanese single malt whisky",
 
     flavorNotes: ["raisin", "dried-fruit", "dark-chocolate", "spice", "oak"],
 
@@ -992,10 +934,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/yamazaki-limited-edition-2021.png",
 
-    imageAlt:
-      "Bottle of Yamazaki Limited Edition 2021 Japanese single malt whisky",
 
     flavorNotes: ["pineapple", "orange", "honey", "vanilla", "ginger", "smoke"],
 
@@ -1030,10 +969,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/yamazaki-limited-edition-2022.png",
 
-    imageAlt:
-      "Bottle of Yamazaki Limited Edition 2022 Japanese single malt whisky",
 
     flavorNotes: [
       "pineapple",
@@ -1075,10 +1011,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/yamazaki-islay-peated-malt-2024.png",
 
-    imageAlt:
-      "Bottle of Yamazaki Islay Peated Malt 2024 Japanese single malt whisky",
 
     flavorNotes: [
       "smoke",
@@ -1120,10 +1053,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/suntory-umeshu.png",
 
-    imageAlt:
-      "Bottle of Suntory Umeshu Blended with Barrel-Aged Plum Liqueur from Yamazaki Distillery",
 
     flavorNotes: ["plum", "honey", "vanilla", "caramel", "oak", "citrus"],
 
@@ -1158,9 +1088,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/suntory-ao-world-whisky.png",
 
-    imageAlt: "Bottle of Suntory AO World Whisky",
 
     flavorNotes: ["vanilla", "pineapple", "honey", "smoke", "cinnamon", "oak"],
 
@@ -1195,9 +1123,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/miyagikyo-single-malt.png",
 
-    imageAlt: "Bottle of Nikka Miyagikyo Single Malt Japanese whisky",
 
     flavorNotes: ["pear", "peach", "citrus", "floral", "honey", "spice"],
 
@@ -1232,10 +1158,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/miyagikyo-peated-2021.png",
 
-    imageAlt:
-      "Bottle of Nikka Miyagikyo Peated 2021 Japanese single malt whisky",
 
     flavorNotes: ["smoke", "peat", "vanilla", "malt", "spice", "chocolate"],
 
@@ -1270,9 +1193,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/miyagikyo-12-year.png",
 
-    imageAlt: "Bottle of Nikka Miyagikyo 12 Year Japanese single malt whisky",
 
     flavorNotes: ["apple", "pear", "dried-fruit", "vanilla", "spice", "oak"],
 
@@ -1307,10 +1228,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/miyagikyo-aromatic-yeast-2022.png",
 
-    imageAlt:
-      "Bottle of Miyagikyo Aromatic Yeast 2022 Japanese single malt whisky",
 
     flavorNotes: ["apricot", "peach", "honey", "floral", "malt", "peat"],
 
@@ -1345,9 +1263,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/yoichi-single-malt.png",
 
-    imageAlt: "Bottle of Nikka Yoichi Single Malt Japanese whisky",
 
     flavorNotes: ["smoke", "peat", "malt", "citrus", "vanilla", "oak"],
 
@@ -1382,9 +1298,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/yoichi-10-year-original.png",
 
-    imageAlt: "Bottle of Yoichi 10 Year Original Japanese single malt whisky",
 
     flavorNotes: [
       "smoke",
@@ -1426,9 +1340,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/yoichi-10-year-2023.png",
 
-    imageAlt: "Bottle of Nikka Yoichi 10 Year 2023 Japanese single malt whisky",
 
     flavorNotes: ["smoke", "peat", "vanilla", "oak", "citrus", "spice"],
 
@@ -1463,9 +1375,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/yoichi-15-year.png",
 
-    imageAlt: "Bottle of Nikka Yoichi 15 Year Japanese single malt whisky",
 
     flavorNotes: [
       "smoke",
@@ -1512,10 +1422,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/yoichi-aromatic-yeast-2022.png",
 
-    imageAlt:
-      "Bottle of Yoichi Aromatic Yeast 2022 Japanese single malt whisky",
 
     flavorNotes: ["smoke", "apple", "pear", "floral", "salinity", "peat"],
 
@@ -1550,9 +1457,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/nikka-coffey-grain.png",
 
-    imageAlt: "Bottle of Nikka Coffey Grain Japanese grain whisky",
 
     flavorNotes: [
       "vanilla",
@@ -1594,9 +1499,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/nikka-coffey-malt.png",
 
-    imageAlt: "Bottle of Nikka Coffey Malt Japanese whisky",
 
     flavorNotes: [
       "vanilla",
@@ -1638,9 +1541,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/nikka-from-the-barrel.png",
 
-    imageAlt: "Bottle of Nikka From the Barrel blended whisky",
 
     flavorNotes: [
       "vanilla",
@@ -1682,9 +1583,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/nikka-date.png",
 
-    imageAlt: "Bottle of Nikka Date Japanese blended whisky",
 
     flavorNotes: ["honey", "vanilla", "floral", "chocolate", "peat", "malt"],
 
@@ -1719,9 +1618,7 @@ export const whiskeyCollection = [
 
     priceRange: "entry",
 
-    image: "/images/whiskey/nikka-days.png",
 
-    imageAlt: "Bottle of Nikka Days Japanese blended whisky",
 
     flavorNotes: ["apple", "pear", "vanilla", "toffee", "floral", "peat"],
 
@@ -1757,10 +1654,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/nikka-the-grain-discovery-2023.png",
 
-    imageAlt:
-      "Bottle of Nikka The Grain Discovery 2023 Japanese blended grain whisky",
 
     flavorNotes: [
       "vanilla",
@@ -1802,9 +1696,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/taketsuru-pure-malt.png",
 
-    imageAlt: "Bottle of Nikka Taketsuru Pure Malt Japanese whisky",
 
     flavorNotes: ["apple", "apricot", "banana", "orange", "vanilla", "peat"],
 
@@ -1839,10 +1731,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/taketsuru-pure-malt-old-black-label.png",
 
-    imageAlt:
-      "Bottle of Taketsuru Pure Malt Old Black Label Japanese blended malt whisky",
 
     flavorNotes: ["green-apple", "pear", "vanilla", "banana", "orange", "malt"],
 
@@ -1877,9 +1766,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/taketsuru-12-year.png",
 
-    imageAlt: "Bottle of Nikka Taketsuru 12 Year Pure Malt Japanese whisky",
 
     flavorNotes: ["apple", "pear", "honey", "vanilla", "spice", "peat"],
 
@@ -1914,9 +1801,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/taketsuru-17-year.png",
 
-    imageAlt: "Bottle of Nikka Taketsuru 17 Year Pure Malt Japanese whisky",
 
     flavorNotes: ["pear", "apple", "dried-fruit", "honey", "vanilla", "oak"],
 
@@ -1951,9 +1836,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/taketsuru-21-year.png",
 
-    imageAlt: "Bottle of Nikka Taketsuru 21 Year Pure Malt Japanese whisky",
 
     flavorNotes: [
       "dried-fruit",
@@ -1995,9 +1878,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/taketsuru-25-year.png",
 
-    imageAlt: "Bottle of Nikka Taketsuru 25 Year Pure Malt Japanese whisky",
 
     flavorNotes: ["tropical-fruit", "orange", "plum", "spice", "oak", "smoke"],
 
@@ -2032,9 +1913,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/the-nikka-tailored.png",
 
-    imageAlt: "Bottle of The Nikka Tailored Japanese blended whisky",
 
     flavorNotes: [
       "apple",
@@ -2076,9 +1955,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/the-nikka-12-year.png",
 
-    imageAlt: "Bottle of The Nikka 12 Year Japanese blended whisky",
 
     flavorNotes: ["apple", "pear", "vanilla", "caramel", "spice", "oak"],
 
@@ -2113,10 +1990,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/the-nikka-nine-decades.png",
 
-    imageAlt:
-      "Bottle of The Nikka Nine Decades commemorative world blended whisky",
 
     flavorNotes: [
       "apple",
@@ -2158,9 +2032,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/akashi-goju-sherry-cask.png",
 
-    imageAlt: "Bottle of Akashi Goju Sherry Cask Japanese blended whisky",
 
     flavorNotes: [
       "raisin",
@@ -2202,9 +2074,7 @@ export const whiskeyCollection = [
 
     priceRange: "entry",
 
-    image: "/images/whiskey/akashi-white-oak.png",
 
-    imageAlt: "Bottle of Akashi White Oak blended Japanese whisky",
 
     flavorNotes: [
       "black-cherry",
@@ -2246,9 +2116,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/akashi-single-malt.png",
 
-    imageAlt: "Bottle of Akashi Single Malt Japanese whisky",
 
     flavorNotes: [
       "yellow-apple",
@@ -2290,9 +2158,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/akashi-3-year-sake-cask.png",
 
-    imageAlt: "Bottle of Akashi 3 Year Sake Cask Aged Japanese whisky",
 
     flavorNotes: ["vanilla", "pear", "apple", "honey", "floral", "oak"],
 
@@ -2327,9 +2193,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/akashi-4-year-ume-cask.png",
 
-    imageAlt: "Bottle of Akashi 4 Year Ume Cask Japanese single malt whisky",
 
     flavorNotes: ["plum", "apricot", "raisin", "honey", "vanilla", "oak"],
 
@@ -2364,10 +2228,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/akashi-5-year-bourbon-cask.png",
 
-    imageAlt:
-      "Bottle of Akashi 5 Year Bourbon Cask Japanese single malt whisky",
 
     flavorNotes: ["vanilla", "caramel", "honey", "apple", "oak", "spice"],
 
@@ -2402,9 +2263,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/akashi-5-year-sherry-cask.png",
 
-    imageAlt: "Bottle of Akashi 5 Year Sherry Cask Japanese single malt whisky",
 
     flavorNotes: [
       "raisin",
@@ -2446,10 +2305,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/akashi-sommelier-series-pinot-noir.png",
 
-    imageAlt:
-      "Bottle of Akashi Sommelier Series Pinot Noir Cask Finish Japanese single malt whisky",
 
     flavorNotes: [
       "stone-fruit",
@@ -2491,9 +2347,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/akkeshi-boshu.png",
 
-    imageAlt: "Bottle of Akkeshi Boshu Japanese single malt whisky",
 
     flavorNotes: [
       "smoke",
@@ -2535,9 +2389,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/akkeshi-hakuro-2023.png",
 
-    imageAlt: "Bottle of Akkeshi Hakuro 2023 Japanese single malt whisky",
 
     flavorNotes: [
       "smoke",
@@ -2585,9 +2437,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/akkeshi-shoman-2023.png",
 
-    imageAlt: "Bottle of Akkeshi Shoman 2023 Japanese blended whisky",
 
     flavorNotes: [
       "pineapple",
@@ -2629,9 +2479,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/akkeshi-shosetsu-2023.png",
 
-    imageAlt: "Bottle of Akkeshi Shosetsu 2023 Japanese blended whisky",
 
     flavorNotes: [
       "smoke",
@@ -2673,10 +2521,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/akkeshi-daikan-2022.png",
 
-    imageAlt:
-      "Bottle of Akkeshi Malt & Grain Daikan 2022 Japanese blended whisky",
 
     flavorNotes: [
       "orange",
@@ -2718,10 +2563,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/akkeshi-shosho-2021.png",
 
-    imageAlt:
-      "Bottle of Akkeshi Malt & Grain Shosho 2021 Japanese blended whisky",
 
     flavorNotes: [
       "smoke",
@@ -2763,10 +2605,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/akkeshi-taisho-2022.png",
 
-    imageAlt:
-      "Bottle of Akkeshi Malt & Grain Taisho 2022 Japanese blended whisky",
 
     flavorNotes: [
       "grapefruit",
@@ -2808,10 +2647,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/akkeshi-usui-2021.png",
 
-    imageAlt:
-      "Bottle of Akkeshi Malt & Grain Usui 2021 Japanese blended whisky",
 
     flavorNotes: [
       "orange",
@@ -2853,10 +2689,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/akkeshi-seimei-2022.png",
 
-    imageAlt:
-      "Bottle of Akkeshi Seimei 2022 Peated Japanese single malt whisky",
 
     flavorNotes: [
       "smoke",
@@ -2898,9 +2731,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/akkeshi-kanro-2020.png",
 
-    imageAlt: "Bottle of Akkeshi Kanro Japanese single malt whisky",
 
     flavorNotes: [
       "smoke",
@@ -2942,9 +2773,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/akkeshi-keichitsu-2023.png",
 
-    imageAlt: "Bottle of Akkeshi Keichitsu 2023 Japanese single malt whisky",
 
     flavorNotes: [
       "orange",
@@ -2986,9 +2815,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/akkeshi-ritto-2021.png",
 
-    imageAlt: "Bottle of Akkeshi Ritto 2021 Japanese single malt whisky",
 
     flavorNotes: [
       "orange",
@@ -3030,9 +2857,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/akkeshi-taisetsu-2022.png",
 
-    imageAlt: "Bottle of Akkeshi Taisetsu 2022 Japanese single malt whisky",
 
     flavorNotes: [
       "orange",
@@ -3079,10 +2904,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/akkeshi-sarorunkamuy-2020.png",
 
-    imageAlt:
-      "200ml bottle of Akkeshi Sarorunkamuy 2020 Japanese single malt whisky",
 
     flavorNotes: [
       "strawberry",
@@ -3124,9 +2946,7 @@ export const whiskeyCollection = [
 
     priceRange: "entry",
 
-    image: "/images/whiskey/iwai-tradition.png",
 
-    imageAlt: "Bottle of Mars Iwai Tradition Japanese blended whisky",
 
     flavorNotes: ["cherry", "honey", "caramel", "vanilla", "ginger", "spice"],
 
@@ -3161,9 +2981,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/iwai-tradition-haru-sakura-cask.png",
 
-    imageAlt: "Bottle of Mars Iwai Tradition Haru Sakura Cask Japanese whisky",
 
     flavorNotes: [
       "honey",
@@ -3205,10 +3023,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/iwai-tradition-fuyu-chestnut-cask.png",
 
-    imageAlt:
-      "Bottle of Mars Iwai Tradition Fuyu Chestnut Cask Japanese whisky",
 
     flavorNotes: [
       "brown-sugar",
@@ -3250,9 +3065,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/iwai-tradition-sherry-cask-px.png",
 
-    imageAlt: "Bottle of Mars Iwai Tradition Sherry Cask PX Japanese whisky",
 
     flavorNotes: [
       "brown-sugar",
@@ -3294,10 +3107,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/iwai-tradition-natsu-umeshu-cask.png",
 
-    imageAlt:
-      "Bottle of Iwai Tradition Natsu Umeshu Cask Japanese blended whisky",
 
     flavorNotes: ["plum", "honey", "toffee", "ginger", "cinnamon", "black-tea"],
 
@@ -3332,9 +3142,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/iwai-tradition-wine-cask.png",
 
-    imageAlt: "Bottle of Mars Iwai Tradition Wine Cask Japanese whisky",
 
     flavorNotes: [
       "strawberry",
@@ -3381,9 +3189,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/iwai-tradition-napa-wine-cask.png",
 
-    imageAlt: "Bottle of Iwai Tradition Napa Wine Cask Japanese blended whisky",
 
     flavorNotes: [
       "dried-cherry",
@@ -3425,10 +3231,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/mars-bakemono-1-oyashirome.png",
 
-    imageAlt:
-      "Bottle of Mars Bakemono Zukushi #1 Oyashirome single cask Japanese single malt whisky",
 
     flavorNotes: [
       "strawberry",
@@ -3470,10 +3273,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/mars-bakemono-2-daichiuchi.png",
 
-    imageAlt:
-      "Bottle of Mars Bakemono Zukushi #2 Daichiuchi single cask Japanese single malt whisky",
 
     flavorNotes: ["apricot", "peach", "apple", "pear", "vanilla", "peat"],
 
@@ -3508,10 +3308,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/mars-bakemono-3-domo-komo.png",
 
-    imageAlt:
-      "Bottle of Mars Bakemono Zukushi #3 Dōmo-Kōmo Japanese pure malt whisky",
 
     flavorNotes: ["apricot", "orange", "peach", "apple", "vanilla", "ginger"],
 
@@ -3546,10 +3343,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/mars-bakemono-4-sarahebi.png",
 
-    imageAlt:
-      "Bottle of Mars Bakemono Zukushi #4 Sarahebi Japanese single malt whisky",
 
     flavorNotes: ["orange", "peach", "vanilla", "peanut", "ginger", "oak"],
 
@@ -3584,10 +3378,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/mars-bakemono-5-minokedachi.png",
 
-    imageAlt:
-      "Bottle of Mars Bakemono Zukushi #5 Minokedachi Japanese single malt whisky",
 
     flavorNotes: [
       "smoke",
@@ -3629,10 +3420,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/mars-bakemono-6-nobusuma.png",
 
-    imageAlt:
-      "Bottle of Mars Bakemono Zukushi #6 Y.A. Nobusuma Japanese blended malt whisky",
 
     flavorNotes: ["honey", "apple", "pear", "citrus", "vanilla", "smoke"],
 
@@ -3667,10 +3455,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/mars-bakemono-7-umashika.png",
 
-    imageAlt:
-      "Bottle of Mars Bakemono Zukushi #7 Umashika Japanese blended malt whisky",
 
     flavorNotes: [
       "orange",
@@ -3712,10 +3497,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/mars-bakemono-8-hajikkaki.png",
 
-    imageAlt:
-      "Bottle of Mars Bakemono Zukushi #8 Hajikkaki Japanese single malt whisky",
 
     flavorNotes: ["apple", "orange", "vanilla", "peach", "mint", "oak"],
 
@@ -3750,10 +3532,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/mars-bakemono-9-odoroshi.png",
 
-    imageAlt:
-      "Bottle of Mars Bakemono Zukushi #9 Odoroshi Japanese single malt whisky",
 
     flavorNotes: [
       "red-apple",
@@ -3795,9 +3574,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/komagatake-27-year.png",
 
-    imageAlt: "Bottle of Komagatake 27 Year Japanese single malt whisky",
 
     flavorNotes: ["plum", "apricot", "vanilla", "dried-fruit", "oak", "spice"],
 
@@ -3832,10 +3609,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/komagatake-30-year-american-white-oak.png",
 
-    imageAlt:
-      "Bottle of Komagatake 1986 Aged 30 Years American White Oak Japanese single malt whisky",
 
     flavorNotes: ["vanilla", "apple", "pear", "oak", "caramel", "spice"],
 
@@ -3870,10 +3644,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/komagatake-3-year-cask-strength.png",
 
-    imageAlt:
-      "Bottle of Komagatake 3 Year Old Cask Strength Japanese single malt whisky",
 
     flavorNotes: ["apricot", "honey", "vanilla", "almond", "cinnamon", "malt"],
 
@@ -3908,10 +3679,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/komagatake-double-cellars-2019.png",
 
-    imageAlt:
-      "Bottle of Komagatake Double Cellars Bottled in 2019 Japanese single malt whisky",
 
     flavorNotes: [
       "apricot",
@@ -3953,10 +3721,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/komagatake-ipa-cask-finish-2020.png",
 
-    imageAlt:
-      "Bottle of Komagatake IPA Cask Finish 2020 Japanese single malt whisky",
 
     flavorNotes: ["grapefruit", "orange", "citrus", "mint", "herbal", "hops"],
 
@@ -3991,10 +3756,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/komagatake-ipa-cask-finish-2021.png",
 
-    imageAlt:
-      "Bottle of Komagatake IPA Cask Finish 2021 Japanese single malt whisky",
 
     flavorNotes: ["apple", "grapefruit", "orange", "honey", "vanilla", "hops"],
 
@@ -4029,10 +3791,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/komagatake-ipa-cask-finish-2022.png",
 
-    imageAlt:
-      "Bottle of Komagatake IPA Cask Finish 2022 Japanese single malt whisky",
 
     flavorNotes: ["grapefruit", "orange", "citrus", "mint", "herbal", "hops"],
 
@@ -4067,10 +3826,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/komagatake-ipa-cask-finish-2023.png",
 
-    imageAlt:
-      "Bottle of Komagatake IPA Cask Finish 2023 Japanese single malt whisky",
 
     flavorNotes: [
       "grapefruit",
@@ -4112,10 +3868,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/komagatake-limited-edition-2018.png",
 
-    imageAlt:
-      "Bottle of Komagatake Limited Edition 2018 Japanese single malt whisky",
 
     flavorNotes: ["plum", "floral", "citrus", "vanilla", "malt", "smoke"],
 
@@ -4150,10 +3903,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/komagatake-limited-edition-2019.png",
 
-    imageAlt:
-      "Bottle of Komagatake Limited Edition 2019 Japanese single malt whisky",
 
     flavorNotes: ["apricot", "plum", "orange", "honey", "vanilla", "smoke"],
 
@@ -4188,10 +3938,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/komagatake-limited-edition-2020.png",
 
-    imageAlt:
-      "Bottle of Komagatake Limited Edition 2020 Japanese single malt whisky",
 
     flavorNotes: ["plum", "honey", "vanilla", "orange", "cocoa", "dried-fruit"],
 
@@ -4226,10 +3973,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/komagatake-limited-edition-2021.png",
 
-    imageAlt:
-      "Bottle of Komagatake Limited Edition 2021 Japanese single malt whisky",
 
     flavorNotes: ["apricot", "plum", "honey", "vanilla", "melon", "hazelnut"],
 
@@ -4264,9 +4008,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/komagatake-2022-edition.png",
 
-    imageAlt: "Bottle of Komagatake 2022 Edition Japanese single malt whisky",
 
     flavorNotes: [
       "grapefruit",
@@ -4308,9 +4050,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/komagatake-2023-edition.png",
 
-    imageAlt: "Bottle of Komagatake 2023 Edition Japanese single malt whisky",
 
     flavorNotes: [
       "apricot",
@@ -4352,10 +4092,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/komagatake-kohiganzakura.png",
 
-    imageAlt:
-      "Bottle of Komagatake Nature of Shinshu Kohiganzakura Japanese single malt whisky",
 
     flavorNotes: [
       "berry",
@@ -4397,10 +4134,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/komagatake-nature-of-shinshu-rindo.png",
 
-    imageAlt:
-      "Bottle of Komagatake Nature of Shinshu Rindo Japanese single malt whisky",
 
     flavorNotes: ["dried-fruit", "malt", "orange", "plum", "honey", "oak"],
 
@@ -4435,10 +4169,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/komagatake-shinanotanpopo.png",
 
-    imageAlt:
-      "Bottle of Komagatake Nature of Shinshu Shinanotanpopo Japanese single malt whisky",
 
     flavorNotes: [
       "berry",
@@ -4480,10 +4211,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/komagatake-tsunuki-aging-2018.png",
 
-    imageAlt:
-      "Bottle of Komagatake Tsunuki Aging Bottled in 2018 Japanese single malt whisky",
 
     flavorNotes: [
       "cherry",
@@ -4525,10 +4253,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/komagatake-tsunuki-aging-2019.png",
 
-    imageAlt:
-      "Bottle of Komagatake Tsunuki Aging Bottled in 2019 Japanese single malt whisky",
 
     flavorNotes: [
       "apple",
@@ -4570,10 +4295,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/mars-malt-duo-komagatake-chichibu.png",
 
-    imageAlt:
-      "Bottle of Mars Malt Duo Komagatake Chichibu Japanese blended malt whisky",
 
     flavorNotes: [
       "apple",
@@ -4615,10 +4337,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/komagatake-yakushima-aging-2019.png",
 
-    imageAlt:
-      "Bottle of Komagatake Yakushima Aging Bottled in 2019 Japanese single malt whisky",
 
     flavorNotes: [
       "honey",
@@ -4660,10 +4379,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/komagatake-yakushima-aging-2020.png",
 
-    imageAlt:
-      "Bottle of Komagatake Yakushima Aging Bottled in 2020 Japanese single malt whisky",
 
     flavorNotes: [
       "citrus",
@@ -4705,10 +4421,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/komagatake-yakushima-aging-2021.png",
 
-    imageAlt:
-      "Bottle of Komagatake Yakushima Aging Bottled in 2021 Japanese single malt whisky",
 
     flavorNotes: [
       "banana",
@@ -4750,9 +4463,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/lucky-cat-hana.png",
 
-    imageAlt: "Bottle of The Lucky Cat Hana blended Japanese whisky",
 
     flavorNotes: [
       "stone-fruit",
@@ -4794,9 +4505,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/lucky-cat-luna.png",
 
-    imageAlt: "Bottle of The Lucky Cat Luna blended Japanese whisky",
 
     flavorNotes: [
       "dried-fruit",
@@ -4838,10 +4547,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/lucky-cat-may-luna.png",
 
-    imageAlt:
-      "Bottle of The Lucky Cat Double Individuals May and Luna Japanese blended whisky",
 
     flavorNotes: ["cherry", "apricot", "honey", "vanilla", "lemon", "peat"],
 
@@ -4876,9 +4582,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/lucky-cat-ash-99.png",
 
-    imageAlt: "Bottle of The Lucky Cat Ash 99 Japanese blended whisky",
 
     flavorNotes: [
       "orange",
@@ -4920,9 +4624,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/lucky-cat-choco.png",
 
-    imageAlt: "Bottle of The Lucky Cat Choco Japanese blended whisky",
 
     flavorNotes: [
       "dark-chocolate",
@@ -4964,9 +4666,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/lucky-cat-may.png",
 
-    imageAlt: "Bottle of The Lucky Cat May Japanese blended whisky",
 
     flavorNotes: [
       "green-plum",
@@ -5008,9 +4708,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/lucky-cat-mint.png",
 
-    imageAlt: "Bottle of The Lucky Cat Mint Japanese blended whisky",
 
     flavorNotes: ["honey", "vanilla", "peach", "apple", "oak", "spice"],
 
@@ -5045,10 +4743,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/lucky-cat-sun.png",
 
-    imageAlt:
-      "Bottle of The Lucky Cat Sun Port and Madeira Cask Finish Japanese blended whisky",
 
     flavorNotes: [
       "tropical-fruit",
@@ -5090,10 +4785,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/mars-maltage-3-plus-25.png",
 
-    imageAlt:
-      "Bottle of Mars Maltage 3+25 28 Year Japanese blended malt whisky",
 
     flavorNotes: [
       "dried-fruit",
@@ -5135,9 +4827,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/mars-asagi-madara.png",
 
-    imageAlt: "Bottle of Mars Asagi Madara Japanese blended whisky",
 
     flavorNotes: ["apple", "plum", "vanilla", "malt", "smoke", "herbal"],
 
@@ -5172,9 +4862,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/mars-the-ya-01.png",
 
-    imageAlt: "Bottle of Mars The Y.A. #01 Japanese blended malt whisky",
 
     flavorNotes: ["pineapple", "orange", "pear", "vanilla", "honey", "smoke"],
 
@@ -5209,9 +4897,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/mars-the-ya-02.png",
 
-    imageAlt: "Bottle of Mars The Y.A. #02 Japanese blended malt whisky",
 
     flavorNotes: ["pear", "banana", "vanilla", "honey", "smoke", "salinity"],
 
@@ -5246,10 +4932,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/mars-maltage-cosmo-manzanilla-cask.png",
 
-    imageAlt:
-      "Bottle of Mars Maltage Cosmo Manzanilla Cask Finish blended malt whisky",
 
     flavorNotes: [
       "dried-fruit",
@@ -5291,10 +4974,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/mars-maltage-cosmo-wine-cask.png",
 
-    imageAlt:
-      "Bottle of Mars Maltage Cosmo Wine Cask Finish blended malt whisky",
 
     flavorNotes: [
       "fig",
@@ -5336,9 +5016,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/tsunuki-2022-edition.png",
 
-    imageAlt: "Bottle of Mars Single Malt Tsunuki 2022 Edition Japanese whisky",
 
     flavorNotes: [
       "apricot",
@@ -5380,9 +5058,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/fuji-single-grain.png",
 
-    imageAlt: "Bottle of Fuji Single Grain Japanese whisky",
 
     flavorNotes: [
       "pear",
@@ -5424,9 +5100,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/fuji-sanroku-signature-blend.png",
 
-    imageAlt: "Bottle of Fuji Sanroku Signature Blend Japanese blended whisky",
 
     flavorNotes: ["pear", "pineapple", "orange", "vanilla", "honey", "oak"],
 
@@ -5461,9 +5135,7 @@ export const whiskeyCollection = [
 
     priceRange: "entry",
 
-    image: "/images/whiskey/fuji-world-blend.png",
 
-    imageAlt: "Bottle of Fuji World Blend Japanese world blended whisky",
 
     flavorNotes: ["vanilla", "apricot", "fig", "prune", "cinnamon", "oak"],
 
@@ -5498,10 +5170,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/fuji-sanroku-18-year-limited-edition.png",
 
-    imageAlt:
-      "Bottle of Fuji Sanroku 18 Year Limited Edition Japanese blended whisky",
 
     flavorNotes: [
       "fig",
@@ -5543,10 +5212,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/fuji-sanroku-50-white-label.png",
 
-    imageAlt:
-      "Bottle of Fuji-Sanroku 50 degree White Label Japanese blended whisky",
 
     flavorNotes: ["caramel", "vanilla", "honey", "chocolate", "apple", "spice"],
 
@@ -5581,9 +5247,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/fuji-single-malt.png",
 
-    imageAlt: "Bottle of Fuji Single Malt Japanese whisky",
 
     flavorNotes: ["vanilla", "caramel", "pineapple", "apple", "peach", "oak"],
 
@@ -5618,9 +5282,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/ichiros-malt-and-grain.png",
 
-    imageAlt: "Bottle of Ichiro's Malt & Grain World Blended Whisky",
 
     flavorNotes: [
       "apricot",
@@ -5662,9 +5324,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/ichiros-malt-and-grain-111.png",
 
-    imageAlt: "Bottle of Ichiro's Malt & Grain 111 Proof World Blended Whisky",
 
     flavorNotes: [
       "orange",
@@ -5706,10 +5366,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/ichiros-malt-and-grain-limited-edition.png",
 
-    imageAlt:
-      "Bottle of Ichiro's Malt & Grain Limited Edition World Blended Whisky",
 
     flavorNotes: ["apple", "honey", "vanilla", "caramel", "toffee", "spice"],
 
@@ -5744,9 +5401,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/ichiros-malt-green-leaf.png",
 
-    imageAlt: "Bottle of Ichiro's Malt Green Leaf Japanese blended malt whisky",
 
     flavorNotes: ["apple", "pear", "vanilla", "honey", "caramel", "spice"],
 
@@ -5781,10 +5436,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/ichiros-malt-double-distilleries-2021.png",
 
-    imageAlt:
-      "Bottle of Ichiro's Malt Double Distilleries 2021 Chichibu and Komagatake Japanese blended malt whisky",
 
     flavorNotes: [
       "orange",
@@ -5832,10 +5484,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/ichiros-malt-us-edition-2018.png",
 
-    imageAlt:
-      "Bottle of Ichiro's Malt The US Edition 2018 Japanese single malt whisky",
 
     flavorNotes: ["melon", "citrus", "vanilla", "honey", "cocoa", "spice"],
 
@@ -5876,10 +5525,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/ichiros-malt-us-edition-2019.png",
 
-    imageAlt:
-      "Bottle of Ichiro's Malt The US Edition 2019 Japanese single malt whisky",
 
     flavorNotes: [
       "pear",
@@ -5927,10 +5573,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/ichiros-malt-us-edition-2020.png",
 
-    imageAlt:
-      "Bottle of Ichiro's Malt The US Edition 2020 Japanese single malt whisky",
 
     flavorNotes: ["vanilla", "citrus", "mint", "cinnamon", "clove", "smoke"],
 
@@ -5972,10 +5615,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/ichiros-malt-us-edition-2021.png",
 
-    imageAlt:
-      "Bottle of Ichiro's Malt The US Edition 2021 Japanese single malt whisky",
 
     flavorNotes: ["peach", "apricot", "orange", "vanilla", "honey", "spice"],
 
@@ -6021,10 +5661,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/ichiros-malt-us-edition-2022.png",
 
-    imageAlt:
-      "Bottle of Ichiro's Malt The US Edition 2022 Japanese single malt whisky",
 
     flavorNotes: [
       "vanilla",
@@ -6073,10 +5710,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/ichiros-malt-us-edition-2023.png",
 
-    imageAlt:
-      "Bottle of Ichiro's Malt The US Edition 2023 Japanese single malt whisky",
 
     flavorNotes: [
       "orange",
@@ -6125,10 +5759,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/ichiros-malt-us-edition-2024.png",
 
-    imageAlt:
-      "Bottle of Ichiro's Malt The US Edition 2024 Japanese single malt whisky",
 
     flavorNotes: ["apple", "pear", "peach", "vanilla", "honey", "almond"],
 
@@ -6169,11 +5800,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image:
-      "/images/whiskey/ichiros-malt-chichibu-red-wine-cask-finish-2023.png",
 
-    imageAlt:
-      "Bottle of Ichiro's Malt Chichibu Red Wine Cask Finish 2023 Japanese single malt whisky",
 
     flavorNotes: [
       "orange",
@@ -6215,10 +5842,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/ichiros-malt-the-first-ten.png",
 
-    imageAlt:
-      "Bottle of Ichiro's Malt Chichibu The First Ten 10 Year Old Japanese single malt whisky",
 
     flavorNotes: ["apple", "pear", "honey", "vanilla", "cinnamon", "smoke"],
 
@@ -6259,10 +5883,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/hanyu-golden-horse-black.png",
 
-    imageAlt:
-      "Bottle of Hanyu Golden Horse Black historical Japanese blended whisky",
 
     flavorNotes: ["caramel", "vanilla", "honey", "apple", "smoke", "oak"],
 
@@ -6297,10 +5918,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/ichiros-malt-chichibu-10-year.png",
 
-    imageAlt:
-      "Bottle of Ichiro's Malt Chichibu 10 Year Japanese single malt whisky",
 
     flavorNotes: [
       "honey",
@@ -6348,10 +5966,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/ichiros-malt-chichibu-distillery-ii.png",
 
-    imageAlt:
-      "Bottle of Ichiro's Malt Chichibu Distillery II Japanese single malt whisky",
 
     flavorNotes: ["pineapple", "pear", "apple", "honey", "vanilla", "smoke"],
 
@@ -6386,10 +6001,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/ichiros-malt-chichibu-floor-malted-2024.png",
 
-    imageAlt:
-      "Bottle of Ichiro's Malt Chichibu On The Way Floor Malted 2024 Japanese single malt whisky",
 
     flavorNotes: ["peach", "plum", "pear", "vanilla", "honey", "malt"],
 
@@ -6424,10 +6036,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/ichiros-malt-on-the-way-2013.png",
 
-    imageAlt:
-      "Bottle of Ichiro's Malt Chichibu On The Way 2013 Japanese single malt whisky",
 
     flavorNotes: ["apple", "pear", "vanilla", "caramel", "coconut", "pepper"],
 
@@ -6462,10 +6071,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/ichiros-malt-chichibu-on-the-way-2019.png",
 
-    imageAlt:
-      "Bottle of Ichiro's Malt Chichibu On The Way 2019 Japanese single malt whisky",
 
     flavorNotes: ["apple", "pear", "citrus", "honey", "vanilla", "oak"],
 
@@ -6506,10 +6112,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/ichiros-malt-chichibu-on-the-way-2024.png",
 
-    imageAlt:
-      "Bottle of Ichiro's Malt Chichibu On The Way Floor Malted 2024 Japanese single malt whisky",
 
     flavorNotes: ["peach", "plum", "honey", "vanilla", "malt", "mint"],
 
@@ -6544,10 +6147,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/ichiros-malt-chichibu-port-pipe.png",
 
-    imageAlt:
-      "Bottle of Ichiro's Malt Chichibu Port Pipe Japanese single malt whisky",
 
     flavorNotes: ["red-berries", "plum", "raisin", "citrus", "vanilla", "oak"],
 
@@ -6582,10 +6182,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/ichiros-malt-chichibu-the-first.png",
 
-    imageAlt:
-      "Bottle of Ichiro's Malt Chichibu The First Japanese single malt whisky",
 
     flavorNotes: ["vanilla", "caramel", "citrus", "apple", "spice", "oak"],
 
@@ -6620,10 +6217,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/ichiros-malt-chichibu-the-peated.png",
 
-    imageAlt:
-      "Bottle of Ichiro's Malt Chichibu The Peated Japanese single malt whisky",
 
     flavorNotes: ["smoke", "peat", "citrus", "honey", "vanilla", "spice"],
 
@@ -6658,10 +6252,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/ichiros-malt-chichibu-cask-14162.png",
 
-    imageAlt:
-      "Bottle of Ichiro's Malt Chichibu Single Cask 14162 Year of the Snake",
 
     flavorNotes: [
       "grapefruit",
@@ -6711,9 +6302,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/ichiros-malt-chichibu-cask-3861-cat-and-mouse.png",
 
-    imageAlt: "Bottle of Ichiro's Malt Chichibu Single Cask 3861 Cat and Mouse",
 
     flavorNotes: ["melon", "apple", "citrus", "coconut", "vanilla", "honey"],
 
@@ -6762,10 +6351,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/ichiros-malt-hanyu-final-vintage-15-year.png",
 
-    imageAlt:
-      "Bottle of Ichiro's Malt Hanyu 15 Year The Final Vintage Japanese single malt whisky",
 
     flavorNotes: ["apple", "orange", "plum", "vanilla", "honey", "cinnamon"],
 
@@ -6807,9 +6393,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/ichiros-malt-chichibu-cask-3912-scooby.png",
 
-    imageAlt: "Bottle of Ichiro's Malt Chichibu Single Cask 3912 Scooby",
 
     flavorNotes: [
       "chocolate",
@@ -6859,10 +6443,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/ichiros-malt-chichibu-cask-2134-mouse.png",
 
-    imageAlt:
-      "Bottle of Ichiro's Malt Chichibu Single Cask 2134 Year of the Rat",
 
     flavorNotes: ["melon", "apricot", "vanilla", "pear", "pineapple", "spice"],
 
@@ -6906,9 +6487,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/ichiros-malt-chichibu-cask-2345-the-boar.png",
 
-    imageAlt: "Bottle of Ichiro's Malt Chichibu Single Cask 2345 The Boar",
 
     flavorNotes: ["stone-fruit", "honey", "citrus", "toffee", "almond", "malt"],
 
@@ -6952,10 +6531,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/kanosuke-2021-first-edition.png",
 
-    imageAlt:
-      "Bottle of Kanosuke 2021 First Edition Japanese single malt whisky",
 
     flavorNotes: ["lime", "plum", "raisin", "vanilla", "cinnamon", "orange"],
 
@@ -6997,10 +6573,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/kanosuke-2022-limited-edition.png",
 
-    imageAlt:
-      "Bottle of Kanosuke 2022 Limited Edition Japanese single malt whisky",
 
     flavorNotes: [
       "orange",
@@ -7048,9 +6621,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/kanosuke-double-distillery.png",
 
-    imageAlt: "Bottle of Kanosuke Double Distillery Japanese blended whisky",
 
     flavorNotes: [
       "vanilla",
@@ -7092,9 +6663,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/kanosuke-hioki-pot-still.png",
 
-    imageAlt: "Bottle of Kanosuke Hioki Pot Still Japanese whisky",
 
     flavorNotes: ["vanilla", "apricot", "plum", "citrus", "cinnamon", "ginger"],
 
@@ -7129,10 +6698,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/kanosuke-2023-limited-edition.png",
 
-    imageAlt:
-      "Bottle of Kanosuke 2023 Limited Edition Japanese single malt whisky",
 
     flavorNotes: [
       "banana",
@@ -7182,9 +6748,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/kanosuke-single-malt.png",
 
-    imageAlt: "Bottle of Kanosuke Single Malt Japanese whisky",
 
     flavorNotes: ["honey", "banana", "lemon", "caramel", "quince", "cinnamon"],
 
@@ -7219,9 +6783,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/moon-glow-half-moon-2019.png",
 
-    imageAlt: "Bottle of Moon Glow Half Moon 2019 Japanese blended whisky",
 
     flavorNotes: ["apple", "raisin", "vanilla", "caramel", "honey", "smoke"],
 
@@ -7262,10 +6824,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/moon-glow-10yr-limited-edition-2018.png",
 
-    imageAlt:
-      "Bottle of Moon Glow 10 Year Limited Edition 2018 Japanese blended whisky",
 
     flavorNotes: ["orange", "apple", "vanilla", "malt", "biscuit", "smoke"],
 
@@ -7300,10 +6859,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/moon-glow-10yr-limited-edition-2019.png",
 
-    imageAlt:
-      "Bottle of Moon Glow 10 Year Limited Edition 2019 Japanese blended whisky",
 
     flavorNotes: ["grape", "apricot", "honey", "caramel", "malt", "smoke"],
 
@@ -7345,9 +6901,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/the-matsui-mizunara-cask.png",
 
-    imageAlt: "Bottle of The Matsui Mizunara Cask Japanese single malt whisky",
 
     flavorNotes: [
       "pear",
@@ -7389,9 +6943,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/yuza-first-edition-2022.png",
 
-    imageAlt: "Bottle of YUZA First Edition 2022 Japanese single malt whisky",
 
     flavorNotes: ["apricot", "honey", "vanilla", "almond", "citrus", "malt"],
 
@@ -7433,10 +6985,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/yamazakura-asaka-the-first-3-year.png",
 
-    imageAlt:
-      "Bottle of Yamazakura Asaka The First 3 Year Japanese single malt whisky",
 
     flavorNotes: ["peach", "apricot", "apple", "honey", "vanilla", "malt"],
 
@@ -7478,9 +7027,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/hinomaru-the-1st-edition.png",
 
-    imageAlt: "Bottle of Hinomaru The 1st Edition Japanese blended whisky",
 
     flavorNotes: [
       "apple",
@@ -7528,9 +7075,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/ardbeg-10-year.png",
 
-    imageAlt: "Bottle of Ardbeg 10 Year Islay single malt Scotch whisky",
 
     flavorNotes: [
       "smoke",
@@ -7572,9 +7117,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/lagavulin-16-year.png",
 
-    imageAlt: "Bottle of Lagavulin 16 Year Islay single malt Scotch whisky",
 
     flavorNotes: ["smoke", "peat", "dried-fruit", "vanilla", "oak", "salinity"],
 
@@ -7609,9 +7152,7 @@ export const whiskeyCollection = [
 
     priceRange: "entry",
 
-    image: "/images/whiskey/bowmore-12-year.png",
 
-    imageAlt: "Bottle of Bowmore 12 Year Islay single malt Scotch whisky",
 
     flavorNotes: [
       "smoke",
@@ -7653,9 +7194,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/bowmore-18-year.png",
 
-    imageAlt: "Bottle of Bowmore 18 Year Islay single malt Scotch whisky",
 
     flavorNotes: [
       "smoke",
@@ -7701,10 +7240,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/loch-lomond-12-year.png",
 
-    imageAlt:
-      "Bottle of Loch Lomond 12 Year Highland single malt Scotch whisky",
 
     flavorNotes: ["peach", "pear", "lemon", "vanilla", "caramel", "smoke"],
 
@@ -7739,10 +7275,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/loch-lomond-18-year.png",
 
-    imageAlt:
-      "Bottle of Loch Lomond 18 Year Highland single malt Scotch whisky",
 
     flavorNotes: ["apple", "pear", "honey", "vanilla", "cinnamon", "smoke"],
 
@@ -7777,10 +7310,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/macallan-12-year-sherry-oak.png",
 
-    imageAlt:
-      "Bottle of The Macallan 12 Year Sherry Oak single malt Scotch whisky",
 
     flavorNotes: [
       "dried-fruit",
@@ -7822,10 +7352,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/macallan-18-year-sherry-oak.png",
 
-    imageAlt:
-      "Bottle of The Macallan 18 Year Sherry Oak single malt Scotch whisky",
 
     flavorNotes: [
       "dried-fruit",
@@ -7867,9 +7394,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/compass-box-hedonism.png",
 
-    imageAlt: "Bottle of Compass Box Hedonism blended grain Scotch whisky",
 
     flavorNotes: ["vanilla", "caramel", "coconut", "toffee", "citrus", "oak"],
 
@@ -7904,9 +7429,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/compass-box-flaming-heart.png",
 
-    imageAlt: "Bottle of Compass Box Flaming Heart blended malt Scotch whisky",
 
     flavorNotes: ["smoke", "peat", "citrus", "vanilla", "spice", "oak"],
 
@@ -7942,9 +7465,7 @@ export const whiskeyCollection = [
 
     priceRange: "entry",
 
-    image: "/images/whiskey/laphroaig-10-year.png",
 
-    imageAlt: "Bottle of Laphroaig 10 Year Islay single malt Scotch whisky",
 
     flavorNotes: [
       "smoke",
@@ -7986,10 +7507,7 @@ export const whiskeyCollection = [
 
     priceRange: "entry",
 
-    image: "/images/whiskey/glenlivet-12-year.png",
 
-    imageAlt:
-      "Bottle of The Glenlivet 12 Year Speyside single malt Scotch whisky",
 
     flavorNotes: ["pineapple", "pear", "apple", "citrus", "vanilla", "honey"],
 
@@ -8024,9 +7542,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/oban-14-year.png",
 
-    imageAlt: "Bottle of Oban 14 Year Highland single malt Scotch whisky",
 
     flavorNotes: ["orange", "pear", "honey", "smoke", "oak", "salinity"],
 
@@ -8061,10 +7577,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/port-charlotte-10-year.png",
 
-    imageAlt:
-      "Bottle of Port Charlotte 10 Year Heavily Peated Islay single malt Scotch whisky",
 
     flavorNotes: ["smoke", "peat", "lemon", "vanilla", "caramel", "salinity"],
 
@@ -8099,10 +7612,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/talisker-10-year.png",
 
-    imageAlt:
-      "Bottle of Talisker 10 Year Isle of Skye single malt Scotch whisky",
 
     flavorNotes: [
       "smoke",
@@ -8144,10 +7654,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/highland-park-18-year.png",
 
-    imageAlt:
-      "Bottle of Highland Park 18 Year Orkney single malt Scotch whisky",
 
     flavorNotes: [
       "heather-honey",
@@ -8189,9 +7696,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/jura-18-year.png",
 
-    imageAlt: "Bottle of Jura 18 Year Isle of Jura single malt Scotch whisky",
 
     flavorNotes: [
       "dark-chocolate",
@@ -8233,10 +7738,7 @@ export const whiskeyCollection = [
 
     priceRange: "entry",
 
-    image: "/images/whiskey/glenfarclas-10-year.png",
 
-    imageAlt:
-      "Bottle of Glenfarclas 10 Year Speyside single malt Scotch whisky",
 
     flavorNotes: [
       "dried-fruit",
@@ -8278,10 +7780,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/glenfarclas-25-year.png",
 
-    imageAlt:
-      "Bottle of Glenfarclas 25 Year Speyside single malt Scotch whisky",
 
     flavorNotes: [
       "dried-fruit",
@@ -8323,10 +7822,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/balvenie-14-year-caribbean-cask.png",
 
-    imageAlt:
-      "Bottle of The Balvenie 14 Year Caribbean Cask Speyside single malt Scotch whisky",
 
     flavorNotes: [
       "vanilla",
@@ -8368,10 +7864,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/old-forester-birthday-bourbon-2023.png",
 
-    imageAlt:
-      "Bottle of Old Forester Birthday Bourbon 2023 Kentucky straight bourbon whiskey",
 
     flavorNotes: [
       "dark-honey",
@@ -8413,9 +7906,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/old-forester-birthday-bourbon-2024.png",
 
-    imageAlt: "Bottle of Old Forester Birthday Bourbon 2024",
 
     flavorNotes: ["apricot", "apple", "caramel", "vanilla", "tobacco", "oak"],
 
@@ -8459,9 +7950,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/old-forester-birthday-bourbon-2025.png",
 
-    imageAlt: "Bottle of Old Forester Birthday Bourbon 2025",
 
     flavorNotes: [
       "brown-sugar",
@@ -8513,10 +8002,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/old-forester-1924-10-year.png",
 
-    imageAlt:
-      "Bottle of Old Forester 1924 10 Year Kentucky straight bourbon whisky",
 
     flavorNotes: ["fudge", "cocoa", "marzipan", "tobacco", "cinnamon", "oak"],
 
@@ -8551,10 +8037,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/old-forester-1920-prohibition-style.png",
 
-    imageAlt:
-      "Bottle of Old Forester 1920 Prohibition Style Kentucky straight bourbon whisky",
 
     flavorNotes: [
       "cherry",
@@ -8596,9 +8079,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/old-forester-presidents-choice-bourbon.png",
 
-    imageAlt: "Bottle of Old Forester President's Choice Bourbon",
 
     flavorNotes: [
       "dark-fruit",
@@ -8648,10 +8129,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/parkers-heritage-11-year-single-barrel.png",
 
-    imageAlt:
-      "Bottle of Parker's Heritage Collection 11 Year Single Barrel Kentucky straight bourbon whiskey",
 
     flavorNotes: ["caramel", "vanilla", "cherry", "cinnamon", "oak", "tobacco"],
 
@@ -8686,9 +8164,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/parkers-heritage-8-year-heavy-char-rye.png",
 
-    imageAlt: "Bottle of Parker's Heritage 8 Year Heavy Char Rye",
 
     flavorNotes: [
       "caramel",
@@ -8739,10 +8215,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/parkers-heritage-double-barreled-blend.png",
 
-    imageAlt:
-      "Bottle of Parker's Heritage Collection Double Barreled Blend Bourbon",
 
     flavorNotes: [
       "cherry",
@@ -8796,11 +8269,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image:
-      "/images/whiskey/parkers-heritage-orange-curacao-barrel-finished.png",
 
-    imageAlt:
-      "Bottle of Parker's Heritage Collection Bourbon Finished in Orange Curaçao Barrels",
 
     flavorNotes: [
       "orange",
@@ -8851,10 +8320,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/old-fitzgerald-15-year.png",
 
-    imageAlt:
-      "Bottle of Old Fitzgerald 15 Year Bottled-in-Bond Kentucky straight bourbon",
 
     flavorNotes: ["caramel", "maple", "vanilla", "cherry", "cinnamon", "oak"],
 
@@ -8898,10 +8364,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/old-fitzgerald-11-year.png",
 
-    imageAlt:
-      "Bottle of Old Fitzgerald 11 Year Bottled-in-Bond Kentucky straight bourbon",
 
     flavorNotes: ["honey", "butterscotch", "plum", "peach", "fig", "chocolate"],
 
@@ -8945,10 +8408,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/four-roses-135th-anniversary-small-batch-2023.png",
 
-    imageAlt:
-      "Bottle of Four Roses 135th Anniversary Limited Edition Small Batch Bourbon 2023",
 
     flavorNotes: [
       "raspberry",
@@ -9000,10 +8460,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/elijah-craig-18-year-single-barrel.png",
 
-    imageAlt:
-      "Bottle of Elijah Craig 18 Year Single Barrel Kentucky straight bourbon",
 
     flavorNotes: ["honey", "vanilla", "cherry", "chocolate", "mint", "oak"],
 
@@ -9046,10 +8503,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/elijah-craig-23-year-single-barrel.png",
 
-    imageAlt:
-      "Bottle of Elijah Craig 23 Year Single Barrel Kentucky straight bourbon",
 
     flavorNotes: ["caramel", "vanilla", "honey", "cocoa", "tobacco", "oak"],
 
@@ -9092,9 +8546,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/thomas-h-handy-sazerac.png",
 
-    imageAlt: "Bottle of Thomas H. Handy Sazerac Straight Rye Whiskey",
 
     flavorNotes: [
       "toffee",
@@ -9146,9 +8598,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/sazerac-rye-18-year.png",
 
-    imageAlt: "Bottle of Sazerac Rye 18 Year Old Kentucky straight rye whiskey",
 
     flavorNotes: ["oak", "molasses", "mint", "vanilla", "cinnamon", "pepper"],
 
@@ -9191,9 +8641,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/willett-family-estate-4-year-rye.png",
 
-    imageAlt: "Bottle of Willett Family Estate 4 Year Rye whiskey",
 
     flavorNotes: ["cherry", "mint", "cinnamon", "vanilla", "caramel", "pepper"],
 
@@ -9235,10 +8683,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/king-of-kentucky-16-year.png",
 
-    imageAlt:
-      "Bottle of King of Kentucky 16 Year Single Barrel Kentucky straight bourbon",
 
     flavorNotes: [
       "caramel",
@@ -9289,10 +8734,7 @@ export const whiskeyCollection = [
 
     priceRange: "entry",
 
-    image: "/images/whiskey/willett-pot-still-reserve.png",
 
-    imageAlt:
-      "Bottle of Willett Pot Still Reserve Kentucky straight bourbon whiskey",
 
     flavorNotes: ["vanilla", "caramel", "cherry", "citrus", "cinnamon", "oak"],
 
@@ -9327,9 +8769,7 @@ export const whiskeyCollection = [
 
     priceRange: "entry",
 
-    image: "/images/whiskey/whistlepig-piggyback-6-year.png",
 
-    imageAlt: "Bottle of WhistlePig PiggyBack 6 Year Rye Whiskey",
 
     flavorNotes: [
       "cinnamon",
@@ -9371,9 +8811,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/whistlepig-small-batch-10-year.png",
 
-    imageAlt: "Bottle of WhistlePig Small Batch Rye Aged 10 Years",
 
     flavorNotes: [
       "orange",
@@ -9420,9 +8858,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/whistlepig-old-world-12-year.png",
 
-    imageAlt: "Bottle of WhistlePig Old World Rye 12 Year",
 
     flavorNotes: [
       "dark-fruit",
@@ -9471,9 +8907,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/whistlepig-the-boss-hog-vi-samurai-scientist.png",
 
-    imageAlt: "Bottle of WhistlePig The Boss Hog VI The Samurai Scientist",
 
     flavorNotes: ["plum", "maple", "tobacco", "ginger", "cinnamon", "smoke"],
 
@@ -9518,10 +8952,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/old-rip-van-winkle-10-year.png",
 
-    imageAlt:
-      "Bottle of Old Rip Van Winkle 10 Year Kentucky straight wheated bourbon",
 
     flavorNotes: [
       "dried-fruit",
@@ -9571,10 +9002,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/van-winkle-special-reserve-lot-b-12-year.png",
 
-    imageAlt:
-      "Bottle of Van Winkle Special Reserve Lot B 12 Year Kentucky straight bourbon whiskey",
 
     flavorNotes: ["vanilla", "caramel", "honey", "dried-fruit", "clove", "oak"],
 
@@ -9609,10 +9037,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/pappy-van-winkle-15-year.png",
 
-    imageAlt:
-      "Bottle of Pappy Van Winkle's Family Reserve 15 Year Kentucky straight bourbon whiskey",
 
     flavorNotes: ["caramel", "vanilla", "toffee", "nuts", "brown-spice", "oak"],
 
@@ -9647,10 +9072,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/pappy-van-winkle-20-year.png",
 
-    imageAlt:
-      "Bottle of Pappy Van Winkle's Family Reserve 20 Year Kentucky straight bourbon whiskey",
 
     flavorNotes: [
       "caramel",
@@ -9692,10 +9114,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/pappy-van-winkle-23-year.png",
 
-    imageAlt:
-      "Bottle of Pappy Van Winkle's Family Reserve 23 Year Kentucky straight bourbon whiskey",
 
     flavorNotes: [
       "caramel",
@@ -9742,9 +9161,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/legent-yamazaki-cask-finish-blend.png",
 
-    imageAlt: "Bottle of Legent Yamazaki Cask Finish Blend bourbon",
 
     flavorNotes: ["cherry", "orange", "caramel", "vanilla", "cocoa", "spice"],
 
@@ -9791,9 +9208,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/eagle-rare-17-year.png",
 
-    imageAlt: "Bottle of Eagle Rare 17 Year Kentucky straight bourbon",
 
     flavorNotes: ["cherry", "toffee", "vanilla", "tobacco", "cinnamon", "oak"],
 
@@ -9837,10 +9252,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/george-t-stagg-antique-collection.png",
 
-    imageAlt:
-      "Bottle of George T. Stagg Buffalo Trace Antique Collection Kentucky straight bourbon whiskey",
 
     flavorNotes: ["caramel", "cherry", "vanilla", "tobacco", "spice", "oak"],
 
@@ -9875,10 +9287,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/william-larue-weller-antique-collection.png",
 
-    imageAlt:
-      "Bottle of William Larue Weller Buffalo Trace Antique Collection Kentucky straight bourbon whiskey",
 
     flavorNotes: ["caramel", "plum", "fig", "toffee", "tobacco", "oak"],
 
@@ -9913,10 +9322,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/weller-antique-107.png",
 
-    imageAlt:
-      "Bottle of W.L. Weller Antique 107 Kentucky straight wheated bourbon",
 
     flavorNotes: ["cherry", "vanilla", "caramel", "cinnamon", "fruit", "oak"],
 
@@ -9951,9 +9357,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/weller-107-old-lightning-barrel-select.png",
 
-    imageAlt: "Bottle of Weller Antique 107 Old Lightning Barrel Select",
 
     flavorNotes: [
       "caramel",
@@ -10004,10 +9408,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/weller-single-barrel.png",
 
-    imageAlt:
-      "Bottle of W.L. Weller Single Barrel Kentucky straight wheated bourbon",
 
     flavorNotes: [
       "cherry",
@@ -10055,10 +9456,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/weller-full-proof.png",
 
-    imageAlt:
-      "Bottle of W.L. Weller Full Proof Kentucky straight wheated bourbon",
 
     flavorNotes: [
       "vanilla",
@@ -10107,10 +9505,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/weller-cypb.png",
 
-    imageAlt:
-      "Bottle of W.L. Weller C.Y.P.B. Kentucky straight wheated bourbon",
 
     flavorNotes: [
       "citrus",
@@ -10158,9 +9553,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/weller-12-year.png",
 
-    imageAlt: "Bottle of W.L. Weller 12 Year Kentucky straight wheated bourbon",
 
     flavorNotes: ["almond", "vanilla", "caramel", "cherry", "oak", "cinnamon"],
 
@@ -10201,9 +9594,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/hancocks-presidents-reserve-single-barrel.png",
 
-    imageAlt: "Bottle of Hancock's President's Reserve Single Barrel Bourbon",
 
     flavorNotes: [
       "caramel",
@@ -10251,9 +9642,7 @@ export const whiskeyCollection = [
 
     priceRange: "entry",
 
-    image: "/images/whiskey/woodford-reserve.png",
 
-    imageAlt: "Bottle of Woodford Reserve Kentucky Straight Bourbon Whiskey",
 
     flavorNotes: [
       "orange",
@@ -10295,9 +9684,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/makers-mark-cellar-aged-2023.png",
 
-    imageAlt: "Bottle of Maker's Mark Cellar Aged 2023 bourbon",
 
     flavorNotes: [
       "brown-sugar",
@@ -10349,10 +9736,7 @@ export const whiskeyCollection = [
 
     priceRange: "entry",
 
-    image: "/images/whiskey/makers-mark-the-heart-release-2024.png",
 
-    imageAlt:
-      "Bottle of Maker's Mark Wood Finishing Series The Heart Release 2024",
 
     flavorNotes: [
       "dark-cherry",
@@ -10404,10 +9788,7 @@ export const whiskeyCollection = [
 
     priceRange: "entry",
 
-    image: "/images/whiskey/makers-mark-46-cask-strength.png",
 
-    imageAlt:
-      "Bottle of Maker's Mark 46 Cask Strength Kentucky straight bourbon",
 
     flavorNotes: [
       "vanilla",
@@ -10457,9 +9838,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/blantons-gold.png",
 
-    imageAlt: "Bottle of Blanton's Gold Edition Single Barrel Bourbon",
 
     flavorNotes: [
       "honey",
@@ -10509,9 +9888,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/blantons-straight-from-the-barrel.png",
 
-    imageAlt: "Bottle of Blanton's Straight From the Barrel bourbon",
 
     flavorNotes: [
       "vanilla",
@@ -10564,9 +9941,7 @@ export const whiskeyCollection = [
 
     priceRange: "entry",
 
-    image: "/images/whiskey/high-west-bourbon.png",
 
-    imageAlt: "Bottle of High West Bourbon",
 
     flavorNotes: ["caramel", "honey", "vanilla", "apple", "pecan", "corn"],
 
@@ -10607,9 +9982,7 @@ export const whiskeyCollection = [
 
     priceRange: "entry",
 
-    image: "/images/whiskey/whistlepig-piggyback-6-year-bourbon.png",
 
-    imageAlt: "Bottle of WhistlePig PiggyBack 6 Year Bourbon",
 
     flavorNotes: ["caramel", "maple", "vanilla", "apple", "cinnamon", "oak"],
 
@@ -10651,9 +10024,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/elmer-t-lee-single-barrel.png",
 
-    imageAlt: "Bottle of Elmer T. Lee Single Barrel Kentucky straight bourbon",
 
     flavorNotes: ["apple", "cherry", "caramel", "vanilla", "honey", "cinnamon"],
 
@@ -10695,10 +10066,7 @@ export const whiskeyCollection = [
 
     priceRange: "entry",
 
-    image: "/images/whiskey/henry-mckenna-10-year.png",
 
-    imageAlt:
-      "Bottle of Henry McKenna 10 Year Single Barrel Bottled-in-Bond bourbon",
 
     flavorNotes: ["caramel", "vanilla", "cherry", "honey", "cinnamon", "oak"],
 
@@ -10741,9 +10109,7 @@ export const whiskeyCollection = [
 
     priceRange: "entry",
 
-    image: "/images/whiskey/noahs-mill.png",
 
-    imageAlt: "Bottle of Noah's Mill Kentucky straight bourbon",
 
     flavorNotes: [
       "caramel",
@@ -10785,9 +10151,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/little-book-chapter-7.png",
 
-    imageAlt: "Bottle of Little Book Chapter 7 In Retrospect",
 
     flavorNotes: ["vanilla", "caramel", "apple", "honey", "cinnamon", "smoke"],
 
@@ -10823,10 +10187,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/rock-hill-farms-single-barrel.png",
 
-    imageAlt:
-      "Bottle of Rock Hill Farms Single Barrel Kentucky straight bourbon",
 
     flavorNotes: ["cherry", "apple", "vanilla", "caramel", "cinnamon", "oak"],
 
@@ -10861,9 +10222,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/rowans-creek.png",
 
-    imageAlt: "Bottle of Rowan's Creek Kentucky Straight Bourbon",
 
     flavorNotes: [
       "caramel",
@@ -10906,10 +10265,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/bombergers-declaration-2024.png",
 
-    imageAlt:
-      "Bottle of Bomberger's Declaration Kentucky Straight Bourbon 2024",
 
     flavorNotes: [
       "caramel",
@@ -10957,9 +10313,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/shenks-homestead-2024.png",
 
-    imageAlt: "Bottle of Shenk's Homestead Sour Mash Whiskey 2024",
 
     flavorNotes: [
       "toffee",
@@ -11005,9 +10359,7 @@ export const whiskeyCollection = [
 
     priceRange: "entry",
 
-    image: "/images/whiskey/michters-us1-small-batch-bourbon.png",
 
-    imageAlt: "Bottle of Michter's US*1 Small Batch Kentucky Straight Bourbon",
 
     flavorNotes: [
       "caramel",
@@ -11053,9 +10405,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/michters-toasted-barrel.png",
 
-    imageAlt: "Bottle of Michter's US*1 Toasted Barrel Finish Bourbon",
 
     flavorNotes: [
       "cinnamon",
@@ -11100,10 +10450,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/eh-taylor-barrel-proof.png",
 
-    imageAlt:
-      "Bottle of E.H. Taylor Jr. Barrel Proof Kentucky Straight Bourbon",
 
     flavorNotes: [
       "berry",
@@ -11148,9 +10495,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/parkers-heritage-8-year-malt.png",
 
-    imageAlt: "Bottle of Parker's Heritage 8 Year Malt Whiskey",
 
     flavorNotes: [
       "maple",
@@ -11196,9 +10541,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/parkers-heritage-11-year-wheat.png",
 
-    imageAlt: "Bottle of Parker's Heritage 11 Year Heavy Char Wheat Whiskey",
 
     flavorNotes: [
       "honey",
@@ -11246,9 +10589,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/star-hill-farm-whisky-2025.png",
 
-    imageAlt: "Bottle of Maker's Mark Star Hill Farm Whisky 2025",
 
     flavorNotes: [
       "caramel",
@@ -11296,9 +10637,7 @@ export const whiskeyCollection = [
 
     priceRange: "entry",
 
-    image: "/images/whiskey/michters-us1-american-whiskey.png",
 
-    imageAlt: "Bottle of Michter's US*1 American Whiskey",
 
     flavorNotes: [
       "butterscotch",
@@ -11340,9 +10679,7 @@ export const whiskeyCollection = [
 
     priceRange: "entry",
 
-    image: "/images/whiskey/balcones-peated-texas-single-malt.png",
 
-    imageAlt: "Bottle of Balcones Peated Texas Single Malt Whisky",
 
     flavorNotes: [
       "smoke",
@@ -11388,9 +10725,7 @@ export const whiskeyCollection = [
 
     priceRange: "entry",
 
-    image: "/images/whiskey/balcones-lineage.png",
 
-    imageAlt: "Bottle of Balcones Lineage Texas Single Malt Whisky",
 
     flavorNotes: [
       "cream-soda",
@@ -11436,10 +10771,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/bookers-bourbon.png",
 
-    imageAlt:
-      "Bottle of Booker's Barrel Strength Kentucky straight bourbon whiskey",
 
     flavorNotes: [
       "caramel",
@@ -11481,9 +10813,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/stagg-jr.png",
 
-    imageAlt: "Bottle of Stagg Jr. Kentucky straight bourbon whiskey",
 
     flavorNotes: [
       "cherry",
@@ -11525,9 +10855,7 @@ export const whiskeyCollection = [
 
     priceRange: "entry",
 
-    image: "/images/whiskey/basil-hayden.png",
 
-    imageAlt: "Bottle of Basil Hayden Kentucky Straight Bourbon Whiskey",
 
     flavorNotes: [
       "vanilla",
@@ -11569,10 +10897,7 @@ export const whiskeyCollection = [
 
     priceRange: "entry",
 
-    image: "/images/whiskey/basil-hayden-malted-rye.png",
 
-    imageAlt:
-      "Bottle of Basil Hayden Malted Rye Kentucky Straight Rye Malt Whiskey",
 
     flavorNotes: [
       "cinnamon",
@@ -11614,9 +10939,7 @@ export const whiskeyCollection = [
 
     priceRange: "entry",
 
-    image: "/images/whiskey/basil-hayden-dark-rye.png",
 
-    imageAlt: "Bottle of Basil Hayden Dark Rye blended rye whiskey",
 
     flavorNotes: [
       "dark-berry",
@@ -11658,10 +10981,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/blantons-original-single-barrel.png",
 
-    imageAlt:
-      "Bottle of Blanton's Original Single Barrel Kentucky Straight Bourbon Whiskey",
 
     flavorNotes: ["vanilla", "caramel", "honey", "cinnamon", "nutmeg", "oak"],
 
@@ -11696,9 +11016,7 @@ export const whiskeyCollection = [
 
     priceRange: "entry",
 
-    image: "/images/whiskey/high-west-double-rye.png",
 
-    imageAlt: "Bottle of High West Double Rye blended straight rye whiskey",
 
     flavorNotes: ["mint", "cinnamon", "ginger", "caramel", "vanilla", "oak"],
 
@@ -11733,9 +11051,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/high-west-rendezvous-rye.png",
 
-    imageAlt: "Bottle of High West Rendezvous Rye blended straight rye whiskey",
 
     flavorNotes: [
       "plum",
@@ -11777,9 +11093,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/high-west-midwinter-nights-dram-act-12-scene-8.png",
 
-    imageAlt: "Bottle of High West A Midwinter Night's Dram Act 12 Scene 8",
 
     flavorNotes: [
       "peach",
@@ -11828,10 +11142,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/van-winkle-family-reserve-rye-13-year.png",
 
-    imageAlt:
-      "Bottle of Van Winkle Family Reserve Rye 13 Year Kentucky straight rye whiskey",
 
     flavorNotes: [
       "chestnut",
@@ -11880,9 +11191,7 @@ export const whiskeyCollection = [
 
     priceRange: "entry",
 
-    image: "/images/whiskey/templeton-rye-4-year.png",
 
-    imageAlt: "Bottle of Templeton Rye 4 Year American rye whiskey",
 
     flavorNotes: ["vanilla", "toffee", "caramel", "pepper", "cinnamon", "oak"],
 
@@ -11917,10 +11226,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-    image: "/images/whiskey/old-forester-presidents-choice-rye-117-month.png",
 
-    imageAlt:
-      "Bottle of Old Forester President's Choice Straight Rye 117 Month",
 
     flavorNotes: [
       "cherry",
@@ -11971,9 +11277,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/eh-taylor-straight-rye.png",
 
-    imageAlt: "Bottle of E.H. Taylor Jr. Straight Rye Kentucky rye whiskey",
 
     flavorNotes: [
       "dried-fruit",
@@ -12022,10 +11326,7 @@ export const whiskeyCollection = [
 
     priceRange: "premium",
 
-    image: "/images/whiskey/colonel-e-h-taylor-jr-barrel-proof.png",
 
-    imageAlt:
-      "Bottle of Colonel E.H. Taylor Jr. Barrel Proof Kentucky Straight Bourbon Whiskey",
 
     flavorNotes: [
       "caramel",
@@ -12067,10 +11368,7 @@ export const whiskeyCollection = [
 
     priceRange: "entry",
 
-    image: "/images/whiskey/colonel-e-h-taylor-jr-small-batch.png",
 
-    imageAlt:
-      "Bottle of Colonel E.H. Taylor Jr. Small Batch Kentucky Straight Bourbon Whiskey",
 
     flavorNotes: [
       "caramel",
@@ -12112,9 +11410,7 @@ export const whiskeyCollection = [
 
     priceRange: "entry",
 
-    image: "/images/whiskey/michters-us1-kentucky-straight-rye.png",
 
-    imageAlt: "Bottle of Michter's US1 Kentucky Straight Rye whiskey",
 
     flavorNotes: [
       "pepper",
@@ -12156,10 +11452,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/michters-10-year-single-barrel-straight-rye.png",
 
-    imageAlt:
-      "Bottle of Michter's 10 Year Single Barrel Kentucky Straight Rye whiskey",
 
     flavorNotes: [
       "vanilla",
@@ -12209,9 +11502,7 @@ export const whiskeyCollection = [
 
     priceRange: "entry",
 
-    image: "/images/whiskey/michters-us1-kentucky-straight-bourbon.png",
 
-    imageAlt: "Bottle of Michter's US★1 Kentucky Straight Bourbon",
 
     flavorNotes: ["caramel", "vanilla", "stone-fruit", "smoke", "oak", "honey"],
 
@@ -12250,9 +11541,7 @@ export const whiskeyCollection = [
 
     priceRange: "entry",
 
-    image: "/images/whiskey/slane-irish-whiskey.png",
 
-    imageAlt: "Bottle of Slane Triple Casked Irish Whiskey",
 
     flavorNotes: [
       "vanilla",
@@ -12294,9 +11583,7 @@ export const whiskeyCollection = [
 
     priceRange: "mid",
 
-    image: "/images/whiskey/kavalan-classic-single-malt.png",
 
-    imageAlt: "Bottle of Kavalan Classic Single Malt Whisky",
 
     flavorNotes: [
       "mango",

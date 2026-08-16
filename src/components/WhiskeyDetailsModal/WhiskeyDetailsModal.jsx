@@ -85,14 +85,6 @@ function WhiskeyDetailsModal({ whiskey, preferences, isOpen, onClose }) {
         </button>
 
         <div className="whiskey-modal__hero">
-          <div className="whiskey-modal__image-container">
-            <img
-              className="whiskey-modal__image"
-              src={whiskey.image}
-              alt={whiskey.imageAlt}
-            />
-          </div>
-
           <div className="whiskey-modal__hero-content">
             <header className="whiskey-modal__heading">
               <p className="whiskey-modal__distillery">{whiskey.distillery}</p>

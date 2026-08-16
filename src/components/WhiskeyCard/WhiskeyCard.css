@@ -27,31 +27,6 @@
   box-shadow: var(--shadow-hover);
 }
 
-/* ===========================
-   Image
-=========================== */
-
-.whiskey-card__image-container {
-  position: relative;
-
-  overflow: hidden;
-
-  aspect-ratio: 4 / 3;
-}
-
-.whiskey-card__image {
-  width: 100%;
-  height: 100%;
-
-  object-fit: cover;
-
-  transition: transform 0.35s ease;
-}
-
-.whiskey-card:hover .whiskey-card__image {
-  transform: scale(1.03);
-}
-
 .whiskey-card__score {
   position: absolute;
 

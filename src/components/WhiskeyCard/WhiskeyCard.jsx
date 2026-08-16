@@ -6,19 +6,6 @@ import "./WhiskeyCard.css";
 function WhiskeyCard({ whiskey, onViewDetails }) {
   return (
     <article className="whiskey-card">
-      <div className="whiskey-card__image-container">
-        {whiskey.scores?.total !== undefined && (
-          <p className="whiskey-card__score">
-            {Math.round(whiskey.scores.total)}% Match
-          </p>
-        )}
-        <img
-          className="whiskey-card__image"
-          src={whiskey.image}
-          alt={whiskey.imageAlt}
-        />
-      </div>
-
       <div className="whiskey-card__content">
         <div className="whiskey-card__heading">
           <h4 className="whiskey-card__name">{whiskey.name}</h4>

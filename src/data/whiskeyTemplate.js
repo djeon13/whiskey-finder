@@ -21,10 +21,6 @@ export const whiskeyTemplate = {
 
   priceRange: "",
 
-  image: "",
-
-  imageAlt: "",
-
   flavorNotes: [],
 
   description: "",

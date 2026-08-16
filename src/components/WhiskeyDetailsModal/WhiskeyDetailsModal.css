@@ -182,35 +182,6 @@
   padding: 56px;
 }
 
-.whiskey-modal__image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  padding: 32px;
-
-  border-radius: var(--radius-card);
-
-  background: radial-gradient(
-    circle at top,
-    rgba(201, 139, 60, 0.18),
-    transparent 60%
-  );
-}
-
-.whiskey-modal__image {
-  max-width: 230px;
-  max-height: 380px;
-
-  object-fit: contain;
-
-  transition: transform 0.4s ease;
-}
-
-.whiskey-modal__image:hover {
-  transform: scale(1.04);
-}
-
 .whiskey-modal__hero-content {
   display: flex;
   flex-direction: column;
@@ -427,11 +398,6 @@
     padding: 36px;
 
     gap: 32px;
-  }
-
-  .whiskey-modal__image {
-    max-width: 180px;
-    max-height: 300px;
   }
 
   .whiskey-modal__facts {
