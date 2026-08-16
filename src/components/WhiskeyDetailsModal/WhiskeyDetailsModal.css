@@ -24,7 +24,7 @@
 
   overflow-y: auto;
 
-  background: var(--color-card);
+  background: var(--color-surface);
 
   border: 1px solid var(--color-border);
   border-top: 4px solid var(--color-accent);
@@ -176,9 +176,7 @@
 
 .whiskey-modal__hero {
   display: grid;
-  grid-template-columns: 320px 1fr;
-
-  gap: 48px;
+  grid-template-columns: 1fr;
 
   padding: 56px;
 }
@@ -226,19 +224,20 @@
 =========================== */
 
 .whiskey-modal__facts {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 
-  gap: 12px;
-
-  margin-top: 28px;
+  margin-top: 40px;
 }
 
 .whiskey-modal__fact {
-  padding: 14px 10px;
+  width: 100%;
+
+  padding: 20px;
 
   border: 1px solid var(--color-border);
-  border-radius: 16px;
+  border-radius: var(--radius-card);
 
   background: var(--color-surface);
 
@@ -246,11 +245,11 @@
 }
 
 .whiskey-modal__fact-label {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 
   color: var(--color-text-secondary);
 
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 
   letter-spacing: 0.12em;
   text-transform: uppercase;
@@ -259,7 +258,7 @@
 .whiskey-modal__fact-value {
   color: var(--color-text-primary);
 
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 
@@ -392,20 +391,6 @@
    Mobile
 =========================== */
 
-@media (max-width: 900px) {
-  .whiskey-modal__hero {
-    grid-template-columns: 1fr;
-
-    padding: 36px;
-
-    gap: 32px;
-  }
-
-  .whiskey-modal__body {
-    padding: 0 36px 36px;
-  }
-}
-
 @media (max-width: 600px) {
   .whiskey-modal {
     padding: 16px;
@@ -434,15 +419,19 @@
   }
 
   .whiskey-modal__facts {
-  gap: 8px;
-  margin-top: 24px;
-}
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
 
-.whiskey-modal__fact {
-  padding: 12px 6px;
-}
+    margin-top: 24px;
+  }
 
-.whiskey-modal__fact-value {
-  font-size: 0.95rem;
-}
+  .whiskey-modal__fact {
+    flex: 1;
+    padding: 12px 6px;
+  }
+
+  .whiskey-modal__fact-value {
+    font-size: 0.95rem;
+  }
 }
