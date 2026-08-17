@@ -325,7 +325,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-
+    pourSize:1,
 
     flavorNotes: [
       "dried-fruit",
@@ -472,7 +472,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-
+    pourSize:1,
 
     flavorNotes: [
       "smoke",
@@ -633,7 +633,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-
+    pourSize:1,
 
     flavorNotes: ["orange", "honey", "vanilla", "apple", "custard", "malt"],
 
@@ -668,7 +668,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-
+    pourSize:1,
 
     flavorNotes: ["smoke", "herbal", "pineapple", "citrus", "earth", "peat"],
 
@@ -703,7 +703,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-
+    pourSize:1,
 
     flavorNotes: ["green-apple", "vanilla", "honey", "butterscotch", "oak"],
 
@@ -738,7 +738,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-
+    pourSize:1,
 
     flavorNotes: [
       "raisin",
@@ -780,7 +780,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-
+    pourSize:1,
 
     flavorNotes: ["berry", "red-grape", "sweet", "spice", "oak"],
 
@@ -815,7 +815,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-
+    pourSize:1,
 
     flavorNotes: [
       "cherry",
@@ -857,7 +857,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-
+    pourSize:1,
 
     flavorNotes: [
       "dried-fruit",
@@ -899,7 +899,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-
+    pourSize:1,
 
     flavorNotes: ["raisin", "dried-fruit", "dark-chocolate", "spice", "oak"],
 
@@ -1298,7 +1298,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-
+    pourSize:1,
 
     flavorNotes: [
       "smoke",
@@ -1340,7 +1340,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-
+    pourSize:1,
 
     flavorNotes: ["smoke", "peat", "vanilla", "oak", "citrus", "spice"],
 
@@ -1375,7 +1375,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-
+    pourSize:1,
 
     flavorNotes: [
       "smoke",
@@ -1878,7 +1878,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-
+    pourSize:1,
 
     flavorNotes: ["tropical-fruit", "orange", "plum", "spice", "oak", "smoke"],
 
@@ -3574,7 +3574,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-
+    pourSize:1,
 
     flavorNotes: ["plum", "apricot", "vanilla", "dried-fruit", "oak", "spice"],
 
@@ -3609,7 +3609,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-
+    pourSize:1,
 
     flavorNotes: ["vanilla", "apple", "pear", "oak", "caramel", "spice"],
 
@@ -4785,7 +4785,7 @@ export const whiskeyCollection = [
 
     priceRange: "luxury",
 
-
+    pourSize:1,
 
     flavorNotes: [
       "dried-fruit",
