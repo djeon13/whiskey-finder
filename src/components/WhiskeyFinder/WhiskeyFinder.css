@@ -577,6 +577,217 @@
   }
 }
 
+/* ===========================
+   Whiskey Library Search
+=========================== */
+
+.whiskey-finder__search {
+  position: relative;
+
+  display: flex;
+  align-items: stretch;
+
+  width: 100%;
+  max-width: 620px;
+
+  margin: 0 auto;
+
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+
+  background: var(--color-surface);
+
+  box-shadow: var(--shadow-card);
+
+  transition:
+    border-color var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.whiskey-finder__search:focus-within {
+  border-color: var(--color-accent);
+
+  box-shadow: 0 0 0 3px rgba(201, 139, 60, 0.12);
+}
+
+.whiskey-finder__search-input-wrapper {
+  position: relative;
+
+  flex: 1;
+  min-width: 0;
+}
+
+.whiskey-finder__search-input {
+  width: 100%;
+  height: 58px;
+
+  padding: 0 48px 0 20px;
+
+  border: none;
+  border-radius: 999px 0 0 999px;
+
+  background: transparent;
+
+  color: var(--color-text-primary);
+
+  font: inherit;
+  font-size: 1rem;
+
+  outline: none;
+}
+
+.whiskey-finder__search-input::-webkit-search-decoration,
+.whiskey-finder__search-input::-webkit-search-cancel-button,
+.whiskey-finder__search-input::-webkit-search-results-button,
+.whiskey-finder__search-input::-webkit-search-results-decoration {
+  display: none;
+}
+
+.whiskey-finder__search-input::placeholder {
+  color: var(--color-text-secondary);
+
+  opacity: 1;
+}
+
+.whiskey-finder__search-suggestions {
+  position: absolute;
+
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+
+  z-index: 50;
+
+  margin: 0;
+  padding: 6px;
+
+  list-style: none;
+
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+
+  background: var(--color-surface);
+
+  box-shadow: var(--shadow-hover);
+
+  overflow: hidden;
+}
+
+.whiskey-finder__search-suggestion {
+  display: block;
+
+  width: 100%;
+
+  padding: 14px 16px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: transparent;
+
+  color: var(--color-text-primary);
+
+  font: inherit;
+  font-size: 0.95rem;
+  font-weight: 600;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition:
+    background var(--transition-fast),
+    color var(--transition-fast);
+}
+
+.whiskey-finder__search-suggestion:hover,
+.whiskey-finder__search-suggestion:focus {
+  background: rgba(201, 139, 60, 0.12);
+
+  color: var(--color-accent);
+
+  outline: none;
+}
+
+.whiskey-finder__search-button {
+  flex: 0 0 58px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 58px;
+
+  padding: 0;
+
+  border: none;
+  border-radius: 0 999px 999px 0;
+
+  background: var(--color-accent);
+
+  color: white;
+
+  font-size: 1.25rem;
+
+  cursor: pointer;
+
+  transition:
+    background var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.whiskey-finder__search-button:hover {
+  background: var(--color-accent-dark);
+}
+
+.whiskey-finder__search-button:active {
+  transform: scale(0.96);
+}
+
+.whiskey-finder__search-button:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+.whiskey-finder__library-search {
+  max-width: 700px;
+
+  margin: 72px auto 0;
+
+  padding-top: 40px;
+
+  border-top: 1px solid var(--color-border);
+
+  text-align: center;
+}
+
+.whiskey-finder__library-search-text {
+  max-width: 560px;
+
+  margin: 0 auto 20px;
+
+  color: var(--color-text-secondary);
+
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.whiskey-finder__search-empty {
+  max-width: 620px;
+
+  margin: 20px auto 0;
+  padding: 16px 20px;
+
+  border: 1px solid var(--color-border);
+  border-radius: 14px;
+
+  background: rgba(255, 255, 255, 0.12);
+
+  color: var(--color-text-secondary);
+
+  text-align: center;
+}
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -716,7 +927,8 @@
     pointer-events: none;
     z-index: 0;
   }
-   .whiskey-finder__results-modal {
+
+  .whiskey-finder__results-modal {
     position: fixed;
     inset: 0;
 
@@ -754,23 +966,25 @@
   }
 
   .whiskey-finder__results-modal-header {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+  position: relative;
 
-    gap: 16px;
+  display: block;
 
-    margin-bottom: 24px;
+  margin-bottom: 24px;
 
-    padding-bottom: 18px;
+  padding: 4px 44px 18px;
 
-    border-bottom: 1px solid var(--color-border);
-  }
+  border-bottom: 1px solid var(--color-border);
+
+  text-align: center;
+}
 
   .whiskey-finder__results-modal-header
-    .whiskey-finder__eyebrow {
-    margin-bottom: 6px;
-  }
+  .whiskey-finder__eyebrow {
+  margin: 0 auto 8px;
+
+  text-align: center;
+}
 
   .whiskey-finder__results-title {
     margin: 0;
@@ -781,14 +995,18 @@
 
     font-size: 1.5rem;
     line-height: 1.2;
+
+    text-align: center;
   }
 
   .whiskey-finder__results-modal-close {
+    position: absolute;
+    top:0;
+    right: 0;
+    
     display: flex;
     align-items: center;
     justify-content: center;
-
-    flex-shrink: 0;
 
     width: 38px;
     height: 38px;
@@ -834,5 +1052,40 @@
   .whiskey-finder__results-modal
     .whiskey-finder__results-item {
     margin: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .whiskey-finder__search {
+    max-width: 100%;
+
+    margin-bottom: 32px;
+  }
+
+  .whiskey-finder__search-input {
+    height: 54px;
+
+    padding: 0 42px 0 16px;
+
+    font-size: 0.9rem;
+  }
+
+  .whiskey-finder__search-button {
+    flex-basis: 54px;
+
+    width: 54px;
+    height: 54px;
+  }
+
+  .whiskey-finder__search-suggestions {
+    top: calc(100% + 6px);
+
+    border-radius: 12px;
+  }
+
+  .whiskey-finder__search-suggestion {
+    padding: 12px 14px;
+
+    font-size: 0.9rem;
   }
 }

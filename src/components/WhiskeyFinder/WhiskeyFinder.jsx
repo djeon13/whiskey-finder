@@ -3,7 +3,7 @@ import { useState } from "react";
 import { FLAVOR_CATEGORIES } from "../../data/flavorNotes";
 import { COUNTRIES } from "../../data/countries";
 import { PRICE_RANGES } from "../../data/priceRanges";
-
+import { whiskeyCollection } from "../../data/whiskeyCollection";
 import { recommendWhiskeys } from "../../utils/recommendationEngine";
 import { getFlavorDescription } from "../../utils/flavorDescriptions";
 
@@ -24,28 +24,69 @@ function WhiskeyFinder() {
 
   const [recommendations, setRecommendations] = useState([]);
 
+  const [searchQuery, setSearchQuery] = useState("");
+
   const [hasSearched, setHasSearched] = useState(false);
 
-  const [isResultsModalOpen, setIsResultsModalOpen] =
-  useState(false);
+  const [searchResults, setSearchResults] = useState([]);
+
+  const [isResultsModalOpen, setIsResultsModalOpen] = useState(false);
 
   const [selectedWhiskey, setSelectedWhiskey] = useState(null);
 
+  const [detailsSource, setDetailsSource] = useState(null);
+
   const [isLoading, setIsLoading] = useState(false);
 
-  function handleViewDetails(whiskey) {
-      setIsResultsModalOpen(false);
+  const searchKeywords = [
+    ...new Set(
+      whiskeyCollection.flatMap((whiskey) => {
+        const searchableFields = [
+          whiskey.name,
+          whiskey.distillery,
+          whiskey.brand,
+        ].filter(Boolean);
+
+        return searchableFields.flatMap((field) =>
+          field
+            .split(/\s+/)
+            .map((word) => word.replace(/[^\w'-]/g, ""))
+            .filter((word) => word.length > 2)
+        );
+      })
+    ),
+  ];
+
+  const searchSuggestions =
+    searchQuery.trim().length > 0
+      ? searchKeywords
+          .filter((keyword) =>
+            keyword.toLowerCase().startsWith(searchQuery.trim().toLowerCase())
+          )
+          .slice(0, 1)
+      : [];
+
+  function handleViewDetails(whiskey, source) {
+    setIsResultsModalOpen(false);
     setSelectedWhiskey(whiskey);
+    setDetailsSource(source);
   }
 
   function handleCloseDetails() {
     setSelectedWhiskey(null);
-    setIsResultsModalOpen(true);
+
+    if (detailsSource === "recommendations") {
+      setIsResultsModalOpen(true);
+    }
+
+    setDetailsSource(null);
   }
 
   function handleCloseResultsModal() {
-  setIsResultsModalOpen(false);
-}
+    setIsResultsModalOpen(false);
+    setRecommendations([]);
+    setHasSearched(false);
+  }
 
   function handleFlavorClick(flavorId) {
     const isSelected = preferences.flavors.includes(flavorId);
@@ -95,9 +136,32 @@ function WhiskeyFinder() {
     }));
   }
 
+  function handleSearch(event) {
+    event.preventDefault();
+
+    const query = searchQuery.trim().toLowerCase();
+
+    if (!query) {
+      return;
+    }
+
+    const matches = whiskeyCollection.filter((whiskey) => {
+      const searchText = [whiskey.name, whiskey.distillery, whiskey.brand]
+        .filter(Boolean)
+        .join(" ")
+        .toLowerCase();
+
+      return searchText.includes(query);
+    });
+
+    setSearchResults(matches);
+  }
+
   function handleSubmit(event) {
     event.preventDefault();
 
+    setSearchResults([]);
+    setSearchQuery("");
     setIsLoading(true);
 
     setTimeout(() => {
@@ -108,8 +172,8 @@ function WhiskeyFinder() {
       setHasSearched(true);
 
       if (whiskeyRecommendations.length > 0) {
-  setIsResultsModalOpen(true);
-}
+        setIsResultsModalOpen(true);
+      }
 
       setIsLoading(false);
     }, 700);
@@ -194,6 +258,7 @@ function WhiskeyFinder() {
               </section>
             )}
           </fieldset>
+
           <fieldset className="whiskey-finder__fieldset">
             <legend className="whiskey-finder__legend">Price Range</legend>
 
@@ -277,7 +342,9 @@ function WhiskeyFinder() {
                   <WhiskeyCard
                     whiskey={whiskey}
                     rank={index + 1}
-                    onViewDetails={handleViewDetails}
+                    onViewDetails={(whiskey) =>
+                      handleViewDetails(whiskey, "recommendations")
+                    }
                   />
                 </li>
               ))}
@@ -296,52 +363,147 @@ function WhiskeyFinder() {
             </p>
           </section>
         )}
+        <section className="whiskey-finder__library-search">
+          <p className="whiskey-finder__library-search-text">
+            Already know what you want? Search the library to see if Wolf &amp;
+            Crane has it.
+          </p>
+
+          <form className="whiskey-finder__search" onSubmit={handleSearch}>
+            <div className="whiskey-finder__search-input-wrapper">
+              <input
+                className="whiskey-finder__search-input"
+                type="search"
+                placeholder="Search the whiskey library..."
+                value={searchQuery}
+                onChange={(event) => setSearchQuery(event.target.value)}
+                aria-label="Search the whiskey library"
+              />
+
+              {searchSuggestions.length > 0 &&
+                searchSuggestions[0].toLowerCase() !==
+                  searchQuery.trim().toLowerCase() && (
+                  <ul className="whiskey-finder__search-suggestions">
+                    {searchSuggestions.map((suggestion) => (
+                      <li key={suggestion}>
+                        <button
+                          type="button"
+                          className="whiskey-finder__search-suggestion"
+                          onClick={() => {
+                            const keyword = suggestion;
+
+                            setSearchQuery(keyword);
+
+                            const matches = whiskeyCollection.filter(
+                              (whiskey) => {
+                                const searchText = [
+                                  whiskey.name,
+                                  whiskey.distillery,
+                                  whiskey.brand,
+                                ]
+                                  .filter(Boolean)
+                                  .join(" ")
+                                  .toLowerCase();
+
+                                return searchText.includes(
+                                  keyword.toLowerCase()
+                                );
+                              }
+                            );
+
+                            setSearchResults(matches);
+                          }}
+                        >
+                          {suggestion}
+                        </button>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+            </div>
+
+            <button
+              className="whiskey-finder__search-button"
+              type="submit"
+              aria-label="Search"
+            >
+              &#128269;
+            </button>
+          </form>
+        </section>
+
+        {searchResults.length > 0 && (
+          <section className="whiskey-finder__search-results">
+            <h3 className="whiskey-finder__results-title">Search Results</h3>
+
+            <ul className="whiskey-finder__results-list">
+              {searchResults.map((whiskey) => (
+                <li key={whiskey.id} className="whiskey-finder__results-item">
+                  <WhiskeyCard
+                    whiskey={whiskey}
+                    showTags={false}
+                    onViewDetails={handleViewDetails}
+                  />
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+
+        {searchQuery.trim() &&
+          searchSuggestions.length === 0 &&
+          searchResults.length === 0 && (
+            <section className="whiskey-finder__search-empty">
+              <p>
+                We couldn't find that whiskey in the Wolf &amp; Crane library.
+              </p>
+            </section>
+          )}
       </div>
+
       <div
-  className={`whiskey-finder__results-modal ${
-    isResultsModalOpen
-      ? "whiskey-finder__results-modal--open"
-      : ""
-  }`}
->
-  <div className="whiskey-finder__results-modal-content">
-    <div className="whiskey-finder__results-modal-header">
-      <div>
-        <p className="whiskey-finder__eyebrow">
-          Personalized Recommendations
-        </p>
-
-        <h3 className="whiskey-finder__results-title">
-          Your Whiskey Matches
-        </h3>
-      </div>
-
-      <button
-        className="whiskey-finder__results-modal-close"
-        type="button"
-        onClick={handleCloseResultsModal}
-        aria-label="Close whiskey recommendations"
+        className={`whiskey-finder__results-modal ${
+          isResultsModalOpen ? "whiskey-finder__results-modal--open" : ""
+        }`}
       >
-        ×
-      </button>
-    </div>
+        <div className="whiskey-finder__results-modal-content">
+          <div className="whiskey-finder__results-modal-header">
+            <div>
+              <p className="whiskey-finder__eyebrow">
+                Personalized Recommendations
+              </p>
 
-    <ul className="whiskey-finder__results-list">
-      {recommendations.map((whiskey, index) => (
-        <li
-          key={whiskey.id}
-          className="whiskey-finder__results-item"
-        >
-          <WhiskeyCard
-            whiskey={whiskey}
-            rank={index + 1}
-            onViewDetails={handleViewDetails}
-          />
-        </li>
-      ))}
-    </ul>
-  </div>
-</div>
+              <h3 className="whiskey-finder__results-title">
+                Your Whiskey Matches
+              </h3>
+            </div>
+
+            <button
+              className="whiskey-finder__results-modal-close"
+              type="button"
+              onClick={handleCloseResultsModal}
+              aria-label="Close whiskey recommendations"
+            >
+              ×
+            </button>
+          </div>
+
+          <ul className="whiskey-finder__results-list">
+            {recommendations.map((whiskey, index) => (
+              <li key={whiskey.id} className="whiskey-finder__results-item">
+                <WhiskeyCard
+                  whiskey={whiskey}
+
+                  rank={index + 1}
+                  onViewDetails={(whiskey) =>
+                    handleViewDetails(whiskey, "recommendations")
+                  }
+                />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
 
       <WhiskeyDetailsModal
         key={selectedWhiskey?.id}
