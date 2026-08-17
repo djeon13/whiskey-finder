@@ -73,20 +73,20 @@ function WhiskeyCard({
           </div>
 
           <div className="whiskey-card__fact">
-            <div className="whiskey-card__fact-label">
-              <DollarSign
-                size={14}
-                className="whiskey-card__fact-icon"
-                aria-hidden="true"
-              />
+  <div className="whiskey-card__fact-label">
+    <DollarSign
+      size={14}
+      className="whiskey-card__fact-icon"
+      aria-hidden="true"
+    />
 
-              <span>Pour</span>
-            </div>
+    <span>Pour</span>
+  </div>
 
-            <p className="whiskey-card__fact-value">
-              ${whiskey.price}
-            </p>
-          </div>
+  <p className="whiskey-card__fact-value">
+    ${whiskey.price} / {whiskey.pourSize ?? 1.5} oz
+  </p>
+</div>
 
           <div className="whiskey-card__fact">
             <div className="whiskey-card__fact-label">
