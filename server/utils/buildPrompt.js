@@ -87,7 +87,7 @@ Do not repeat the bartender note verbatim.
 
 Explain why this whiskey is a good match for the guest's preferences.
 
-Describe the experience of drinking it rather than listing tasting notes.
+Describe what the guest can expect in the glass using natural bartender language rather than simply listing tasting notes.
 
 Do not compare it to other whiskies.
 
@@ -97,9 +97,15 @@ Do not invent tasting notes.
 
 Only use the information provided.
 
-Keep your response between 70 and 120 words.
+Keep your response between 35 and 55 words.
 
-Write naturally in one or two short paragraphs.
+Write naturally in one short paragraph.
+
+Use approachable bartender language. You can use phrases such as
+"on the nose," "on the palate," "finish," "easy sipper,"
+"rich," "dry," "sweet," "spicy," or "smoky" when appropriate.
+
+Keep the explanation conversational and concise.
 
 Never use bullet points.
 
