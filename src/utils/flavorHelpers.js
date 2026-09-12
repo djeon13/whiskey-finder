@@ -36,9 +36,7 @@ export function getFlavorNoteLabel(noteId) {
 }
 
 export function getBarrelTypeLabel(barrelTypeId) {
-  const barrelType = BARREL_TYPES.find(
-    (barrel) => barrel.id === barrelTypeId
-  );
+  const barrelType = BARREL_TYPES.find((barrel) => barrel.id === barrelTypeId);
 
   return barrelType ? barrelType.label : barrelTypeId;
 }
@@ -48,7 +46,6 @@ export function getFlavorCategory(noteId) {
     return FLAVOR_METADATA[noteId].categories[0];
   }
 
-  
   const category = FLAVOR_CATEGORIES.find(
     (flavorCategory) => flavorCategory.id === noteId
   );
@@ -57,7 +54,6 @@ export function getFlavorCategory(noteId) {
     return category.id;
   }
 
-  
   for (const flavorCategory of FLAVOR_CATEGORIES) {
     const note = flavorCategory.notes.find(
       (flavorNote) => flavorNote.id === noteId

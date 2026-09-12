@@ -1,19 +1,10 @@
 import { getFlavorNoteLabel } from "../../utils/flavorHelpers";
 import { getTagLabel } from "../../utils/tagHelpers";
-import {
-  MapPin,
-  FlaskConical,
-  DollarSign,
-} from "lucide-react";
+import { MapPin, FlaskConical, DollarSign } from "lucide-react";
 
 import "./WhiskeyCard.css";
 
-function WhiskeyCard({
-  whiskey,
-  rank,
-  onViewDetails,
-  showTags = true,
-}) {
+function WhiskeyCard({ whiskey, rank, onViewDetails, showTags = true }) {
   const isRecommendation = showTags;
 
   return (
@@ -29,28 +20,18 @@ function WhiskeyCard({
           )}
 
           {rank && isRecommendation && (
-            <span className="whiskey-card__rank">
-              #{rank} Match
-            </span>
+            <span className="whiskey-card__rank">#{rank} Match</span>
           )}
         </div>
 
         <div className="whiskey-card__heading">
-          <h4 className="whiskey-card__name">
-            {whiskey.name}
-          </h4>
+          <h4 className="whiskey-card__name">{whiskey.name}</h4>
 
-          <p className="whiskey-card__distillery">
-            {whiskey.distillery}
-          </p>
+          <p className="whiskey-card__distillery">{whiskey.distillery}</p>
         </div>
 
         <div className="whiskey-card__location">
-          <MapPin
-            size={15}
-            className="whiskey-card__icon"
-            aria-hidden="true"
-          />
+          <MapPin size={15} className="whiskey-card__icon" aria-hidden="true" />
 
           <span>{whiskey.location}</span>
         </div>
@@ -67,26 +48,24 @@ function WhiskeyCard({
               <span>ABV</span>
             </div>
 
-            <p className="whiskey-card__fact-value">
-              {whiskey.abv}%
-            </p>
+            <p className="whiskey-card__fact-value">{whiskey.abv}%</p>
           </div>
 
           <div className="whiskey-card__fact">
-  <div className="whiskey-card__fact-label">
-    <DollarSign
-      size={14}
-      className="whiskey-card__fact-icon"
-      aria-hidden="true"
-    />
+            <div className="whiskey-card__fact-label">
+              <DollarSign
+                size={14}
+                className="whiskey-card__fact-icon"
+                aria-hidden="true"
+              />
 
-    <span>Pour</span>
-  </div>
+              <span>Pour</span>
+            </div>
 
-  <p className="whiskey-card__fact-value">
-    ${whiskey.price} / {whiskey.pourSize ?? 1.5} oz
-  </p>
-</div>
+            <p className="whiskey-card__fact-value">
+              ${whiskey.price} / {whiskey.pourSize ?? 1.5} oz
+            </p>
+          </div>
 
           <div className="whiskey-card__fact">
             <div className="whiskey-card__fact-label">
@@ -116,16 +95,11 @@ function WhiskeyCard({
 
         {showTags && whiskey.matchingNotes?.length > 0 && (
           <div className="whiskey-card__matches">
-            <p className="whiskey-card__matches-title">
-              Your Flavor Matches
-            </p>
+            <p className="whiskey-card__matches-title">Your Flavor Matches</p>
 
             <ul className="whiskey-card__matches-list">
               {whiskey.matchingNotes.map((note) => (
-                <li
-                  className="whiskey-card__match"
-                  key={note}
-                >
+                <li className="whiskey-card__match" key={note}>
                   {getFlavorNoteLabel(note)}
                 </li>
               ))}
@@ -134,9 +108,7 @@ function WhiskeyCard({
         )}
 
         {whiskey.description && (
-          <p className="whiskey-card__description">
-            {whiskey.description}
-          </p>
+          <p className="whiskey-card__description">{whiskey.description}</p>
         )}
 
         <button

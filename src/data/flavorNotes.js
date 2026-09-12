@@ -197,7 +197,7 @@ export const FLAVOR_CATEGORIES = [
       { id: "hops", label: "Hops" },
     ],
   },
-    {
+  {
     id: "dessert",
     label: "Dessert",
 

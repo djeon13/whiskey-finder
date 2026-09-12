@@ -966,25 +966,24 @@
   }
 
   .whiskey-finder__results-modal-header {
-  position: relative;
+    position: relative;
 
-  display: block;
+    display: block;
 
-  margin-bottom: 24px;
+    margin-bottom: 24px;
 
-  padding: 4px 44px 18px;
+    padding: 4px 44px 18px;
 
-  border-bottom: 1px solid var(--color-border);
+    border-bottom: 1px solid var(--color-border);
 
-  text-align: center;
-}
+    text-align: center;
+  }
 
-  .whiskey-finder__results-modal-header
-  .whiskey-finder__eyebrow {
-  margin: 0 auto 8px;
+  .whiskey-finder__results-modal-header .whiskey-finder__eyebrow {
+    margin: 0 auto 8px;
 
-  text-align: center;
-}
+    text-align: center;
+  }
 
   .whiskey-finder__results-title {
     margin: 0;
@@ -1001,9 +1000,9 @@
 
   .whiskey-finder__results-modal-close {
     position: absolute;
-    top:0;
+    top: 0;
     right: 0;
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1036,8 +1035,7 @@
     border-color: var(--color-accent);
   }
 
-  .whiskey-finder__results-modal
-    .whiskey-finder__results-list {
+  .whiskey-finder__results-modal .whiskey-finder__results-list {
     display: flex;
     flex-direction: column;
 
@@ -1049,8 +1047,7 @@
     list-style: none;
   }
 
-  .whiskey-finder__results-modal
-    .whiskey-finder__results-item {
+  .whiskey-finder__results-modal .whiskey-finder__results-item {
     margin: 0;
   }
 }
