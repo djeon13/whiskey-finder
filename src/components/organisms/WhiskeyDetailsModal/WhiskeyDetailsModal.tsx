@@ -8,8 +8,8 @@ import {
 } from "../../../utils/flavorHelpers";
 import type { Preferences, RecommendedWhiskey } from "../../../types";
 import { PillList } from "../../molecules/PillList/PillList";
+import { TitledSection } from "../../molecules/TitledSection/TitledSection";
 import { CloseButton } from "../../atoms/CloseButton/CloseButton";
-import { SectionTitle } from "../../atoms/SectionTitle/SectionTitle";
 import { PrimaryButton } from "../../atoms/PrimaryButton/PrimaryButton";
 import "./WhiskeyDetailsModal.css";
 
@@ -143,11 +143,11 @@ function WhiskeyDetailsModal({
         </div>
 
         <div className="whiskey-modal__body">
-          <section className="whiskey-modal__section">
-            <SectionTitle className="whiskey-modal__section-title">
-              Flavor Profile
-            </SectionTitle>
-
+          <TitledSection
+            className="whiskey-modal__section"
+            titleClassName="whiskey-modal__section-title"
+            title="Flavor Profile"
+          >
             <PillList
               className="whiskey-modal__flavors"
               items={whiskey.flavorNotes.map((note) => ({
@@ -158,14 +158,14 @@ function WhiskeyDetailsModal({
                 )}`,
               }))}
             />
-          </section>
+          </TitledSection>
 
           {(whiskey.matchingNotes?.length ?? 0) > 0 && (
-            <section className="whiskey-modal__section">
-              <SectionTitle className="whiskey-modal__section-title">
-                Why We Recommended This
-              </SectionTitle>
-
+            <TitledSection
+              className="whiskey-modal__section"
+              titleClassName="whiskey-modal__section-title"
+              title="Why We Recommended This"
+            >
               <p className="whiskey-modal__section-description">
                 These flavor notes matched your selections:
               </p>
@@ -180,14 +180,14 @@ function WhiskeyDetailsModal({
                   )}`,
                 }))}
               />
-            </section>
+            </TitledSection>
           )}
 
-          <section className="whiskey-modal__section">
-            <SectionTitle className="whiskey-modal__section-title">
-              Barrel Types
-            </SectionTitle>
-
+          <TitledSection
+            className="whiskey-modal__section"
+            titleClassName="whiskey-modal__section-title"
+            title="Barrel Types"
+          >
             <PillList
               className="whiskey-modal__flavors"
               itemClassName="whiskey-modal__flavor"
@@ -196,21 +196,21 @@ function WhiskeyDetailsModal({
                 label: getBarrelTypeLabel(barrelType),
               }))}
             />
-          </section>
+          </TitledSection>
 
-          <section className="whiskey-modal__section">
-            <SectionTitle className="whiskey-modal__section-title">
-              About This Whiskey
-            </SectionTitle>
-
+          <TitledSection
+            className="whiskey-modal__section"
+            titleClassName="whiskey-modal__section-title"
+            title="About This Whiskey"
+          >
             <p className="whiskey-modal__text">{whiskey.description}</p>
-          </section>
+          </TitledSection>
 
-          <section className="whiskey-modal__section whiskey-modal__section--bartender">
-            <SectionTitle className="whiskey-modal__section-title">
-              Bartender's Recommendation
-            </SectionTitle>
-
+          <TitledSection
+            className="whiskey-modal__section whiskey-modal__section--bartender"
+            titleClassName="whiskey-modal__section-title"
+            title="Bartender's Recommendation"
+          >
             <p className="whiskey-modal__text">{whiskey.bartenderNote}</p>
 
             {!isBartenderLoading && (
@@ -241,7 +241,7 @@ function WhiskeyDetailsModal({
             {bartenderError && (
               <p className="whiskey-modal__bartender-error">{bartenderError}</p>
             )}
-          </section>
+          </TitledSection>
         </div>
       </div>
     </div>

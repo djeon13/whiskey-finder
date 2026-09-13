@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
 
 import whiskeyPour from "../../../assets/origami-whiskeyglass.png";
-import { Eyebrow } from "../../atoms/Eyebrow/Eyebrow";
 import { PrimaryButton } from "../../atoms/PrimaryButton/PrimaryButton";
+import { PageHeading } from "../../molecules/PageHeading/PageHeading";
 
 import "./Hero.css";
 
@@ -16,20 +16,21 @@ function Hero() {
   return (
     <section className="hero">
       <div className="hero__content">
-        <Eyebrow className="hero__eyebrow">
-          Curated Whiskey Recommendations
-        </Eyebrow>
-
-        <h1 className="hero__title">
-          Discover Your
-          <br />
-          Perfect Pour
-        </h1>
-
-        <p className="hero__description">
-          Explore the Wolf & Crane collection through personalized whiskey
-          recommendations based on flavor profile, price, and country of origin.
-        </p>
+        <PageHeading
+          as="h1"
+          eyebrow="Curated Whiskey Recommendations"
+          eyebrowClassName="hero__eyebrow"
+          title={
+            <>
+              Discover Your
+              <br />
+              Perfect Pour
+            </>
+          }
+          titleClassName="hero__title"
+          description="Explore the Wolf & Crane collection through personalized whiskey recommendations based on flavor profile, price, and country of origin."
+          descriptionClassName="hero__description"
+        />
 
         <div className="hero__cta">
           <div className="hero__illustration">

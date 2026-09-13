@@ -23,7 +23,6 @@ import { getFlavorDescription } from "../../../utils/flavorDescriptions";
 
 import { Menu, MenuItem } from "../../molecules/Menu/Menu";
 import { FormFieldset } from "../../atoms/FormFieldset/FormFieldset";
-import { SelectField } from "../../atoms/SelectField/SelectField";
 import { PillList } from "../../molecules/PillList/PillList";
 import { WhiskeyCardList } from "../WhiskeyCardList/WhiskeyCardList";
 import WhiskeyDetailsModal from "../WhiskeyDetailsModal/WhiskeyDetailsModal";
@@ -32,6 +31,9 @@ import { Eyebrow } from "../../atoms/Eyebrow/Eyebrow";
 import { SectionTitle } from "../../atoms/SectionTitle/SectionTitle";
 import { PrimaryButton } from "../../atoms/PrimaryButton/PrimaryButton";
 import { CloseButton } from "../../atoms/CloseButton/CloseButton";
+import { TitledSection } from "../../molecules/TitledSection/TitledSection";
+import { PageHeading } from "../../molecules/PageHeading/PageHeading";
+import { SelectFilterField } from "../../molecules/SelectFilterField/SelectFilterField";
 
 import "./WhiskeyFinder.css";
 
@@ -210,16 +212,14 @@ function WhiskeyFinder() {
     <section className="whiskey-finder">
       <div className="whiskey-finder__container">
         <div className="whiskey-finder__heading">
-          <Eyebrow className="whiskey-finder__eyebrow">
-            Personalized Recommendations
-          </Eyebrow>
-
-          <h2 className="whiskey-finder__title">Find Your Whiskey</h2>
-
-          <p className="whiskey-finder__description">
-            Tell us what you enjoy and we'll recommend three whiskeys from our
-            collection.
-          </p>
+          <PageHeading
+            eyebrow="Personalized Recommendations"
+            eyebrowClassName="whiskey-finder__eyebrow"
+            title="Find Your Whiskey"
+            titleClassName="whiskey-finder__title"
+            description="Tell us what you enjoy and we'll recommend three whiskeys from our collection."
+            descriptionClassName="whiskey-finder__description"
+          />
         </div>
 
         <form className="whiskey-finder__form" onSubmit={handleSubmit}>
@@ -279,37 +279,31 @@ function WhiskeyFinder() {
             )}
           </FormFieldset>
 
-          <FormFieldset
-            className="whiskey-finder__fieldset"
+          <SelectFilterField
+            fieldsetClassName="whiskey-finder__fieldset"
             legendClassName="whiskey-finder__legend"
             helperTextClassName="whiskey-finder__helper-text"
+            selectClassName="whiskey-finder__select"
             legend="Price Range"
             helperText="Optional"
-          >
-            <SelectField
-              className="whiskey-finder__select"
-              options={PRICE_RANGES}
-              value={preferences.priceRange}
-              onChange={handlePriceChange}
-              placeholderLabel="Any Price"
-            />
-          </FormFieldset>
+            options={PRICE_RANGES}
+            value={preferences.priceRange}
+            onChange={handlePriceChange}
+            placeholderLabel="Any Price"
+          />
 
-          <FormFieldset
-            className="whiskey-finder__fieldset"
+          <SelectFilterField
+            fieldsetClassName="whiskey-finder__fieldset"
             legendClassName="whiskey-finder__legend"
             helperTextClassName="whiskey-finder__helper-text"
+            selectClassName="whiskey-finder__select"
             legend="Country of Origin"
             helperText="Optional"
-          >
-            <SelectField
-              className="whiskey-finder__select"
-              options={COUNTRIES}
-              value={preferences.country}
-              onChange={handleCountryChange}
-              placeholderLabel="Any Country"
-            />
-          </FormFieldset>
+            options={COUNTRIES}
+            value={preferences.country}
+            onChange={handleCountryChange}
+            placeholderLabel="Any Country"
+          />
 
           <PrimaryButton
             className="whiskey-finder__submit"
@@ -321,25 +315,24 @@ function WhiskeyFinder() {
         </form>
 
         {isLoading && (
-          <section className="whiskey-finder__loading">
-            <WhiskeyLoader />
-
-            <SectionTitle className="whiskey-finder__loading-title">
-              Finding Your Perfect Pour...
-            </SectionTitle>
-
+          <TitledSection
+            className="whiskey-finder__loading"
+            titleClassName="whiskey-finder__loading-title"
+            leading={<WhiskeyLoader />}
+            title="Finding Your Perfect Pour..."
+          >
             <p className="whiskey-finder__loading-text">
               Searching our collection for the best matches.
             </p>
-          </section>
+          </TitledSection>
         )}
 
         {hasSearched && recommendations.length > 0 && (
-          <section className="whiskey-finder__results">
-            <SectionTitle className="whiskey-finder__results-title">
-              Your Whiskey Matches
-            </SectionTitle>
-
+          <TitledSection
+            className="whiskey-finder__results"
+            titleClassName="whiskey-finder__results-title"
+            title="Your Whiskey Matches"
+          >
             <WhiskeyCardList
               whiskeys={recommendations}
               onViewDetails={handleViewDetails}
@@ -347,21 +340,21 @@ function WhiskeyFinder() {
               showRank
               animateStagger
             />
-          </section>
+          </TitledSection>
         )}
 
         {hasSearched && !isLoading && recommendations.length === 0 && (
-          <section className="whiskey-finder__empty">
-            <SectionTitle className="whiskey-finder__empty-title">
-              No Matches Found
-            </SectionTitle>
-
+          <TitledSection
+            className="whiskey-finder__empty"
+            titleClassName="whiskey-finder__empty-title"
+            title="No Matches Found"
+          >
             <p className="whiskey-finder__empty-text">
               We couldn't find a whiskey that matches those flavor profiles and
               filters. Try selecting a different flavor combination or removing
               a filter.
             </p>
-          </section>
+          </TitledSection>
         )}
         <section className="whiskey-finder__library-search">
           <p className="whiskey-finder__library-search-text">
@@ -432,17 +425,17 @@ function WhiskeyFinder() {
         </section>
 
         {searchResults.length > 0 && (
-          <section className="whiskey-finder__search-results">
-            <SectionTitle className="whiskey-finder__results-title">
-              Search Results
-            </SectionTitle>
-
+          <TitledSection
+            className="whiskey-finder__search-results"
+            titleClassName="whiskey-finder__results-title"
+            title="Search Results"
+          >
             <WhiskeyCardList
               whiskeys={searchResults}
               onViewDetails={handleViewDetails}
               showTags={false}
             />
-          </section>
+          </TitledSection>
         )}
 
         {searchQuery.trim() &&

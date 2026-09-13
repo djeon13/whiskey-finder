@@ -1,0 +1,9 @@
+.page-heading__title {
+  margin: 0;
+  font-weight: 700;
+}
+
+.page-heading__description {
+  margin: 0;
+  opacity: 0.8;
+}
