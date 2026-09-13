@@ -1,13 +1,13 @@
 import { useEffect, useState } from "react";
-import { getBartenderPerspective } from "../../utils/bartenderApi";
-import WhiskeyLoader from "../WhiskeyLoader/WhiskeyLoader";
+import { getBartenderPerspective } from "../../../utils/bartenderApi";
+import WhiskeyLoader from "../../atoms/WhiskeyLoader/WhiskeyLoader";
 import {
   getFlavorNoteLabel,
   getBarrelTypeLabel,
   getFlavorCategory,
-} from "../../utils/flavorHelpers";
-import type { Preferences, RecommendedWhiskey } from "../../types";
-import { PillList } from "../PillList/PillList";
+} from "../../../utils/flavorHelpers";
+import type { Preferences, RecommendedWhiskey } from "../../../types";
+import { PillList } from "../../molecules/PillList/PillList";
 import "./WhiskeyDetailsModal.css";
 
 interface WhiskeyDetailsModalProps {

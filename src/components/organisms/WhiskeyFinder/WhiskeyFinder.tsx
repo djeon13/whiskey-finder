@@ -1,9 +1,9 @@
 import { useState } from "react";
 
-import flavorNotesData from "../../data/flavorNotes.json";
-import countriesData from "../../data/countries.json";
-import priceRangesData from "../../data/priceRanges.json";
-import whiskeyCollectionData from "../../data/whiskeyCollection.json";
+import flavorNotesData from "../../../data/flavorNotes.json";
+import countriesData from "../../../data/countries.json";
+import priceRangesData from "../../../data/priceRanges.json";
+import whiskeyCollectionData from "../../../data/whiskeyCollection.json";
 import type {
   Country,
   FlavorCategory,
@@ -11,23 +11,23 @@ import type {
   PriceRange,
   RecommendedWhiskey,
   Whiskey,
-} from "../../types";
+} from "../../../types";
 
 const FLAVOR_CATEGORIES = flavorNotesData as FlavorCategory[];
 const COUNTRIES = countriesData as Country[];
 const PRICE_RANGES = priceRangesData as PriceRange[];
 const whiskeyCollection = whiskeyCollectionData as Whiskey[];
 
-import { recommendWhiskeys } from "../../utils/recommendationEngine";
-import { getFlavorDescription } from "../../utils/flavorDescriptions";
+import { recommendWhiskeys } from "../../../utils/recommendationEngine";
+import { getFlavorDescription } from "../../../utils/flavorDescriptions";
 
-import { Menu, MenuItem } from "../Menu/Menu";
-import { FormFieldset } from "../FormFieldset/FormFieldset";
-import { SelectField } from "../SelectField/SelectField";
-import { PillList } from "../PillList/PillList";
+import { Menu, MenuItem } from "../../molecules/Menu/Menu";
+import { FormFieldset } from "../../atoms/FormFieldset/FormFieldset";
+import { SelectField } from "../../atoms/SelectField/SelectField";
+import { PillList } from "../../molecules/PillList/PillList";
 import { WhiskeyCardList } from "../WhiskeyCardList/WhiskeyCardList";
 import WhiskeyDetailsModal from "../WhiskeyDetailsModal/WhiskeyDetailsModal";
-import WhiskeyLoader from "../WhiskeyLoader/WhiskeyLoader";
+import WhiskeyLoader from "../../atoms/WhiskeyLoader/WhiskeyLoader";
 
 import "./WhiskeyFinder.css";
 

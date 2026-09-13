@@ -1,4 +1,4 @@
-import type { RecommendedWhiskey } from "../../types";
+import type { RecommendedWhiskey } from "../../../types";
 import WhiskeyCard from "../WhiskeyCard/WhiskeyCard";
 
 export interface WhiskeyCardListProps {

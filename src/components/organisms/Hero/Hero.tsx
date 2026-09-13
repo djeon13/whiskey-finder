@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 
-import whiskeyPour from "../../assets/origami-whiskeyglass.png";
+import whiskeyPour from "../../../assets/origami-whiskeyglass.png";
 
 import "./Hero.css";
 

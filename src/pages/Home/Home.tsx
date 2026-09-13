@@ -1,4 +1,4 @@
-import Hero from "../../components/Hero/Hero";
+import Hero from "../../components/organisms/Hero/Hero";
 import "./Home.css";
 
 function Home() {

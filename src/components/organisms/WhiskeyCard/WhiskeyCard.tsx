@@ -1,9 +1,9 @@
-import { getFlavorNoteLabel } from "../../utils/flavorHelpers";
-import { getTagLabel } from "../../utils/tagHelpers";
+import { getFlavorNoteLabel } from "../../../utils/flavorHelpers";
+import { getTagLabel } from "../../../utils/tagHelpers";
 import { MapPin, FlaskConical, DollarSign } from "lucide-react";
-import type { RecommendedWhiskey } from "../../types";
-import { Stat } from "../Stat/Stat";
-import { PillList } from "../PillList/PillList";
+import type { RecommendedWhiskey } from "../../../types";
+import { Stat } from "../../atoms/Stat/Stat";
+import { PillList } from "../../molecules/PillList/PillList";
 
 import "./WhiskeyCard.css";
 

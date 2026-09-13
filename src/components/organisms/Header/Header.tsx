@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import Navigation from "../Navigation/Navigation";
-import logo from "../../assets/wolf-crane-logo.svg";
+import Navigation from "../../molecules/Navigation/Navigation";
+import logo from "../../../assets/wolf-crane-logo.svg";
 import "./Header.css";
 
 function Header() {
