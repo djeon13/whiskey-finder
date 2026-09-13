@@ -1,19 +1,17 @@
 import flavorNotesData from "../data/flavorNotes.json";
 import flavorMetadataData from "../data/flavorMetadata.json";
 import barrelTypesData from "../data/barrelTypes.json";
+import type { BarrelType, FlavorCategory, FlavorMetadata } from "../types";
 
-/** @type {import("../types").FlavorCategory[]} */
-const FLAVOR_CATEGORIES = flavorNotesData;
-/** @type {import("../types").FlavorMetadata} */
-const FLAVOR_METADATA = flavorMetadataData;
-/** @type {import("../types").BarrelType[]} */
-const BARREL_TYPES = barrelTypesData;
+const FLAVOR_CATEGORIES = flavorNotesData as FlavorCategory[];
+const FLAVOR_METADATA = flavorMetadataData as FlavorMetadata;
+const BARREL_TYPES = barrelTypesData as BarrelType[];
 
-export function getFlavorCategories() {
+export function getFlavorCategories(): FlavorCategory[] {
   return FLAVOR_CATEGORIES;
 }
 
-export function getFlavorNoteLabel(noteId) {
+export function getFlavorNoteLabel(noteId: string): string {
   // First check the metadata.
   if (FLAVOR_METADATA[noteId]?.label) {
     return FLAVOR_METADATA[noteId].label;
@@ -42,13 +40,13 @@ export function getFlavorNoteLabel(noteId) {
   return noteId;
 }
 
-export function getBarrelTypeLabel(barrelTypeId) {
+export function getBarrelTypeLabel(barrelTypeId: string): string {
   const barrelType = BARREL_TYPES.find((barrel) => barrel.id === barrelTypeId);
 
   return barrelType ? barrelType.label : barrelTypeId;
 }
 
-export function getFlavorCategory(noteId) {
+export function getFlavorCategory(noteId: string): string {
   if (FLAVOR_METADATA[noteId]?.categories?.[0]) {
     return FLAVOR_METADATA[noteId].categories[0];
   }

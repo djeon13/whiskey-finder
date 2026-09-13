@@ -1,5 +1,5 @@
-export function getFlavorDescription(categoryId) {
-  const descriptions = {
+export function getFlavorDescription(categoryId: string): string {
+  const descriptions: Record<string, string> = {
     smoke: "Bold smoky flavors commonly found in peated Scotch whiskies.",
 
     sweet:

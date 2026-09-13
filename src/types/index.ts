@@ -8,3 +8,5 @@ export type { Tag } from "./Tag";
 export type { PriceRange } from "./PriceRange";
 export type { FlavorNote, FlavorCategory } from "./FlavorCategory";
 export type { FlavorMetadataEntry, FlavorMetadata } from "./FlavorMetadata";
+export type { Preferences } from "./Preferences";
+export type { Weights, Scores } from "./Scoring";

@@ -1,3 +1,5 @@
+import type { Scores } from "./Scoring";
+
 export interface Whiskey {
   id: string;
   name: string;
@@ -20,10 +22,7 @@ export interface Whiskey {
 
 export interface RecommendedWhiskey extends Whiskey {
   fingerprint?: Record<string, number>;
-  scores?: {
-    flavor?: number;
-    total: number;
-  };
+  scores?: Scores;
   matchingNotes?: string[];
 }
 

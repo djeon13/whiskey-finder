@@ -1,4 +1,5 @@
 import whiskeyCollectionData from "../data/whiskeyCollection.json";
+import type { Preferences, RecommendedWhiskey, Scores, Whiskey } from "../types";
 
 import { getActiveWeights, getTotalScore } from "./scoring";
 
@@ -7,14 +8,11 @@ import {
   scoreFlavorFingerprint,
 } from "./flavorFingerprint";
 
-/** @type {import("../types").Whiskey[]} */
-const whiskeyCollection = whiskeyCollectionData;
+const whiskeyCollection = whiskeyCollectionData as Whiskey[];
 
-/**
- * @param {{ flavors: string[], priceRange: string, country: string }} preferences
- * @returns {import("../types").RecommendedWhiskey[]}
- */
-export function recommendWhiskeys(preferences) {
+export function recommendWhiskeys(
+  preferences: Preferences
+): RecommendedWhiskey[] {
   const hasFlavorPreference = preferences.flavors.length > 0;
 
   const hasPricePreference = Boolean(preferences.priceRange);
@@ -44,31 +42,40 @@ export function recommendWhiskeys(preferences) {
 
   // ---------- PASS 1 ----------
   // Build fingerprints and compute RAW flavor scores.
-  const scoredWhiskeys = eligibleWhiskeys.map((whiskey) => {
-    const fingerprint = buildFlavorFingerprint(whiskey.flavorNotes);
+  const scoredWhiskeys: RecommendedWhiskey[] = eligibleWhiskeys.map(
+    (whiskey) => {
+      const fingerprint = buildFlavorFingerprint(whiskey.flavorNotes);
 
-    const scores = {};
+      const scores: Scores = {};
 
-    if (weights.flavor) {
-      scores.flavor = scoreFlavorFingerprint(fingerprint, preferences.flavors);
+      if (weights.flavor) {
+        scores.flavor = scoreFlavorFingerprint(
+          fingerprint,
+          preferences.flavors
+        );
+      }
+
+      return {
+        ...whiskey,
+        fingerprint,
+        scores,
+      };
     }
-
-    return {
-      ...whiskey,
-      fingerprint,
-      scores,
-    };
-  });
+  );
 
   const maxFlavorScore = Math.max(
-    ...scoredWhiskeys.map((whiskey) => whiskey.scores.flavor ?? 0),
+    ...scoredWhiskeys.map((whiskey) => whiskey.scores?.flavor ?? 0),
     1
   );
 
   scoredWhiskeys.forEach((whiskey) => {
+    if (!whiskey.scores) {
+      return;
+    }
+
     if (weights.flavor) {
       whiskey.scores.flavor = Number(
-        ((whiskey.scores.flavor / maxFlavorScore) * 100).toFixed(1)
+        (((whiskey.scores.flavor ?? 0) / maxFlavorScore) * 100).toFixed(1)
       );
     }
 
@@ -76,6 +83,6 @@ export function recommendWhiskeys(preferences) {
   });
 
   return scoredWhiskeys
-    .sort((a, b) => b.scores.total - a.scores.total)
+    .sort((a, b) => (b.scores?.total ?? 0) - (a.scores?.total ?? 0))
     .slice(0, 3);
 }

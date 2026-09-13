@@ -6,16 +6,22 @@ import {
   getBarrelTypeLabel,
   getFlavorCategory,
 } from "../../utils/flavorHelpers";
+import type { Preferences, RecommendedWhiskey } from "../../types";
 import "./WhiskeyDetailsModal.css";
 
-/**
- * @param {Object} props
- * @param {import("../../types").RecommendedWhiskey | null} props.whiskey
- * @param {{ flavors: string[], priceRange: string, country: string }} props.preferences
- * @param {boolean} props.isOpen
- * @param {() => void} props.onClose
- */
-function WhiskeyDetailsModal({ whiskey, preferences, isOpen, onClose }) {
+interface WhiskeyDetailsModalProps {
+  whiskey: RecommendedWhiskey | null;
+  preferences: Preferences;
+  isOpen: boolean;
+  onClose: () => void;
+}
+
+function WhiskeyDetailsModal({
+  whiskey,
+  preferences,
+  isOpen,
+  onClose,
+}: WhiskeyDetailsModalProps) {
   const [isBartenderLoading, setIsBartenderLoading] = useState(false);
 
   const [bartenderPerspective, setBartenderPerspective] = useState("");
@@ -27,7 +33,7 @@ function WhiskeyDetailsModal({ whiskey, preferences, isOpen, onClose }) {
       return;
     }
 
-    function handleEscape(event) {
+    function handleEscape(event: KeyboardEvent) {
       if (event.key === "Escape") {
         onClose();
       }
@@ -44,13 +50,17 @@ function WhiskeyDetailsModal({ whiskey, preferences, isOpen, onClose }) {
     return null;
   }
 
-  function handleOverlayClick(event) {
+  function handleOverlayClick(event: React.MouseEvent<HTMLDivElement>) {
     if (event.target === event.currentTarget) {
       onClose();
     }
   }
 
   async function handleAskBartender() {
+    if (!whiskey) {
+      return;
+    }
+
     try {
       setBartenderError("");
       setBartenderPerspective("");
@@ -149,7 +159,7 @@ function WhiskeyDetailsModal({ whiskey, preferences, isOpen, onClose }) {
             </ul>
           </section>
 
-          {whiskey.matchingNotes?.length > 0 && (
+          {(whiskey.matchingNotes?.length ?? 0) > 0 && (
             <section className="whiskey-modal__section">
               <h3 className="whiskey-modal__section-title">
                 Why We Recommended This
@@ -160,7 +170,7 @@ function WhiskeyDetailsModal({ whiskey, preferences, isOpen, onClose }) {
               </p>
 
               <ul className="whiskey-modal__flavors">
-                {whiskey.matchingNotes.map((note) => (
+                {whiskey.matchingNotes?.map((note) => (
                   <li
                     key={note}
                     className={`whiskey-modal__flavor whiskey-modal__flavor--${getFlavorCategory(

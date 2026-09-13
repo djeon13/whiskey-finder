@@ -4,15 +4,20 @@ import flavorNotesData from "../../data/flavorNotes.json";
 import countriesData from "../../data/countries.json";
 import priceRangesData from "../../data/priceRanges.json";
 import whiskeyCollectionData from "../../data/whiskeyCollection.json";
+import type {
+  Country,
+  FlavorCategory,
+  Preferences,
+  PriceRange,
+  RecommendedWhiskey,
+  Whiskey,
+} from "../../types";
 
-/** @type {import("../../types").FlavorCategory[]} */
-const FLAVOR_CATEGORIES = flavorNotesData;
-/** @type {import("../../types").Country[]} */
-const COUNTRIES = countriesData;
-/** @type {import("../../types").PriceRange[]} */
-const PRICE_RANGES = priceRangesData;
-/** @type {import("../../types").Whiskey[]} */
-const whiskeyCollection = whiskeyCollectionData;
+const FLAVOR_CATEGORIES = flavorNotesData as FlavorCategory[];
+const COUNTRIES = countriesData as Country[];
+const PRICE_RANGES = priceRangesData as PriceRange[];
+const whiskeyCollection = whiskeyCollectionData as Whiskey[];
+
 import { recommendWhiskeys } from "../../utils/recommendationEngine";
 import { getFlavorDescription } from "../../utils/flavorDescriptions";
 
@@ -23,38 +28,39 @@ import WhiskeyLoader from "../WhiskeyLoader/WhiskeyLoader";
 import "./WhiskeyFinder.css";
 
 function WhiskeyFinder() {
-  const [preferences, setPreferences] = useState({
+  const [preferences, setPreferences] = useState<Preferences>({
     flavors: [],
     priceRange: "",
     country: "",
   });
 
-  const [activeFlavor, setActiveFlavor] = useState(null);
+  const [activeFlavor, setActiveFlavor] = useState<string | null>(null);
 
-  const [recommendations, setRecommendations] = useState([]);
+  const [recommendations, setRecommendations] = useState<
+    RecommendedWhiskey[]
+  >([]);
 
   const [searchQuery, setSearchQuery] = useState("");
 
   const [hasSearched, setHasSearched] = useState(false);
 
-  const [searchResults, setSearchResults] = useState([]);
+  const [searchResults, setSearchResults] = useState<RecommendedWhiskey[]>([]);
 
   const [isResultsModalOpen, setIsResultsModalOpen] = useState(false);
 
-  const [selectedWhiskey, setSelectedWhiskey] = useState(null);
+  const [selectedWhiskey, setSelectedWhiskey] =
+    useState<RecommendedWhiskey | null>(null);
 
-  const [detailsSource, setDetailsSource] = useState(null);
+  const [detailsSource, setDetailsSource] = useState<string | null>(null);
 
   const [isLoading, setIsLoading] = useState(false);
 
   const searchKeywords = [
     ...new Set(
       whiskeyCollection.flatMap((whiskey) => {
-        const searchableFields = [
-          whiskey.name,
-          whiskey.distillery,
-          whiskey.brand,
-        ].filter(Boolean);
+        const searchableFields = [whiskey.name, whiskey.distillery].filter(
+          Boolean
+        );
 
         return searchableFields.flatMap((field) =>
           field
@@ -75,10 +81,10 @@ function WhiskeyFinder() {
           .slice(0, 1)
       : [];
 
-  function handleViewDetails(whiskey, source) {
+  function handleViewDetails(whiskey: RecommendedWhiskey, source?: string) {
     setIsResultsModalOpen(false);
     setSelectedWhiskey(whiskey);
-    setDetailsSource(source);
+    setDetailsSource(source ?? null);
   }
 
   function handleCloseDetails() {
@@ -97,7 +103,7 @@ function WhiskeyFinder() {
     setHasSearched(false);
   }
 
-  function handleFlavorClick(flavorId) {
+  function handleFlavorClick(flavorId: string) {
     const isSelected = preferences.flavors.includes(flavorId);
 
     if (isSelected) {
@@ -131,21 +137,21 @@ function WhiskeyFinder() {
     setActiveFlavor(flavorId);
   }
 
-  function handlePriceChange(event) {
+  function handlePriceChange(event: React.ChangeEvent<HTMLSelectElement>) {
     setPreferences((currentPreferences) => ({
       ...currentPreferences,
       priceRange: event.target.value,
     }));
   }
 
-  function handleCountryChange(event) {
+  function handleCountryChange(event: React.ChangeEvent<HTMLSelectElement>) {
     setPreferences((currentPreferences) => ({
       ...currentPreferences,
       country: event.target.value,
     }));
   }
 
-  function handleSearch(event) {
+  function handleSearch(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
     const query = searchQuery.trim().toLowerCase();
@@ -155,7 +161,7 @@ function WhiskeyFinder() {
     }
 
     const matches = whiskeyCollection.filter((whiskey) => {
-      const searchText = [whiskey.name, whiskey.distillery, whiskey.brand]
+      const searchText = [whiskey.name, whiskey.distillery]
         .filter(Boolean)
         .join(" ")
         .toLowerCase();
@@ -166,7 +172,7 @@ function WhiskeyFinder() {
     setSearchResults(matches);
   }
 
-  function handleSubmit(event) {
+  function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
     setSearchResults([]);
@@ -408,7 +414,6 @@ function WhiskeyFinder() {
                                 const searchText = [
                                   whiskey.name,
                                   whiskey.distillery,
-                                  whiskey.brand,
                                 ]
                                   .filter(Boolean)
                                   .join(" ")
@@ -502,7 +507,6 @@ function WhiskeyFinder() {
               <li key={whiskey.id} className="whiskey-finder__results-item">
                 <WhiskeyCard
                   whiskey={whiskey}
-
                   rank={index + 1}
                   onViewDetails={(whiskey) =>
                     handleViewDetails(whiskey, "recommendations")

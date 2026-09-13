@@ -1,12 +1,16 @@
-const API_URL = import.meta.env.VITE_API_URL;
+import type { Preferences, Whiskey } from "../types";
 
-/**
- * @param {Object} params
- * @param {import("../types").Whiskey} params.whiskey
- * @param {{ flavors: string[], priceRange: string, country: string }} params.preferences
- * @returns {Promise<string>}
- */
-export async function getBartenderPerspective({ whiskey, preferences }) {
+const API_URL = import.meta.env.VITE_API_URL as string;
+
+interface GetBartenderPerspectiveParams {
+  whiskey: Whiskey;
+  preferences: Preferences;
+}
+
+export async function getBartenderPerspective({
+  whiskey,
+  preferences,
+}: GetBartenderPerspectiveParams): Promise<string> {
   const response = await fetch(`${API_URL}/api/bartender`, {
     method: "POST",
     headers: {

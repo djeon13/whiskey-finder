@@ -1,17 +1,23 @@
 import { getFlavorNoteLabel } from "../../utils/flavorHelpers";
 import { getTagLabel } from "../../utils/tagHelpers";
 import { MapPin, FlaskConical, DollarSign } from "lucide-react";
+import type { RecommendedWhiskey } from "../../types";
 
 import "./WhiskeyCard.css";
 
-/**
- * @param {Object} props
- * @param {import("../../types").RecommendedWhiskey} props.whiskey
- * @param {number} [props.rank]
- * @param {(whiskey: import("../../types").RecommendedWhiskey) => void} props.onViewDetails
- * @param {boolean} [props.showTags]
- */
-function WhiskeyCard({ whiskey, rank, onViewDetails, showTags = true }) {
+interface WhiskeyCardProps {
+  whiskey: RecommendedWhiskey;
+  rank?: number;
+  onViewDetails: (whiskey: RecommendedWhiskey) => void;
+  showTags?: boolean;
+}
+
+function WhiskeyCard({
+  whiskey,
+  rank,
+  onViewDetails,
+  showTags = true,
+}: WhiskeyCardProps) {
   const isRecommendation = showTags;
 
   return (
@@ -87,7 +93,7 @@ function WhiskeyCard({ whiskey, rank, onViewDetails, showTags = true }) {
           </div>
         </div>
 
-        {showTags && whiskey.tags?.length > 0 && (
+        {showTags && whiskey.tags.length > 0 && (
           <div className="whiskey-card__badges">
             {whiskey.tags.map((tag) => (
               <span
@@ -100,12 +106,12 @@ function WhiskeyCard({ whiskey, rank, onViewDetails, showTags = true }) {
           </div>
         )}
 
-        {showTags && whiskey.matchingNotes?.length > 0 && (
+        {showTags && (whiskey.matchingNotes?.length ?? 0) > 0 && (
           <div className="whiskey-card__matches">
             <p className="whiskey-card__matches-title">Your Flavor Matches</p>
 
             <ul className="whiskey-card__matches-list">
-              {whiskey.matchingNotes.map((note) => (
+              {whiskey.matchingNotes?.map((note) => (
                 <li className="whiskey-card__match" key={note}>
                   {getFlavorNoteLabel(note)}
                 </li>
