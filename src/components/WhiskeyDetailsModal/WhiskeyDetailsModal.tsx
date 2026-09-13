@@ -7,6 +7,7 @@ import {
   getFlavorCategory,
 } from "../../utils/flavorHelpers";
 import type { Preferences, RecommendedWhiskey } from "../../types";
+import { PillList } from "../PillList/PillList";
 import "./WhiskeyDetailsModal.css";
 
 interface WhiskeyDetailsModalProps {
@@ -145,18 +146,16 @@ function WhiskeyDetailsModal({
           <section className="whiskey-modal__section">
             <h3 className="whiskey-modal__section-title">Flavor Profile</h3>
 
-            <ul className="whiskey-modal__flavors">
-              {whiskey.flavorNotes.map((note) => (
-                <li
-                  key={note}
-                  className={`whiskey-modal__flavor whiskey-modal__flavor--${getFlavorCategory(
-                    note
-                  )}`}
-                >
-                  {getFlavorNoteLabel(note)}
-                </li>
-              ))}
-            </ul>
+            <PillList
+              className="whiskey-modal__flavors"
+              items={whiskey.flavorNotes.map((note) => ({
+                id: note,
+                label: getFlavorNoteLabel(note),
+                className: `whiskey-modal__flavor whiskey-modal__flavor--${getFlavorCategory(
+                  note
+                )}`,
+              }))}
+            />
           </section>
 
           {(whiskey.matchingNotes?.length ?? 0) > 0 && (
@@ -169,31 +168,30 @@ function WhiskeyDetailsModal({
                 These flavor notes matched your selections:
               </p>
 
-              <ul className="whiskey-modal__flavors">
-                {whiskey.matchingNotes?.map((note) => (
-                  <li
-                    key={note}
-                    className={`whiskey-modal__flavor whiskey-modal__flavor--${getFlavorCategory(
-                      note
-                    )}`}
-                  >
-                    ✓ {getFlavorNoteLabel(note)}
-                  </li>
-                ))}
-              </ul>
+              <PillList
+                className="whiskey-modal__flavors"
+                items={(whiskey.matchingNotes ?? []).map((note) => ({
+                  id: note,
+                  label: `✓ ${getFlavorNoteLabel(note)}`,
+                  className: `whiskey-modal__flavor whiskey-modal__flavor--${getFlavorCategory(
+                    note
+                  )}`,
+                }))}
+              />
             </section>
           )}
 
           <section className="whiskey-modal__section">
             <h3 className="whiskey-modal__section-title">Barrel Types</h3>
 
-            <ul className="whiskey-modal__flavors">
-              {whiskey.barrelTypes.map((barrelType) => (
-                <li className="whiskey-modal__flavor" key={barrelType}>
-                  {getBarrelTypeLabel(barrelType)}
-                </li>
-              ))}
-            </ul>
+            <PillList
+              className="whiskey-modal__flavors"
+              itemClassName="whiskey-modal__flavor"
+              items={whiskey.barrelTypes.map((barrelType) => ({
+                id: barrelType,
+                label: getBarrelTypeLabel(barrelType),
+              }))}
+            />
           </section>
 
           <section className="whiskey-modal__section">

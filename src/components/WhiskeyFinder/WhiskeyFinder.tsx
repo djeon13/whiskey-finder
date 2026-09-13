@@ -21,7 +21,11 @@ const whiskeyCollection = whiskeyCollectionData as Whiskey[];
 import { recommendWhiskeys } from "../../utils/recommendationEngine";
 import { getFlavorDescription } from "../../utils/flavorDescriptions";
 
-import WhiskeyCard from "../WhiskeyCard/WhiskeyCard";
+import { Menu, MenuItem } from "../Menu/Menu";
+import { FormFieldset } from "../FormFieldset/FormFieldset";
+import { SelectField } from "../SelectField/SelectField";
+import { PillList } from "../PillList/PillList";
+import { WhiskeyCardList } from "../WhiskeyCardList/WhiskeyCardList";
 import WhiskeyDetailsModal from "../WhiskeyDetailsModal/WhiskeyDetailsModal";
 import WhiskeyLoader from "../WhiskeyLoader/WhiskeyLoader";
 
@@ -215,17 +219,14 @@ function WhiskeyFinder() {
         </div>
 
         <form className="whiskey-finder__form" onSubmit={handleSubmit}>
-          <fieldset className="whiskey-finder__fieldset">
-            <legend className="whiskey-finder__legend">
-              Choose Your Flavors
-            </legend>
-
-            <p className="whiskey-finder__helper-text">
-              Choose up to two flavor profiles. ({preferences.flavors.length}/2
-              selected)
-            </p>
-
-            <div className="whiskey-finder__options">
+          <FormFieldset
+            className="whiskey-finder__fieldset"
+            legendClassName="whiskey-finder__legend"
+            helperTextClassName="whiskey-finder__helper-text"
+            legend="Choose Your Flavors"
+            helperText={`Choose up to two flavor profiles. (${preferences.flavors.length}/2 selected)`}
+          >
+            <Menu className="whiskey-finder__options">
               {FLAVOR_CATEGORIES.map((flavor) => {
                 const isSelected = preferences.flavors.includes(flavor.id);
 
@@ -233,21 +234,20 @@ function WhiskeyFinder() {
                   preferences.flavors.length >= 2 && !isSelected;
 
                 return (
-                  <button
+                  <MenuItem
                     key={flavor.id}
-                    type="button"
+                    selected={isSelected}
                     disabled={isDisabled}
-                    onClick={() => handleFlavorClick(flavor.id)}
-                    className={`whiskey-finder__option ${
-                      isSelected ? "whiskey-finder__option--selected" : ""
-                    }`}
+                    onSelect={() => handleFlavorClick(flavor.id)}
+                    className="whiskey-finder__option"
+                    selectedClassName="whiskey-finder__option--selected"
                   >
                     {isSelected && "✓ "}
                     {flavor.label}
-                  </button>
+                  </MenuItem>
                 );
               })}
-            </div>
+            </Menu>
 
             {displayedFlavor && (
               <section className="whiskey-finder__flavor-panel">
@@ -263,58 +263,49 @@ function WhiskeyFinder() {
                   Typical Tasting Notes
                 </p>
 
-                <ul className="whiskey-finder__notes-list">
-                  {displayedFlavor.previewNotes.map((note) => (
-                    <li key={note.id} className="whiskey-finder__note">
-                      {note.label}
-                    </li>
-                  ))}
-                </ul>
+                <PillList
+                  className="whiskey-finder__notes-list"
+                  itemClassName="whiskey-finder__note"
+                  items={displayedFlavor.previewNotes.map((note) => ({
+                    id: note.id,
+                    label: note.label,
+                  }))}
+                />
               </section>
             )}
-          </fieldset>
+          </FormFieldset>
 
-          <fieldset className="whiskey-finder__fieldset">
-            <legend className="whiskey-finder__legend">Price Range</legend>
-
-            <p className="whiskey-finder__helper-text">Optional</p>
-
-            <select
+          <FormFieldset
+            className="whiskey-finder__fieldset"
+            legendClassName="whiskey-finder__legend"
+            helperTextClassName="whiskey-finder__helper-text"
+            legend="Price Range"
+            helperText="Optional"
+          >
+            <SelectField
               className="whiskey-finder__select"
+              options={PRICE_RANGES}
               value={preferences.priceRange}
               onChange={handlePriceChange}
-            >
-              <option value="">Any Price</option>
+              placeholderLabel="Any Price"
+            />
+          </FormFieldset>
 
-              {PRICE_RANGES.map((priceRange) => (
-                <option key={priceRange.id} value={priceRange.id}>
-                  {priceRange.label}
-                </option>
-              ))}
-            </select>
-          </fieldset>
-
-          <fieldset className="whiskey-finder__fieldset">
-            <legend className="whiskey-finder__legend">
-              Country of Origin
-            </legend>
-
-            <p className="whiskey-finder__helper-text">Optional</p>
-
-            <select
+          <FormFieldset
+            className="whiskey-finder__fieldset"
+            legendClassName="whiskey-finder__legend"
+            helperTextClassName="whiskey-finder__helper-text"
+            legend="Country of Origin"
+            helperText="Optional"
+          >
+            <SelectField
               className="whiskey-finder__select"
+              options={COUNTRIES}
               value={preferences.country}
               onChange={handleCountryChange}
-            >
-              <option value="">Any Country</option>
-
-              {COUNTRIES.map((country) => (
-                <option key={country.id} value={country.id}>
-                  {country.label}
-                </option>
-              ))}
-            </select>
-          </fieldset>
+              placeholderLabel="Any Country"
+            />
+          </FormFieldset>
 
           <button
             className="whiskey-finder__submit"
@@ -345,25 +336,13 @@ function WhiskeyFinder() {
               Your Whiskey Matches
             </h3>
 
-            <ul className="whiskey-finder__results-list">
-              {recommendations.map((whiskey, index) => (
-                <li
-                  key={whiskey.id}
-                  className="whiskey-finder__results-item"
-                  style={{
-                    animationDelay: `${index * 180}ms`,
-                  }}
-                >
-                  <WhiskeyCard
-                    whiskey={whiskey}
-                    rank={index + 1}
-                    onViewDetails={(whiskey) =>
-                      handleViewDetails(whiskey, "recommendations")
-                    }
-                  />
-                </li>
-              ))}
-            </ul>
+            <WhiskeyCardList
+              whiskeys={recommendations}
+              onViewDetails={handleViewDetails}
+              viewDetailsSource="recommendations"
+              showRank
+              animateStagger
+            />
           </section>
         )}
 
@@ -450,17 +429,11 @@ function WhiskeyFinder() {
           <section className="whiskey-finder__search-results">
             <h3 className="whiskey-finder__results-title">Search Results</h3>
 
-            <ul className="whiskey-finder__results-list">
-              {searchResults.map((whiskey) => (
-                <li key={whiskey.id} className="whiskey-finder__results-item">
-                  <WhiskeyCard
-                    whiskey={whiskey}
-                    showTags={false}
-                    onViewDetails={handleViewDetails}
-                  />
-                </li>
-              ))}
-            </ul>
+            <WhiskeyCardList
+              whiskeys={searchResults}
+              onViewDetails={handleViewDetails}
+              showTags={false}
+            />
           </section>
         )}
 
@@ -502,19 +475,12 @@ function WhiskeyFinder() {
             </button>
           </div>
 
-          <ul className="whiskey-finder__results-list">
-            {recommendations.map((whiskey, index) => (
-              <li key={whiskey.id} className="whiskey-finder__results-item">
-                <WhiskeyCard
-                  whiskey={whiskey}
-                  rank={index + 1}
-                  onViewDetails={(whiskey) =>
-                    handleViewDetails(whiskey, "recommendations")
-                  }
-                />
-              </li>
-            ))}
-          </ul>
+          <WhiskeyCardList
+            whiskeys={recommendations}
+            onViewDetails={handleViewDetails}
+            viewDetailsSource="recommendations"
+            showRank
+          />
         </div>
       </div>
 

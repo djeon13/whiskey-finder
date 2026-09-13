@@ -2,6 +2,8 @@ import { getFlavorNoteLabel } from "../../utils/flavorHelpers";
 import { getTagLabel } from "../../utils/tagHelpers";
 import { MapPin, FlaskConical, DollarSign } from "lucide-react";
 import type { RecommendedWhiskey } from "../../types";
+import { Stat } from "../Stat/Stat";
+import { PillList } from "../PillList/PillList";
 
 import "./WhiskeyCard.css";
 
@@ -50,47 +52,47 @@ function WhiskeyCard({
         </div>
 
         <div className="whiskey-card__facts">
-          <div className="whiskey-card__fact">
-            <div className="whiskey-card__fact-label">
+          <Stat
+            className="whiskey-card__fact"
+            labelClassName="whiskey-card__fact-label"
+            valueClassName="whiskey-card__fact-value"
+            icon={
               <FlaskConical
                 size={14}
                 className="whiskey-card__fact-icon"
                 aria-hidden="true"
               />
+            }
+            label="ABV"
+            value={`${whiskey.abv}%`}
+          />
 
-              <span>ABV</span>
-            </div>
-
-            <p className="whiskey-card__fact-value">{whiskey.abv}%</p>
-          </div>
-
-          <div className="whiskey-card__fact">
-            <div className="whiskey-card__fact-label">
+          <Stat
+            className="whiskey-card__fact"
+            labelClassName="whiskey-card__fact-label"
+            valueClassName="whiskey-card__fact-value"
+            icon={
               <DollarSign
                 size={14}
                 className="whiskey-card__fact-icon"
                 aria-hidden="true"
               />
+            }
+            label="Pour"
+            value={`$${whiskey.price} / ${whiskey.pourSize ?? 1.5} oz`}
+          />
 
-              <span>Pour</span>
-            </div>
-
-            <p className="whiskey-card__fact-value">
-              ${whiskey.price} / {whiskey.pourSize ?? 1.5} oz
-            </p>
-          </div>
-
-          <div className="whiskey-card__fact">
-            <div className="whiskey-card__fact-label">
-              <span>Age</span>
-            </div>
-
-            <p className="whiskey-card__fact-value">
-              {whiskey.age
+          <Stat
+            className="whiskey-card__fact"
+            labelClassName="whiskey-card__fact-label"
+            valueClassName="whiskey-card__fact-value"
+            label="Age"
+            value={
+              whiskey.age
                 ? `${whiskey.age} yr${whiskey.age === 1 ? "" : "s"}`
-                : "NAS"}
-            </p>
-          </div>
+                : "NAS"
+            }
+          />
         </div>
 
         {showTags && whiskey.tags.length > 0 && (
@@ -110,13 +112,14 @@ function WhiskeyCard({
           <div className="whiskey-card__matches">
             <p className="whiskey-card__matches-title">Your Flavor Matches</p>
 
-            <ul className="whiskey-card__matches-list">
-              {whiskey.matchingNotes?.map((note) => (
-                <li className="whiskey-card__match" key={note}>
-                  {getFlavorNoteLabel(note)}
-                </li>
-              ))}
-            </ul>
+            <PillList
+              className="whiskey-card__matches-list"
+              itemClassName="whiskey-card__match"
+              items={(whiskey.matchingNotes ?? []).map((note) => ({
+                id: note,
+                label: getFlavorNoteLabel(note),
+              }))}
+            />
           </div>
         )}
 

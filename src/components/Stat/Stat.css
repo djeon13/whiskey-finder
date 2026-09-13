@@ -1,0 +1,18 @@
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.stat__label {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.75rem;
+  opacity: 0.75;
+}
+
+.stat__value {
+  margin: 0;
+  font-weight: 600;
+}

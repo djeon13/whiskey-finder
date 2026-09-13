@@ -1,0 +1,22 @@
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.menu__item {
+  border: 1px solid currentColor;
+  background: transparent;
+  border-radius: 999px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.menu__item:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.menu__item--selected {
+  font-weight: 600;
+}
