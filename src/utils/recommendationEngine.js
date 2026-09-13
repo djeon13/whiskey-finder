@@ -1,4 +1,4 @@
-import { whiskeyCollection } from "../data/whiskeyCollection";
+import whiskeyCollection from "../data/whiskeyCollection.json";
 
 import { getActiveWeights, getTotalScore } from "./scoring";
 

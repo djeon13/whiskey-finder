@@ -1,6 +1,6 @@
-import { FLAVOR_CATEGORIES } from "../data/flavorNotes";
-import { FLAVOR_METADATA } from "../data/flavorMetadata";
-import { BARREL_TYPES } from "../data/barrelTypes";
+import FLAVOR_CATEGORIES from "../data/flavorNotes.json";
+import FLAVOR_METADATA from "../data/flavorMetadata.json";
+import BARREL_TYPES from "../data/barrelTypes.json";
 
 export function getFlavorCategories() {
   return FLAVOR_CATEGORIES;

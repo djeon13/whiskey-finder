@@ -1,4 +1,4 @@
-import { FLAVOR_CATEGORIES } from "../data/flavorNotes";
+import FLAVOR_CATEGORIES from "../data/flavorNotes.json";
 
 /**
  * Returns a Set containing every valid flavor note ID

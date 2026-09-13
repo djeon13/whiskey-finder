@@ -1,4 +1,4 @@
-import { FLAVOR_METADATA } from "../data/flavorMetadata";
+import FLAVOR_METADATA from "../data/flavorMetadata.json";
 
 export function buildFlavorFingerprint(flavorNotes = []) {
   const fingerprint = {};
