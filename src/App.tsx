@@ -2,8 +2,8 @@ import { Routes, Route } from "react-router-dom";
 
 import Header from "./components/organisms/Header/Header";
 
-import Home from "./pages/Home/Home";
-import Finder from "./pages/Finder/Finder";
+import Home from "./components/pages/Home/Home";
+import Finder from "./components/pages/Finder/Finder";
 import Footer from "./components/organisms/Footer/Footer";
 import "./App.css";
 

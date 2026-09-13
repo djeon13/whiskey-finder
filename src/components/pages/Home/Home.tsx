@@ -1,4 +1,4 @@
-import Hero from "../../components/organisms/Hero/Hero";
+import Hero from "../../organisms/Hero/Hero";
 
 function Home() {
   return (
