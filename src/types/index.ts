@@ -1,4 +1,4 @@
-export type { Whiskey } from "./Whiskey";
+export type { Whiskey, RecommendedWhiskey } from "./Whiskey";
 export { whiskeyTemplate } from "./Whiskey";
 
 export type { Country } from "./Country";

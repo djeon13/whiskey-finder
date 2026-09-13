@@ -1,4 +1,7 @@
-import FLAVOR_CATEGORIES from "../data/flavorNotes.json";
+import flavorNotesData from "../data/flavorNotes.json";
+
+/** @type {import("../types").FlavorCategory[]} */
+const FLAVOR_CATEGORIES = flavorNotesData;
 
 /**
  * Returns a Set containing every valid flavor note ID
@@ -15,6 +18,7 @@ export function getValidFlavorNoteIds() {
 /**
  * Checks a whiskey collection for flavor notes that
  * are not defined in FLAVOR_CATEGORIES.
+ * @param {import("../types").Whiskey[]} whiskeys
  */
 export function validateFlavorNotes(whiskeys) {
   const validFlavorNoteIds = getValidFlavorNoteIds();

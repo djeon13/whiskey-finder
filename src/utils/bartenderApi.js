@@ -1,5 +1,11 @@
 const API_URL = import.meta.env.VITE_API_URL;
 
+/**
+ * @param {Object} params
+ * @param {import("../types").Whiskey} params.whiskey
+ * @param {{ flavors: string[], priceRange: string, country: string }} params.preferences
+ * @returns {Promise<string>}
+ */
 export async function getBartenderPerspective({ whiskey, preferences }) {
   const response = await fetch(`${API_URL}/api/bartender`, {
     method: "POST",

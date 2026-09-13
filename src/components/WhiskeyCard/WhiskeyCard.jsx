@@ -4,6 +4,13 @@ import { MapPin, FlaskConical, DollarSign } from "lucide-react";
 
 import "./WhiskeyCard.css";
 
+/**
+ * @param {Object} props
+ * @param {import("../../types").RecommendedWhiskey} props.whiskey
+ * @param {number} [props.rank]
+ * @param {(whiskey: import("../../types").RecommendedWhiskey) => void} props.onViewDetails
+ * @param {boolean} [props.showTags]
+ */
 function WhiskeyCard({ whiskey, rank, onViewDetails, showTags = true }) {
   const isRecommendation = showTags;
 

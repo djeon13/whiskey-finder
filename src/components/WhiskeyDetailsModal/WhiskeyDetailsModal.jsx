@@ -8,6 +8,13 @@ import {
 } from "../../utils/flavorHelpers";
 import "./WhiskeyDetailsModal.css";
 
+/**
+ * @param {Object} props
+ * @param {import("../../types").RecommendedWhiskey | null} props.whiskey
+ * @param {{ flavors: string[], priceRange: string, country: string }} props.preferences
+ * @param {boolean} props.isOpen
+ * @param {() => void} props.onClose
+ */
 function WhiskeyDetailsModal({ whiskey, preferences, isOpen, onClose }) {
   const [isBartenderLoading, setIsBartenderLoading] = useState(false);
 

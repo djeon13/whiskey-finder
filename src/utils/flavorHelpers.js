@@ -1,6 +1,13 @@
-import FLAVOR_CATEGORIES from "../data/flavorNotes.json";
-import FLAVOR_METADATA from "../data/flavorMetadata.json";
-import BARREL_TYPES from "../data/barrelTypes.json";
+import flavorNotesData from "../data/flavorNotes.json";
+import flavorMetadataData from "../data/flavorMetadata.json";
+import barrelTypesData from "../data/barrelTypes.json";
+
+/** @type {import("../types").FlavorCategory[]} */
+const FLAVOR_CATEGORIES = flavorNotesData;
+/** @type {import("../types").FlavorMetadata} */
+const FLAVOR_METADATA = flavorMetadataData;
+/** @type {import("../types").BarrelType[]} */
+const BARREL_TYPES = barrelTypesData;
 
 export function getFlavorCategories() {
   return FLAVOR_CATEGORIES;

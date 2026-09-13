@@ -1,4 +1,4 @@
-import whiskeyCollection from "../data/whiskeyCollection.json";
+import whiskeyCollectionData from "../data/whiskeyCollection.json";
 
 import { getActiveWeights, getTotalScore } from "./scoring";
 
@@ -7,6 +7,13 @@ import {
   scoreFlavorFingerprint,
 } from "./flavorFingerprint";
 
+/** @type {import("../types").Whiskey[]} */
+const whiskeyCollection = whiskeyCollectionData;
+
+/**
+ * @param {{ flavors: string[], priceRange: string, country: string }} preferences
+ * @returns {import("../types").RecommendedWhiskey[]}
+ */
 export function recommendWhiskeys(preferences) {
   const hasFlavorPreference = preferences.flavors.length > 0;
 

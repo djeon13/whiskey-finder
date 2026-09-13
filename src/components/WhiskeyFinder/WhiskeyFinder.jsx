@@ -1,9 +1,18 @@
 import { useState } from "react";
 
-import FLAVOR_CATEGORIES from "../../data/flavorNotes.json";
-import COUNTRIES from "../../data/countries.json";
-import PRICE_RANGES from "../../data/priceRanges.json";
-import whiskeyCollection from "../../data/whiskeyCollection.json";
+import flavorNotesData from "../../data/flavorNotes.json";
+import countriesData from "../../data/countries.json";
+import priceRangesData from "../../data/priceRanges.json";
+import whiskeyCollectionData from "../../data/whiskeyCollection.json";
+
+/** @type {import("../../types").FlavorCategory[]} */
+const FLAVOR_CATEGORIES = flavorNotesData;
+/** @type {import("../../types").Country[]} */
+const COUNTRIES = countriesData;
+/** @type {import("../../types").PriceRange[]} */
+const PRICE_RANGES = priceRangesData;
+/** @type {import("../../types").Whiskey[]} */
+const whiskeyCollection = whiskeyCollectionData;
 import { recommendWhiskeys } from "../../utils/recommendationEngine";
 import { getFlavorDescription } from "../../utils/flavorDescriptions";
 

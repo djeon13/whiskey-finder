@@ -7,13 +7,24 @@ export interface Whiskey {
   style: string;
   barrelTypes: string[];
   age: number | null;
-  abv: number;
+  ageMonths?: number;
+  abv: number | null;
   price: number;
   priceRange: string;
+  pourSize?: number;
   flavorNotes: string[];
   description: string;
   bartenderNote: string;
   tags: string[];
+}
+
+export interface RecommendedWhiskey extends Whiskey {
+  fingerprint?: Record<string, number>;
+  scores?: {
+    flavor?: number;
+    total: number;
+  };
+  matchingNotes?: string[];
 }
 
 export const whiskeyTemplate = {
