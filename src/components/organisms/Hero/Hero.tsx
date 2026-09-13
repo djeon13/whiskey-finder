@@ -1,6 +1,8 @@
 import { useNavigate } from "react-router-dom";
 
 import whiskeyPour from "../../../assets/origami-whiskeyglass.png";
+import { Eyebrow } from "../../atoms/Eyebrow/Eyebrow";
+import { PrimaryButton } from "../../atoms/PrimaryButton/PrimaryButton";
 
 import "./Hero.css";
 
@@ -14,7 +16,9 @@ function Hero() {
   return (
     <section className="hero">
       <div className="hero__content">
-        <p className="hero__eyebrow">Curated Whiskey Recommendations</p>
+        <Eyebrow className="hero__eyebrow">
+          Curated Whiskey Recommendations
+        </Eyebrow>
 
         <h1 className="hero__title">
           Discover Your
@@ -36,13 +40,9 @@ function Hero() {
             />
           </div>
 
-          <button
-            className="hero__button"
-            type="button"
-            onClick={handleStartExploring}
-          >
+          <PrimaryButton className="hero__button" onClick={handleStartExploring}>
             Start Exploring
-          </button>
+          </PrimaryButton>
         </div>
       </div>
     </section>

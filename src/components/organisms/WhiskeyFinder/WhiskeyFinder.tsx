@@ -28,6 +28,10 @@ import { PillList } from "../../molecules/PillList/PillList";
 import { WhiskeyCardList } from "../WhiskeyCardList/WhiskeyCardList";
 import WhiskeyDetailsModal from "../WhiskeyDetailsModal/WhiskeyDetailsModal";
 import WhiskeyLoader from "../../atoms/WhiskeyLoader/WhiskeyLoader";
+import { Eyebrow } from "../../atoms/Eyebrow/Eyebrow";
+import { SectionTitle } from "../../atoms/SectionTitle/SectionTitle";
+import { PrimaryButton } from "../../atoms/PrimaryButton/PrimaryButton";
+import { CloseButton } from "../../atoms/CloseButton/CloseButton";
 
 import "./WhiskeyFinder.css";
 
@@ -206,9 +210,9 @@ function WhiskeyFinder() {
     <section className="whiskey-finder">
       <div className="whiskey-finder__container">
         <div className="whiskey-finder__heading">
-          <p className="whiskey-finder__eyebrow">
+          <Eyebrow className="whiskey-finder__eyebrow">
             Personalized Recommendations
-          </p>
+          </Eyebrow>
 
           <h2 className="whiskey-finder__title">Find Your Whiskey</h2>
 
@@ -251,9 +255,9 @@ function WhiskeyFinder() {
 
             {displayedFlavor && (
               <section className="whiskey-finder__flavor-panel">
-                <h3 className="whiskey-finder__flavor-title">
+                <SectionTitle className="whiskey-finder__flavor-title">
                   {displayedFlavor.label}
-                </h3>
+                </SectionTitle>
 
                 <p className="whiskey-finder__flavor-description">
                   {getFlavorDescription(displayedFlavor.id)}
@@ -307,22 +311,22 @@ function WhiskeyFinder() {
             />
           </FormFieldset>
 
-          <button
+          <PrimaryButton
             className="whiskey-finder__submit"
             type="submit"
             disabled={isLoading}
           >
             {isLoading ? "Finding Your Whiskey..." : "Find My Whiskey"}
-          </button>
+          </PrimaryButton>
         </form>
 
         {isLoading && (
           <section className="whiskey-finder__loading">
             <WhiskeyLoader />
 
-            <h3 className="whiskey-finder__loading-title">
+            <SectionTitle className="whiskey-finder__loading-title">
               Finding Your Perfect Pour...
-            </h3>
+            </SectionTitle>
 
             <p className="whiskey-finder__loading-text">
               Searching our collection for the best matches.
@@ -332,9 +336,9 @@ function WhiskeyFinder() {
 
         {hasSearched && recommendations.length > 0 && (
           <section className="whiskey-finder__results">
-            <h3 className="whiskey-finder__results-title">
+            <SectionTitle className="whiskey-finder__results-title">
               Your Whiskey Matches
-            </h3>
+            </SectionTitle>
 
             <WhiskeyCardList
               whiskeys={recommendations}
@@ -348,7 +352,9 @@ function WhiskeyFinder() {
 
         {hasSearched && !isLoading && recommendations.length === 0 && (
           <section className="whiskey-finder__empty">
-            <h3 className="whiskey-finder__empty-title">No Matches Found</h3>
+            <SectionTitle className="whiskey-finder__empty-title">
+              No Matches Found
+            </SectionTitle>
 
             <p className="whiskey-finder__empty-text">
               We couldn't find a whiskey that matches those flavor profiles and
@@ -427,7 +433,9 @@ function WhiskeyFinder() {
 
         {searchResults.length > 0 && (
           <section className="whiskey-finder__search-results">
-            <h3 className="whiskey-finder__results-title">Search Results</h3>
+            <SectionTitle className="whiskey-finder__results-title">
+              Search Results
+            </SectionTitle>
 
             <WhiskeyCardList
               whiskeys={searchResults}
@@ -456,23 +464,20 @@ function WhiskeyFinder() {
         <div className="whiskey-finder__results-modal-content">
           <div className="whiskey-finder__results-modal-header">
             <div>
-              <p className="whiskey-finder__eyebrow">
+              <Eyebrow className="whiskey-finder__eyebrow">
                 Personalized Recommendations
-              </p>
+              </Eyebrow>
 
-              <h3 className="whiskey-finder__results-title">
+              <SectionTitle className="whiskey-finder__results-title">
                 Your Whiskey Matches
-              </h3>
+              </SectionTitle>
             </div>
 
-            <button
+            <CloseButton
               className="whiskey-finder__results-modal-close"
-              type="button"
               onClick={handleCloseResultsModal}
-              aria-label="Close whiskey recommendations"
-            >
-              ×
-            </button>
+              label="Close whiskey recommendations"
+            />
           </div>
 
           <WhiskeyCardList

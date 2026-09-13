@@ -8,6 +8,9 @@ import {
 } from "../../../utils/flavorHelpers";
 import type { Preferences, RecommendedWhiskey } from "../../../types";
 import { PillList } from "../../molecules/PillList/PillList";
+import { CloseButton } from "../../atoms/CloseButton/CloseButton";
+import { SectionTitle } from "../../atoms/SectionTitle/SectionTitle";
+import { PrimaryButton } from "../../atoms/PrimaryButton/PrimaryButton";
 import "./WhiskeyDetailsModal.css";
 
 interface WhiskeyDetailsModalProps {
@@ -93,14 +96,11 @@ function WhiskeyDetailsModal({
         aria-modal="true"
         aria-labelledby="whiskey-modal-title"
       >
-        <button
+        <CloseButton
           className="whiskey-modal__close"
-          type="button"
-          aria-label="Close whiskey details"
           onClick={onClose}
-        >
-          ×
-        </button>
+          label="Close whiskey details"
+        />
 
         <div className="whiskey-modal__hero">
           <div className="whiskey-modal__hero-content">
@@ -144,7 +144,9 @@ function WhiskeyDetailsModal({
 
         <div className="whiskey-modal__body">
           <section className="whiskey-modal__section">
-            <h3 className="whiskey-modal__section-title">Flavor Profile</h3>
+            <SectionTitle className="whiskey-modal__section-title">
+              Flavor Profile
+            </SectionTitle>
 
             <PillList
               className="whiskey-modal__flavors"
@@ -160,9 +162,9 @@ function WhiskeyDetailsModal({
 
           {(whiskey.matchingNotes?.length ?? 0) > 0 && (
             <section className="whiskey-modal__section">
-              <h3 className="whiskey-modal__section-title">
+              <SectionTitle className="whiskey-modal__section-title">
                 Why We Recommended This
-              </h3>
+              </SectionTitle>
 
               <p className="whiskey-modal__section-description">
                 These flavor notes matched your selections:
@@ -182,7 +184,9 @@ function WhiskeyDetailsModal({
           )}
 
           <section className="whiskey-modal__section">
-            <h3 className="whiskey-modal__section-title">Barrel Types</h3>
+            <SectionTitle className="whiskey-modal__section-title">
+              Barrel Types
+            </SectionTitle>
 
             <PillList
               className="whiskey-modal__flavors"
@@ -195,26 +199,27 @@ function WhiskeyDetailsModal({
           </section>
 
           <section className="whiskey-modal__section">
-            <h3 className="whiskey-modal__section-title">About This Whiskey</h3>
+            <SectionTitle className="whiskey-modal__section-title">
+              About This Whiskey
+            </SectionTitle>
 
             <p className="whiskey-modal__text">{whiskey.description}</p>
           </section>
 
           <section className="whiskey-modal__section whiskey-modal__section--bartender">
-            <h3 className="whiskey-modal__section-title">
+            <SectionTitle className="whiskey-modal__section-title">
               Bartender's Recommendation
-            </h3>
+            </SectionTitle>
 
             <p className="whiskey-modal__text">{whiskey.bartenderNote}</p>
 
             {!isBartenderLoading && (
-              <button
+              <PrimaryButton
                 className="whiskey-modal__bartender-button"
-                type="button"
                 onClick={handleAskBartender}
               >
                 {bartenderPerspective ? "✨ Ask Again" : "✨ Ask the Bartender"}
-              </button>
+              </PrimaryButton>
             )}
 
             {isBartenderLoading && (

@@ -4,6 +4,8 @@ import { MapPin, FlaskConical, DollarSign } from "lucide-react";
 import type { RecommendedWhiskey } from "../../../types";
 import { Stat } from "../../atoms/Stat/Stat";
 import { PillList } from "../../molecules/PillList/PillList";
+import { Badge } from "../../atoms/Badge/Badge";
+import { PrimaryButton } from "../../atoms/PrimaryButton/PrimaryButton";
 
 import "./WhiskeyCard.css";
 
@@ -35,7 +37,7 @@ function WhiskeyCard({
           )}
 
           {rank && isRecommendation && (
-            <span className="whiskey-card__rank">#{rank} Match</span>
+            <Badge className="whiskey-card__rank">#{rank} Match</Badge>
           )}
         </div>
 
@@ -98,12 +100,12 @@ function WhiskeyCard({
         {showTags && whiskey.tags.length > 0 && (
           <div className="whiskey-card__badges">
             {whiskey.tags.map((tag) => (
-              <span
+              <Badge
                 key={tag}
                 className={`whiskey-card__badge whiskey-card__badge--${tag}`}
               >
                 {getTagLabel(tag)}
-              </span>
+              </Badge>
             ))}
           </div>
         )}
@@ -127,13 +129,12 @@ function WhiskeyCard({
           <p className="whiskey-card__description">{whiskey.description}</p>
         )}
 
-        <button
+        <PrimaryButton
           className="whiskey-card__button"
-          type="button"
           onClick={() => onViewDetails(whiskey)}
         >
           View Details
-        </button>
+        </PrimaryButton>
       </div>
     </article>
   );

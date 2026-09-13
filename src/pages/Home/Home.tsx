@@ -1,5 +1,4 @@
 import Hero from "../../components/organisms/Hero/Hero";
-import "./Home.css";
 
 function Home() {
   return (
