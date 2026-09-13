@@ -1,26 +1,24 @@
-import { NavLink } from "react-router-dom";
+import { NavItem } from "../../atoms/NavItem/NavItem";
 import "./Navigation.css";
 
 function Navigation() {
   return (
     <nav className="navigation">
-      <NavLink
+      <NavItem
         to="/"
-        className={({ isActive }) =>
-          `navigation__link ${isActive ? "navigation__link--active" : ""}`
-        }
+        className="navigation__link"
+        activeClassName="navigation__link--active"
       >
         Home
-      </NavLink>
+      </NavItem>
 
-      <NavLink
+      <NavItem
         to="/finder"
-        className={({ isActive }) =>
-          `navigation__link ${isActive ? "navigation__link--active" : ""}`
-        }
+        className="navigation__link"
+        activeClassName="navigation__link--active"
       >
         Finder
-      </NavLink>
+      </NavItem>
     </nav>
   );
 }

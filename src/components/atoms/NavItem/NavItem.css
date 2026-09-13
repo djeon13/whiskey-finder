@@ -1,0 +1,8 @@
+.nav-item {
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav-item--active {
+  font-weight: 700;
+}

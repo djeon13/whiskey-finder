@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import logo from "../../../assets/wolf-crane-logo.svg";
+import { BrandLogo } from "../../atoms/BrandLogo/BrandLogo";
 import "./Footer.css";
 
 function Footer() {
@@ -7,13 +8,12 @@ function Footer() {
     <footer className="footer">
       <div className="footer__container">
         <div className="footer__brand">
-          <Link className="footer__logo-link" to="/">
-            <img
-              className="footer__logo"
-              src={logo}
-              alt="Wolf & Crane Whiskey Library"
-            />
-          </Link>
+          <BrandLogo
+            className="footer__logo-link"
+            imageClassName="footer__logo"
+            src={logo}
+            alt="Wolf & Crane Whiskey Library"
+          />
 
           <p className="footer__description">
             Explore the Wolf & Crane collection through personalized whiskey

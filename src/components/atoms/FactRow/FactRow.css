@@ -1,0 +1,16 @@
+.fact-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.fact-row__label {
+  margin: 0;
+  font-size: 0.75rem;
+  opacity: 0.75;
+}
+
+.fact-row__value {
+  margin: 0;
+  font-weight: 600;
+}

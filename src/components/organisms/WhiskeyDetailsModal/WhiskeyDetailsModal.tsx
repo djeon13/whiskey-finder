@@ -11,6 +11,7 @@ import { PillList } from "../../molecules/PillList/PillList";
 import { TitledSection } from "../../molecules/TitledSection/TitledSection";
 import { CloseButton } from "../../atoms/CloseButton/CloseButton";
 import { PrimaryButton } from "../../atoms/PrimaryButton/PrimaryButton";
+import { FactRow } from "../../atoms/FactRow/FactRow";
 import "./WhiskeyDetailsModal.css";
 
 interface WhiskeyDetailsModalProps {
@@ -116,28 +117,30 @@ function WhiskeyDetailsModal({
 
             <dl className="whiskey-modal__facts">
               {whiskey.age !== null && (
-                <div className="whiskey-modal__fact">
-                  <dt className="whiskey-modal__fact-label">Age</dt>
-
-                  <dd className="whiskey-modal__fact-value">
-                    {whiskey.age} Years
-                  </dd>
-                </div>
+                <FactRow
+                  className="whiskey-modal__fact"
+                  labelClassName="whiskey-modal__fact-label"
+                  valueClassName="whiskey-modal__fact-value"
+                  label="Age"
+                  value={`${whiskey.age} Years`}
+                />
               )}
 
-              <div className="whiskey-modal__fact">
-                <dt className="whiskey-modal__fact-label">ABV</dt>
+              <FactRow
+                className="whiskey-modal__fact"
+                labelClassName="whiskey-modal__fact-label"
+                valueClassName="whiskey-modal__fact-value"
+                label="ABV"
+                value={`${whiskey.abv}%`}
+              />
 
-                <dd className="whiskey-modal__fact-value">{whiskey.abv}%</dd>
-              </div>
-
-              <div className="whiskey-modal__fact">
-                <dt className="whiskey-modal__fact-label">Price</dt>
-
-                <dd className="whiskey-modal__fact-value">
-                  ${whiskey.price} / pour
-                </dd>
-              </div>
+              <FactRow
+                className="whiskey-modal__fact"
+                labelClassName="whiskey-modal__fact-label"
+                valueClassName="whiskey-modal__fact-value"
+                label="Price"
+                value={`$${whiskey.price} / pour`}
+              />
             </dl>
           </div>
         </div>
