@@ -1,12 +1,12 @@
 import flavorMetadataData from "../data/flavorMetadata.json";
-import type { FlavorMetadata } from "../types";
+import type { FlavorCategory, FlavorMetadata, FlavorNote } from "../types";
 
 const FLAVOR_METADATA = flavorMetadataData as FlavorMetadata;
 
 export function buildFlavorFingerprint(
-  flavorNotes: string[] = []
-): Record<string, number> {
-  const fingerprint: Record<string, number> = {};
+  flavorNotes: FlavorNote["id"][] = []
+): Record<FlavorCategory["id"], number> {
+  const fingerprint: Record<FlavorCategory["id"], number> = {};
 
   flavorNotes.forEach((noteId) => {
     const metadata = FLAVOR_METADATA[noteId];
@@ -28,8 +28,8 @@ export function buildFlavorFingerprint(
 }
 
 export function scoreFlavorFingerprint(
-  fingerprint: Record<string, number>,
-  selectedCategories: string[]
+  fingerprint: Record<FlavorCategory["id"], number>,
+  selectedCategories: FlavorCategory["id"][]
 ): number {
   if (!selectedCategories.length) {
     return 0;

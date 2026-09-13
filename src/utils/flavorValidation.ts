@@ -1,5 +1,5 @@
 import flavorNotesData from "../data/flavorNotes.json";
-import type { FlavorCategory, Whiskey } from "../types";
+import type { FlavorCategory, FlavorNote, Whiskey } from "../types";
 
 const FLAVOR_CATEGORIES = flavorNotesData as FlavorCategory[];
 
@@ -7,7 +7,7 @@ const FLAVOR_CATEGORIES = flavorNotesData as FlavorCategory[];
  * Returns a Set containing every valid flavor note ID
  * defined in FLAVOR_CATEGORIES.
  */
-export function getValidFlavorNoteIds(): Set<string> {
+export function getValidFlavorNoteIds(): Set<FlavorNote["id"]> {
   return new Set(
     FLAVOR_CATEGORIES.flatMap((category) =>
       category.notes.map((note) => note.id)
@@ -16,9 +16,9 @@ export function getValidFlavorNoteIds(): Set<string> {
 }
 
 interface InvalidFlavorNote {
-  whiskeyId: string;
-  whiskeyName: string;
-  flavorNote: string;
+  whiskeyId: Whiskey["id"];
+  whiskeyName: Whiskey["name"];
+  flavorNote: FlavorNote["id"];
 }
 
 /**
@@ -46,13 +46,13 @@ export function validateFlavorNotes(whiskeys: Whiskey[]): InvalidFlavorNote[] {
   return invalidFlavorNotes;
 }
 
-export function findDuplicateFlavorNoteIds(): string[] {
+export function findDuplicateFlavorNoteIds(): FlavorNote["id"][] {
   const flavorNoteIds = FLAVOR_CATEGORIES.flatMap((category) =>
     category.notes.map((note) => note.id)
   );
 
-  const seenFlavorNoteIds = new Set<string>();
-  const duplicateFlavorNoteIds = new Set<string>();
+  const seenFlavorNoteIds = new Set<FlavorNote["id"]>();
+  const duplicateFlavorNoteIds = new Set<FlavorNote["id"]>();
 
   flavorNoteIds.forEach((noteId) => {
     if (seenFlavorNoteIds.has(noteId)) {
