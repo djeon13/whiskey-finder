@@ -1,3 +1,4 @@
+/** @type {import("../types").Whiskey} */
 export const whiskeyTemplate = {
   id: "",
 
