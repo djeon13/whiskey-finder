@@ -1,16 +1,18 @@
-export type { Whiskey, RecommendedWhiskey } from "./Whiskey";
-export { whiskeyTemplate } from "./Whiskey";
+export type { Whiskey, RecommendedWhiskey, WhiskeyStyle } from "./Whiskey";
+export { whiskeyTemplate, WhiskeyStyleId } from "./Whiskey";
 
 export type { Country } from "./Country";
 export { CountryId } from "./Country";
-export type { WhiskeyStyle } from "./WhiskeyStyle";
-export { WhiskeyStyleId } from "./WhiskeyStyle";
-export type { BarrelType } from "./BarrelType";
-export { BarrelTypeId } from "./BarrelType";
+export type { Barrel } from "./Barrel";
+export { BarrelId } from "./Barrel";
 export type { Tag } from "./Tag";
 export type { PriceRange } from "./PriceRange";
-export type { FlavorNote, FlavorCategory } from "./FlavorCategory";
-export { FlavorCategoryId } from "./FlavorCategory";
-export type { FlavorMetadataEntry, FlavorMetadata } from "./FlavorMetadata";
-export type { Preferences } from "./Preferences";
-export type { Weights, Scores } from "./Scoring";
+export type {
+  FlavorNote,
+  FlavorCategory,
+  FlavorMetadataEntry,
+  FlavorMetadata,
+} from "./Flavor";
+export { FlavorCategoryId } from "./Flavor";
+export type { Preference } from "./Preference";
+export type { Weight, Score } from "./Scoring";

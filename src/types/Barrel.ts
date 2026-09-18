@@ -1,4 +1,4 @@
-export enum BarrelTypeId {
+export enum BarrelId {
   AmericanOak = "american-oak",
   AmericanOakHogshead = "american-oak-hogshead",
   AmericanOakPuncheon = "american-oak-puncheon",
@@ -79,7 +79,7 @@ export enum BarrelTypeId {
   YamazakiSherryCask = "yamazaki-sherry-cask",
 }
 
-export interface BarrelType {
-  id: BarrelTypeId;
+export interface Barrel {
+  id: BarrelId;
   label: string;
 }

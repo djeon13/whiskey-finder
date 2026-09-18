@@ -1,10 +1,10 @@
-import type { Preferences, Whiskey } from "@types";
+import type { Preference, Whiskey } from "@types";
 
 const API_URL = import.meta.env.VITE_API_URL as string;
 
 interface GetBartenderPerspectiveParams {
   whiskey: Whiskey;
-  preferences: Preferences;
+  preferences: Preference;
 }
 
 export async function getBartenderPerspective({

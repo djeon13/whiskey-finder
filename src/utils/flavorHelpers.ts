@@ -1,5 +1,5 @@
 import { BARREL_TYPES, FLAVOR_CATEGORIES, FLAVOR_METADATA } from "@data";
-import type { BarrelType, FlavorCategory, FlavorNote } from "@types";
+import type { Barrel, FlavorCategory, FlavorNote } from "@types";
 
 export function getFlavorCategories(): FlavorCategory[] {
   return FLAVOR_CATEGORIES;
@@ -35,8 +35,8 @@ export function getFlavorNoteLabel(noteId: FlavorNote["id"]): FlavorNote["label"
 }
 
 export function getBarrelTypeLabel(
-  barrelTypeId: BarrelType["id"]
-): BarrelType["label"] {
+  barrelTypeId: Barrel["id"]
+): Barrel["label"] {
   const barrelType = BARREL_TYPES.find((barrel) => barrel.id === barrelTypeId);
 
   return barrelType ? barrelType.label : barrelTypeId;

@@ -1,10 +1,28 @@
-import type { BarrelType } from "./BarrelType";
+import type { Barrel } from "./Barrel";
 import type { Country } from "./Country";
-import type { FlavorCategory, FlavorNote } from "./FlavorCategory";
+import type { FlavorCategory, FlavorNote } from "./Flavor";
 import type { PriceRange } from "./PriceRange";
-import type { Scores } from "./Scoring";
+import type { Score } from "./Scoring";
 import type { Tag } from "./Tag";
-import type { WhiskeyStyle } from "./WhiskeyStyle";
+
+export enum WhiskeyStyleId {
+  SingleMaltScotch = "single-malt-scotch",
+  BlendedScotch = "blended-scotch",
+  BlendedMaltScotch = "blended-malt-scotch",
+  Bourbon = "bourbon",
+  StraightBourbon = "straight-bourbon",
+  RyeWhiskey = "rye-whiskey",
+  TennesseeWhiskey = "tennessee-whiskey",
+  IrishWhiskey = "irish-whiskey",
+  SinglePotStill = "single-pot-still",
+  JapaneseWhisky = "japanese-whisky",
+  CanadianWhisky = "canadian-whisky",
+}
+
+export interface WhiskeyStyle {
+  id: WhiskeyStyleId;
+  label: string;
+}
 
 export interface Whiskey {
   id: string;
@@ -13,7 +31,7 @@ export interface Whiskey {
   country: Country["id"];
   location: string;
   style: WhiskeyStyle["id"];
-  barrelTypes: BarrelType["id"][];
+  barrelTypes: Barrel["id"][];
   age: number | null;
   ageMonths?: number;
   abv: number | null;
@@ -28,7 +46,7 @@ export interface Whiskey {
 
 export interface RecommendedWhiskey extends Whiskey {
   fingerprint?: Record<FlavorCategory["id"], number>;
-  scores?: Scores;
+  scores?: Score;
   matchingNotes?: FlavorNote["id"][];
 }
 

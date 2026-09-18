@@ -5,7 +5,7 @@ import {
   getBarrelTypeLabel,
   getFlavorCategory,
 } from "@utils";
-import type { Preferences, RecommendedWhiskey } from "@types";
+import type { Preference, RecommendedWhiskey } from "@types";
 import {
   WhiskeyLoader,
   CloseButton,
@@ -17,7 +17,7 @@ import "./WhiskeyDetailsModal.css";
 
 interface WhiskeyDetailsModalProps {
   whiskey: RecommendedWhiskey | null;
-  preferences: Preferences;
+  preferences: Preference;
   isOpen: boolean;
   onClose: () => void;
 }

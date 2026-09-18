@@ -6,7 +6,7 @@ import {
   PRICE_RANGES,
   WHISKEY_COLLECTION,
 } from "@data";
-import type { FlavorCategory, Preferences, RecommendedWhiskey } from "@types";
+import type { FlavorCategory, Preference, RecommendedWhiskey } from "@types";
 import { CountryId } from "@types";
 
 import { recommendWhiskeys, getFlavorDescription } from "@utils";
@@ -33,7 +33,7 @@ import WhiskeyDetailsModal from "@components/organisms/WhiskeyDetailsModal/Whisk
 import "./WhiskeyFinder.css";
 
 function WhiskeyFinder() {
-  const [preferences, setPreferences] = useState<Preferences>({
+  const [preferences, setPreferences] = useState<Preference>({
     flavors: [],
     priceRange: "",
     country: "" as CountryId,

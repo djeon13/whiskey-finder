@@ -8,7 +8,7 @@ import whiskeyCollectionData from "./whiskeyCollection.json";
 import whiskeyStylesData from "./whiskeyStyles.json";
 
 import type {
-  BarrelType,
+  Barrel,
   Country,
   FlavorCategory,
   FlavorMetadata,
@@ -18,7 +18,7 @@ import type {
   WhiskeyStyle,
 } from "@types";
 
-export const BARREL_TYPES = barrelTypesData as BarrelType[];
+export const BARREL_TYPES = barrelTypesData as Barrel[];
 export const COUNTRIES = countriesData as Country[];
 export const FLAVOR_METADATA = flavorMetadataData as FlavorMetadata;
 export const FLAVOR_CATEGORIES = flavorNotesData as FlavorCategory[];

@@ -20,3 +20,13 @@ export interface FlavorCategory {
   previewNotes: FlavorNote[];
   notes: FlavorNote[];
 }
+
+export interface FlavorMetadataEntry {
+  label: string;
+  importance: number;
+  intensity: number;
+  categories: FlavorCategory["id"][];
+  style: string;
+}
+
+export type FlavorMetadata = Record<FlavorNote["id"], FlavorMetadataEntry>;

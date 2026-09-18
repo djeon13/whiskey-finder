@@ -1,5 +1,5 @@
 import { WHISKEY_COLLECTION as whiskeyCollection } from "@data";
-import type { Preferences, RecommendedWhiskey, Scores } from "@types";
+import type { Preference, RecommendedWhiskey, Score } from "@types";
 
 import { getActiveWeights, getTotalScore } from "./scoring";
 
@@ -9,7 +9,7 @@ import {
 } from "./flavorFingerprint";
 
 export function recommendWhiskeys(
-  preferences: Preferences
+  preferences: Preference
 ): RecommendedWhiskey[] {
   const hasFlavorPreference = preferences.flavors.length > 0;
 
@@ -44,10 +44,10 @@ export function recommendWhiskeys(
     (whiskey) => {
       const fingerprint = buildFlavorFingerprint(whiskey.flavorNotes);
 
-      const scores: Scores = {};
+      const scores: Score = {};
 
-      if (weights.flavor) {
-        scores.flavor = scoreFlavorFingerprint(
+      if (weights.flavorWeight) {
+        scores.flavorScore = scoreFlavorFingerprint(
           fingerprint,
           preferences.flavors
         );
@@ -62,7 +62,7 @@ export function recommendWhiskeys(
   );
 
   const maxFlavorScore = Math.max(
-    ...scoredWhiskeys.map((whiskey) => whiskey.scores?.flavor ?? 0),
+    ...scoredWhiskeys.map((whiskey) => whiskey.scores?.flavorScore ?? 0),
     1
   );
 
@@ -71,9 +71,12 @@ export function recommendWhiskeys(
       return;
     }
 
-    if (weights.flavor) {
-      whiskey.scores.flavor = Number(
-        (((whiskey.scores.flavor ?? 0) / maxFlavorScore) * 100).toFixed(1)
+    if (weights.flavorWeight) {
+      whiskey.scores.flavorScore = Number(
+        (
+          ((whiskey.scores.flavorScore ?? 0) / maxFlavorScore) *
+          100
+        ).toFixed(1)
       );
     }
 
