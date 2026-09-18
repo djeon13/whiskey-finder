@@ -76,5 +76,5 @@ export function getFlavorCategory(
     }
   }
 
-  return "";
+  return "" as FlavorCategory["id"];
 }

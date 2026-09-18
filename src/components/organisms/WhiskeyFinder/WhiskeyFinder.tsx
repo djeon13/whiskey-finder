@@ -12,6 +12,7 @@ import type {
   RecommendedWhiskey,
   Whiskey,
 } from "../../../types";
+import { CountryId } from "../../../types";
 
 const FLAVOR_CATEGORIES = flavorNotesData as FlavorCategory[];
 const COUNTRIES = countriesData as Country[];
@@ -41,10 +42,12 @@ function WhiskeyFinder() {
   const [preferences, setPreferences] = useState<Preferences>({
     flavors: [],
     priceRange: "",
-    country: "",
+    country: "" as CountryId,
   });
 
-  const [activeFlavor, setActiveFlavor] = useState<string | null>(null);
+  const [activeFlavor, setActiveFlavor] = useState<FlavorCategory["id"] | null>(
+    null
+  );
 
   const [recommendations, setRecommendations] = useState<
     RecommendedWhiskey[]
@@ -113,7 +116,7 @@ function WhiskeyFinder() {
     setHasSearched(false);
   }
 
-  function handleFlavorClick(flavorId: string) {
+  function handleFlavorClick(flavorId: FlavorCategory["id"]) {
     const isSelected = preferences.flavors.includes(flavorId);
 
     if (isSelected) {
@@ -157,7 +160,7 @@ function WhiskeyFinder() {
   function handleCountryChange(event: React.ChangeEvent<HTMLSelectElement>) {
     setPreferences((currentPreferences) => ({
       ...currentPreferences,
-      country: event.target.value,
+      country: event.target.value as CountryId,
     }));
   }
 

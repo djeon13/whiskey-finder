@@ -6,7 +6,7 @@ const FLAVOR_METADATA = flavorMetadataData as FlavorMetadata;
 export function buildFlavorFingerprint(
   flavorNotes: FlavorNote["id"][] = []
 ): Record<FlavorCategory["id"], number> {
-  const fingerprint: Record<FlavorCategory["id"], number> = {};
+  const fingerprint = {} as Record<FlavorCategory["id"], number>;
 
   flavorNotes.forEach((noteId) => {
     const metadata = FLAVOR_METADATA[noteId];

@@ -3,8 +3,19 @@ export interface FlavorNote {
   label: string;
 }
 
+export enum FlavorCategoryId {
+  Smoke = "smoke",
+  Sweet = "sweet",
+  Fruit = "fruit",
+  Spice = "spice",
+  Wood = "wood",
+  Dessert = "dessert",
+  Floral = "floral",
+  Maritime = "maritime",
+}
+
 export interface FlavorCategory {
-  id: string;
+  id: FlavorCategoryId;
   label: string;
   previewNotes: FlavorNote[];
   notes: FlavorNote[];
