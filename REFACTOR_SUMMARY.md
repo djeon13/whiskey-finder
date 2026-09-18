@@ -12,7 +12,7 @@ Every change below is in service of one of these:
 
 1. **Readability & organization.** Can a teammate open a file cold and understand what it does from its name, location, and shape alone — well enough to start building alongside you on this codebase without a walkthrough? Consistent nomenclature and predictable folder structure are what make that possible.
 2. **Scalability.** The codebase should get easier to extend as it grows, not harder. Consistent conventions (aliases, barrels, typed catalogs) mean adding a new component, catalog, or team member doesn't require re-deriving how things are done each time — the existing patterns just extend.
-3. **Reduced complexity.** Messier code is buggier code: every duplicated cast, inconsistent name, or ad hoc pattern is another place for a bug to hide, and another thing a reader has to hold in their head at once. Simplifying and de-duplicating shrinks that surface area.
+3. **Reduced complexity, staying DRY (Don't Repeat Yourself).** Messier code is buggier code: every duplicated cast, inconsistent name, or ad hoc pattern is another place for a bug to hide, and another thing a reader has to hold in their head at once. Keeping logic and type definitions defined in exactly one place is what makes that duplication go away instead of just moving around.
 4. **Reusable components.** Atomic Design tiers and barrel exports make shared UI pieces easy to find and pull in, so the natural path is reusing an existing atom or molecule instead of quietly rebuilding a near-duplicate.
 5. **Strict typing via indexed-access types and enums.** Referencing a field's type through the type that owns it (`Whiskey["style"]`, `WhiskeyStyle["label"]`) instead of a bare `string` catches invalid values at compile time, keeps every reference to that field in sync automatically (reinforcing goal 4), and — once there's a real backend — gives the frontend's expectations a concrete contract to check a schema against.
 6. **Unit testing (not yet started).** A test suite will let the team ship changes with confidence and catch regressions automatically instead of relying on manual review — most valuable exactly when the team is moving fast or short-staffed.
@@ -62,7 +62,7 @@ Aliasing folders still left every import pointing at one specific component file
 
 - Added an `index.ts` barrel to `atoms/`, `molecules/`, `organisms/`, `pages/`, and `utils/`, re-exporting everything in that tier.
 - Updated cross-folder imports to pull from the tier's barrel (e.g. `@components/atoms`) instead of the individual file.
-- Imports *within* the same tier (e.g. one organism importing a sibling organism) were kept as direct file imports rather than routed through their own barrel, to avoid circular-import issues.
+- Imports _within_ the same tier (e.g. one organism importing a sibling organism) were kept as direct file imports rather than routed through their own barrel, to avoid circular-import issues.
 
 ## 7. Clean up type names
 
