@@ -5,30 +5,26 @@ import {
   FLAVOR_CATEGORIES,
   PRICE_RANGES,
   WHISKEY_COLLECTION as whiskeyCollection,
-} from "../../../data";
-import type {
-  FlavorCategory,
-  Preferences,
-  RecommendedWhiskey,
-} from "../../../types";
-import { CountryId } from "../../../types";
+} from "@data";
+import type { FlavorCategory, Preferences, RecommendedWhiskey } from "@types";
+import { CountryId } from "@types";
 
-import { recommendWhiskeys } from "../../../utils/recommendationEngine";
-import { getFlavorDescription } from "../../../utils/flavorDescriptions";
+import { recommendWhiskeys } from "@utils/recommendationEngine";
+import { getFlavorDescription } from "@utils/flavorDescriptions";
 
-import { Menu, MenuItem } from "../../molecules/Menu/Menu";
-import { FormFieldset } from "../../atoms/FormFieldset/FormFieldset";
-import { PillList } from "../../molecules/PillList/PillList";
-import { WhiskeyCardList } from "../WhiskeyCardList/WhiskeyCardList";
-import WhiskeyDetailsModal from "../WhiskeyDetailsModal/WhiskeyDetailsModal";
-import WhiskeyLoader from "../../atoms/WhiskeyLoader/WhiskeyLoader";
-import { Eyebrow } from "../../atoms/Eyebrow/Eyebrow";
-import { SectionTitle } from "../../atoms/SectionTitle/SectionTitle";
-import { PrimaryButton } from "../../atoms/PrimaryButton/PrimaryButton";
-import { CloseButton } from "../../atoms/CloseButton/CloseButton";
-import { TitledSection } from "../../molecules/TitledSection/TitledSection";
-import { PageHeading } from "../../molecules/PageHeading/PageHeading";
-import { SelectFilterField } from "../../molecules/SelectFilterField/SelectFilterField";
+import { Menu, MenuItem } from "@components/molecules/Menu/Menu";
+import { FormFieldset } from "@components/atoms/FormFieldset/FormFieldset";
+import { PillList } from "@components/molecules/PillList/PillList";
+import { WhiskeyCardList } from "@components/organisms/WhiskeyCardList/WhiskeyCardList";
+import WhiskeyDetailsModal from "@components/organisms/WhiskeyDetailsModal/WhiskeyDetailsModal";
+import WhiskeyLoader from "@components/atoms/WhiskeyLoader/WhiskeyLoader";
+import { Eyebrow } from "@components/atoms/Eyebrow/Eyebrow";
+import { SectionTitle } from "@components/atoms/SectionTitle/SectionTitle";
+import { PrimaryButton } from "@components/atoms/PrimaryButton/PrimaryButton";
+import { CloseButton } from "@components/atoms/CloseButton/CloseButton";
+import { TitledSection } from "@components/molecules/TitledSection/TitledSection";
+import { PageHeading } from "@components/molecules/PageHeading/PageHeading";
+import { SelectFilterField } from "@components/molecules/SelectFilterField/SelectFilterField";
 
 import "./WhiskeyFinder.css";
 

@@ -1,4 +1,4 @@
-import type { Preferences, Scores, Weights } from "../types";
+import type { Preferences, Scores, Weights } from "@types";
 
 export function getActiveWeights(preferences: Preferences): Weights {
   if (!preferences.flavors.length) {

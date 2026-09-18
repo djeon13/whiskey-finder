@@ -16,7 +16,7 @@ import type {
   Tag,
   Whiskey,
   WhiskeyStyle,
-} from "../types";
+} from "@types";
 
 export const BARREL_TYPES = barrelTypesData as BarrelType[];
 export const COUNTRIES = countriesData as Country[];

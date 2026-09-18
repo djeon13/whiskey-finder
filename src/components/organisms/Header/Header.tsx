@@ -1,6 +1,6 @@
-import Navigation from "../../molecules/Navigation/Navigation";
-import logo from "../../../assets/wolf-crane-logo.svg";
-import { BrandLogo } from "../../atoms/BrandLogo/BrandLogo";
+import Navigation from "@components/molecules/Navigation/Navigation";
+import logo from "@assets/wolf-crane-logo.svg";
+import { BrandLogo } from "@components/atoms/BrandLogo/BrandLogo";
 import "./Header.css";
 
 function Header() {

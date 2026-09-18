@@ -1,5 +1,5 @@
-import { FLAVOR_METADATA } from "../data";
-import type { FlavorCategory, FlavorNote } from "../types";
+import { FLAVOR_METADATA } from "@data";
+import type { FlavorCategory, FlavorNote } from "@types";
 
 export function buildFlavorFingerprint(
   flavorNotes: FlavorNote["id"][] = []

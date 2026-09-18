@@ -1,5 +1,5 @@
-import { BARREL_TYPES, FLAVOR_CATEGORIES, FLAVOR_METADATA } from "../data";
-import type { BarrelType, FlavorCategory, FlavorNote } from "../types";
+import { BARREL_TYPES, FLAVOR_CATEGORIES, FLAVOR_METADATA } from "@data";
+import type { BarrelType, FlavorCategory, FlavorNote } from "@types";
 
 export function getFlavorCategories(): FlavorCategory[] {
   return FLAVOR_CATEGORIES;

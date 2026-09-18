@@ -1,4 +1,4 @@
-import type { FlavorCategory } from "../types";
+import type { FlavorCategory } from "@types";
 
 export function getFlavorDescription(
   categoryId: FlavorCategory["id"]

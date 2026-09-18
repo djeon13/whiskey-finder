@@ -1,4 +1,4 @@
-import type { Tag } from "../types";
+import type { Tag } from "@types";
 
 export const TAG_LABELS: Record<Tag["id"], Tag["label"]> = {
   "staff-pick": "Staff Pick",

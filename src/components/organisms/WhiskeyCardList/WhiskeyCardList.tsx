@@ -1,5 +1,5 @@
-import type { RecommendedWhiskey } from "../../../types";
-import WhiskeyCard from "../WhiskeyCard/WhiskeyCard";
+import type { RecommendedWhiskey } from "@types";
+import WhiskeyCard from "@components/organisms/WhiskeyCard/WhiskeyCard";
 
 export interface WhiskeyCardListProps {
   whiskeys: RecommendedWhiskey[];

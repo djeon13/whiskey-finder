@@ -1,4 +1,4 @@
-import type { Preferences, Whiskey } from "../types";
+import type { Preferences, Whiskey } from "@types";
 
 const API_URL = import.meta.env.VITE_API_URL as string;
 

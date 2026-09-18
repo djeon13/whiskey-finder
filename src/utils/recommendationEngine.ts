@@ -1,5 +1,5 @@
-import { WHISKEY_COLLECTION as whiskeyCollection } from "../data";
-import type { Preferences, RecommendedWhiskey, Scores } from "../types";
+import { WHISKEY_COLLECTION as whiskeyCollection } from "@data";
+import type { Preferences, RecommendedWhiskey, Scores } from "@types";
 
 import { getActiveWeights, getTotalScore } from "./scoring";
 

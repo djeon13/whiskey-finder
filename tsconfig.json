@@ -29,7 +29,16 @@
 
     "paths": {
       "src": ["./src"],
-      "src/*": ["./src/*"]
+      "src/*": ["./src/*"],
+      "@assets/*": ["./src/assets/*"],
+      "@components/*": ["./src/components/*"],
+      "@data": ["./src/data"],
+      "@data/*": ["./src/data/*"],
+      "@fonts/*": ["./src/fonts/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@types": ["./src/types"],
+      "@types/*": ["./src/types/*"],
+      "@utils/*": ["./src/utils/*"]
     }
   },
   "include": ["src", "vite.config.ts"],

@@ -1,4 +1,4 @@
-import WhiskeyFinder from "../../organisms/WhiskeyFinder/WhiskeyFinder";
+import WhiskeyFinder from "@components/organisms/WhiskeyFinder/WhiskeyFinder";
 
 import "./Finder.css";
 
