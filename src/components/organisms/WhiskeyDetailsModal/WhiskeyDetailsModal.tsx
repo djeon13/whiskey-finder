@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
-import { getBartenderPerspective } from "@utils/bartenderApi";
 import {
+  getBartenderPerspective,
   getFlavorNoteLabel,
   getBarrelTypeLabel,
   getFlavorCategory,
-} from "@utils/flavorHelpers";
+} from "@utils";
 import type { Preferences, RecommendedWhiskey } from "@types";
 import {
   WhiskeyLoader,

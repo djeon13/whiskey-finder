@@ -1,5 +1,4 @@
-import { getFlavorNoteLabel } from "@utils/flavorHelpers";
-import { getTagLabel } from "@utils/tagHelpers";
+import { getFlavorNoteLabel, getTagLabel } from "@utils";
 import { MapPin, FlaskConical, DollarSign } from "lucide-react";
 import type { RecommendedWhiskey } from "@types";
 import { Stat, Badge, PrimaryButton } from "@components/atoms";

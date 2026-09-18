@@ -1,10 +1,7 @@
 import { Routes, Route } from "react-router-dom";
 
-import Header from "./components/organisms/Header/Header";
-
-import Home from "./components/pages/Home/Home";
-import Finder from "./components/pages/Finder/Finder";
-import Footer from "./components/organisms/Footer/Footer";
+import { Header, Footer } from "@components/organisms";
+import { Home, Finder } from "@components/pages";
 import "./App.css";
 
 function App() {

@@ -9,8 +9,7 @@ import {
 import type { FlavorCategory, Preferences, RecommendedWhiskey } from "@types";
 import { CountryId } from "@types";
 
-import { recommendWhiskeys } from "@utils/recommendationEngine";
-import { getFlavorDescription } from "@utils/flavorDescriptions";
+import { recommendWhiskeys, getFlavorDescription } from "@utils";
 
 import {
   Eyebrow,
