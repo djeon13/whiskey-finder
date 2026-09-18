@@ -1,7 +1,5 @@
-import flavorNotesData from "../data/flavorNotes.json";
-import type { FlavorCategory, FlavorNote, Whiskey } from "../types";
-
-const FLAVOR_CATEGORIES = flavorNotesData as FlavorCategory[];
+import { FLAVOR_CATEGORIES } from "../data";
+import type { FlavorNote, Whiskey } from "../types";
 
 /**
  * Returns a Set containing every valid flavor note ID

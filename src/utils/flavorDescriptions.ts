@@ -1,5 +1,9 @@
-export function getFlavorDescription(categoryId: string): string {
-  const descriptions: Record<string, string> = {
+import type { FlavorCategory } from "../types";
+
+export function getFlavorDescription(
+  categoryId: FlavorCategory["id"]
+): string {
+  const descriptions: Record<FlavorCategory["id"], string> = {
     smoke: "Bold smoky flavors commonly found in peated Scotch whiskies.",
 
     sweet:

@@ -1,7 +1,5 @@
-import flavorMetadataData from "../data/flavorMetadata.json";
-import type { FlavorCategory, FlavorMetadata, FlavorNote } from "../types";
-
-const FLAVOR_METADATA = flavorMetadataData as FlavorMetadata;
+import { FLAVOR_METADATA } from "../data";
+import type { FlavorCategory, FlavorNote } from "../types";
 
 export function buildFlavorFingerprint(
   flavorNotes: FlavorNote["id"][] = []

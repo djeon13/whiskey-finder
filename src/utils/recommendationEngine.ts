@@ -1,5 +1,5 @@
-import whiskeyCollectionData from "../data/whiskeyCollection.json";
-import type { Preferences, RecommendedWhiskey, Scores, Whiskey } from "../types";
+import { WHISKEY_COLLECTION as whiskeyCollection } from "../data";
+import type { Preferences, RecommendedWhiskey, Scores } from "../types";
 
 import { getActiveWeights, getTotalScore } from "./scoring";
 
@@ -7,8 +7,6 @@ import {
   buildFlavorFingerprint,
   scoreFlavorFingerprint,
 } from "./flavorFingerprint";
-
-const whiskeyCollection = whiskeyCollectionData as Whiskey[];
 
 export function recommendWhiskeys(
   preferences: Preferences
