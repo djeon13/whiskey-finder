@@ -1,8 +1,8 @@
 import { useNavigate } from "react-router-dom";
 
 import whiskeyPour from "@assets/origami-whiskeyglass.png";
-import { PrimaryButton } from "@components/atoms/PrimaryButton/PrimaryButton";
-import { PageHeading } from "@components/molecules/PageHeading/PageHeading";
+import { PrimaryButton } from "@components/atoms";
+import { PageHeading } from "@components/molecules";
 
 import "./Hero.css";
 

@@ -1,5 +1,5 @@
 import type { ElementType, ReactNode } from "react";
-import { Eyebrow } from "@components/atoms/Eyebrow/Eyebrow";
+import { Eyebrow } from "@components/atoms";
 import "./PageHeading.css";
 
 export interface PageHeadingProps {

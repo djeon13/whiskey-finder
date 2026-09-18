@@ -1,4 +1,4 @@
-import { NavItem } from "@components/atoms/NavItem/NavItem";
+import { NavItem } from "@components/atoms";
 import "./Navigation.css";
 
 function Navigation() {

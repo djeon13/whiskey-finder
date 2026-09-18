@@ -1,5 +1,5 @@
 import type { ReactNode } from "react";
-import { SectionTitle } from "@components/atoms/SectionTitle/SectionTitle";
+import { SectionTitle } from "@components/atoms";
 import "./TitledSection.css";
 
 export interface TitledSectionProps {

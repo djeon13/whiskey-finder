@@ -1,17 +1,18 @@
 import { useEffect, useState } from "react";
 import { getBartenderPerspective } from "@utils/bartenderApi";
-import WhiskeyLoader from "@components/atoms/WhiskeyLoader/WhiskeyLoader";
 import {
   getFlavorNoteLabel,
   getBarrelTypeLabel,
   getFlavorCategory,
 } from "@utils/flavorHelpers";
 import type { Preferences, RecommendedWhiskey } from "@types";
-import { PillList } from "@components/molecules/PillList/PillList";
-import { TitledSection } from "@components/molecules/TitledSection/TitledSection";
-import { CloseButton } from "@components/atoms/CloseButton/CloseButton";
-import { PrimaryButton } from "@components/atoms/PrimaryButton/PrimaryButton";
-import { FactRow } from "@components/atoms/FactRow/FactRow";
+import {
+  WhiskeyLoader,
+  CloseButton,
+  PrimaryButton,
+  FactRow,
+} from "@components/atoms";
+import { PillList, TitledSection } from "@components/molecules";
 import "./WhiskeyDetailsModal.css";
 
 interface WhiskeyDetailsModalProps {

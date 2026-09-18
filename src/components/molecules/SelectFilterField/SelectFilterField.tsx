@@ -1,9 +1,9 @@
 import type { ChangeEvent, ReactNode } from "react";
-import { FormFieldset } from "@components/atoms/FormFieldset/FormFieldset";
 import {
+  FormFieldset,
   SelectField,
   type SelectFieldOption,
-} from "@components/atoms/SelectField/SelectField";
+} from "@components/atoms";
 
 export interface SelectFilterFieldProps {
   legend: ReactNode;

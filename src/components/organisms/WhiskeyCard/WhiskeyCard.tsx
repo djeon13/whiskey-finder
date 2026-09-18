@@ -2,10 +2,8 @@ import { getFlavorNoteLabel } from "@utils/flavorHelpers";
 import { getTagLabel } from "@utils/tagHelpers";
 import { MapPin, FlaskConical, DollarSign } from "lucide-react";
 import type { RecommendedWhiskey } from "@types";
-import { Stat } from "@components/atoms/Stat/Stat";
-import { PillList } from "@components/molecules/PillList/PillList";
-import { Badge } from "@components/atoms/Badge/Badge";
-import { PrimaryButton } from "@components/atoms/PrimaryButton/PrimaryButton";
+import { Stat, Badge, PrimaryButton } from "@components/atoms";
+import { PillList } from "@components/molecules";
 
 import "./WhiskeyCard.css";
 

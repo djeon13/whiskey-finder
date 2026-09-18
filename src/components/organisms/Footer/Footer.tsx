@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import logo from "@assets/wolf-crane-logo.svg";
-import { BrandLogo } from "@components/atoms/BrandLogo/BrandLogo";
+import { BrandLogo } from "@components/atoms";
 import "./Footer.css";
 
 function Footer() {
