@@ -28,7 +28,7 @@ The app was originally plain JS/JSX with no type safety, so mismatched fields (e
 
 ## 2. Reorganize components using Atomic Design
 
-Components previously lived in one flat folder with no signal for what was reusable versus page-specific.
+Components previously lived in one flat folder with no signal for what was reusable versus page-specific. Atomic design is a frontend architecture methodology that organizes components into a hierarchy based on complexity. Some teams use this, others use different methods, but this one is my favorite and is absolutely a personal preference :)
 
 - Extracted shared UI pieces (buttons, badges, form fields, section headings, etc.) into `atoms/` and `molecules/`.
 - Grouped feature-level components (`WhiskeyCard`, `WhiskeyFinder`, `Header`, `Footer`, etc.) into `organisms/`.
@@ -44,6 +44,8 @@ Fields like whiskey style, barrel type, country, and flavor category were typed 
 - Typed each catalog interface's `id` field with its enum, so an invalid or misspelled id is now a compile error instead of a silent bug.
 
 ## 4. Centralize data typing
+
+This is also a personal style preference that can be polarizing--some like it, some don't. I hate a huge import section, so this is why I prefer it tbh. It satiates my OCD lol.
 
 Every file that imported a JSON catalog (whiskey styles, countries, flavor notes, etc.) was re-asserting its type with its own `as Type[]` cast, duplicating the same JSON-to-type contract in half a dozen places.
 
