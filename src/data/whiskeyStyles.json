@@ -1,0 +1,46 @@
+[
+  {
+    "id": "single-malt-scotch",
+    "label": "Single Malt Scotch"
+  },
+  {
+    "id": "blended-scotch",
+    "label": "Blended Scotch"
+  },
+  {
+    "id": "blended-malt-scotch",
+    "label": "Blended Malt Scotch"
+  },
+  {
+    "id": "bourbon",
+    "label": "Bourbon"
+  },
+  {
+    "id": "straight-bourbon",
+    "label": "Straight Bourbon"
+  },
+  {
+    "id": "rye-whiskey",
+    "label": "Rye Whiskey"
+  },
+  {
+    "id": "tennessee-whiskey",
+    "label": "Tennessee Whiskey"
+  },
+  {
+    "id": "irish-whiskey",
+    "label": "Irish Whiskey"
+  },
+  {
+    "id": "single-pot-still",
+    "label": "Single Pot Still Irish"
+  },
+  {
+    "id": "japanese-whisky",
+    "label": "Japanese Whisky"
+  },
+  {
+    "id": "canadian-whisky",
+    "label": "Canadian Whisky"
+  }
+]

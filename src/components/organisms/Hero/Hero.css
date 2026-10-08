@@ -1,0 +1,313 @@
+.hero {
+  position: relative;
+
+  overflow: hidden;
+
+  background: linear-gradient(180deg, #f7f3eb 0%, #efe4d3 100%);
+}
+
+/* ======================================
+   Ambient Lighting
+====================================== */
+
+.hero::before,
+.hero::after {
+  content: "";
+
+  position: absolute;
+
+  border-radius: 50%;
+
+  filter: blur(110px);
+
+  pointer-events: none;
+}
+
+.hero::before {
+  width: 760px;
+  height: 760px;
+
+  top: -240px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  background: rgba(255, 248, 236, 0.85);
+
+  z-index: 0;
+}
+
+.hero::after {
+  width: 520px;
+  height: 520px;
+
+  bottom: 40px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  background: rgba(201, 139, 60, 0.14);
+
+  z-index: 0;
+}
+
+/* ======================================
+   Content
+====================================== */
+
+.hero__content {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 760px;
+
+  margin: 0 auto;
+
+  text-align: center;
+}
+
+.hero__eyebrow {
+  margin: 0 0 24px;
+
+  color: var(--color-accent);
+
+  font-size: 0.9rem;
+  font-weight: 700;
+
+  letter-spacing: 0.22em;
+
+  text-transform: uppercase;
+}
+
+.hero__title {
+  margin: 0 0 34px;
+
+  color: var(--color-hero-title);
+
+  font-size: clamp(3.5rem, 7vw, 5.8rem);
+
+  line-height: 0.94;
+}
+
+.hero__description {
+  max-width: 620px;
+
+  margin: 0 auto 24px;
+
+  color: var(--color-text-secondary);
+
+  font-size: 1.15rem;
+
+  line-height: 1.8;
+}
+
+/* ======================================
+   CTA
+====================================== */
+
+.hero__cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero__illustration {
+  position: relative;
+
+  z-index: 2;
+}
+
+.hero__illustration::before {
+  content: "";
+
+  position: absolute;
+
+  top: 50%;
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 320px;
+  height: 320px;
+
+  border-radius: 50%;
+
+  background: radial-gradient(
+    circle,
+    rgba(255, 250, 240, 0.7) 0%,
+    rgba(201, 139, 60, 0.22) 42%,
+    rgba(201, 139, 60, 0.1) 68%,
+    transparent 82%
+  );
+
+  filter: blur(24px);
+
+  z-index: -1;
+
+  pointer-events: none;
+}
+
+.hero__pour {
+  position: relative;
+
+  z-index: 2;
+
+  width: clamp(210px, 24vw, 350px);
+
+  height: auto;
+
+  margin: 16px 0 24px;
+
+  margin-left: -14px;
+
+  opacity: 0.72;
+
+  transform: rotate(-8deg);
+
+  mix-blend-mode: multiply;
+
+  pointer-events: none;
+
+  user-select: none;
+}
+
+.hero__button {
+  display: inline-flex;
+
+  justify-content: center;
+  align-items: center;
+
+  min-height: 64px;
+
+  padding: 0 64px;
+
+  border: none;
+
+  border-radius: 999px;
+
+  background: var(--color-accent);
+
+  color: #fff;
+
+  font: inherit;
+
+  font-size: 1.1rem;
+  font-weight: 700;
+
+  letter-spacing: 0.08em;
+
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  transition:
+    transform var(--transition-fast),
+    background var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.hero__button:hover {
+  background: var(--color-accent-dark);
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 18px 36px rgba(185, 61, 22, 0.22);
+}
+
+.hero__button:focus-visible {
+  outline: 2px solid var(--color-accent);
+
+  outline-offset: 4px;
+}
+
+/* ======================================
+   Mobile
+====================================== */
+
+@media screen and (max-width: 768px) {
+  .hero {
+    min-height: auto;
+
+    padding: 72px 24px;
+  }
+
+  /* Smaller spotlight behind heading */
+
+  .hero::before {
+    width: 480px;
+    height: 480px;
+
+    top: -140px;
+
+    filter: blur(90px);
+  }
+
+  /* Smaller glow behind illustration */
+
+  .hero::after {
+    width: 320px;
+    height: 320px;
+
+    bottom: 40px;
+
+    filter: blur(80px);
+  }
+
+  .hero__content {
+    max-width: 100%;
+  }
+
+  .hero__eyebrow {
+    font-size: 0.82rem;
+
+    letter-spacing: 0.18em;
+
+    margin-bottom: 20px;
+  }
+
+  .hero__title {
+    font-size: clamp(2.7rem, 11vw, 4rem);
+
+    margin-bottom: 28px;
+  }
+
+  .hero__description {
+    max-width: 100%;
+
+    margin: 0 auto 14px;
+
+    font-size: 1rem;
+
+    line-height: 1.7;
+  }
+
+  .hero__cta {
+    margin-top: 0;
+  }
+
+  .hero__illustration::before {
+    width: 240px;
+    height: 240px;
+
+    filter: blur(20px);
+  }
+}
+
+.hero__pour {
+  width: clamp(165px, 48vw, 230px);
+
+  margin: 4px 0 16px;
+
+  margin-left: -10px;
+
+  opacity: 0.72;
+}
+
+.hero__button {
+  min-height: 58px;
+
+  padding: 0 48px;
+
+  font-size: 1rem;
+}

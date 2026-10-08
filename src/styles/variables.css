@@ -1,0 +1,110 @@
+:root {
+  /* ==================================================
+     Wolf & Crane Color Palette
+  ================================================== */
+
+  /* Backgrounds */
+
+  --color-charcoal: #d8ccb5;
+  --color-walnut: #e7ddcb;
+  --color-oak: #f4ecdf;
+
+  /* Brand Accents */
+
+  --color-bourbon: #b93d16;
+  --color-bourbon-light: #cf6842;
+  --color-copper: #8f2e10;
+
+  /* Secondary Accent */
+
+  --color-matcha: #8b6d4f;
+  --color-matcha-light: #a98866;
+
+  /* Neutral */
+
+  --color-parchment: #faf6ef;
+  /* ==================================================
+   Hero
+================================================== */
+
+  --color-hero: #efe4d1;
+  --color-hero-overlay: rgba(255, 255, 255, 0.18);
+  --color-hero-title: #34241d;
+
+  /* ==================================================
+     Text
+  ================================================== */
+
+  --color-text-primary: #2c211c;
+  --color-text-secondary: #6b564a;
+  --color-text-muted: #927d70;
+
+  /* ==================================================
+     Borders
+  ================================================== */
+
+  --color-border: #bea58d;
+
+  /* ==================================================
+     Buttons
+  ================================================== */
+
+  --button-primary-bg: linear-gradient(180deg, #c74d22 0%, #a33412 100%);
+
+  --button-primary-text: #faf6ef;
+
+  /* ==================================================
+     Shadows
+  ================================================== */
+
+  --shadow-card: 0 8px 24px rgba(44, 33, 28, 0.08);
+
+  --shadow-hover: 0 14px 36px rgba(44, 33, 28, 0.16);
+
+  /* ==================================================
+     Radius
+  ================================================== */
+
+  --radius-small: 8px;
+  --radius-card: 18px;
+  --radius-button: 999px;
+
+  /* ==================================================
+     Spacing
+  ================================================== */
+
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 40px;
+  --spacing-2xl: 48px;
+  --spacing-xxl: 64px;
+
+  /* ==================================================
+     Animation
+  ================================================== */
+
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+
+  /* ==================================================
+     Compatibility Aliases
+  ================================================== */
+
+  --color-background: var(--color-charcoal);
+  --color-surface: var(--color-walnut);
+  --color-card: var(--color-oak);
+
+  --color-accent: var(--color-bourbon);
+  --color-accent-light: var(--color-bourbon-light);
+  --color-accent-dark: var(--color-copper);
+
+  --color-amber: var(--color-bourbon);
+  --color-brass: var(--color-bourbon);
+
+  --color-cream: var(--color-parchment);
+
+  --radius-sm: var(--radius-small);
+  --radius-md: var(--radius-card);
+}

@@ -1,0 +1,19 @@
+.finder {
+  width: min(1200px, 100%);
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+
+  animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

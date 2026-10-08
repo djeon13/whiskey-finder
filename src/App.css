@@ -1,3 +1,12 @@
 .app {
   min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  background:
+    radial-gradient(circle at top, rgba(201, 139, 60, 0.08), transparent 45%),
+    var(--color-background);
+
+  color: var(--color-text-primary);
 }

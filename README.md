@@ -1,16 +1,90 @@
-# React + Vite
+# 🥃 Wolf and Crane Whiskey Library
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The Whiskey Library is a React web application that helps users discover whiskey recommendations based on their flavor preferences. Users can select up to two flavor profiles, optionally filter by price range and country, and receive personalized recommendations from a curated whiskey collection.
 
-Currently, two official plugins are available:
+This project was developed as the **TripleTen Software Engineering Custom Final Project**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Personalized whiskey recommendation engine
+- Select up to two flavor profiles
+- Optional price range filter
+- Optional country filter
+- Interactive flavor guide with tasting notes
+- Whiskey details modal with:
+  - Bottle information
+  - Flavor profile
+  - Barrel types
+  - Bartender recommendation
+- Animated recommendation cards
+- Custom whiskey-themed loading animation
+- Responsive design for desktop, tablet, and mobile devices
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Recommendation Algorithm
 
-## Expanding the ESLint configuration
+Recommendations are generated using the following process:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. The user selects up to two flavor categories.
+2. The application filters the whiskey collection to bottles matching **all** selected flavor categories.
+3. Optional price and country filters are applied.
+4. Remaining bottles are scored based on flavor similarity and selected filters.
+5. The three highest-scoring whiskeys are displayed.
+
+This recommendation process is designed to simulate the experience of receiving suggestions from a knowledgeable bartender rather than simply filtering a list.
+
+## Technologies Used
+
+- React
+- Vite
+- React Router
+- JavaScript (ES6+)
+- CSS3
+- Responsive Web Design
+- BEM Methodology
+
+## Responsive Design
+
+The application is responsive and optimized for:
+
+- Desktop
+- Tablet
+- Mobile
+
+## Future Improvements
+
+Planned features include:
+
+- Backend database integration
+- User authentication
+- Favorite whiskey list
+- AI-assisted recommendations
+- Inventory management
+- Search by bottle or distillery
+- Food pairing suggestions
+- Whiskey comparison tool
+
+## Screenshots
+
+Add screenshots before submitting:
+
+- Home page
+- Whiskey Finder
+- Recommendation results
+- Whiskey Details modal
+- Mobile layout
+
+## Live Demo
+
+Frontend:
+https://djeon13.github.io/whiskey-finder/
+
+Backend API:
+https://wolf-crane-api-daniel.onrender.com
+
+## Project Video
+
+https://www.loom.com/share/384d54c81a404befb90f4d9bfa61b766
+
+## Author
+
+Developed by Da In Jeon as part of the TripleTen Software Engineering program.

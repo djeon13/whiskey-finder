@@ -1,0 +1,9 @@
+.brand-logo {
+  display: inline-flex;
+}
+
+.brand-logo__image {
+  display: block;
+  height: 40px;
+  width: auto;
+}

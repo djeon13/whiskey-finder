@@ -1,0 +1,22 @@
+[
+  {
+    "id": "featured",
+    "label": "Featured"
+  },
+  {
+    "id": "staff-pick",
+    "label": "Staff Pick"
+  },
+  {
+    "id": "new-arrival",
+    "label": "New Arrival"
+  },
+  {
+    "id": "limited-release",
+    "label": "Limited Release"
+  },
+  {
+    "id": "award-winner",
+    "label": "Award Winner"
+  }
+]
