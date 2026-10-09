@@ -1,5 +1,12 @@
 .hero {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: calc(100vh - 129px);
+  box-sizing: border-box;
+  padding: 24px;
 
   overflow: hidden;
 
@@ -63,6 +70,8 @@
   max-width: 760px;
 
   margin: 0 auto;
+
+  padding-top: 60px;
 
   text-align: center;
 }
