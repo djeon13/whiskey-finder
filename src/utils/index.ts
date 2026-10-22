@@ -1,4 +1,3 @@
-export { getBartenderPerspective } from "./bartenderApi";
 export { getFlavorDescription } from "./flavorDescriptions";
 export {
   buildFlavorFingerprint,
