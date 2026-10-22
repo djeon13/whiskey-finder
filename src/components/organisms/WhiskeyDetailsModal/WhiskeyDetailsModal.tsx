@@ -1,39 +1,26 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import {
-  getBartenderPerspective,
   getFlavorNoteLabel,
   getBarrelTypeLabel,
   getFlavorCategory,
 } from "@utils";
-import type { Preference, RecommendedWhiskey } from "@types";
-import {
-  WhiskeyLoader,
-  CloseButton,
-  PrimaryButton,
-  FactRow,
-} from "@components/atoms";
+import type { RecommendedWhiskey } from "@types";
+import { CloseButton, FactRow } from "@components/atoms";
 import { PillList, TitledSection } from "@components/molecules";
 import "./WhiskeyDetailsModal.css";
 
 interface WhiskeyDetailsModalProps {
   whiskey: RecommendedWhiskey | null;
-  preferences: Preference;
   isOpen: boolean;
   onClose: () => void;
 }
 
 function WhiskeyDetailsModal({
   whiskey,
-  preferences,
   isOpen,
   onClose,
 }: WhiskeyDetailsModalProps) {
-  const [isBartenderLoading, setIsBartenderLoading] = useState(false);
-
-  const [bartenderPerspective, setBartenderPerspective] = useState("");
-
-  const [bartenderError, setBartenderError] = useState("");
-
+  
   useEffect(() => {
     if (!isOpen) {
       return;
@@ -59,34 +46,6 @@ function WhiskeyDetailsModal({
   function handleOverlayClick(event: React.MouseEvent<HTMLDivElement>) {
     if (event.target === event.currentTarget) {
       onClose();
-    }
-  }
-
-  async function handleAskBartender() {
-    if (!whiskey) {
-      return;
-    }
-
-    try {
-      setBartenderError("");
-      setBartenderPerspective("");
-
-      setIsBartenderLoading(true);
-
-      const response = await getBartenderPerspective({
-        whiskey,
-        preferences,
-      });
-
-      setBartenderPerspective(response);
-    } catch (error) {
-      console.error(error);
-
-      setBartenderError(
-        "The bartender is unavailable at the moment. Please try again."
-      );
-    } finally {
-      setIsBartenderLoading(false);
     }
   }
 
@@ -217,34 +176,7 @@ function WhiskeyDetailsModal({
           >
             <p className="whiskey-modal__text">{whiskey.bartenderNote}</p>
 
-            {!isBartenderLoading && (
-              <PrimaryButton
-                className="whiskey-modal__bartender-button"
-                onClick={handleAskBartender}
-              >
-                {bartenderPerspective ? "✨ Ask Again" : "✨ Ask the Bartender"}
-              </PrimaryButton>
-            )}
-
-            {isBartenderLoading && (
-              <div className="whiskey-modal__bartender-loader">
-                <WhiskeyLoader />
-              </div>
-            )}
-
-            {bartenderPerspective && (
-              <div className="whiskey-modal__bartender-bubble">
-                <h4 className="whiskey-modal__bartender-title">
-                  🥃 Bartender's Perspective
-                </h4>
-
-                <p className="whiskey-modal__text">{bartenderPerspective}</p>
-              </div>
-            )}
-
-            {bartenderError && (
-              <p className="whiskey-modal__bartender-error">{bartenderError}</p>
-            )}
+            
           </TitledSection>
         </div>
       </div>

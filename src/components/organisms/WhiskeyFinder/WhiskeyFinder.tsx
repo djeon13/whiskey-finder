@@ -482,7 +482,6 @@ function WhiskeyFinder() {
       <WhiskeyDetailsModal
         key={selectedWhiskey?.id}
         whiskey={selectedWhiskey}
-        preferences={preferences}
         isOpen={Boolean(selectedWhiskey)}
         onClose={handleCloseDetails}
       />
