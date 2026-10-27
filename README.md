@@ -2,8 +2,6 @@
 
 The Whiskey Library is a React web application that helps users discover whiskey recommendations based on their flavor preferences. Users can select up to two flavor profiles, optionally filter by price range and country, and receive personalized recommendations from a curated whiskey collection.
 
-This project was developed as the **TripleTen Software Engineering Custom Final Project**.
-
 ## Features
 
 - Personalized whiskey recommendation engine
